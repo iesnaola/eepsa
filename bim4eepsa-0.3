@@ -180,7 +180,8 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bim4eepsa#contains">
         <rdfs:domain rdf:resource="https://w3id.org/bot#Space"/>
-        <rdfs:comment xml:lang="en">Relation of a space to a Thing</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation to a Thing contained in a space.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -399,8 +400,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Door"/>
+        <rdfs:comment xml:lang="en">A door that is external (facing the outside of the building)</rdfs:comment>
         <rdfs:label xml:lang="en">External door</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">A door that is external (facing the outside of the building)</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -417,8 +418,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Wall"/>
+        <rdfs:comment xml:lang="en">A wall that is external (facing the outside of the building)</rdfs:comment>
         <rdfs:label xml:lang="en">External wall</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">A wall that is external (facing the outside of the building)</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -455,6 +456,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#FeedingStructure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
+        <rdfs:comment xml:lang="en">Architectonic elements with feeding purposes.</rdfs:comment>
         <rdfs:label xml:lang="en">Feeding Structure</rdfs:label>
     </owl:Class>
     
@@ -505,8 +507,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Skylight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes. (Wikipedia)</rdfs:comment>
         <rdfs:label xml:lang="en">Skylight</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes. (Wikipedia)</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -525,6 +527,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Trough">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#FeedingStructure"/>
+        <rdfs:comment xml:lang="en">A long, narrow container without a lid that usually holds water or food for farm animals.</rdfs:comment>
         <rdfs:label xml:lang="en">Trough</rdfs:label>
     </owl:Class>
     
@@ -545,6 +548,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#WaterDispenser">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#FeedingStructure"/>
+        <rdfs:comment xml:lang="en">A structure that dispenses water for feeding purposes.</rdfs:comment>
         <rdfs:label xml:lang="en">Water Dispenser</rdfs:label>
     </owl:Class>
     
@@ -726,15 +730,6 @@ basic geo vocab
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
-        <rdfs:label>location</rdfs:label>
-        <rdfs:comment>The relation between something and the point, 
- or other geometrical thing in space, where it is.  For example, the realtionship between
- a radio tower and a Point with a given lat and long.
- Or a relationship between a park and its outline as a closed arc of points, or a road and
- its location as a arc (a sequence of points).
- Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
- an accuracy appropriate for the size of the object and uses such as mapping .
- </rdfs:comment>
         <rdfs:comment xml:lang="en">The relation between something and the point,  or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
         <rdfs:label xml:lang="en">location</rdfs:label>
     </rdf:Description>
