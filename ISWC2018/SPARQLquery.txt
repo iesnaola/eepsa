@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX eepsa: <https://w3id.org/eepsa#>
+PREFIX f4eepsa: <https://w3id.org/f4eepsa#>
+PREFIX pep: <https://w3id.org/pep/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?hvacControlStrategy
+FROM <myGraph>
+WHERE {
+?hvacControlStrategy eepsa:isForecastedToProduceSituation 
+     eepsa:INSHTForSedentarySituation.
+			
+?predictiveProcedure pep:hasInput ?hvacControlStrategy.
+
+?prediction pep:usedProcedure ?predictiveProcedure;
+	geo:location :openSpace.
+	pep:hasResult ?predResult.
+
+?predResult f4eepsa:hasForecastedDateTime 
+     ?dateTime.
+	
+FILTER (
+?dateTime = xsd:dateTime("2017-12-15T15:00:00"))  }
