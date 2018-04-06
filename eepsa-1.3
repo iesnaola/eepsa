@@ -31,16 +31,17 @@
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
         <owl:imports rdf:resource="https://w3id.org/bim4eepsa"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology aims to capture knowledge related to buildings, sensing and actuating devices, and their corresponding observations and actuations, towards the support of data analysts in energy efficiency problems.</terms:description>
         <terms:issued>2017-07-21</terms:issued>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology is documented in:
+
+Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2018) Semantic Prediction Assistant Approach applied to Energy Efficiency in Tertiary Buildings http://www.semantic-web-journal.net/content/semantic-prediction-assistant-approach-applied-energy-efficiency-tertiary-buildings-1</rdfs:comment>
         <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
         <terms:creator xml:lang="en">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-01-02</terms:modified>
         <vann:preferredNamespacePrefix>eepsa</vann:preferredNamespacePrefix>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology is documented in:
-
-Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2017) Semantic Prediction Assistant Approach applied to Energy Efficiency in Tertiary Buildings http://www.semantic-web-journal.net/content/semantic-prediction-assistant-approach-applied-energy-efficiency-tertiary-buildings-0</rdfs:comment>
         <terms:created>2016-02-20</terms:created>
         <dc:title>EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology</dc:title>
         <terms:license xml:lang="en">This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.</terms:license>
@@ -266,7 +267,6 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/eepsa#isForecastedToProduceSituation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/eepsa#isForecastedToProduceSituation">
-        <rdfs:range rdf:resource="https://w3id.org/eepsa#Situation"/>
         <rdfs:comment xml:lang="en">A property that links a Thing, with a Situation that is forecasted to produce</rdfs:comment>
         <rdfs:label xml:lang="en">is forecasted to produce situation</rdfs:label>
     </owl:ObjectProperty>
@@ -541,7 +541,25 @@ myOnto:obs1 eepsa:observationTime &quot;12:00:00&quot;.</skos:example>
     <!-- http://purl.org/iot/vocab/m3-lite#Thermometer -->
 
     <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#Thermometer">
-        <owl:equivalentClass rdf:resource="https://w3id.org/eepsa#TemperatureSensor"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
+                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Illuminance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
+                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
+                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#SolarRadiation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -722,7 +740,6 @@ myOnto:obs1 eepsa:observationTime &quot;12:00:00&quot;.</skos:example>
     <!-- https://w3id.org/eepsa#ComfortableThermalSituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#ComfortableThermalSituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#Situation"/>
         <rdfs:comment xml:lang="en">A set of circumstances that ensures a comfortable thermal situation. Themal comfort is understood as that condition of mind that express satisfaction with the thermal environment and is assessed by subjective evaluation. (Source: ANSI/ASHRAE Standard 55-2017)</rdfs:comment>
         <rdfs:label xml:lang="en">Comfortable Thermal Situation</rdfs:label>
     </owl:Class>
@@ -794,8 +811,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#HSESituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#HSESituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by UK&apos;s HSE (Health and Safety Execution) guidelines.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures over 16ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">HSE Situation</rdfs:label>
     </owl:Class>
     
@@ -804,8 +822,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#INSHTForLightSituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#INSHTForLightSituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) guidelines for light workplaces.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 14ºC and 25ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">INSHT for Light Situation</rdfs:label>
     </owl:Class>
     
@@ -814,8 +833,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#INSHTForSedentarySituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#INSHTForSedentarySituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) guidelines for sedentary workplaces.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 17ºC and 27ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">INSHT for Sedentary Situation</rdfs:label>
     </owl:Class>
     
@@ -824,7 +844,7 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#MeteorologicalProperty -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#MeteorologicalProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasDataSource"/>
@@ -1179,21 +1199,24 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/eepsa#RITESituation -->
+    <!-- https://w3id.org/eepsa#RITEForWinterSituation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#RITESituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
-        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines.</rdfs:comment>
-        <rdfs:label xml:lang="en">RITE Situation</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/eepsa#RITEForWinterSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
+        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines for Winter days.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 21ºC and 23ºC during working hours.</rdfs:comment>
+        <rdfs:label xml:lang="en">RITE for Winter Situation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/eepsa#Situation -->
+    <!-- https://w3id.org/eepsa#RiteForSummerSituation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#Situation">
-        <rdfs:comment xml:lang="en">Relative to a set of circumstances.</rdfs:comment>
-        <rdfs:label xml:lang="en">Situation</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/eepsa#RiteForSummerSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
+        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines for Summer days.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 23ºC and 25ºC during working hours.</rdfs:comment>
+        <rdfs:label xml:lang="en">RITE for Summer Situation</rdfs:label>
     </owl:Class>
     
 
@@ -1386,28 +1409,12 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/eepsa#TemperatureSensor -->
+    <!-- https://w3id.org/eepsa#ThermalComfortRegulation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#TemperatureSensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Illuminance"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#SolarRadiation"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="https://w3id.org/eepsa#ThermalComfortRegulation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:comment xml:lang="en">HVAC control strategies that fulfill a set of regulations and guidelines that ensure occupants&apos; comfort with the thermal environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thermal Comfort Regulation</rdfs:label>
     </owl:Class>
     
 
