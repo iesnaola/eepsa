@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/measurements4pfeepsa#"
+     xml:base="https://w3id.org/measurements4pfeepsa"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="https://w3id.org/measurements4pfeepsa">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/measurements4eepsa-0.3"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <terms:modified>2018-04-20</terms:modified>
+        <vann:preferredNamespacePrefix xml:lang="en">measurements4pfeepsa</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1#"/>
+        <terms:title>Measurements for PFEEPSA (Poultry Farm Energy Efficiency Prediction Semantic Assistant) Ontology</terms:title>
+        <terms:issued>2018-05-15</terms:issued>
+        <terms:description xml:lang="en">Devices, actuations and measurement-related information for the PFEEPSA Ontology.</terms:description>
+        <terms:created>2018-04-20</terms:created>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa#StockingDensity -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#StockingDensity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">In the Poultry Farm domain, Stocking Density determines the bird weight per unit area. The benefit of using bird weight per unit area is that the standards are consistent and would stand true no matter how heavy the target weight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1#"/>
+        <rdfs:label xml:lang="en">Stocking Density</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa#StockingDensitySensor -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#StockingDensitySensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">A sensor for determining Stocking density within a room or space.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1#"/>
+        <rdfs:label xml:lang="en">Stocking Density Sensor</rdfs:label>
+        <ns:term_status xml:lang="en">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1# -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/measurements4pfeepsa-0.1#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/bim4pfeepsa#"
+     xml:base="https://w3id.org/bim4pfeepsa"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/bim4pfeepsa">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/CIKM2018/bim4pfeepsa-0.1"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/bim4eepsa-0.3"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <terms:modified>2018-04-20</terms:modified>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <terms:issued>2018-05-15</terms:issued>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:created>2018-04-20</terms:created>
+        <terms:description xml:lang="en">Building and space-related information for the PFEEPSA Ontology.</terms:description>
+        <terms:title>BIM (Building Information Modelling) for PFEEPSA (Poultry Farm Energy Efficiency Prediction Semantic Assistant) Ontology</terms:title>
+        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <vann:preferredNamespacePrefix xml:lang="en">bim4pfeepsa</vann:preferredNamespacePrefix>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#PhysicalObject -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
+    
+
+
+    <!-- https://w3id.org/bot#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Building"/>
+    
+
+
+    <!-- https://w3id.org/eepsa#Farm -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#Farm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Building"/>
+        <rdfs:comment xml:lang="en">A farm is an area of land that is devoted primarily to agricultural processes with the primary objective of producing food and other crops; it is the basic facility in food production (Source: Wikipedia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <rdfs:label xml:lang="en">Farm</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa#FeedingStructure -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#FeedingStructure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
+        <rdfs:comment xml:lang="en">Architectonic elements with feeding purposes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <rdfs:label xml:lang="en">Feeding Structure</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa#PoultryFarm -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#PoultryFarm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#Farm"/>
+        <rdfs:comment xml:lang="en">A farm where poultry are raised.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <rdfs:label xml:lang="en">Poultry Farm</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa#Trough -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#Trough">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#FeedingStructure"/>
+        <rdfs:comment xml:lang="en">A long, narrow container without a lid that usually holds water or food for farm animals.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <rdfs:label xml:lang="en">Trough</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa#WaterDispenser -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa#WaterDispenser">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#FeedingStructure"/>
+        <rdfs:comment xml:lang="en">A structure that dispenses water for feeding purposes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4pfeepsa#"/>
+        <rdfs:label xml:lang="en">Water Dispenser</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bim4pfeepsa# -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bim4pfeepsa#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

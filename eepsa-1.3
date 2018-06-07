@@ -4,9 +4,9 @@
      xmlns:eepsa="https://w3id.org/eepsa#"
      xmlns:schema="http://schema.org/"
      xmlns:bim4eepsa="https://w3id.org/bim4eepsa#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:iot-lite="http://purl.oclc.org/NET/UNIS/iot-lite/iot-lite#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:bot="https://w3id.org/bot#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -26,29 +26,30 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/eepsa">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/eepsa-1.3"/>
-        <owl:imports rdf:resource="https://w3id.org/measurements4eepsa"/>
-        <owl:imports rdf:resource="https://w3id.org/forecasting4eepsa"/>
+        <owl:imports rdf:resource="http://193.144.237.227:8890/DAV/home/dba/Ontologies/datamining4EEPSA.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/forecasting4eepsa-0.2"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/measurements4eepsa-0.3"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
         <owl:imports rdf:resource="https://w3id.org/bim4eepsa"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology aims to capture knowledge related to buildings, sensing and actuating devices, and their corresponding observations and actuations, towards the support of data analysts in energy efficiency problems.</terms:description>
+        <terms:title>EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology</terms:title>
+        <terms:modified>2018-01-02</terms:modified>
         <terms:issued>2017-07-21</terms:issued>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
-        <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
-        <terms:creator xml:lang="en">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-01-02</terms:modified>
-        <vann:preferredNamespacePrefix>eepsa</vann:preferredNamespacePrefix>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ontology is documented in:
 
-Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2017) Semantic Prediction Assistant Approach applied to Energy Efficiency in Tertiary Buildings http://www.semantic-web-journal.net/content/semantic-prediction-assistant-approach-applied-energy-efficiency-tertiary-buildings-0</rdfs:comment>
+Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2018) Semantic Prediction Assistant Approach applied to Energy Efficiency in Tertiary Buildings http://www.semantic-web-journal.net/content/semantic-prediction-assistant-approach-applied-energy-efficiency-tertiary-buildings-1</rdfs:comment>
+        <vann:preferredNamespacePrefix>eepsa</vann:preferredNamespacePrefix>
         <terms:created>2016-02-20</terms:created>
-        <dc:title>EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology</dc:title>
-        <terms:license xml:lang="en">This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.</terms:license>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa#"/>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about changes compared to version 1.2
 *********************************************************
 •	The classes and properties related to the building modelling (imported from bim4EEPSA) are now described using the BOT Ontology.
 •	The f4EEPSA (Forecasting for EEPSA) module is now imported.</rdfs:comment>
-        <bibo:status xml:lang="en">Work in progress</bibo:status>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
     </owl:Ontology>
     
 
@@ -61,6 +62,12 @@ Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2017)
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -98,6 +105,12 @@ Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2017)
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
@@ -106,21 +119,13 @@ Iker Esnaola-Gonzalez, Jesús Bermúdez, Izaskun Fernandez, Aitor Arnaiz, (2017)
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
-        <rdfs:comment>The WGS84 altitude of a SpatialThing (decimal meters 
-above the local reference ellipsoid).</rdfs:comment>
-        <rdfs:label>altitude</rdfs:label>
-        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
-        <rdfs:comment>The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
-        <rdfs:label>latitude</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
     
 
 
@@ -132,10 +137,13 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
-        <rdfs:comment>The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
-        <rdfs:label>longitude</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
@@ -187,18 +195,6 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://qudt.org/schema/qudt#unit -->
-
-    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt#unit"/>
-    
-
-
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-    
-
-
     <!-- https://w3id.org/eepsa#capturedIn -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/eepsa#capturedIn">
@@ -236,8 +232,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/eepsa#hasSolvingMethod -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/eepsa#hasSolvingMethod">
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
-        <rdfs:comment>A relation between a Thing (mainly an Outlier) and a Method proposed to solve it</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+        <rdfs:comment xml:lang="en">A relation between a Thing (mainly an Outlier) and a Procedure proposed to solve it.</rdfs:comment>
         <rdfs:label xml:lang="en">has solving method</rdfs:label>
     </owl:ObjectProperty>
     
@@ -266,7 +262,6 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/eepsa#isForecastedToProduceSituation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/eepsa#isForecastedToProduceSituation">
-        <rdfs:range rdf:resource="https://w3id.org/eepsa#Situation"/>
         <rdfs:comment xml:lang="en">A property that links a Thing, with a Situation that is forecasted to produce</rdfs:comment>
         <rdfs:label xml:lang="en">is forecasted to produce situation</rdfs:label>
     </owl:ObjectProperty>
@@ -294,15 +289,6 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/eepsa#susceptibleToOutliersCausedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/eepsa#susceptibleToOutliersCausedBy">
-        <rdfs:comment xml:lang="en">Determines the cause that makes a sensing devices susceptible to suffer from Outliers.</rdfs:comment>
-        <rdfs:label xml:lang="en">susceptible to outliers caused by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -322,12 +308,6 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
-
-
     <!-- https://w3id.org/eepsa#endingTime -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#endingTime">
@@ -342,52 +322,6 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#hasMonth">
         <rdfs:label xml:lang="en">has month</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/eepsa#manufacturedBy -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#manufacturedBy">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Determines the manufacturer of a Thing</rdfs:comment>
-        <rdfs:label xml:lang="en">manufactured by</rdfs:label>
-        <skos:example xml:lang="en">Example:
-myOnto:Vehicle1 eepsa:manufacturedBy xsd:string(&quot;Volkswagen&quot;).</skos:example>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/eepsa#model -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#model">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Model of a Thing (normally a Physical Object)</rdfs:comment>
-        <rdfs:label xml:lang="en">model</rdfs:label>
-        <skos:example xml:lang="en">Example:
-myOnto:Vehicle1 eepsa:model xsd:string(&quot;Golf GTI&quot;).</skos:example>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/eepsa#obsDate -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#obsDate">
-        <rdfs:comment>Determines the Date (e.g. yyyy-MM-dd) of an observation.</rdfs:comment>
-        <rdfs:label xml:lang="en">observation date</rdfs:label>
-        <skos:example xml:lang="en">Example:
-myOnto:obs1 eepsa:observationDate &quot;2017-02-15&quot;.</skos:example>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/eepsa#obsTime -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa#obsTime">
-        <rdfs:comment>Determines the Time (e.g. hh:mm:ss) of an observation.</rdfs:comment>
-        <rdfs:label xml:lang="en">observation time</rdfs:label>
-        <skos:example xml:lang="en">Example:
-myOnto:obs1 eepsa:observationTime &quot;12:00:00&quot;.</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -415,180 +349,143 @@ myOnto:obs1 eepsa:observationTime &quot;12:00:00&quot;.</skos:example>
 
     <!-- http://purl.org/iot/vocab/m3-lite#AirPollution -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#AirPollution">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirPollution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#AirQuality -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#AirQuality">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirQuality">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#AirTemperature -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#AirTemperature">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#AirTemperature">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#CO2 -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#CO2">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#CO2">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#CloudCover -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#CloudCover">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#CloudCover">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#Conductivity -->
+
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Conductivity"/>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#DewPoint -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#DewPoint">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#DewPoint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/iot/vocab/m3-lite#HumiditySensor -->
-
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#HumiditySensor">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#Illuminance -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#Illuminance">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Illuminance">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#LeafWetness -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#LeafWetness">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#LeafWetness">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#Precipitation -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#Precipitation">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Precipitation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#Rainfall -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#Rainfall">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#Rainfall">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#SolarRadiation -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#SolarRadiation">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SolarRadiation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#SunPositionDirection -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#SunPositionDirection">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SunPositionDirection">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#SunPositionElevation -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#SunPositionElevation">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#SunPositionElevation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/iot/vocab/m3-lite#Thermometer -->
-
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#Thermometer">
-        <owl:equivalentClass rdf:resource="https://w3id.org/eepsa#TemperatureSensor"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#WindChill -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#WindChill">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#WindChill">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#WindDirection -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#WindDirection">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#WindDirection">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/iot/vocab/m3-lite#WindSpeed -->
 
-    <rdf:Description rdf:about="http://purl.org/iot/vocab/m3-lite#WindSpeed">
+    <owl:Class rdf:about="http://purl.org/iot/vocab/m3-lite#WindSpeed">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method -->
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method">
-        <rdfs:comment>A method is a Description that defines or uses concepts in order to guide carrying out actions aimed at a solution with respect to a problem. It is different from a Plan, because plans could be carried out in order to follow a method, but a method can be followed by executing alternative plans.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Sensor -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#unit"/>
-                <owl:someValuesFrom rdf:resource="http://qudt.org/schema/qudt#Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
     
 
 
@@ -722,47 +619,8 @@ myOnto:obs1 eepsa:observationTime &quot;12:00:00&quot;.</skos:example>
     <!-- https://w3id.org/eepsa#ComfortableThermalSituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#ComfortableThermalSituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#Situation"/>
         <rdfs:comment xml:lang="en">A set of circumstances that ensures a comfortable thermal situation. Themal comfort is understood as that condition of mind that express satisfaction with the thermal environment and is assessed by subjective evaluation. (Source: ANSI/ASHRAE Standard 55-2017)</rdfs:comment>
         <rdfs:label xml:lang="en">Comfortable Thermal Situation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#DeviceRelocation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#DeviceRelocation">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
-        <rdfs:comment xml:lang="en">A method that consists in placing the sensing device in an adequate location. Following guides can be followed:
-
-https://www.rmets.org/sites/default/files/pdf/guidelines/aws-guide.pdf
-
-http://weatherfaqs.org.uk/node/124
-
-http://www.conservationphysics.org/datalog/datlog6.php
-
-http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
-        <rdfs:label xml:lang="en">Device Relocation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#DeviceReplacement -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#DeviceReplacement">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
-        <rdfs:comment xml:lang="en">A method that consists in replacing the sensing device for another one.</rdfs:comment>
-        <rdfs:label xml:lang="en">Device Replacement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#DeviceShelter -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#DeviceShelter">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
-        <rdfs:comment xml:lang="en">A method that consists in covering the sensing device adequately to avoid erroneous observations. For example, Stevenson Screen to shield the sensing device against direct precipitation or direct sunlight.</rdfs:comment>
-        <rdfs:label xml:lang="en">Device Shelter</rdfs:label>
     </owl:Class>
     
 
@@ -773,13 +631,10 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#eastOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -794,8 +649,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#HSESituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#HSESituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by UK&apos;s HSE (Health and Safety Execution) guidelines.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures over 16ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">HSE Situation</rdfs:label>
     </owl:Class>
     
@@ -804,8 +660,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#INSHTForLightSituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#INSHTForLightSituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) guidelines for light workplaces.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 14ºC and 25ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">INSHT for Light Situation</rdfs:label>
     </owl:Class>
     
@@ -814,8 +671,9 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#INSHTForSedentarySituation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#INSHTForSedentarySituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
         <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) guidelines for sedentary workplaces.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 17ºC and 27ºC during working hours.</rdfs:comment>
         <rdfs:label xml:lang="en">INSHT for Sedentary Situation</rdfs:label>
     </owl:Class>
     
@@ -824,14 +682,15 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#MeteorologicalProperty -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#MeteorologicalProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasDataSource"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa#WeatherService"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Meteorological Variables that can be measured by weather stations (this means that they are outdoors. Maybe the name has to be changed)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Properties that can be measured by weather stations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Meteorological Property</rdfs:label>
     </owl:Class>
     
 
@@ -893,72 +752,15 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#northEastOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAprilNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAugustNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodDecemberNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodFebruaryNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJanuaryNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJulyNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJuneNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMarchNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMayNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodNovemberNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodOctoberNE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodSeptemberNE"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Object oriented towards the North East</rdfs:comment>
         <rdfs:label xml:lang="en">North East Oriented Object</rdfs:label>
     </owl:Class>
@@ -971,13 +773,10 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#northOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -995,213 +794,39 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#northWestOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAprilNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAugustNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodFebruaryNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJulyNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJuneNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMarchNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMayNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodOctoberNW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodSeptemberNW"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Object oriented towards the North West</rdfs:comment>
         <rdfs:label xml:lang="en">North West Oriented Object</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/eepsa#Outlier -->
+    <!-- https://w3id.org/eepsa#RITEForWinterSituation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#Outlier">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:comment xml:lang="en">Observations that stand out and do not conform to the expected behaviour</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/eepsa#RITEForWinterSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
+        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines for Winter days.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 21ºC and 23ºC during working hours.</rdfs:comment>
+        <rdfs:label xml:lang="en">RITE for Winter Situation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/eepsa#OutlierCausedByBeamSpotlight -->
+    <!-- https://w3id.org/eepsa#RiteForSummerSituation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByBeamSpotlight">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceLocation"/>
-        <rdfs:comment xml:lang="en">An erroneous observation (e.g. temperature, illuminance) caused by a beam spotlight. For example, an observation made by a sensing device located under a light bulb</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Beam Spotlight</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByDeviceError -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByDeviceError">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#Outlier"/>
-        <rdfs:comment xml:lang="en">Outliers caused by an error on the device itself</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Device Error</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByDeviceLocation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByDeviceLocation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#Outlier"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSolvingMethod"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa#DeviceRelocation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Outlier caused by the poor location of the device</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Device Location</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByDeviceLowBattery -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByDeviceLowBattery">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceError"/>
-        <rdfs:comment xml:lang="en">An erroneous observation caused by the low battery of the device.</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Device Low Battery</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByDeviceMalfunction -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByDeviceMalfunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceError"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSolvingMethod"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa#DeviceReplacement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An erroneous observation caused by a malfunction suffered by the device, which might have been transient.</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Device Malfunction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByExternalConditions -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByExternalConditions">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceLocation"/>
-        <rdfs:comment xml:lang="en">An erroneous observation (e.g. temperature, illuminance) caused by external factors. For example for being next to a source of radiant heat or cold such as windows and poorly insulated outside walls.</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by External Conditions</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByHVAC -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByHVAC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceLocation"/>
-        <rdfs:comment xml:lang="en">An erroneous observation (e.g. temperature) caused by its placement next to an activated HVAC system (whether it was heating or cooling)</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by HVAC</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedByRain -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedByRain">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceLocation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSolvingMethod"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa#DeviceShelter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An erroneous observation caused by rainfall.</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Rain</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#OutlierCausedBySolarRadiation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#OutlierCausedBySolarRadiation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#OutlierCausedByDeviceLocation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSolvingMethod"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa#DeviceShelter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An erroneous observation (e.g. temperature, illuminance) caused by direct sunlight.</rdfs:comment>
-        <rdfs:label xml:lang="en">Outlier caused by Solar Radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#RITESituation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#RITESituation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
-        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines.</rdfs:comment>
-        <rdfs:label xml:lang="en">RITE Situation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#Situation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#Situation">
-        <rdfs:comment xml:lang="en">Relative to a set of circumstances.</rdfs:comment>
-        <rdfs:label xml:lang="en">Situation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#SolarIrradiance -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#SolarIrradiance">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
+    <owl:Class rdf:about="https://w3id.org/eepsa#RiteForSummerSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ThermalComfortRegulation"/>
+        <rdfs:comment xml:lang="en">A situation that meets themal requirements defined by Spanish RITE (Reglamento de Instalaciones Térmicas en los Edificios) guidelines for Summer days.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperatures between 23ºC and 25ºC during working hours.</rdfs:comment>
+        <rdfs:label xml:lang="en">RITE for Summer Situation</rdfs:label>
     </owl:Class>
     
 
@@ -1212,72 +837,15 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#southEastOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAprilSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAugustSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodDecemberSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodFebruarySE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJanuarySE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJulySE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJuneSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMarchSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMaySE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodNovemberSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodOctoberSE"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodSeptemberSE"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Object oriented towards the South East</rdfs:comment>
         <rdfs:label xml:lang="en">South East Oriented Object</rdfs:label>
     </owl:Class>
@@ -1290,13 +858,10 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#southOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1314,108 +879,27 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#southWestOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAprilSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodAugustSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodDecemberSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodFebruarySW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJanuarySW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJulySW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodJuneSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMarchSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodMaySW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodNovemberSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodOctoberSW"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#hasSunExposurePeriod"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/eepsa#periodSeptemberSW"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Object oriented towards the South West</rdfs:comment>
         <rdfs:label xml:lang="en">South West Oriented Object</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/eepsa#TemperatureSensor -->
+    <!-- https://w3id.org/eepsa#ThermalComfortRegulation -->
 
-    <owl:Class rdf:about="https://w3id.org/eepsa#TemperatureSensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Illuminance"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#Rainfall"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/eepsa#susceptibleToOutliersCausedBy"/>
-                        <owl:hasValue rdf:resource="http://purl.org/iot/vocab/m3-lite#SolarRadiation"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa#WaterConductivity -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa#WaterConductivity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/iot/vocab/m3-lite#Conductivity"/>
+    <owl:Class rdf:about="https://w3id.org/eepsa#ThermalComfortRegulation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#ComfortableThermalSituation"/>
+        <rdfs:comment xml:lang="en">HVAC control strategies that fulfill a set of regulations and guidelines that ensure occupants&apos; comfort with the thermal environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thermal Comfort Regulation</rdfs:label>
     </owl:Class>
     
 
@@ -1424,7 +908,7 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/eepsa#WeatherForecasting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#WeatherService"/>
-        <rdfs:comment xml:lang="en">Predicted meteorological conditions for an area</rdfs:comment>
+        <rdfs:comment xml:lang="en">Meteorological conditions&apos; forecast for a specific area and time.</rdfs:comment>
         <rdfs:label xml:lang="en">Weather Forecasting</rdfs:label>
     </owl:Class>
     
@@ -1434,7 +918,7 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/eepsa#WeatherReport">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#WeatherService"/>
-        <rdfs:comment xml:lang="en">A summary of weather conditions for an area</rdfs:comment>
+        <rdfs:comment xml:lang="en">A summary of meteorological conditions for a specific area and time.</rdfs:comment>
         <rdfs:label xml:lang="en">Weather Report</rdfs:label>
     </owl:Class>
     
@@ -1443,6 +927,8 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#WeatherService -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa#WeatherService">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:comment xml:lang="en">A service providing weather forecasts, warnings of hazardous weather, and other weather-related products to organizations and the public for the purposes of protection, safety, and general information</rdfs:comment>
         <rdfs:label xml:lang="en">Weather Service</rdfs:label>
     </owl:Class>
     
@@ -1454,13 +940,10 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#PhysicalObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/iot/vocab/m3-lite#hasDirection"/>
                         <owl:hasValue rdf:resource="https://w3id.org/measurements4eepsa#westOrientation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-                        <owl:hasValue rdf:resource="http://es.dbpedia.org/resource/Spain"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1488,6 +971,14 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/measurements4eepsa#SolarIrradiance -->
+
+    <owl:Class rdf:about="https://w3id.org/measurements4eepsa#SolarIrradiance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa#MeteorologicalProperty"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1496,12 +987,6 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://es.dbpedia.org/resource/Spain -->
-
-    <owl:NamedIndividual rdf:about="http://es.dbpedia.org/resource/Spain"/>
     
 
 
@@ -1556,501 +1041,6 @@ http://www.weatherstations.co.uk/gooddata.htm</rdfs:comment>
     <!-- https://w3id.org/eepsa#SpaceOccupancy -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#SpaceOccupancy"/>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAprilNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAprilNE">
-        <endingTime>13:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in April for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAprilNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAprilNW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasMonth>
-        <startingTime>17:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in April for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAprilSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAprilSE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in April for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAprilSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAprilSW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in April for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAugustNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAugustNE">
-        <endingTime>13:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in August for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAugustNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAugustNW">
-        <endingTime>22:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasMonth>
-        <startingTime>18:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in August for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAugustSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAugustSE">
-        <endingTime>17:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in August for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodAugustSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodAugustSW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in August for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodDecemberNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodDecemberNE">
-        <endingTime>11:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in December for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodDecemberSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodDecemberSE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in December for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodDecemberSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodDecemberSW">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasMonth>
-        <startingTime>12:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in December for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodFebruaryNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodFebruaryNE">
-        <endingTime>11:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in February for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodFebruaryNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodFebruaryNW">
-        <endingTime>19:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasMonth>
-        <startingTime>18:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in February for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodFebruarySE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodFebruarySE">
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasMonth>
-        <startingTime>19:00:00</startingTime>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in February for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodFebruarySW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodFebruarySW">
-        <endingTime>19:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasMonth>
-        <startingTime>13:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in February for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJanuaryNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJanuaryNE">
-        <endingTime>11:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in January for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJanuarySE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJanuarySE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in January for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJanuarySW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJanuarySW">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
-        <startingTime>12:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in January for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJulyNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJulyNE">
-        <endingTime>14:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in July for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJulyNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJulyNW">
-        <endingTime>22:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <startingTime>16:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in July for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJulySE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJulySE">
-        <endingTime>17:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in July for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJulySW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJulySW">
-        <endingTime>22:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in July for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJuneNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJuneNE">
-        <endingTime>14:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in June for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJuneNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJuneNW">
-        <endingTime>22:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <startingTime>16:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in June for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJuneSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJuneSE">
-        <endingTime>17:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in June for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodJuneSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodJuneSW">
-        <endingTime>14:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in June for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMarchNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMarchNE">
-        <endingTime>12:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in March for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMarchNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMarchNW">
-        <endingTime>20:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <startingTime>17:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in March for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMarchSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMarchSE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in March for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMarchSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMarchSW">
-        <endingTime>20:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <startingTime>13:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in March for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMayNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMayNE">
-        <endingTime>13:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in May for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMayNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMayNW">
-        <endingTime>22:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasMonth>
-        <startingTime>17:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in May for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMaySE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMaySE">
-        <endingTime>17:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in May for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodMaySW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodMaySW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in May for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodNovemberNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodNovemberNE">
-        <endingTime>11:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in November for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodNovemberSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodNovemberSE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in November for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodNovemberSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodNovemberSW">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
-        <startingTime>13:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in November for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodOctoberNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodOctoberNE">
-        <endingTime>12:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in October for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodOctoberNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodOctoberNW">
-        <endingTime>20:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
-        <startingTime>18:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in October for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodOctoberSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodOctoberSE">
-        <endingTime>18:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
-        <startingTime>8:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in October for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodOctoberSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodOctoberSW">
-        <endingTime>20:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in October for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodSeptemberNE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodSeptemberNE">
-        <endingTime>13:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in September for objects oriented towards the North East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodSeptemberNW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodSeptemberNW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
-        <startingTime>18:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in September for objects oriented towards the North West.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodSeptemberSE -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodSeptemberSE">
-        <endingTime>17:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
-        <startingTime>7:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in September for objects oriented towards the South East.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/eepsa#periodSeptemberSW -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa#periodSeptemberSW">
-        <endingTime>21:00:00</endingTime>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
-        <startingTime>14:00:00</startingTime>
-        <rdfs:comment xml:lang="en">Individual representing sun exposure period in September for objects oriented towards the South West.</rdfs:comment>
-    </owl:NamedIndividual>
     
 
 

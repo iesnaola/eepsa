@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/forecasting4eepsa#"
      xml:base="https://w3id.org/forecasting4eepsa"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:bot="https://w3id.org/bot#"
@@ -19,7 +20,7 @@
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/forecasting4eepsa-0.2"/>
         <owl:imports rdf:resource="https://w3id.org/seas/ForecastingOntology-1.0"/>
         <owl:imports rdf:resource="https://w3id.org/pep/pep-1.1"/>
-        <dc:title>Forecasting for EEPSA</dc:title>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:description xml:lang="en">Forecasting-related knowledge representation for the EEPSA Ontology.</terms:description>
         <owl:versionInfo xml:lang="en">0.2</owl:versionInfo>
         <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
@@ -28,7 +29,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <vann:preferredNamespacePrefix xml:lang="en">f4eepsa</vann:preferredNamespacePrefix>
         <terms:issued>2017-11-27</terms:issued>
         <terms:modified xml:lang="en">2018-04-02</terms:modified>
-        <terms:license xml:lang="en">This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.</terms:license>
+        <terms:title>Forecasting for EEPSA</terms:title>
         <bibo:status xml:lang="en">Work in progress</bibo:status>
     </owl:Ontology>
     
@@ -45,27 +46,21 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -111,12 +106,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/based_near -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -156,7 +145,9 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:ObjectProperty rdf:about="https://w3id.org/forecasting4eepsa#hasForecastResult">
         <rdfs:range rdf:resource="https://w3id.org/forecasting4eepsa#ForecastResult"/>
         <rdfs:comment xml:lang="en">Links a Forecast with its result (Forecast Result).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
         <rdfs:label xml:lang="en">has forecast result</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -165,7 +156,9 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/forecasting4eepsa#hasParameter">
         <rdfs:comment xml:lang="en">Links a Forecasting Input with a parameter that it contains.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
         <rdfs:label xml:lang="en">has parameter</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -238,7 +231,9 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Represents the result of a Forecast.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
         <rdfs:label xml:lang="en">Forecast Result</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -246,8 +241,10 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- https://w3id.org/forecasting4eepsa#ForecastingInput -->
 
     <owl:Class rdf:about="https://w3id.org/forecasting4eepsa#ForecastingInput">
+        <rdfs:comment xml:lang="en">Represents inputs of Forecasting Processes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
         <rdfs:label xml:lang="en">Forecasting Input</rdfs:label>
-        <rdfs:label xml:lang="en">Represents inputs of Forecasting Processes.</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 

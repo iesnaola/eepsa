@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/bim4eepsa#"
      xml:base="https://w3id.org/bim4eepsa"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:bot="https://w3id.org/bot#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -12,24 +12,25 @@
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/bim4eepsa">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/bim4eepsa-0.3"/>
         <owl:imports rdf:resource="https://w3id.org/bot/0.2.0"/>
-        <dc:description xml:lang="en">Building and space-related information for the EEPSA Ontology.</dc:description>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
         <terms:issued>2017-07-10</terms:issued>
         <terms:modified>2017-09-18</terms:modified>
+        <terms:description xml:lang="en">Building and space-related information for the EEPSA Ontology.</terms:description>
         <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
-        <terms:creator xml:lang="en">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
-        <dc:title>BIM for EEPSA</dc:title>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <rdfs:comment xml:lang="en">Information about changes compared to version 0.2
 *********************************************************
 •	The classes and properties related to the building modelling are now described using the BOT Ontology.</rdfs:comment>
-        <terms:license xml:lang="en">This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.</terms:license>
+        <terms:title>BIM for EEPSA</terms:title>
         <bibo:status xml:lang="en">Work in progress</bibo:status>
         <vann:preferredNamespacePrefix>bim4eepsa</vann:preferredNamespacePrefix>
     </owl:Ontology>
@@ -44,6 +45,12 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -101,6 +108,12 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
@@ -147,9 +160,9 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
 
@@ -334,6 +347,17 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">Any Object that has a proper space region. The prototypical physical object has also an associated mass, but the nature of its mass can greatly vary based on the epistemological status of the object (scientifically measured, subjectively possible, imaginary).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
+        <rdfs:label xml:lang="en">Physical object</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
@@ -371,9 +395,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Door">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Door</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor"/>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -382,8 +408,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#ExternalBuildingElement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">A building element that is external (face the outside of the building)</rdfs:comment>
-        <rdfs:label xml:lang="en">External building element</rdfs:label>
+        <rdfs:comment xml:lang="en">A building element that is external (face the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
+        <rdfs:label xml:lang="en">External Building Element</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -400,8 +428,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Door"/>
-        <rdfs:comment xml:lang="en">A door that is external (facing the outside of the building)</rdfs:comment>
-        <rdfs:label xml:lang="en">External door</rdfs:label>
+        <rdfs:comment xml:lang="en">A door that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
+        <rdfs:label xml:lang="en">External Door</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -418,8 +448,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Wall"/>
-        <rdfs:comment xml:lang="en">A wall that is external (facing the outside of the building)</rdfs:comment>
-        <rdfs:label xml:lang="en">External wall</rdfs:label>
+        <rdfs:comment xml:lang="en">A wall that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
+        <rdfs:label xml:lang="en">External Wall</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -436,48 +468,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Window"/>
-        <rdfs:comment xml:lang="en">A window that is external (facing the outside of the building)</rdfs:comment>
-        <rdfs:label xml:lang="en">External window</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#Farm -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Farm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Building"/>
-        <rdfs:comment xml:lang="en">A farm is an area of land that is devoted primarily to agricultural processes with the primary objective of producing food and other crops; it is the basic facility in food production (Wikipedia)</rdfs:comment>
-        <rdfs:label xml:lang="en">Farm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#FeedingStructure -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#FeedingStructure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
-        <rdfs:comment xml:lang="en">Architectonic elements with feeding purposes.</rdfs:comment>
-        <rdfs:label xml:lang="en">Feeding Structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#PhysicalObject -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#PhysicalObject">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:comment xml:lang="en">Any Object that has a proper space region. The prototypical physical object has also an associated mass, but the nature of its mass can greatly vary based on the epistemological status of the object (scientifically measured, subjectively possible, imaginary). (Defined in DUL Ontology)</rdfs:comment>
-        <rdfs:label xml:lang="en">Physical object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#PoultryFarm -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#PoultryFarm">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Farm"/>
-        <rdfs:comment xml:lang="en">A farm where poultry are raised.</rdfs:comment>
-        <rdfs:label xml:lang="en">Poultry Farm</rdfs:label>
+        <rdfs:comment xml:lang="en">A window that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
+        <rdfs:label xml:lang="en">External Window</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -486,9 +480,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Roof">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: construction enclosing the building from above.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Construction enclosing the building from above (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Roof</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof"/>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -496,19 +492,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/bim4eepsa#ShelteredDevice -->
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#ShelteredDevice">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
         <rdfs:comment xml:lang="en">A device that is sheltered.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Sheltered Device</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#Silo -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Silo">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Building"/>
-        <rdfs:comment xml:lang="en">A silo (from the Greek σιρός – siros, &quot;pit for holding grain&quot;) is a structure for storing bulk materials. Silos are used in agriculture to store grain (see grain elevators) or fermented feed known as silage (Wikipedia)</rdfs:comment>
-        <rdfs:label xml:lang="en">Silo</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -517,28 +505,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Skylight">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes. (Wikipedia)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes (Source: Wikipedia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Skylight</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#Slaughterhouse -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Slaughterhouse">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Building"/>
-        <rdfs:comment xml:lang="en">A slaughterhouse or abattoir is a facility where animals are slaughtered for consumption as food (Wikipedia)</rdfs:comment>
-        <rdfs:label xml:lang="en">Slaughterhouse</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#Trough -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Trough">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#FeedingStructure"/>
-        <rdfs:comment xml:lang="en">A long, narrow container without a lid that usually holds water or food for farm animals.</rdfs:comment>
-        <rdfs:label xml:lang="en">Trough</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -547,19 +517,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Wall">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Wall</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bim4eepsa#WaterDispenser -->
-
-    <owl:Class rdf:about="https://w3id.org/bim4eepsa#WaterDispenser">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#FeedingStructure"/>
-        <rdfs:comment xml:lang="en">A structure that dispenses water for feeding purposes.</rdfs:comment>
-        <rdfs:label xml:lang="en">Water Dispenser</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -568,9 +530,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#WeatherStation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Building"/>
-        <rdfs:comment xml:lang="en">A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate (Wikipedia)</rdfs:comment>
+        <rdfs:comment xml:lang="en">A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate (Source: Wikipedia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Weather Station</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://aemet.linkeddata.es/ontology/WeatherStation"/>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -579,9 +542,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/bim4eepsa#Window">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
-        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/bim4eepsa#"/>
         <rdfs:label xml:lang="en">Window</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow"/>
+        <vs:term_status>stable</vs:term_status>
     </owl:Class>
     
 
@@ -589,7 +554,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/bot#Building -->
 
     <owl:Class rdf:about="https://w3id.org/bot#Building">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
     </owl:Class>
     
 
@@ -597,7 +562,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/bot#Element -->
 
     <owl:Class rdf:about="https://w3id.org/bot#Element">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
     </owl:Class>
     
 
