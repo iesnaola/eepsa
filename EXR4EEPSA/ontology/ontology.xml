@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/eepsa/exr4eepsa#"
+     xml:base="https://w3id.org/eepsa/exr4eepsa"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/exr4eepsa">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:description xml:lang="en">This ontology module describes the Executor terminology under the eep:Executor class for the EEPSA Ontology.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-07</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-01</terms:modified>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executor ontology module for the EEPSA Ontology</terms:title>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+        <vann:preferredNamespacePrefix xml:lang="en">executor4eepsa</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/executor4eepsa"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/eep#Executor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eep#Executor"/>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#Actuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Actuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <rdfs:comment xml:lang="en">An agent that implements a procedure to act on a real world’s quality.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Actuator</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#AirQualitySensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#AirQualitySensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the air quality</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Air Quality Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#AirQualitySensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the ammonia levels</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Ammonia Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#Anenometer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Anenometer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the wind speed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Anenometer</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the atmospheric pressure</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Atmospheric Pressure Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#BlindActuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#BlindActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that controls the opening and/or closing of a blind</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Blind Actuator</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#CO2Sensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#CO2Sensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#AirQualitySensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the CO2 levels</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">CO2 Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#Calorimeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Calorimeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A meter that measures the amount of heat consumed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Calorimeter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the cloud cover</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Cloud Cover Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#DoorActuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#DoorActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that controls the opening and/or closing of a door</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Door Actuator</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#ElectricityMeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#ElectricityMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A meter that measures the amount of electricity consumed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Electricity Meter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Sensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the environment</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Environment Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#GasMeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#GasMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A meter that measures the amount of gas consumed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Gas Meter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#GenerationMeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#GenerationMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A meter that measures the amount of electricity generated</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Generation Meter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#HVAC -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#HVAC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An system that heats, cools and ventilates a given space</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">HVAC</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#HumiditySensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the humidity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Humidity Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#ImputationMethod -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#ImputationMethod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <rdfs:comment xml:lang="en">An agent that implements a procedure to compute an estimation of missing values</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Imputation Method</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#LightSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#LightSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the light</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Light Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#LigthActuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#LigthActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that controls the activation, deactivation or regulation of a lamp or similar device that produces light</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Light Actuator</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#MovementSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#MovementSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that detects the movement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Movement Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the precipitation type, intensity, or quantity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Precipitation Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#PredictiveModel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#PredictiveModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <rdfs:comment xml:lang="en">An agent that implements a procedure to predict an unknown or future event</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Predictive Model</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#Sensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Sensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <rdfs:comment xml:lang="en">An agent that implements a procedure to sense a change in a real world’s quality and produces an Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/eepsa/exr4eepsa#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#SmartPlug -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#SmartPlug">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A device that enables the remote control and monitoring of the device plugged in</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Smart Plug</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the solar radiation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Solar Radiation Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#SunSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#SunSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that senses the direction of the Sun to measure the position of the sun or other light sources with respect to the sensor position.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Sun Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#TemperatureSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"/>
+        <rdfs:comment xml:lang="en">A sensor that observes the temperature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Temperature Sensor</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#Thermostat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Thermostat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that controls the regulation of a device or system that heats or cools.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Thermostat</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#UtilityMeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#UtilityMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Sensor"/>
+        <rdfs:comment xml:lang="en">A system that observes the consumption/generation of an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Utility Meter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#WaterMeter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#WaterMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#UtilityMeter"/>
+        <rdfs:comment xml:lang="en">A meter that measures the amount of water consumed</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Water Meter</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#WindowActuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#WindowActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that controls the opening and/or closing of a window</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exr4eepsa#"/>
+        <rdfs:label xml:lang="en">Window Actuator</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/exr4eepsa#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
