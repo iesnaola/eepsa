@@ -1,0 +1,382 @@
+@prefix : <https://w3id.org/eepsa/exr4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/eepsa/exr4eepsa> .
+
+<https://w3id.org/eepsa/exr4eepsa> rdf:type owl:Ontology ;
+                                    <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                    <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>""" ;
+                                    <http://purl.org/dc/terms/created> "2018-08-21" ;
+                                    <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                                    <http://purl.org/dc/terms/description> "This ontology module describes the Executor terminology under the eep:Executor class for the EEPSA Ontology."@en ;
+                                    <http://purl.org/dc/terms/issued> "2018-09-07" ;
+                                    <http://purl.org/dc/terms/modified> "2018-09-01" ;
+                                    <http://purl.org/dc/terms/title> "Executor ontology module for the EEPSA Ontology" ;
+                                    <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "executor4eepsa"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/executor4eepsa> ;
+                                    owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/eep#Executor
+<https://w3id.org/eep#Executor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Actuator
+:Actuator rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+          rdfs:comment "An agent that implements a procedure to act on a real world’s quality."@en ;
+          rdfs:isDefinedBy : ;
+          rdfs:label "Actuator"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#AirQualitySensor
+:AirQualitySensor rdf:type owl:Class ;
+                  rdfs:subClassOf :EnvironmentSensor ;
+                  rdfs:comment "A sensor that observes the air quality"@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Air Quality Sensor"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor
+:AmmoniaSensor rdf:type owl:Class ;
+               rdfs:subClassOf :AirQualitySensor ;
+               rdfs:comment "A sensor that observes the ammonia levels"@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:label "Ammonia Sensor"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Anenometer
+:Anenometer rdf:type owl:Class ;
+            rdfs:subClassOf :EnvironmentSensor ;
+            rdfs:comment "A sensor that observes the wind speed"@en ;
+            rdfs:isDefinedBy : ;
+            rdfs:label "Anenometer"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor
+:AtmosphericPressureSensor rdf:type owl:Class ;
+                           rdfs:subClassOf :EnvironmentSensor ;
+                           rdfs:comment "A sensor that observes the atmospheric pressure"@en ;
+                           rdfs:isDefinedBy : ;
+                           rdfs:label "Atmospheric Pressure Sensor"@en ;
+                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#BlindActuator
+:BlindActuator rdf:type owl:Class ;
+               rdfs:subClassOf :Actuator ;
+               rdfs:comment "An actuator that controls the opening and/or closing of a blind"@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:label "Blind Actuator"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#CO2Sensor
+:CO2Sensor rdf:type owl:Class ;
+           rdfs:subClassOf :AirQualitySensor ;
+           rdfs:comment "A sensor that observes the CO2 levels"@en ;
+           rdfs:isDefinedBy : ;
+           rdfs:label "CO2 Sensor"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Calorimeter
+:Calorimeter rdf:type owl:Class ;
+             rdfs:subClassOf :UtilityMeter ;
+             rdfs:comment "A meter that measures the amount of heat consumed"@en ;
+             rdfs:isDefinedBy : ;
+             rdfs:label "Calorimeter"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor
+:CloudCoverSensor rdf:type owl:Class ;
+                  rdfs:subClassOf :EnvironmentSensor ;
+                  rdfs:comment "A sensor that observes the cloud cover"@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Cloud Cover Sensor"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#DoorActuator
+:DoorActuator rdf:type owl:Class ;
+              rdfs:subClassOf :Actuator ;
+              rdfs:comment "An actuator that controls the opening and/or closing of a door"@en ;
+              rdfs:isDefinedBy : ;
+              rdfs:label "Door Actuator"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#ElectricityMeter
+:ElectricityMeter rdf:type owl:Class ;
+                  rdfs:subClassOf :UtilityMeter ;
+                  rdfs:comment "A meter that measures the amount of electricity consumed"@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Electricity Meter"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor
+:EnvironmentSensor rdf:type owl:Class ;
+                   rdfs:subClassOf :Sensor ;
+                   rdfs:comment "A sensor that observes the environment"@en ;
+                   rdfs:isDefinedBy : ;
+                   rdfs:label "Environment Sensor"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#GasMeter
+:GasMeter rdf:type owl:Class ;
+          rdfs:subClassOf :UtilityMeter ;
+          rdfs:comment "A meter that measures the amount of gas consumed"@en ;
+          rdfs:isDefinedBy : ;
+          rdfs:label "Gas Meter"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#GenerationMeter
+:GenerationMeter rdf:type owl:Class ;
+                 rdfs:subClassOf :UtilityMeter ;
+                 rdfs:comment "A meter that measures the amount of electricity generated"@en ;
+                 rdfs:isDefinedBy : ;
+                 rdfs:label "Generation Meter"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#HVAC
+:HVAC rdf:type owl:Class ;
+      rdfs:subClassOf :Actuator ;
+      rdfs:comment "An system that heats, cools and ventilates a given space"@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "HVAC"@en ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#HumiditySensor
+:HumiditySensor rdf:type owl:Class ;
+                rdfs:subClassOf :EnvironmentSensor ;
+                rdfs:comment "A sensor that observes the humidity"@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Humidity Sensor"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#ImputationMethod
+:ImputationMethod rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+                  rdfs:comment "An agent that implements a procedure to compute an estimation of missing values"@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Imputation Method"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#LightSensor
+:LightSensor rdf:type owl:Class ;
+             rdfs:subClassOf :EnvironmentSensor ;
+             rdfs:comment "A sensor that observes the light"@en ;
+             rdfs:isDefinedBy : ;
+             rdfs:label "Light Sensor"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#LigthActuator
+:LigthActuator rdf:type owl:Class ;
+               rdfs:subClassOf :Actuator ;
+               rdfs:comment "An actuator that controls the activation, deactivation or regulation of a lamp or similar device that produces light"@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:label "Light Actuator"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#MovementSensor
+:MovementSensor rdf:type owl:Class ;
+                rdfs:subClassOf :EnvironmentSensor ;
+                rdfs:comment "A sensor that detects the movement"@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Movement Sensor"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor
+:PrecipitationSensor rdf:type owl:Class ;
+                     rdfs:subClassOf :EnvironmentSensor ;
+                     rdfs:comment "A sensor that observes the precipitation type, intensity, or quantity"@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Precipitation Sensor"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#PredictiveModel
+:PredictiveModel rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+                 rdfs:comment "An agent that implements a procedure to predict an unknown or future event"@en ;
+                 rdfs:isDefinedBy : ;
+                 rdfs:label "Predictive Model"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+        rdfs:comment "An agent that implements a procedure to sense a change in a real world’s quality and produces an Observation."@en ;
+        rdfs:isDefinedBy "https://w3id.org/eepsa/exr4eepsa#" ;
+        rdfs:label "Sensor"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#SmartPlug
+:SmartPlug rdf:type owl:Class ;
+           rdfs:subClassOf :Actuator ,
+                           :UtilityMeter ;
+           rdfs:comment "A device that enables the remote control and monitoring of the device plugged in"@en ;
+           rdfs:isDefinedBy : ;
+           rdfs:label "Smart Plug"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor
+:SolarRadiationSensor rdf:type owl:Class ;
+                      rdfs:subClassOf :EnvironmentSensor ;
+                      rdfs:comment "A sensor that observes the solar radiation"@en ;
+                      rdfs:isDefinedBy : ;
+                      rdfs:label "Solar Radiation Sensor"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#SunSensor
+:SunSensor rdf:type owl:Class ;
+           rdfs:subClassOf :EnvironmentSensor ;
+           rdfs:comment "A sensor that senses the direction of the Sun to measure the position of the sun or other light sources with respect to the sensor position."@en ;
+           rdfs:isDefinedBy : ;
+           rdfs:label "Sun Sensor"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#TemperatureSensor
+:TemperatureSensor rdf:type owl:Class ;
+                   rdfs:subClassOf :EnvironmentSensor ;
+                   rdfs:comment "A sensor that observes the temperature"@en ;
+                   rdfs:isDefinedBy : ;
+                   rdfs:label "Temperature Sensor"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Thermostat
+:Thermostat rdf:type owl:Class ;
+            rdfs:subClassOf :Actuator ;
+            rdfs:comment "An actuator that controls the regulation of a device or system that heats or cools."@en ;
+            rdfs:isDefinedBy : ;
+            rdfs:label "Thermostat"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#UtilityMeter
+:UtilityMeter rdf:type owl:Class ;
+              rdfs:subClassOf :Sensor ;
+              rdfs:comment "A system that observes the consumption/generation of an entity."@en ;
+              rdfs:isDefinedBy : ;
+              rdfs:label "Utility Meter"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#WaterMeter
+:WaterMeter rdf:type owl:Class ;
+            rdfs:subClassOf :UtilityMeter ;
+            rdfs:comment "A meter that measures the amount of water consumed"@en ;
+            rdfs:isDefinedBy : ;
+            rdfs:label "Water Meter"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#WindowActuator
+:WindowActuator rdf:type owl:Class ;
+                rdfs:subClassOf :Actuator ;
+                rdfs:comment "An actuator that controls the opening and/or closing of a window"@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Window Actuator"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/eepsa/exr4eepsa#
+: rdf:type owl:NamedIndividual ,
+           <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

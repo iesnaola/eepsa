@@ -1,0 +1,151 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "AmmoniaSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SolarRadiationSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor"
+    },
+    "LightSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#LightSensor"
+    },
+    "GasMeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#GasMeter"
+    },
+    "ImputationMethod" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#ImputationMethod"
+    },
+    "WindowActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#WindowActuator"
+    },
+    "Calorimeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Calorimeter"
+    },
+    "ElectricityMeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#ElectricityMeter"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CO2Sensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#CO2Sensor"
+    },
+    "GenerationMeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#GenerationMeter"
+    },
+    "DoorActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#DoorActuator"
+    },
+    "WaterMeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#WaterMeter"
+    },
+    "LigthActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#LigthActuator"
+    },
+    "HVAC" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#HVAC"
+    },
+    "SunSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#SunSensor"
+    },
+    "Thermostat" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Thermostat"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Executor" : {
+      "@id" : "https://w3id.org/eep#Executor"
+    },
+    "CloudCoverSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor"
+    },
+    "SmartPlug" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#SmartPlug"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "EnvironmentSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#TemperatureSensor"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "PredictiveModel" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#PredictiveModel"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Actuator"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "UtilityMeter" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#UtilityMeter"
+    },
+    "Anenometer" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Anenometer"
+    },
+    "PrecipitationSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor"
+    },
+    "HumiditySensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#HumiditySensor"
+    },
+    "BlindActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#BlindActuator"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "AirQualitySensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#AirQualitySensor"
+    },
+    "AtmosphericPressureSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "MovementSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#MovementSensor"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Sensor"
+    }
+  }
+}
