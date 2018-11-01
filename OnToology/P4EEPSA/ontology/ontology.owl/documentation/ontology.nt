@@ -1,0 +1,119 @@
+<https://w3id.org/eepsa/p4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/p4eepsa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Procedure terminology under the eep:Procedure class for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/issued> "2018-09-07" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/modified> "2018-09-01" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/dc/terms/title> "Procedure ontology module for the EEPSA Ontology" .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "p4eepsa"@en .
+<https://w3id.org/eepsa/p4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/p4eepsa> .
+<https://w3id.org/eepsa/p4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eep#Procedure
+<https://w3id.org/eep#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/p4eepsa#ActuatingProcedure
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure specifying how to act on an event."@en .
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/p4eepsa#> .
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Actuating Procedure"@en .
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/p4eepsa#ImputationProcedure
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure specifying how to impute an event."@en .
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/p4eepsa#> .
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation Procedure"@en .
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/p4eepsa#PredictiveProcedure
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure specifying how to predict an event."@en .
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/p4eepsa#> .
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Predictive Procedure"@en .
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/p4eepsa#SensingProcedure
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure specifying how to sense an event."@en .
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/p4eepsa#> .
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Sensing Procedure"@en .
+<https://w3id.org/eepsa/p4eepsa#SensingProcedure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/p4eepsa#
+<https://w3id.org/eepsa/p4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/eepsa/p4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/eepsa/p4eepsa#PredictiveProcedure" "https://w3id.org/eepsa/p4eepsa#ActuatingProcedure" "https://w3id.org/eepsa/exr4eepsa#ImputationMethod" "https://w3id.org/eepsa/exr4eepsa#PredictiveModel" "https://w3id.org/eepsa/exr4eepsa#Actuator" "https://w3id.org/eepsa/p4eepsa#ImputationProcedure" ; /*classes style*/
+	"NULL" -> "https://w3id.org/eepsa/exr4eepsa#ImputationMethod" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eepsa/exr4eepsa#PredictiveModel" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eepsa/p4eepsa#ActuatingProcedure" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eepsa/p4eepsa#ImputationProcedure" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eepsa/exr4eepsa#Actuator" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eep#madeBy" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/eepsa/p4eepsa#PredictiveProcedure" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/eep#usedProcedure" [ label = "owl:onProperty" ];
+	"https://w3id.org/eepsa/exn4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"https://w3id.org/eepsa/exn4eepsa" -> "https://w3id.org/eepsa/exn4eepsa" [ label = ":preferredNamespaceUri" ];
+
+}

@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/bot/0.3.0#"
+     xml:base="https://w3id.org/bot/0.3.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/bot/0.3.0">
+        <owl:imports rdf:resource="https://w3id.org/bot/0.3.0"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:contributor>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <terms:created>2018-08-21</terms:created>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:description xml:lang="en">This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology.</terms:description>
+        <terms:description>Feature of Interest ontology module for the EEPSA Ontology</terms:description>
+        <terms:issued>2017-09-07</terms:issued>
+        <terms:modified>2018-09-01</terms:modified>
+        <terms:title xml:lang="en">Feature of Interest module for the EEPSA Ontology.</terms:title>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+        <vann:preferredNamespacePrefix>foi4eepsa</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/foi4eepsa"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/affectedBy#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Interface -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Interface">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Zone -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Zone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Door -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Door">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">Door</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor"/>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">A building element that is external (i.e., that faces the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">External Building Element</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#ExternalDoor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalDoor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#Door"/>
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/foi4eepsa#Door"/>
+        <rdfs:comment xml:lang="en">A door that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">External Door</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#ExternalWall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalWall">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#Wall"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/foi4eepsa#Wall"/>
+        <rdfs:comment xml:lang="en">A wall that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">External Wall</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#ExternalWindow -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalWindow">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/eepsa/foi4eepsa#Window"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/foi4eepsa#Window"/>
+        <rdfs:comment xml:lang="en">A window that is external (facing the outside of the building).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">External Window</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Roof -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Roof">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Construction enclosing the building from above (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">Roof</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof"/>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Skylight -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Skylight">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes (Source: Wikipedia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">Skylight</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Wall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Wall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">Wall</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall"/>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Window -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Window">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:comment xml:lang="en">Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air (Source: ISO 6707-1).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">Window</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow"/>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/foi4eepsa#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,145 @@
+{
+  "@context" : {
+    "PrecipitationLevel" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel"
+    },
+    "OutdoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Orientation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Orientation"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "WaterConsumption" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WaterConsumption"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SunPositionElevation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SunPositionElevation"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "IndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature"
+    },
+    "ElectricConsumption" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ElectricConsumption"
+    },
+    "ObservableQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ObservableQuality"
+    },
+    "SolarRadiation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SolarRadiation"
+    },
+    "MeteorologicalQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"
+    },
+    "Quality" : {
+      "@id" : "https://w3id.org/affectedBy#Quality"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "HeatConsumption" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#HeatConsumption"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "AtmosphericPressure" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"
+    },
+    "CloudCover" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#CloudCover"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ThermalComfortQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"
+    },
+    "ChemicalAgentAtmosphericConcentrationNH3" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "OutdoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"
+    },
+    "ResourceConsumptionGenerationQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "ElectricGeneration" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ElectricGeneration"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "ActuatableQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ActuatableQuality"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Illuminance" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Illuminance"
+    },
+    "GasConsumption" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#GasConsumption"
+    },
+    "WindDirection" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindDirection"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "CO2" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#CO2"
+    },
+    "IndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "WindChill" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindChill"
+    },
+    "PredictableQuality" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#PredictableQuality"
+    },
+    "SunPositionDirection" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SunPositionDirection"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "WindSpeed" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindSpeed"
+    }
+  }
+}

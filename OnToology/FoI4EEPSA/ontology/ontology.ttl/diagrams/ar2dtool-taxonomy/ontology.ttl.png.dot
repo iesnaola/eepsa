@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/eepsa/foi4eepsa#Window" "https://w3id.org/eepsa/foi4eepsa#ExternalDoor" "https://w3id.org/eepsa/foi4eepsa#Roof" "https://w3id.org/eepsa/foi4eepsa#ExternalWall" "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement" "https://w3id.org/affectedBy#FeatureOfInterest" "https://w3id.org/bot#Interface" "https://w3id.org/eepsa/foi4eepsa#Skylight" "https://w3id.org/eepsa/foi4eepsa#Door" "https://w3id.org/bot#Zone" "https://w3id.org/eepsa/foi4eepsa#ExternalWindow" "https://w3id.org/eepsa/foi4eepsa#Wall" "https://w3id.org/bot#Element" ; /*classes style*/
+	"https://w3id.org/bot#Interface" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#Door" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Element" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#Wall" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#Roof" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#Skylight" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Zone" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalDoor" -> "https://w3id.org/eepsa/foi4eepsa#Door" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalWindow" -> "https://w3id.org/eepsa/foi4eepsa#Window" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalWall" -> "https://w3id.org/eepsa/foi4eepsa#Wall" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#Window" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+
+}

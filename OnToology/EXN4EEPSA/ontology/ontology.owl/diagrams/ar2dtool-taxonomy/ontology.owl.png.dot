@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/eep#Execution" "base:Actuation" "base:Outlier" "base:Imputation" "base:Forecast" "base:MissingValue" "base:Observation" ; /*classes style*/
+	"base:Actuation" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:Forecast" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Imputation" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Observation" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:MissingValue" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:Outlier" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+
+}

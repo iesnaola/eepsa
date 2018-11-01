@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:SensingProcedure" "base:PredictiveProcedure" "base:ImputationProcedure" "base:ActuatingProcedure" "https://w3id.org/eep#Procedure" ; /*classes style*/
+	"base:SensingProcedure" -> "https://w3id.org/eep#Procedure" [ label = "rdfs:subClassOf" ];
+	"base:ActuatingProcedure" -> "https://w3id.org/eep#Procedure" [ label = "rdfs:subClassOf" ];
+	"base:ImputationProcedure" -> "https://w3id.org/eep#Procedure" [ label = "rdfs:subClassOf" ];
+	"base:PredictiveProcedure" -> "https://w3id.org/eep#Procedure" [ label = "rdfs:subClassOf" ];
+
+}

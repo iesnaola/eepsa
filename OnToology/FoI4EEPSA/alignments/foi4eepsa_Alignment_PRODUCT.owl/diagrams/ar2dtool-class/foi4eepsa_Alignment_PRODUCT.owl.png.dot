@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/product#Window" "https://w3id.org/product#Wall" "https://w3id.org/product#Roof" "https://w3id.org/product#Door" "base:Window" "base:Wall" "base:Roof" "base:Door" ; /*classes style*/
+	"base:Door" -> "https://w3id.org/product#Door" [ label = "owl:equivalentClass" ];
+	"base:Wall" -> "https://w3id.org/product#Wall" [ label = "owl:equivalentClass" ];
+	"base:Roof" -> "https://w3id.org/product#Roof" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/foi4eepsa_PRODUCTALignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"base:Window" -> "https://w3id.org/product#Window" [ label = "owl:equivalentClass" ];
+
+}

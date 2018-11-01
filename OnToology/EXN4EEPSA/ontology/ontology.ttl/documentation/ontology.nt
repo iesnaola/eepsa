@@ -1,0 +1,199 @@
+<https://w3id.org/eepsa/exn4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/exn4eepsa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/issued> "2018-09-07" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/modified> "2018-09-01" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exn4eepsa> .
+<https://w3id.org/eepsa/exn4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eep#madeBy
+<https://w3id.org/eep#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/eep#usedProcedure
+<https://w3id.org/eep#usedProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eep#Execution
+<https://w3id.org/eep#Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Actuation
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution made by an actuator implementing an actuating procedure."@en .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#label> "Actuation"@en .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of executions"@en .
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#label> "Collection of Executions"@en .
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Forecast
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#PredictiveModel> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by a predictive model implementing a predictive procedure."@en .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast"@en .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Imputation
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#ImputationMethod> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#ImputationProcedure> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by an imputation method implementing an imputation procedure."@en .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation"@en .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#MissingValue
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "An empty or null event for attributes where a value should have been recorded"@en .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Value"@en .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Observation
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution made by an executor to estimate or calculate a quality of a feature of interest"@en .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Outlier
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation that stands out amongst other observations and does not conform to the expected behaviour"@en .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier"@en .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Actuator
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exr4eepsa#ImputationMethod
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exr4eepsa#PredictiveModel
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/p4eepsa#ActuatingProcedure
+<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/p4eepsa#ImputationProcedure
+<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/p4eepsa#PredictiveProcedure
+<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/exn4eepsa#
+<https://w3id.org/eepsa/exn4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/eepsa/exn4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
