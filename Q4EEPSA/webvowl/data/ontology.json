@@ -1,0 +1,1295 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "https://w3id.org/eepsa/q4eepsa", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/affectedBy" ],
+    "title" : {
+      "undefined" : "Quality ontology module for the EEPSA Ontology"
+    },
+    "iri" : "https://w3id.org/eepsa/q4eepsa",
+    "version" : "1.0",
+    "author" : [ "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" ],
+    "description" : {
+      "en" : "This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2018-08-21",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "q4eepsa",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-09-01",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Quality ontology module for the EEPSA Ontology",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-09-07",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "Work in Progress",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 30,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ObservableQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObservableQuality",
+      "en" : "Observable Quality"
+    },
+    "subClasses" : [ "5", "6", "7" ],
+    "comment" : {
+      "en" : "A quality of a feature of interest that can be observed."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindSpeed",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindSpeed",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindSpeed",
+      "en" : "Wind Speed"
+    },
+    "comment" : {
+      "en" : "The ratio of the distance covered by moving air to the time quantity taken to cover it."
+    },
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#Orientation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Orientation",
+      "en" : "Orientation"
+    },
+    "comment" : {
+      "en" : "The description of how a thing is placed in the space it is in."
+    },
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/affectedBy#Quality",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality"
+    },
+    "subClasses" : [ "3", "9", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ThermalComfortQuality",
+      "en" : "Thermal Comfort Quality"
+    },
+    "subClasses" : [ "11", "12", "13", "14", "15" ],
+    "comment" : {
+      "en" : "A quality related to the thermal comfort. According to the ANSI/ASHRAE Standard 55-2017, thermal comfort is defined as follows: \"that condition of mind that expresses satisfaction with the thermal environment and is assessed by subjective evaluation\""
+    },
+    "id" : "6",
+    "superClasses" : [ "3", "9", "10" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SunPositionDirection",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SunPositionDirection",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SunPositionDirection",
+      "en" : "Sun Position Direction"
+    },
+    "comment" : {
+      "en" : "The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia)."
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "The degree or intensity of heat present indoors.",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndoorTemperature",
+      "en" : "Indoor Temperature"
+    },
+    "id" : "12",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#AtmosphericPressure",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AtmosphericPressure",
+      "en" : "Atmospheric Pressure"
+    },
+    "comment" : {
+      "en" : "The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question."
+    },
+    "id" : "22",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SolarRadiation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SolarRadiation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SolarRadiation",
+      "en" : "Solar Radiation"
+    },
+    "comment" : {
+      "en" : "It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia)."
+    },
+    "id" : "25",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ElectricGeneration",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricGeneration",
+      "en" : "Electric Generation"
+    },
+    "comment" : {
+      "en" : "The amount of electricity generated."
+    },
+    "id" : "35",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SunPositionElevation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SunPositionElevation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SunPositionElevation",
+      "en" : "Sun Position Elevation"
+    },
+    "comment" : {
+      "en" : "It is the altitude of the sun, the angle between the horizon and the centre of the sun's disc."
+    },
+    "id" : "18",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#Precipitation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrecipitationLevel",
+      "en" : "Precipitation Level"
+    },
+    "comment" : {
+      "en" : "It is any product of the condensation of atmospheric water vapour that falls under gravity."
+    },
+    "id" : "31",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/eepsa/q4eepsa",
+      "baseIri" : "https://w3id.org/eepsa",
+      "labels" : {
+        "IRI-based" : "q4eepsa"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindChill",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindChill",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindChill",
+      "en" : "Wind Chill"
+    },
+    "comment" : {
+      "en" : "The cooling effect of wind blowing on a surface."
+    },
+    "id" : "29",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ResourceConsumptionGenerationQuality",
+      "en" : "Resource Consumption/Generation Quality"
+    },
+    "subClasses" : [ "47", "48", "49", "50", "35" ],
+    "comment" : {
+      "en" : "Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)"
+    },
+    "id" : "5",
+    "superClasses" : [ "3", "9" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#PredictableQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PredictableQuality",
+      "en" : "Predictable Quality"
+    },
+    "subClasses" : [ "5", "6", "2" ],
+    "comment" : {
+      "en" : "A quality of a feature of interest that can be predicted."
+    },
+    "id" : "9",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#GasConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GasConsumption",
+      "en" : "Gas Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of gas consumed."
+    },
+    "id" : "48",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WaterConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WaterConsumption",
+      "en" : "Water Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of water consumed."
+    },
+    "id" : "49",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindDirection",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindDirection",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindDirection",
+      "en" : "Wind Direction"
+    },
+    "comment" : {
+      "en" : "The geodetic azimuth of the direction from which the wind is blowing."
+    },
+    "id" : "27",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#CO2",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#CO2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CO2",
+      "en" : "CO2"
+    },
+    "comment" : {
+      "en" : "Carbon Dioxide (CO2) measure in the atmosphere. (Defined by m3-lite)"
+    },
+    "id" : "14",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ActuatableQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActuatableQuality",
+      "en" : "Actuatable Quality"
+    },
+    "subClasses" : [ "6" ],
+    "comment" : {
+      "en" : "A quality of a feature of interest that can be acted on."
+    },
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ElectricConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricConsumption",
+      "en" : "Electric Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of electricity consumed."
+    },
+    "id" : "47",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutdoorHumidity",
+      "en" : "Outdoor Humidity"
+    },
+    "comment" : {
+      "en" : "A quantity representing the amount of water vapour outdoors."
+    },
+    "id" : "34",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndoorHumidity",
+      "en" : "Indoor Humidity"
+    },
+    "comment" : {
+      "en" : "A quantity representing the amount of water vapour indoors."
+    },
+    "id" : "13",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChemicalAgentAtmosphericConcentrationNH3",
+      "undefined" : "Ammonia"
+    },
+    "comment" : {
+      "en" : "Measure of the concentration of Ammonia (NH3) gas suspended in the atmosphere. (Defined by m3-lite)"
+    },
+    "id" : "15",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeteorologicalQuality",
+      "en" : "Meteorological Quality"
+    },
+    "subClasses" : [ "31", "29", "34", "16", "8", "22", "27", "25", "20", "18", "1" ],
+    "comment" : {
+      "en" : "A quality related to the atmosphere and its phenomena."
+    },
+    "id" : "2",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#Illuminance",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#Illuminance",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Illuminance",
+      "en" : "Illuminance"
+    },
+    "comment" : {
+      "en" : "Illuminance is the total luminous flux incident on a surface, per unit area. (Defined by m3-lite)"
+    },
+    "id" : "11",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#HeatConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatConsumption",
+      "en" : "Heat Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of heat consumed."
+    },
+    "id" : "50",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#CloudCover",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#CloudCover",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CloudCover",
+      "en" : "Cloud Cover"
+    },
+    "comment" : {
+      "en" : "Measure of cloud cover at a certain time."
+    },
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutdoorTemperature",
+      "en" : "Outdoor Temperature"
+    },
+    "comment" : {
+      "en" : "The degree or intensity of heat present outdoors."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "2",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "6",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "6",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "6",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "9",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "5",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "5",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "5",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "9",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "5",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "5",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  } ]
+}

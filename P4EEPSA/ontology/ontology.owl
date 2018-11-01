@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/eepsa/p4eepsa#"
+     xml:base="https://w3id.org/eepsa/p4eepsa"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns1="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/p4eepsa">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procedure ontology module for the EEPSA Ontology</terms:title>
+        <terms:description xml:lang="en">This ontology module describes the Procedure terminology under the eep:Procedure class for the EEPSA Ontology.</terms:description>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-01</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-07</terms:issued>
+        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <vann:preferredNamespacePrefix xml:lang="en">p4eepsa</vann:preferredNamespacePrefix>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/p4eepsa"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/eep#Procedure -->
+
+    <owl:Class rdf:about="https://w3id.org/eep#Procedure"/>
+    
+
+
+    <!-- https://w3id.org/eepsa/p4eepsa#ActuatingProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#ActuatingProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:comment xml:lang="en">A procedure specifying how to act on an event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/p4eepsa#"/>
+        <rdfs:label xml:lang="en">Actuating Procedure</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/p4eepsa#ImputationProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#ImputationProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:comment xml:lang="en">A procedure specifying how to impute an event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/p4eepsa#"/>
+        <rdfs:label xml:lang="en">Imputation Procedure</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/p4eepsa#PredictiveProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#PredictiveProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:comment xml:lang="en">A procedure specifying how to predict an event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/p4eepsa#"/>
+        <rdfs:label xml:lang="en">Predictive Procedure</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/p4eepsa#SensingProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#SensingProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:comment xml:lang="en">A procedure specifying how to sense an event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/p4eepsa#"/>
+        <rdfs:label xml:lang="en">Sensing Procedure</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/p4eepsa# -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/p4eepsa#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

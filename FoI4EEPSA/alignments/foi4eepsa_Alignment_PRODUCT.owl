@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/eepsa/foi4eepsa#"
+     xml:base="https://w3id.org/eepsa/foi4eepsa"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:bot="https://w3id.org/bot#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/foi4eepsa_PRODUCTALignment">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <terms:issued>2017-09-07</terms:issued>
+        <terms:created>2018-08-21</terms:created>
+        <terms:title xml:lang="en">FoI4EEPSA ontology alignment with PRODUCT ontology</terms:title>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <bibo:status xml:lang="en">Published</bibo:status>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <vann:preferredNamespacePrefix>foi4eepsa</vann:preferredNamespacePrefix>
+        <terms:modified>2018-09-01</terms:modified>
+        <terms:contributor>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <terms:description xml:lang="en">It defines the proposed alignments between the FoI4EEPSA ontology and the PRODUCT ontology.</terms:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Door -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Door">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Door"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Roof -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Roof">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Roof"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Wall -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Wall">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Wall"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#Window -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Window">
+        <owl:equivalentClass rdf:resource="https://w3id.org/product#Window"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/product#Door -->
+
+    <owl:Class rdf:about="https://w3id.org/product#Door"/>
+    
+
+
+    <!-- https://w3id.org/product#Roof -->
+
+    <owl:Class rdf:about="https://w3id.org/product#Roof"/>
+    
+
+
+    <!-- https://w3id.org/product#Wall -->
+
+    <owl:Class rdf:about="https://w3id.org/product#Wall"/>
+    
+
+
+    <!-- https://w3id.org/product#Window -->
+
+    <owl:Class rdf:about="https://w3id.org/product#Window"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
