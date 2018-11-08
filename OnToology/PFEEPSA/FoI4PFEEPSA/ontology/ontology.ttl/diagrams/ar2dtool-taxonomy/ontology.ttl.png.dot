@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/pfeepsa/foi4pfeepsa#Trough" "https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" "https://w3id.org/pfeepsa/foi4pfeepsa#Farm" "https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" "https://w3id.org/bot#Element" "https://w3id.org/bot#Building" ; /*classes style*/
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" -> "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" -> "https://w3id.org/pfeepsa/foi4pfeepsa#Farm" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Farm" -> "https://w3id.org/bot#Building" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Trough" -> "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Trough" "base:PoultryHousing" "base:Farm" "base:Drinker" "base:AnimalHusbandryEquipment" "https://w3id.org/bot#Element" "https://w3id.org/bot#Building" ; /*classes style*/
+	"base:Drinker" -> "base:AnimalHusbandryEquipment" [ label = "rdfs:subClassOf" ];
+	"base:PoultryHousing" -> "base:Farm" [ label = "rdfs:subClassOf" ];
+	"base:AnimalHusbandryEquipment" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"base:Farm" -> "https://w3id.org/bot#Building" [ label = "rdfs:subClassOf" ];
+	"base:Trough" -> "base:AnimalHusbandryEquipment" [ label = "rdfs:subClassOf" ];
+
+}

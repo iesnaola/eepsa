@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/pfeepsa/q4pfeepsa" -> "https://w3id.org/eepsa/q4eepsa" [ label = "owl:imports" ];
+	"https://w3id.org/pfeepsa/q4pfeepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"https://w3id.org/pfeepsa/q4pfeepsa" -> "https://w3id.org/eepsa/q4pfeepsa" [ label = "vann:preferredNamespaceUri" ];
+
+}

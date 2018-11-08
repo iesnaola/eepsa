@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://aims.fao.org/aos/agrovoc/c_7982" "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" "http://aims.fao.org/aos/agrovoc/c_10743" "https://w3id.org/pfeepsa/foi4pfeepsa#Farm" "http://aims.fao.org/aos/agrovoc/c_25746" "http://aims.fao.org/aos/agrovoc/c_2387" "https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" "https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" "http://aims.fao.org/aos/agrovoc/c_6146" "https://w3id.org/pfeepsa/foi4pfeepsa#Trough" ; /*classes style*/
+	"http://aims.fao.org/aos/agrovoc/c_25746" -> "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" [ label = "owl:equivalentClass" ];
+	"http://aims.fao.org/aos/agrovoc/c_6146" -> "https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"http://aims.fao.org/aos/agrovoc/c_2387" -> "https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" [ label = "owl:equivalentClass" ];
+	"http://aims.fao.org/aos/agrovoc/c_10743" -> "https://w3id.org/pfeepsa/foi4pfeepsa#Farm" [ label = "owl:equivalentClass" ];
+	"http://aims.fao.org/aos/agrovoc/c_7982" -> "https://w3id.org/pfeepsa/foi4pfeepsa#Trough" [ label = "owl:equivalentClass" ];
+
+}

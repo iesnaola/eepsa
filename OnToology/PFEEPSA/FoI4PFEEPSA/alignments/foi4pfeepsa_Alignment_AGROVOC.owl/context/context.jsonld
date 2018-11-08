@@ -1,0 +1,76 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "AnimalHusbandryEquipment" : {
+      "@id" : "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment"
+    },
+    "c_7982" : {
+      "@id" : "http://aims.fao.org/aos/agrovoc/c_7982"
+    },
+    "Trough" : {
+      "@id" : "https://w3id.org/pfeepsa/foi4pfeepsa#Trough"
+    },
+    "c_25746" : {
+      "@id" : "http://aims.fao.org/aos/agrovoc/c_25746"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "PoultryHousing" : {
+      "@id" : "https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "Farm" : {
+      "@id" : "https://w3id.org/pfeepsa/foi4pfeepsa#Farm"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Drinker" : {
+      "@id" : "https://w3id.org/pfeepsa/foi4pfeepsa#Drinker"
+    },
+    "c_2387" : {
+      "@id" : "http://aims.fao.org/aos/agrovoc/c_2387"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "c_6146" : {
+      "@id" : "http://aims.fao.org/aos/agrovoc/c_6146"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "c_10743" : {
+      "@id" : "http://aims.fao.org/aos/agrovoc/c_10743"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://www.w3.org/2002/07/owl#imports> <https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/created> "2018-09-30" .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/description> "This ontology module describes the Executor terminology under the eep:Executor class for the PFEEPSA Ontology."@en .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/issued> "2018-09-30" .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/dc/terms/title> "Executor ontology module for the PFEEPSA Ontology" .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exr4pfeepsa"@en .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/pfeepsa/exr4pfeepsa> .
+<https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eep#Executor
+<https://w3id.org/eep#Executor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Sensor
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pfeepsa/exr4pfeepsa#Scale
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Sensor> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that weighs things, people or animals."@en .
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pfeepsa/exr4pfeepsa#> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale"@en .
+<https://w3id.org/pfeepsa/exr4pfeepsa#Scale> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Sensor> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that estimates the stocking density of a given space."@en .
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pfeepsa/exr4pfeepsa#> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Stocking Density Sensor"@en .
+<https://w3id.org/pfeepsa/exr4pfeepsa#StockingDensitySensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pfeepsa/exr4pfeepsa#
+<https://w3id.org/pfeepsa/exr4pfeepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pfeepsa/exr4pfeepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

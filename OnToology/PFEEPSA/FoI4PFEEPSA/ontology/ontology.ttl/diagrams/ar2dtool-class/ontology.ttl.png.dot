@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/pfeepsa/foi4pfeepsa#Trough" "https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" "https://w3id.org/pfeepsa/foi4pfeepsa#Farm" "https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" "https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" ; /*classes style*/
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Drinker" -> "http://aims.fao.org/aos/agrovoc/c_2387" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing" -> "http://aims.fao.org/aos/agrovoc/c_6146" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment" -> "http://aims.fao.org/aos/agrovoc/c_25746" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Farm" -> "http://aims.fao.org/aos/agrovoc/c_10743" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa#Trough" -> "http://aims.fao.org/aos/agrovoc/c_7982" [ label = "rdfs:seeAlso" ];
+	"https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl" -> "https://w3id.org/pfeepsa/foi4pfeepsa" [ label = ":preferredNamespaceUri" ];
+	"https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl" -> "https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl" [ label = "owl:imports" ];
+
+}

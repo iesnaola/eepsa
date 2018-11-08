@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:StockingDensity" ; /*classes style*/
+	"base:StockingDensity" -> "https://w3id.org/eepsa/q4eepsa#PredictableQuality" [ label = "rdfs:subClassOf" ];
+	"base:StockingDensity" -> "https://w3id.org/eepsa/q4eepsa#ObservableQuality" [ label = "rdfs:subClassOf" ];
+
+}

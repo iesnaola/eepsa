@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Trough" "base:PoultryHousing" "base:Farm" "base:Drinker" "base:AnimalHusbandryEquipment" ; /*classes style*/
+	"https://w3id.org/pfeepsa/foi4pfeepsa" -> "https://w3id.org/pfeepsa/foi4pfeepsa" [ label = "vann:preferredNamespaceUri" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"https://w3id.org/pfeepsa/foi4pfeepsa" -> "https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl" [ label = "owl:imports" ];
+	"base:Drinker" -> "http://aims.fao.org/aos/agrovoc/c_2387" [ label = "rdfs:seeAlso" ];
+	"base:PoultryHousing" -> "http://aims.fao.org/aos/agrovoc/c_6146" [ label = "rdfs:seeAlso" ];
+	"base:AnimalHusbandryEquipment" -> "http://aims.fao.org/aos/agrovoc/c_25746" [ label = "rdfs:seeAlso" ];
+	"base:Farm" -> "http://aims.fao.org/aos/agrovoc/c_10743" [ label = "rdfs:seeAlso" ];
+	"base:Trough" -> "http://aims.fao.org/aos/agrovoc/c_7982" [ label = "rdfs:seeAlso" ];
+
+}

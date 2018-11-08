@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl" -> "https://w3id.org/pfeepsa/exr4pfeepsa" [ label = ":preferredNamespaceUri" ];
+	"https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl" -> "https://iesnaola.github.io/eepsa/EXR4EEPSA/ontology/ontology.ttl" [ label = "owl:imports" ];
+
+}

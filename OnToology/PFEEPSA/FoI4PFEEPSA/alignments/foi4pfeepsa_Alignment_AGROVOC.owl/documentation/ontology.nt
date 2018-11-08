@@ -1,0 +1,110 @@
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/created> "2018-09-30" .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/description> "It defines the proposed alignments between the FoI4EEPSA ontology and the PRODUCT ontology."@en .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/issued> "2018-09-30" .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/dc/terms/title> "FoI4PFEEPSA ontology alignment with AGROVOC"@en .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/ontology/bibo/status> "Published"@en .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4pfeepsa" .
+<https://w3id.org/pfeepsa/foi4pfeepsa_AGROVOCALignment> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://aims.fao.org/aos/agrovoc/c_10743
+<http://aims.fao.org/aos/agrovoc/c_10743> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aims.fao.org/aos/agrovoc/c_10743> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pfeepsa/foi4pfeepsa#Farm> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_2387
+<http://aims.fao.org/aos/agrovoc/c_2387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aims.fao.org/aos/agrovoc/c_2387> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pfeepsa/foi4pfeepsa#Drinker> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_25746
+<http://aims.fao.org/aos/agrovoc/c_25746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aims.fao.org/aos/agrovoc/c_25746> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_6146
+<http://aims.fao.org/aos/agrovoc/c_6146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aims.fao.org/aos/agrovoc/c_6146> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing> .
+# 
+# http://aims.fao.org/aos/agrovoc/c_7982
+<http://aims.fao.org/aos/agrovoc/c_7982> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aims.fao.org/aos/agrovoc/c_7982> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pfeepsa/foi4pfeepsa#Trough> .
+# 
+# https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment
+<https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pfeepsa/foi4pfeepsa#Drinker
+<https://w3id.org/pfeepsa/foi4pfeepsa#Drinker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pfeepsa/foi4pfeepsa#Farm
+<https://w3id.org/pfeepsa/foi4pfeepsa#Farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing
+<https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pfeepsa/foi4pfeepsa#Trough
+<https://w3id.org/pfeepsa/foi4pfeepsa#Trough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
