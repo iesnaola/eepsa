@@ -1,0 +1,178 @@
+@prefix : <https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl> .
+
+<https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl> rdf:type owl:Ontology ;
+                                                                    owl:imports <https://iesnaola.github.io/eepsa/FoI4EEPSA/ontology/ontology.ttl> ;
+                                                                    <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                                                    <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
+                                                                    <http://purl.org/dc/terms/created> "2018-09-25"@en ;
+                                                                    <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
+                                                                    <http://purl.org/dc/terms/description> "Feature of Interest ontology module for the PFEEPSA Ontology"@en ,
+                                                                                                           "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the PFEEPSA Ontology."@en ;
+                                                                    <http://purl.org/dc/terms/issued> "2018-09-30"^^xsd:string ;
+                                                                    <http://purl.org/dc/terms/modified> "2018-09-30"@en ;
+                                                                    <http://purl.org/dc/terms/title> "Feature of Interest module for the PFEEPSA Ontology."@en ;
+                                                                    <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4pfeepsa"^^xsd:string ;
+                                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/pfeepsa/foi4pfeepsa> ;
+                                                                    owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/affectedBy#FeatureOfInterest
+<https://w3id.org/affectedBy#FeatureOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment
+<https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://w3id.org/bot#Element> ;
+                                                                rdfs:comment "The equipment necessary for animal breeding processes."@en ;
+                                                                rdfs:isDefinedBy <http://aims.fao.org/aos/agrovoc/> ;
+                                                                rdfs:label "Animal Husbandry Equipment"@en ;
+                                                                rdfs:seeAlso <http://aims.fao.org/aos/agrovoc/c_25746> ;
+                                                                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#Drinker
+<https://w3id.org/pfeepsa/foi4pfeepsa#Drinker> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment> ;
+                                               rdfs:comment "An equipment that dispenses water for feeding purposes."@en ;
+                                               rdfs:isDefinedBy <http://aims.fao.org/aos/agrovoc/> ;
+                                               rdfs:label "Drinker"@en ;
+                                               rdfs:seeAlso <http://aims.fao.org/aos/agrovoc/c_2387> ;
+                                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#Farm
+<https://w3id.org/pfeepsa/foi4pfeepsa#Farm> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/bot#Building> ;
+                                            rdfs:comment "A farm is an area of land that is devoted primarily to agricultural processes with the primary objective of producing food and other crops; it is the basic facility in food production (Source: Wikipedia)."@en ;
+                                            rdfs:isDefinedBy <https://w3id.org/pfeepsa/foi4pfeepsa#> ;
+                                            rdfs:label "Farm"@en ;
+                                            rdfs:seeAlso <http://aims.fao.org/aos/agrovoc/c_10743> ;
+                                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing
+<https://w3id.org/pfeepsa/foi4pfeepsa#PoultryHousing> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/pfeepsa/foi4pfeepsa#Farm> ;
+                                                      rdfs:comment "A farm where poultry are raised."@en ;
+                                                      rdfs:isDefinedBy <http://aims.fao.org/aos/agrovoc/> ;
+                                                      rdfs:label "Poultry Housing"@en ;
+                                                      rdfs:seeAlso <http://aims.fao.org/aos/agrovoc/c_6146> ;
+                                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#Trough
+<https://w3id.org/pfeepsa/foi4pfeepsa#Trough> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/pfeepsa/foi4pfeepsa#AnimalHusbandryEquipment> ;
+                                              rdfs:comment "A long, narrow container without a lid that usually holds water or food for farm animals."@en ;
+                                              rdfs:isDefinedBy <http://aims.fao.org/aos/agrovoc/> ;
+                                              rdfs:label "Trough"@en ;
+                                              rdfs:seeAlso <http://aims.fao.org/aos/agrovoc/c_7982> ;
+                                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/eepsa/foi4eepsa#
+<https://w3id.org/eepsa/foi4eepsa#> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/pfeepsa/foi4pfeepsa#
+<https://w3id.org/pfeepsa/foi4pfeepsa#> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
