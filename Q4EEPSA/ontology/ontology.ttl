@@ -14,13 +14,13 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
                                   <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                                   <http://purl.org/dc/terms/description> "This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology."@en ;
-                                  <http://purl.org/dc/terms/issued> "2018-09-07"^^xsd:string ;
-                                  <http://purl.org/dc/terms/modified> "2018-09-01"^^xsd:string ;
+                                  <http://purl.org/dc/terms/issued> "2018-11-26"^^xsd:string ;
+                                  <http://purl.org/dc/terms/modified> "2018-11-26"^^xsd:string ;
                                   <http://purl.org/dc/terms/title> "Quality ontology module for the EEPSA Ontology"^^xsd:string ;
                                   <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "q4eepsa"@en ;
                                   <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/q4eepsa> ;
-                                  owl:versionInfo 1.0 .
+                                  owl:versionInfo 1.1 .
 
 #################################################################
 #    Annotation properties
@@ -90,7 +90,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :ActuatableQuality rdf:type owl:Class ;
                    rdfs:subClassOf <https://w3id.org/affectedBy#Quality> ;
                    rdfs:comment "A quality of a feature of interest that can be acted on."@en ;
-                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:isDefinedBy : ;
                    rdfs:label "Actuatable Quality"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -135,42 +135,6 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
-###  https://w3id.org/eepsa/q4eepsa#ElectricConsumption
-:ElectricConsumption rdf:type owl:Class ;
-                     rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
-                     rdfs:comment "The amount of electricity consumed."@en ;
-                     rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                     rdfs:label "Electric Consumption"@en ;
-                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#ElectricGeneration
-:ElectricGeneration rdf:type owl:Class ;
-                    rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
-                    rdfs:comment "The amount of electricity generated."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                    rdfs:label "Electric Generation"@en ;
-                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#GasConsumption
-:GasConsumption rdf:type owl:Class ;
-                rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
-                rdfs:comment "The amount of gas consumed."@en ;
-                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                rdfs:label "Gas Consumption"@en ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#HeatConsumption
-:HeatConsumption rdf:type owl:Class ;
-                 rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
-                 rdfs:comment "The amount of heat consumed."@en ;
-                 rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                 rdfs:label "Heat Consumption"@en ;
-                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
 ###  https://w3id.org/eepsa/q4eepsa#Illuminance
 :Illuminance rdf:type owl:Class ;
              rdfs:subClassOf :ThermalComfortQuality ;
@@ -185,7 +149,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :IndoorHumidity rdf:type owl:Class ;
                 rdfs:subClassOf :ThermalComfortQuality ;
                 rdfs:comment "A quantity representing the amount of water vapour indoors."@en ;
-                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                rdfs:isDefinedBy : ;
                 rdfs:label "Indoor Humidity"@en ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -194,16 +158,16 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :IndoorTemperature rdf:type owl:Class ;
                    rdfs:subClassOf :ThermalComfortQuality ;
                    rdfs:comment "The degree or intensity of heat present indoors."@en ;
-                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:isDefinedBy : ;
                    rdfs:label "Indoor Temperature"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
 ###  https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality
 :MeteorologicalQuality rdf:type owl:Class ;
-                       rdfs:subClassOf :PredictableQuality ;
+                       rdfs:subClassOf :ObservableQuality ;
                        rdfs:comment "A quality related to the atmosphere and its phenomena."@en ;
-                       rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                       rdfs:isDefinedBy : ;
                        rdfs:label "Meteorological Quality"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -212,16 +176,25 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :ObservableQuality rdf:type owl:Class ;
                    rdfs:subClassOf <https://w3id.org/affectedBy#Quality> ;
                    rdfs:comment "A quality of a feature of interest that can be observed."@en ;
-                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:isDefinedBy : ;
                    rdfs:label "Observable Quality"@en ;
                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/eepsa/q4eepsa#Occupancy
+:Occupancy rdf:type owl:Class ;
+           rdfs:subClassOf :ObservableQuality ;
+           rdfs:comment "The usage or intended usage ratio of a given space."@en ;
+           rdfs:isDefinedBy : ;
+           rdfs:label "Occupancy"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
 ###  https://w3id.org/eepsa/q4eepsa#Orientation
 :Orientation rdf:type owl:Class ;
              rdfs:subClassOf :ObservableQuality ;
              rdfs:comment "The description of how a thing is placed in the space it is in."@en ;
-             rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+             rdfs:isDefinedBy : ;
              rdfs:label "Orientation"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
@@ -230,7 +203,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :OutdoorHumidity rdf:type owl:Class ;
                  rdfs:subClassOf :MeteorologicalQuality ;
                  rdfs:comment "A quantity representing the amount of water vapour outdoors."@en ;
-                 rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                 rdfs:isDefinedBy : ;
                  rdfs:label "Outdoor Humidity"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -239,7 +212,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :OutdoorTemperature rdf:type owl:Class ;
                     rdfs:subClassOf :MeteorologicalQuality ;
                     rdfs:comment "The degree or intensity of heat present outdoors."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                    rdfs:isDefinedBy : ;
                     rdfs:label "Outdoor Temperature"@en ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -252,25 +225,6 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                     rdfs:label "Precipitation Level"@en ;
                     rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#Precipitation> ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#PredictableQuality
-:PredictableQuality rdf:type owl:Class ;
-                    rdfs:subClassOf <https://w3id.org/affectedBy#Quality> ;
-                    rdfs:comment "A quality of a feature of interest that can be predicted."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                    rdfs:label "Predictable Quality"@en ;
-                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality
-:ResourceConsumptionGenerationQuality rdf:type owl:Class ;
-                                      rdfs:subClassOf :ObservableQuality ,
-                                                      :PredictableQuality ;
-                                      rdfs:comment "Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)"@en ;
-                                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                                      rdfs:label "Resource Consumption/Generation Quality"@en ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 
 ###  https://w3id.org/eepsa/q4eepsa#SolarRadiation
@@ -306,21 +260,11 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 ###  https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality
 :ThermalComfortQuality rdf:type owl:Class ;
                        rdfs:subClassOf :ActuatableQuality ,
-                                       :ObservableQuality ,
-                                       :PredictableQuality ;
+                                       :ObservableQuality ;
                        rdfs:comment "A quality related to the thermal comfort. According to the ANSI/ASHRAE Standard 55-2017, thermal comfort is defined as follows: \"that condition of mind that expresses satisfaction with the thermal environment and is assessed by subjective evaluation\""@en ;
-                       rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                       rdfs:isDefinedBy : ;
                        rdfs:label "Thermal Comfort Quality"@en ;
                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/q4eepsa#WaterConsumption
-:WaterConsumption rdf:type owl:Class ;
-                  rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
-                  rdfs:comment "The amount of water consumed."@en ;
-                  rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
-                  rdfs:label "Water Consumption"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 
 ###  https://w3id.org/eepsa/q4eepsa#WindChill
@@ -357,9 +301,9 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 #    Individuals
 #################################################################
 
-###  https://w3id.org/eepsa/q4eepsa
-<https://w3id.org/eepsa/q4eepsa> rdf:type owl:NamedIndividual ,
-                                          <http://purl.org/vocommons/voaf#Vocabulary> .
+###  https://w3id.org/eepsa/q4eepsa#
+: rdf:type owl:NamedIndividual ,
+           <http://purl.org/vocommons/voaf#Vocabulary> .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/eepsa/q4eepsa_SEASGenericPropertyALignment#"
+     xml:base="https://w3id.org/eepsa/q4eepsa_SEASGenericPropertyALignment"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:bot="https://w3id.org/bot#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/q4eepsa_SEASGenericPropertyALignment">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <terms:title xml:lang="en">Q4EEPSA ontology alignment with the SEAS Generic Property ontology</terms:title>
+        <terms:issued>2018-11-26</terms:issued>
+        <bibo:status xml:lang="en">Published</bibo:status>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <vann:preferredNamespacePrefix>foi4eepsa</vann:preferredNamespacePrefix>
+        <terms:description xml:lang="en">It defines the proposed alignments between the Q4EEPSA ontology and the SEAS Generic Property ontology.</terms:description>
+        <terms:contributor>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <terms:created>2018-11-26</terms:created>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#CO2 -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#CO2">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/AirCO2LevelProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#IndoorTemperature -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#IndoorTemperature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/TemperatureProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#Orientation -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#Orientation">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/DirectionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#OutdoorTemperature -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/TemperatureProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#WindDirection -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WindDirection">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/WindDirectionProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/q4eepsa#WindSpeed -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WindSpeed">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/WindSpeedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/AirCO2LevelProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/AirCO2LevelProperty"/>
+    
+
+
+    <!-- https://w3id.org/seas/DirectionProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/DirectionProperty"/>
+    
+
+
+    <!-- https://w3id.org/seas/TemperatureProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/TemperatureProperty"/>
+    
+
+
+    <!-- https://w3id.org/seas/WindDirectionProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/WindDirectionProperty"/>
+    
+
+
+    <!-- https://w3id.org/seas/WindSpeedProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/WindSpeedProperty"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

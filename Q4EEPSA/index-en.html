@@ -48,6 +48,7 @@ function loadTOC(){
       $("#introduction").load("sections/introduction-en.html"); 
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
+	  $("#alignments").load("sections/alignments-en.html"); 
       $("#references").load("sections/references-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
@@ -59,21 +60,20 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>Q4EEPSA: Quality ontology module for the EEPSA Ontology</h1>
-<h2>Release  2018-09-01</h2>
+<h2>Release  2018-11-26</h2>
 
 
 <dl>
 <dt>Latest version:</dt>
 <dd><a href="https://w3id.org/eepsa/q4eepsa">https://w3id.org/eepsa/q4eepsa</a></dd>
 <dt>Revision:</dt>
-<dd>1.0</dd>
+<dd>1.1</dd>
 <dt>Authors:</dt>
 <dd>Iker Esnaola-Gonzalez, IK4-Tekniker</dd><dd>Jesús Bermúdez, UPV/EHU</dd>
 
 <dt>Contributors:</dt>
 <dd>Izaskun Fernandez, IK4-Tekniker</dd><dd>Aitor Arnaiz, IK4-Tekniker</dd>
 
-<d
 <dt>Download serialization:</dt><dd><span><a href="ontology/ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology/ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology/ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd>
 <a href="http://purl.org/NET/rdflicense/cc-by4.0" rel="license" target="_blank">
 <img src="https://img.shields.io/badge/License-Creative Commons CC_BY-blue.svg" style="border-width:0" alt="License" />
@@ -92,6 +92,7 @@ function loadTOC(){
      <div id="overview"></div>
      <div id="description"></div>
      <div id="crossref"></div>
+	 <div id="alignments"></div>
      <div id="references"></div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
