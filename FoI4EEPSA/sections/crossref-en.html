@@ -99,7 +99,6 @@ This section provides details for each class and property defined by FoI4EEPSA.
             <sup class="type-c" title="class">c</sup>, <a href="#ExternalBuildingElement"
                title="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement">External Building Element</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Roof" title="https://w3id.org/eepsa/foi4eepsa#Roof">Roof</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Skylight" title="https://w3id.org/eepsa/foi4eepsa#Skylight">Skylight</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Wall" title="https://w3id.org/eepsa/foi4eepsa#Wall">Wall</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Window" title="https://w3id.org/eepsa/foi4eepsa#Window">Window</a>
             <sup class="type-c" title="class">c</sup>
@@ -130,6 +129,11 @@ This section provides details for each class and property defined by FoI4EEPSA.
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/bot#Element" title="https://w3id.org/bot#Element">element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Skylight" title="https://w3id.org/eepsa/foi4eepsa#Skylight">Skylight</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -311,7 +315,8 @@ This section provides details for each class and property defined by FoI4EEPSA.
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/bot#Element" title="https://w3id.org/bot#Element">element</a>
+            <a href="#ExternalBuildingElement"
+               title="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement">External Building Element</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -395,6 +400,135 @@ This section provides details for each class and property defined by FoI4EEPSA.
             <span class="dotted" title="https://w3id.org/affectedBy#FeatureOfInterest">feature of interest</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+      </dl>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasGrossPlannedArea"
+            title="https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea">has gross planned area</a>
+      </li>
+      <li>
+         <a href="#hasMarketCategory"
+            title="https://w3id.org/eepsa/foi4eepsa#hasMarketCategory">has market category</a>
+      </li>
+      <li>
+         <a href="#hasMarketSubCategory"
+            title="https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory">has market subcategory</a>
+      </li>
+      <li>
+         <a href="#hasOccupancyType"
+            title="https://w3id.org/eepsa/foi4eepsa#hasOccupancyType">has occupancy type</a>
+      </li>
+      <li>
+         <a href="#hasYearOfConstruction"
+            title="https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction">has year of construction</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasGrossPlannedArea">
+      <h3>has gross planned area<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea</p>
+      <div class="comment">
+         <span class="markdown">Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/foi4eepsa#">https://w3id.org/eepsa/foi4eepsa#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasMarketCategory">
+      <h3>has market category<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/foi4eepsa#hasMarketCategory</p>
+      <div class="comment">
+         <span class="markdown">Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/foi4eepsa#">https://w3id.org/eepsa/foi4eepsa#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasMarketSubCategory">
+      <h3>has market subcategory<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory</p>
+      <div class="comment">
+         <span class="markdown">Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/foi4eepsa#">https://w3id.org/eepsa/foi4eepsa#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasOccupancyType">
+      <h3>has occupancy type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/foi4eepsa#hasOccupancyType</p>
+      <div class="comment">
+         <span class="markdown">Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/foi4eepsa#">https://w3id.org/eepsa/foi4eepsa#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasYearOfConstruction">
+      <h3>has year of construction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction</p>
+      <div class="comment">
+         <span class="markdown">Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/foi4eepsa#">https://w3id.org/eepsa/foi4eepsa#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
       </dl>
    </div>
 </div><div id="namedindividuals">

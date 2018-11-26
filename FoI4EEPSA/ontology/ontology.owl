@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/eepsa/foi4eepsa#"
      xml:base="https://w3id.org/eepsa/foi4eepsa"
+     xmlns:schema="http://schema.org/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -15,15 +16,15 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/eepsa/foi4eepsa">
         <owl:imports rdf:resource="https://w3id.org/bot/0.3.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <terms:description xml:lang="en">This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology.</terms:description>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foi4eepsa</vann:preferredNamespacePrefix>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-26</terms:issued>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
 Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-07</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-01</terms:modified>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/foi4eepsa"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-26</terms:modified>
         <terms:title xml:lang="en">Feature of Interest module for the EEPSA Ontology.</terms:title>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature of Interest ontology module for the EEPSA Ontology</terms:description>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
@@ -138,6 +139,72 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- http://xmlns.com/foaf/0.1/based_near -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea">
+        <rdfs:comment xml:lang="en">Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">has gross planned area</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#hasMarketCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasMarketCategory">
+        <rdfs:comment xml:lang="en">Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">has market category</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory">
+        <rdfs:comment xml:lang="en">Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">has market subcategory</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#hasOccupancyType -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasOccupancyType">
+        <rdfs:comment xml:lang="en">Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">has occupancy type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction">
+        <rdfs:comment xml:lang="en">Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
+        <rdfs:label xml:lang="en">has year of construction</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
     
 
 
@@ -289,7 +356,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- https://w3id.org/eepsa/foi4eepsa#Skylight -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#Skylight">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
         <rdfs:comment xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes (Source: Wikipedia).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">Skylight</rdfs:label>
