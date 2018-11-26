@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Window" "base:ExternalDoor" "base:Roof" "base:ExternalWall" "base:ExternalBuildingElement" "https://w3id.org/affectedBy#FeatureOfInterest" "https://w3id.org/bot#Interface" "base:Skylight" "base:Door" "https://w3id.org/bot#Zone" "base:ExternalWindow" "base:Wall" "https://w3id.org/bot#Element" ; /*classes style*/
+	"https://w3id.org/bot#Interface" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:Door" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Element" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:Wall" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"base:Roof" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"base:Skylight" -> "base:ExternalBuildingElement" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Zone" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:ExternalDoor" -> "base:Door" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWindow" -> "base:Window" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWall" -> "base:Wall" [ label = "rdfs:subClassOf" ];
+	"base:Window" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"base:ExternalBuildingElement" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,27 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Window" "-3986bf0d:167504a33c1:-7ffc" "base:ExternalDoor" "base:Roof" "-3986bf0d:167504a33c1:-7ff6" "base:ExternalWall" "base:ExternalBuildingElement" "base:Door" "base:ExternalWindow" "base:Wall" "-3986bf0d:167504a33c1:-7ff9" ; /*classes style*/
+	"base:Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"base:Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"base:Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://w3id.org/bot/0.3.0" [ label = "owl:imports" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://w3id.org/eepsa/foi4eepsa" [ label = "vann:preferredNamespaceUri" ];
+	"base:ExternalDoor" -> "-3986bf0d:167504a33c1:-7ffc" [ label = "owl:equivalentClass" ];
+	"base:ExternalWindow" -> "-3986bf0d:167504a33c1:-7ff6" [ label = "owl:equivalentClass" ];
+	"base:ExternalWall" -> "-3986bf0d:167504a33c1:-7ff9" [ label = "owl:equivalentClass" ];
+	"base:Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ff8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "base:Window" [ label = "rdf:first" ];
+	"NULL" -> "base:ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:Door" [ label = "rdf:first" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-3986bf0d:167504a33c1:-7ff5" [ label = "owl:intersectionOf" ];
+	"NULL" -> "base:Wall" [ label = "rdf:first" ];
+
+}

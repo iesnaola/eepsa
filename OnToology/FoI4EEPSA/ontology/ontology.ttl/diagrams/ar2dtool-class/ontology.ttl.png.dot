@@ -1,0 +1,27 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Window" "ea9dcff08c2318b50cda6f65f4d402b3" "base:ExternalDoor" "base:Roof" "1d00d8ead18a0ce7cb4a50863ebecddc" "base:ExternalWall" "base:ExternalBuildingElement" "281c8389b3fd8a448eefe897329e3fe6" "base:Door" "base:ExternalWindow" "base:Wall" ; /*classes style*/
+	"base:Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"base:Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"base:Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://w3id.org/bot/0.3.0" [ label = "owl:imports" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"https://w3id.org/eepsa/foi4eepsa" -> "https://w3id.org/eepsa/foi4eepsa" [ label = ":preferredNamespaceUri" ];
+	"base:ExternalDoor" -> "1d00d8ead18a0ce7cb4a50863ebecddc" [ label = "owl:equivalentClass" ];
+	"base:ExternalWindow" -> "ea9dcff08c2318b50cda6f65f4d402b3" [ label = "owl:equivalentClass" ];
+	"base:ExternalWall" -> "281c8389b3fd8a448eefe897329e3fe6" [ label = "owl:equivalentClass" ];
+	"base:Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"NULL" -> "48603c15800145a9bd94e87cca773809" [ label = "owl:intersectionOf" ];
+	"NULL" -> "d4b4dc4a035d250867176ccbe7751039" [ label = "rdf:rest" ];
+	"NULL" -> "193121f1293cf65c31ab2638aaa8e7bd" [ label = "rdf:rest" ];
+	"NULL" -> "e625bf19fcd1acdec4d76a10737f37cf" [ label = "rdf:rest" ];
+	"NULL" -> "base:Window" [ label = "rdf:first" ];
+	"NULL" -> "base:ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "fced0afdeeab5b045bf31f5e5903a437" [ label = "owl:intersectionOf" ];
+	"NULL" -> "base:Door" [ label = "rdf:first" ];
+	"NULL" -> "2918e851afa3d85473a8d1a626ed078b" [ label = "owl:intersectionOf" ];
+	"NULL" -> "base:Wall" [ label = "rdf:first" ];
+
+}
