@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity" "https://w3id.org/eepsa/q4eepsa#IndoorTemperature" "https://w3id.org/eepsa/q4eepsa#IndoorHumidity" "http://purl.org/iot/vocab/m3-lite#Humidity" "http://purl.org/iot/vocab/m3-lite#Temperature" "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature" ; /*classes style*/
+	"https://w3id.org/eepsa/q4eepsa#IndoorTemperature" -> "http://purl.org/iot/vocab/m3-lite#Temperature" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/q4eepsa#IndoorHumidity" -> "http://purl.org/iot/vocab/m3-lite#Humidity" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/q4eepsa#OutdoorTemperature" -> "http://purl.org/iot/vocab/m3-lite#Temperature" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/eepsa/q4eepsa#OutdoorHumidity" -> "http://purl.org/iot/vocab/m3-lite#Humidity" [ label = "rdfs:subClassOf" ];
+
+}

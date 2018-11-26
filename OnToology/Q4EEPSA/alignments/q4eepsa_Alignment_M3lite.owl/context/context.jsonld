@@ -1,0 +1,106 @@
+{
+  "@context" : {
+    "PrecipitationLevel" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel"
+    },
+    "OutdoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Humidity" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Humidity"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SunPositionElevation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SunPositionElevation"
+    },
+    "Temperature" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Temperature"
+    },
+    "IndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "SolarRadiation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SolarRadiation"
+    },
+    "Precipitation" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Precipitation"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "AtmosphericPressure" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#AtmosphericPressure"
+    },
+    "CloudCover" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#CloudCover"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ChemicalAgentAtmosphericConcentrationNH3" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3"
+    },
+    "OutdoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Illuminance" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Illuminance"
+    },
+    "WindDirection" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindDirection"
+    },
+    "CO2" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#CO2"
+    },
+    "IndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "WindChill" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#WindChill"
+    },
+    "SunPositionDirection" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#SunPositionDirection"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "WindSpeed" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#WindSpeed"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "OutdoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Humidity" : {
+      "@id" : "https://w3id.org/saref#Humidity"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Light" : {
+      "@id" : "https://w3id.org/saref#Light"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/saref#Temperature"
+    },
+    "IndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "AtmosphericPressure" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"
+    },
+    "Pressure" : {
+      "@id" : "https://w3id.org/saref#Pressure"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "OutdoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Occupancy" : {
+      "@id" : "https://w3id.org/saref#Occupancy"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Illuminance" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Illuminance"
+    },
+    "IndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
