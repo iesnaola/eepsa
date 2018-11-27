@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bot "https://w3id.org/bot#" >
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+]>
+
+
+<rdf:RDF xmlns="https://w3id.org/eepsa/exn4eepsa#"
+     xml:base="https://w3id.org/eepsa/exn4eepsa"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bot="https://w3id.org/bot#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cc="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/exr4eepsa_SEASSmartMeterALignment">
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
+        <terms:issued>2018-11-27</terms:issued>
+        <terms:created>2018-11-27</terms:created>
+        <terms:description xml:lang="en">It defines the proposed alignments between the EXR4EEPSA ontology and the SEAS Smart Meter ontology.</terms:description>
+        <terms:contributor>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
+        <vann:preferredNamespacePrefix>exr4eepsa</vann:preferredNamespacePrefix>
+        <terms:title xml:lang="en">EXR4EEPSA ontology alignment with SEAS Smart Meter ontology</terms:title>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <bibo:status xml:lang="en">Published</bibo:status>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="&cc;license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&terms;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&terms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&terms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="&terms;issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&terms;license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="&bibo;status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="&vs;term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;based_near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#ElectricityMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#ElectricityMeter">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/ElectricityMeter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#GasMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#GasMeter">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/GasMeter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/exr4eepsa#WaterMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#WaterMeter">
+        <owl:equivalentClass rdf:resource="https://w3id.org/seas/WaterMeter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/seas/ElectricityMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/ElectricityMeter"/>
+    
+
+
+    <!-- https://w3id.org/seas/GasMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/GasMeter"/>
+    
+
+
+    <!-- https://w3id.org/seas/WaterMeter -->
+
+    <owl:Class rdf:about="https://w3id.org/seas/WaterMeter"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

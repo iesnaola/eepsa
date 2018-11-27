@@ -14,13 +14,13 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
                                     <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                                     <http://purl.org/dc/terms/description> "This ontology module describes the Executor terminology under the eep:Executor class for the EEPSA Ontology."@en ;
-                                    <http://purl.org/dc/terms/issued> "2018-09-07"^^xsd:string ;
-                                    <http://purl.org/dc/terms/modified> "2018-09-01"^^xsd:string ;
+                                    <http://purl.org/dc/terms/issued> "2018-11-27"^^xsd:string ;
+                                    <http://purl.org/dc/terms/modified> "2018-11-27"^^xsd:string ;
                                     <http://purl.org/dc/terms/title> "Executor ontology module for the EEPSA Ontology"^^xsd:string ;
                                     <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
-                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "executor4eepsa"@en ;
-                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/executor4eepsa> ;
-                                    owl:versionInfo 1.0 .
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "exr4eepsa"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exr4eepsa> ;
+                                    owl:versionInfo 1.1 .
 
 #################################################################
 #    Annotation properties
@@ -183,9 +183,10 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 ###  https://w3id.org/eepsa/exr4eepsa#ElectricityMeter
 :ElectricityMeter rdf:type owl:Class ;
                   rdfs:subClassOf :UtilityMeter ;
-                  rdfs:comment "A meter that measures the amount of electricity consumed"@en ;
-                  rdfs:isDefinedBy : ;
+                  rdfs:comment "An electricity meter, electric meter, electrical meter, or energy meter is a meter that measures the amount of electric energy consumed by a residence, a business, or an electrically powered device (defined by SEAS Smart Meter ontology)."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/seas/SmartMeterOntology> ;
                   rdfs:label "Electricity Meter"@en ;
+                  rdfs:seeAlso <https://w3id.org/seas/ElectricityMeter> ;
                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
@@ -201,9 +202,10 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 ###  https://w3id.org/eepsa/exr4eepsa#GasMeter
 :GasMeter rdf:type owl:Class ;
           rdfs:subClassOf :UtilityMeter ;
-          rdfs:comment "A meter that measures the amount of gas consumed"@en ;
-          rdfs:isDefinedBy : ;
+          rdfs:comment "A gas meter is a meter, used to measure the volume of fuel gases such as natural gas and propane. Gas meters are used at residential, commercial, and industrial buildings that consume fuel gas supplied by a gas utility (defined by SEAS Smart Meter ontology)."@en ;
+          rdfs:isDefinedBy <https://w3id.org/seas/SmartMeterOntology> ;
           rdfs:label "Gas Meter"@en ;
+          rdfs:seeAlso <https://w3id.org/seas/GasMeter> ;
           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
@@ -355,9 +357,10 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 ###  https://w3id.org/eepsa/exr4eepsa#WaterMeter
 :WaterMeter rdf:type owl:Class ;
             rdfs:subClassOf :UtilityMeter ;
-            rdfs:comment "A meter that measures the amount of water consumed"@en ;
-            rdfs:isDefinedBy : ;
+            rdfs:comment "A water meter is a Meter designed to measure the quantity of water that flows through a pipe. The water meter can measures water consumption or water supply (defined by SEAS Smart Meter ontology)"@en ;
+            rdfs:isDefinedBy <https://w3id.org/seas/SmartMeterOntology> ;
             rdfs:label "Water Meter"@en ;
+            rdfs:seeAlso <https://w3id.org/seas/WaterMeter> ;
             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
