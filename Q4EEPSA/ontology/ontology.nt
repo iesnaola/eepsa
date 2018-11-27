@@ -4,13 +4,13 @@
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology."@en .
-<https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/issued> "2018-11-26" .
-<https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/modified> "2018-11-26" .
+<https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/issued> "2018-11-27" .
+<https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/modified> "2018-11-27" .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/dc/terms/title> "Quality ontology module for the EEPSA Ontology" .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "q4eepsa"@en .
 <https://w3id.org/eepsa/q4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/q4eepsa> .
-<https://w3id.org/eepsa/q4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/eepsa/q4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -75,7 +75,7 @@
 <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#Quality> .
 <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality of a feature of interest that can be acted on."@en .
-<https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Actuatable Quality"@en .
 <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -115,6 +115,38 @@
 <https://w3id.org/eepsa/q4eepsa#CloudCover> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/iot/vocab/m3-lite#CloudCover> .
 <https://w3id.org/eepsa/q4eepsa#CloudCover> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# https://w3id.org/eepsa/q4eepsa#ElectricConsumption
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> .
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of electricity consumed."@en .
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Consumption"@en .
+<https://w3id.org/eepsa/q4eepsa#ElectricConsumption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/eepsa/q4eepsa#ElectricGeneration
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> .
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of electricity generated."@en .
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Generation"@en .
+<https://w3id.org/eepsa/q4eepsa#ElectricGeneration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/eepsa/q4eepsa#GasConsumption
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> .
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of gas consumed."@en .
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Gas Consumption"@en .
+<https://w3id.org/eepsa/q4eepsa#GasConsumption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/eepsa/q4eepsa#HeatConsumption
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> .
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of heat consumed."@en .
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Heat Consumption"@en .
+<https://w3id.org/eepsa/q4eepsa#HeatConsumption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
 # https://w3id.org/eepsa/q4eepsa#Illuminance
 <https://w3id.org/eepsa/q4eepsa#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#Illuminance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> .
@@ -128,7 +160,7 @@
 <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> .
 <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantity representing the amount of water vapour indoors."@en .
-<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor Humidity"@en .
 <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -136,7 +168,7 @@
 <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> .
 <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The degree or intensity of heat present indoors."@en .
-<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor Temperature"@en .
 <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -144,7 +176,7 @@
 <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ObservableQuality> .
 <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality related to the atmosphere and its phenomena."@en .
-<https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Meteorological Quality"@en .
 <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -152,7 +184,7 @@
 <https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#Quality> .
 <https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality of a feature of interest that can be observed."@en .
-<https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Quality"@en .
 <https://w3id.org/eepsa/q4eepsa#ObservableQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -160,7 +192,7 @@
 <https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ObservableQuality> .
 <https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2000/01/rdf-schema#comment> "The usage or intended usage ratio of a given space."@en .
-<https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy"@en .
 <https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -168,7 +200,7 @@
 <https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ObservableQuality> .
 <https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2000/01/rdf-schema#comment> "The description of how a thing is placed in the space it is in."@en .
-<https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientation"@en .
 <https://w3id.org/eepsa/q4eepsa#Orientation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
@@ -176,7 +208,7 @@
 <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantity representing the amount of water vapour outdoors."@en .
-<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor Humidity"@en .
 <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -184,7 +216,7 @@
 <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The degree or intensity of heat present outdoors."@en .
-<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor Temperature"@en .
 <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -196,6 +228,14 @@
 <https://w3id.org/eepsa/q4eepsa#PrecipitationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation Level"@en .
 <https://w3id.org/eepsa/q4eepsa#PrecipitationLevel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/iot/vocab/m3-lite#Precipitation> .
 <https://w3id.org/eepsa/q4eepsa#PrecipitationLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ObservableQuality> .
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)"@en .
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Consumption/Generation Quality"@en .
+<https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # https://w3id.org/eepsa/q4eepsa#SolarRadiation
 <https://w3id.org/eepsa/q4eepsa#SolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -229,9 +269,17 @@
 <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ActuatableQuality> .
 <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ObservableQuality> .
 <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality related to the thermal comfort. According to the ANSI/ASHRAE Standard 55-2017, thermal comfort is defined as follows: \"that condition of mind that expresses satisfaction with the thermal environment and is assessed by subjective evaluation\""@en .
-<https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
 <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal Comfort Quality"@en .
 <https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/q4eepsa#WaterConsumption
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality> .
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of water consumed."@en .
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/q4eepsa> .
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Water Consumption"@en .
+<https://w3id.org/eepsa/q4eepsa#WaterConsumption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # https://w3id.org/eepsa/q4eepsa#WindChill
 <https://w3id.org/eepsa/q4eepsa#WindChill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
