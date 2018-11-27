@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/eep#Executor" "base:WaterMeter" "base:PrecipitationSensor" "base:Anenometer" "base:CO2Sensor" "base:TemperatureSensor" "base:Sensor" "base:AmmoniaSensor" "base:GenerationMeter" "base:WindowActuator" "base:ImputationMethod" "base:HVAC" "base:EnvironmentSensor" "base:PredictiveModel" "base:ElectricityMeter" "base:MovementSensor" "base:Calorimeter" "base:SunSensor" "base:DoorActuator" "base:AirQualitySensor" "base:CloudCoverSensor" "base:SolarRadiationSensor" "base:LigthActuator" "base:GasMeter" "base:Actuator" "base:UtilityMeter" "base:BlindActuator" "base:AtmosphericPressureSensor" "base:Thermostat" "base:LightSensor" "base:HumiditySensor" "base:SmartPlug" ; /*classes style*/
+	"base:AmmoniaSensor" -> "base:AirQualitySensor" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:LightSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:PrecipitationSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:HVAC" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:ElectricityMeter" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:GasMeter" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:HumiditySensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:WaterMeter" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:Actuator" -> "https://w3id.org/eep#Executor" [ label = "rdfs:subClassOf" ];
+	"base:Calorimeter" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:AirQualitySensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:Thermostat" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:PredictiveModel" -> "https://w3id.org/eep#Executor" [ label = "rdfs:subClassOf" ];
+	"base:CloudCoverSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:AtmosphericPressureSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:ImputationMethod" -> "https://w3id.org/eep#Executor" [ label = "rdfs:subClassOf" ];
+	"base:WindowActuator" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:CO2Sensor" -> "base:AirQualitySensor" [ label = "rdfs:subClassOf" ];
+	"base:SolarRadiationSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:EnvironmentSensor" -> "base:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Anenometer" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:BlindActuator" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:MovementSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:UtilityMeter" -> "base:Sensor" [ label = "rdfs:subClassOf" ];
+	"base:GenerationMeter" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:SmartPlug" -> "base:UtilityMeter" [ label = "rdfs:subClassOf" ];
+	"base:SmartPlug" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:LigthActuator" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+	"base:SunSensor" -> "base:EnvironmentSensor" [ label = "rdfs:subClassOf" ];
+	"base:Sensor" -> "https://w3id.org/eep#Executor" [ label = "rdfs:subClassOf" ];
+	"base:DoorActuator" -> "base:Actuator" [ label = "rdfs:subClassOf" ];
+
+}

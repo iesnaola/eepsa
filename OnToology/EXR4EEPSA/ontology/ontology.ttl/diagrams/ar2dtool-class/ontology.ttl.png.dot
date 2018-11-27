@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:WaterMeter" "base:ElectricityMeter" "base:GasMeter" ; /*classes style*/
+	"base:GasMeter" -> "https://w3id.org/seas/GasMeter" [ label = "rdfs:seeAlso" ];
+	"base:ElectricityMeter" -> "https://w3id.org/seas/ElectricityMeter" [ label = "rdfs:seeAlso" ];
+	"base:WaterMeter" -> "https://w3id.org/seas/WaterMeter" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/exr4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"https://w3id.org/eepsa/exr4eepsa" -> "https://w3id.org/eepsa/exr4eepsa" [ label = ":preferredNamespaceUri" ];
+
+}
