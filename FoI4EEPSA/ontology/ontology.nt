@@ -6,13 +6,13 @@
 <https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
 <https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/description> "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology."@en .
 <https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/description> "Feature of Interest ontology module for the EEPSA Ontology" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/issued> "2018-11-26" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/modified> "2018-11-26" .
+<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/issued> "2018-11-27" .
+<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/modified> "2018-11-27" .
 <https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en .
 <https://w3id.org/bot/0.3.0> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 <https://w3id.org/bot/0.3.0> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa" .
 <https://w3id.org/bot/0.3.0> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/foi4eepsa> .
-<https://w3id.org/bot/0.3.0> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bot/0.3.0> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -46,20 +46,11 @@
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/ontology/bibo/status
 <http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -90,6 +81,8 @@
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea
 <https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference)."@en .
 <https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
@@ -98,6 +91,7 @@
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasMarketCategory
 <https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference)."@en .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
@@ -106,6 +100,7 @@
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory
 <https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference)."@en .
 <https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
@@ -114,6 +109,7 @@
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasOccupancyType
 <https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
 <https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference)."@en .
 <https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
@@ -122,6 +118,7 @@
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction
 <https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
 <https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference)."@en .
 <https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
@@ -142,6 +139,8 @@
 # 
 # https://w3id.org/affectedBy#FeatureOfInterest
 <https://w3id.org/affectedBy#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Building
 # 
 # https://w3id.org/bot#Element
 <https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
