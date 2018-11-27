@@ -1,0 +1,129 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Roof" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Roof"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "ExternalDoor" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalDoor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/affectedBy#FeatureOfInterest"
+    },
+    "hasOccupancyType" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#hasOccupancyType",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ExternalBuildingElement" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"
+    },
+    "Interface" : {
+      "@id" : "https://w3id.org/bot#Interface"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/bot#Building"
+    },
+    "hasYearOfConstruction" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Door" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Door"
+    },
+    "Zone" : {
+      "@id" : "https://w3id.org/bot#Zone"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Window" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Window"
+    },
+    "hasGrossPlannedArea" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "hasMarketSubCategory" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "ExternalWall" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalWall"
+    },
+    "Skylight" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Skylight"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "ExternalWindow" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalWindow"
+    },
+    "Wall" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Wall"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Element" : {
+      "@id" : "https://w3id.org/bot#Element"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasMarketCategory" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#hasMarketCategory",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }
+  }
+}

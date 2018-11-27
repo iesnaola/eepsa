@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/eepsa/foi4eepsa#Window" "https://w3id.org/eepsa/foi4eepsa#ExternalDoor" "https://w3id.org/eepsa/foi4eepsa#Roof" "68325201:16755fc094d:-7ffc" "https://w3id.org/eepsa/foi4eepsa#ExternalWall" "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement" "68325201:16755fc094d:-7ff9" "https://w3id.org/eepsa/foi4eepsa#Door" "https://w3id.org/eepsa/foi4eepsa#ExternalWindow" "https://w3id.org/eepsa/foi4eepsa#Wall" "68325201:16755fc094d:-7ff6" ; /*classes style*/
+	"https://w3id.org/eepsa/foi4eepsa#Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/foi4eepsa#Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/foi4eepsa#Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" [ label = "owl:imports" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/foi4eepsa" [ label = "vann:preferredNamespaceUri" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalDoor" -> "68325201:16755fc094d:-7ffc" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalWindow" -> "68325201:16755fc094d:-7ff6" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/foi4eepsa#ExternalWall" -> "68325201:16755fc094d:-7ff9" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/foi4eepsa#Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"NULL" -> "68325201:16755fc094d:-7ff8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "68325201:16755fc094d:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "68325201:16755fc094d:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "68325201:16755fc094d:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "https://w3id.org/eepsa/foi4eepsa#Window" [ label = "rdf:first" ];
+	"NULL" -> "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "https://w3id.org/eepsa/foi4eepsa#Door" [ label = "rdf:first" ];
+	"NULL" -> "68325201:16755fc094d:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "https://w3id.org/eepsa/foi4eepsa#Wall" [ label = "rdf:first" ];
+	"NULL" -> "68325201:16755fc094d:-7ff5" [ label = "owl:intersectionOf" ];
+	"https://w3id.org/bot#Building" -> "xsd:float" [ label = "https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory" ];
+	"https://w3id.org/bot#Building" -> "xsd:integer" [ label = "https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "https://w3id.org/eepsa/foi4eepsa#hasMarketCategory" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "https://w3id.org/eepsa/foi4eepsa#hasOccupancyType" ];
+
+}
