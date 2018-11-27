@@ -102,6 +102,13 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
 
@@ -113,6 +120,20 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -174,6 +195,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">has gross planned area</rdfs:label>
@@ -186,6 +208,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasMarketCategory">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">has market category</rdfs:label>
@@ -198,6 +221,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">has market subcategory</rdfs:label>
@@ -210,6 +234,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasOccupancyType">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">has occupancy type</rdfs:label>
@@ -222,6 +247,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">has year of construction</rdfs:label>

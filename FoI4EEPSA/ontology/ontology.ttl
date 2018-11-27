@@ -1,11 +1,11 @@
-@prefix : <https://w3id.org/eepsa/foi4eepsa#> .
+@prefix : <https://w3id.org/bot/0.3.0#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://w3id.org/eepsa/foi4eepsa> a owl:Ontology ;
+<https://w3id.org/bot/0.3.0> a owl:Ontology ;
 	owl:imports <https://w3id.org/bot/0.3.0> ;
 	owl:versionInfo "1.1"^^xsd:decimal ;
 	<http://purl.org/dc/terms/created> "2018-08-21"^^xsd:string ;
@@ -18,9 +18,9 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
 	<http://purl.org/dc/terms/modified> "2018-11-26"^^xsd:string ;
 	<http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en ;
 	<http://purl.org/dc/terms/description> "Feature of Interest ontology module for the EEPSA Ontology"^^xsd:string ;
-	<http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
 	<http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
+	<http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
 	<http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 # 
 # 
@@ -106,7 +106,8 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea
 
-:hasGrossPlannedArea a owl:DatatypeProperty ;
+<https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea> a owl:DatatypeProperty ;
+	rdfs:range xsd:float ;
 	rdfs:comment "Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "has gross planned area"@en ;
@@ -114,7 +115,8 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasMarketCategory
 
-:hasMarketCategory a owl:DatatypeProperty ;
+<https://w3id.org/eepsa/foi4eepsa#hasMarketCategory> a owl:DatatypeProperty ;
+	rdfs:range rdfs:Literal ;
 	rdfs:comment "Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "has market category"@en ;
@@ -122,7 +124,8 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory
 
-:hasMarketSubCategory a owl:DatatypeProperty ;
+<https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory> a owl:DatatypeProperty ;
+	rdfs:range rdfs:Literal ;
 	rdfs:comment "Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "has market subcategory"@en ;
@@ -130,7 +133,8 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasOccupancyType
 
-:hasOccupancyType a owl:DatatypeProperty ;
+<https://w3id.org/eepsa/foi4eepsa#hasOccupancyType> a owl:DatatypeProperty ;
+	rdfs:range rdfs:Literal ;
 	rdfs:comment "Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "has occupancy type"@en ;
@@ -138,7 +142,8 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction
 
-:hasYearOfConstruction a owl:DatatypeProperty ;
+<https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction> a owl:DatatypeProperty ;
+	rdfs:range xsd:integer ;
 	rdfs:comment "Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "has year of construction"@en ;
@@ -178,7 +183,7 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Door
 
-:Door a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#Door> a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/bot#Element> ;
 	rdfs:comment "Construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation (Source: ISO 6707-1)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
@@ -188,7 +193,7 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement
 
-:ExternalBuildingElement a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/bot#Element> ;
 	rdfs:comment "A building element that is external (i.e., that faces the outside of the building)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
@@ -197,22 +202,22 @@ owl:versionInfo a owl:AnnotationProperty .
 # 
 # https://w3id.org/eepsa/foi4eepsa#ExternalDoor
 
-:ExternalDoor a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalDoor> a owl:Class ;
 	owl:equivalentClass _:genid1 .
 
 _:genid1 owl:intersectionOf _:genid3 .
 
 _:genid3 a rdf:List ;
-	rdf:first :Door ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#Door> ;
 	rdf:rest _:genid2 .
 
 _:genid2 a rdf:List ;
-	rdf:first :ExternalBuildingElement ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> ;
 	rdf:rest rdf:nil .
 
 _:genid1 a owl:Class .
 
-:ExternalDoor rdfs:subClassOf :Door ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalDoor> rdfs:subClassOf <https://w3id.org/eepsa/foi4eepsa#Door> ;
 	rdfs:comment "A door that is external (facing the outside of the building)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "External Door"@en ;
@@ -220,22 +225,22 @@ _:genid1 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#ExternalWall
 
-:ExternalWall a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalWall> a owl:Class ;
 	owl:equivalentClass _:genid4 .
 
 _:genid4 owl:intersectionOf _:genid6 .
 
 _:genid6 a rdf:List ;
-	rdf:first :ExternalBuildingElement ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> ;
 	rdf:rest _:genid5 .
 
 _:genid5 a rdf:List ;
-	rdf:first :Wall ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#Wall> ;
 	rdf:rest rdf:nil .
 
 _:genid4 a owl:Class .
 
-:ExternalWall rdfs:subClassOf :Wall ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalWall> rdfs:subClassOf <https://w3id.org/eepsa/foi4eepsa#Wall> ;
 	rdfs:comment "A wall that is external (facing the outside of the building)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "External Wall"@en ;
@@ -243,22 +248,22 @@ _:genid4 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#ExternalWindow
 
-:ExternalWindow a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalWindow> a owl:Class ;
 	owl:equivalentClass _:genid7 .
 
 _:genid7 owl:intersectionOf _:genid9 .
 
 _:genid9 a rdf:List ;
-	rdf:first :ExternalBuildingElement ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> ;
 	rdf:rest _:genid8 .
 
 _:genid8 a rdf:List ;
-	rdf:first :Window ;
+	rdf:first <https://w3id.org/eepsa/foi4eepsa#Window> ;
 	rdf:rest rdf:nil .
 
 _:genid7 a owl:Class .
 
-:ExternalWindow rdfs:subClassOf :Window ;
+<https://w3id.org/eepsa/foi4eepsa#ExternalWindow> rdfs:subClassOf <https://w3id.org/eepsa/foi4eepsa#Window> ;
 	rdfs:comment "A window that is external (facing the outside of the building)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "External Window"@en ;
@@ -266,7 +271,7 @@ _:genid7 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Roof
 
-:Roof a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#Roof> a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/bot#Element> ;
 	rdfs:comment "Construction enclosing the building from above (Source: ISO 6707-1)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
@@ -276,8 +281,8 @@ _:genid7 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Skylight
 
-:Skylight a owl:Class ;
-	rdfs:subClassOf :ExternalBuildingElement ;
+<https://w3id.org/eepsa/foi4eepsa#Skylight> a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> ;
 	rdfs:comment "Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building's space for daylighting purposes (Source: Wikipedia)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
 	rdfs:label "Skylight"@en ;
@@ -285,7 +290,7 @@ _:genid7 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Wall
 
-:Wall a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#Wall> a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/bot#Element> ;
 	rdfs:comment "Vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function (Source: ISO 6707-1)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
@@ -295,7 +300,7 @@ _:genid7 a owl:Class .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Window
 
-:Window a owl:Class ;
+<https://w3id.org/eepsa/foi4eepsa#Window> a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/bot#Element> ;
 	rdfs:comment "Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air (Source: ISO 6707-1)."@en ;
 	rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
