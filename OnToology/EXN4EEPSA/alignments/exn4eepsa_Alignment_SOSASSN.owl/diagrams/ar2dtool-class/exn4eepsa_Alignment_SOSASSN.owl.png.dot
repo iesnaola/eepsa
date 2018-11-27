@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Observation" "base:Actuation" "http://www.w3.org/ns/sosa/Observation" "http://www.w3.org/ns/sosa/Actuation" ; /*classes style*/
+	"http://www.w3.org/ns/sosa/Observation" -> "base:Observation" [ label = "owl:equivalentClass" ];
+	"http://www.w3.org/ns/sosa/Actuation" -> "base:Actuation" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/exn4eepsa_SOSASSNALignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+
+}

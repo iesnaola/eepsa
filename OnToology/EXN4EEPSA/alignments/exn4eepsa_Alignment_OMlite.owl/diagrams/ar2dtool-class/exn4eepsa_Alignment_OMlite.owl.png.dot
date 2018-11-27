@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Observation" "http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" ; /*classes style*/
+	"http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" -> "base:Observation" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/exn4eepsa_OMliteAlignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+
+}
