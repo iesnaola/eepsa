@@ -4,8 +4,8 @@
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en .
-<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/issued> "2018-09-07" .
-<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/modified> "2018-09-01" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/issued> "2018-11-27" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/modified> "2018-11-27" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en .
@@ -60,21 +60,6 @@
 # 
 # #################################################################
 # #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# https://w3id.org/eep#madeBy
-<https://w3id.org/eep#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://w3id.org/eep#usedProcedure
-<https://w3id.org/eep#usedProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# 
-# 
-# #################################################################
-# #
 # #    Classes
 # #
 # #################################################################
@@ -89,14 +74,6 @@
 # https://w3id.org/eepsa/exn4eepsa#Actuation
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
-<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
-<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution made by an actuator implementing an actuating procedure."@en .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#label> "Actuation"@en .
@@ -112,14 +89,6 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/
 # https://w3id.org/eepsa/exn4eepsa#Forecast
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
-<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#PredictiveModel> .
-<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by a predictive model implementing a predictive procedure."@en .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast"@en .
@@ -128,14 +97,6 @@ _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/
 # https://w3id.org/eepsa/exn4eepsa#Imputation
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
-<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#madeBy> .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/exr4eepsa#ImputationMethod> .
-<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eep#usedProcedure> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/p4eepsa#ImputationProcedure> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by an imputation method implementing an imputation procedure."@en .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation"@en .
@@ -164,24 +125,6 @@ _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier"@en .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# https://w3id.org/eepsa/exr4eepsa#Actuator
-<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/eepsa/exr4eepsa#ImputationMethod
-<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/eepsa/exr4eepsa#PredictiveModel
-<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/eepsa/p4eepsa#ActuatingProcedure
-<https://w3id.org/eepsa/p4eepsa#ActuatingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/eepsa/p4eepsa#ImputationProcedure
-<https://w3id.org/eepsa/p4eepsa#ImputationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/eepsa/p4eepsa#PredictiveProcedure
-<https://w3id.org/eepsa/p4eepsa#PredictiveProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

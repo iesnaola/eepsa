@@ -19,8 +19,8 @@ Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <terms:description xml:lang="en">This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-07</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-09-01</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution ontology module for the EEPSA Ontology</terms:title>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
         <vann:preferredNamespacePrefix xml:lang="en">exn4eepsa</vann:preferredNamespacePrefix>
@@ -129,32 +129,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- https://w3id.org/eep#madeBy -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/eep#madeBy"/>
-    
-
-
-    <!-- https://w3id.org/eep#usedProcedure -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/eep#usedProcedure"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -183,18 +157,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Actuation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Execution"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#madeBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#usedProcedure"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/p4eepsa#ActuatingProcedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An execution made by an actuator implementing an actuating procedure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
         <rdfs:label xml:lang="en">Actuation</rdfs:label>
@@ -220,18 +182,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Forecast">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#madeBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/exr4eepsa#PredictiveModel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#usedProcedure"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/p4eepsa#PredictiveProcedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An observation estimated by a predictive model implementing a predictive procedure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
         <rdfs:label xml:lang="en">Forecast</rdfs:label>
@@ -245,18 +195,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Imputation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#madeBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/exr4eepsa#ImputationMethod"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/eep#usedProcedure"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/p4eepsa#ImputationProcedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An observation estimated by an imputation method implementing an imputation procedure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
         <rdfs:label xml:lang="en">Imputation</rdfs:label>
@@ -301,48 +239,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:label xml:lang="en">Outlier</rdfs:label>
         <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exr4eepsa#Actuator -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#Actuator"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/exr4eepsa#ImputationMethod -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#ImputationMethod"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/exr4eepsa#PredictiveModel -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exr4eepsa#PredictiveModel"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/p4eepsa#ActuatingProcedure -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#ActuatingProcedure"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/p4eepsa#ImputationProcedure -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#ImputationProcedure"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/p4eepsa#PredictiveProcedure -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/p4eepsa#PredictiveProcedure"/>
     
 
 
