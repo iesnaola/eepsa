@@ -7,15 +7,15 @@
 
 <https://w3id.org/eepsa/exn4eepsa> a owl:Ontology ;
 	<http://purl.org/dc/terms/created> "2018-08-21"^^xsd:string ;
-	owl:versionInfo "1.0"^^xsd:decimal ;
+	owl:versionInfo "1.2"^^xsd:decimal ;
 	<http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en ;
 	<http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en ;
 	<http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exn4eepsa> ;
-	<http://purl.org/dc/terms/issued> "2018-11-27"^^xsd:string ;
+	<http://purl.org/dc/terms/issued> "2018-11-29"^^xsd:string ;
 	<http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
 Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
-	<http://purl.org/dc/terms/modified> "2018-11-27"^^xsd:string ;
 	<http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology"^^xsd:string ;
+	<http://purl.org/dc/terms/modified> "2018-11-29"^^xsd:string ;
 	<http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
 	<http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
@@ -81,6 +81,36 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 # 
 # #################################################################
 # #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/exn4eepsa#hasMember
+
+:hasMember a owl:ObjectProperty ;
+	owl:inverseOf :isMemberOf ;
+	rdfs:domain :CollectionOfExecutions ;
+	rdfs:range <https://w3id.org/eep#Execution> ;
+	rdfs:comment "Relation that links a collection of executions to an execution belonging to that collection."@en ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+	rdfs:label "has member"@en ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#isMemberOf
+
+:isMemberOf a owl:ObjectProperty ;
+	rdfs:domain <https://w3id.org/eep#Execution> ;
+	rdfs:range :CollectionOfExecutions ;
+	rdfs:comment "Relation that links an execution to the collection of executions it belongs to."@en ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+	rdfs:label "is member of"@en ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
@@ -99,7 +129,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Actuation a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/eep#Execution> ;
 	rdfs:comment "An execution made by an actuator implementing an actuating procedure."@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Actuation"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -107,7 +137,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 
 :CollectionOfExecutions a owl:Class ;
 	rdfs:comment "A collection of executions"@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Collection of Executions"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -116,7 +146,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Forecast a owl:Class ;
 	rdfs:subClassOf :Observation ;
 	rdfs:comment "An observation estimated by a predictive model implementing a predictive procedure."@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Forecast"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -125,7 +155,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Imputation a owl:Class ;
 	rdfs:subClassOf :Observation ;
 	rdfs:comment "An observation estimated by an imputation method implementing an imputation procedure."@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Imputation"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -134,7 +164,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :MissingValue a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/eep#Execution> ;
 	rdfs:comment "An empty or null event for attributes where a value should have been recorded"@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Missing Value"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -143,7 +173,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Observation a owl:Class ;
 	rdfs:subClassOf <https://w3id.org/eep#Execution> ;
 	rdfs:comment "An execution made by an executor to estimate or calculate a quality of a feature of interest"@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Observation"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 
@@ -152,7 +182,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Outlier a owl:Class ;
 	rdfs:subClassOf :Observation ;
 	rdfs:comment "An observation that stands out amongst other observations and does not conform to the expected behaviour"@en ;
-	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa#> ;
+	rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
 	rdfs:label "Outlier"@en ;
 	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 # 

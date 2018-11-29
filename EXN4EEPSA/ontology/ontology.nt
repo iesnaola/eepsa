@@ -4,13 +4,13 @@
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en .
-<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/issued> "2018-11-27" .
-<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/modified> "2018-11-27" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/issued> "2018-11-29" .
+<https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/modified> "2018-11-29" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology" .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en .
 <https://w3id.org/eepsa/exn4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exn4eepsa> .
-<https://w3id.org/eepsa/exn4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/eepsa/exn4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -60,6 +60,34 @@
 # 
 # #################################################################
 # #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/exn4eepsa#hasMember
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/eepsa/exn4eepsa#isMemberOf> .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eep#Execution> .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that links a collection of executions to an execution belonging to that collection."@en .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has member"@en .
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exn4eepsa#isMemberOf
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eep#Execution> .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that links an execution to the collection of executions it belongs to."@en .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "is member of"@en .
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
@@ -75,14 +103,14 @@
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution made by an actuator implementing an actuating procedure."@en .
-<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2000/01/rdf-schema#label> "Actuation"@en .
 <https://w3id.org/eepsa/exn4eepsa#Actuation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions
 <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of executions"@en .
-<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2000/01/rdf-schema#label> "Collection of Executions"@en .
 <https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -90,7 +118,7 @@
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by a predictive model implementing a predictive procedure."@en .
-<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast"@en .
 <https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -98,7 +126,7 @@
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation estimated by an imputation method implementing an imputation procedure."@en .
-<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation"@en .
 <https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -106,7 +134,7 @@
 <https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
 <https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "An empty or null event for attributes where a value should have been recorded"@en .
-<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Value"@en .
 <https://w3id.org/eepsa/exn4eepsa#MissingValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -114,7 +142,7 @@
 <https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Execution> .
 <https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An execution made by an executor to estimate or calculate a quality of a feature of interest"@en .
-<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
 <https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -122,7 +150,7 @@
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exn4eepsa#Observation> .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation that stands out amongst other observations and does not conform to the expected behaviour"@en .
-<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exn4eepsa> .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier"@en .
 <https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 

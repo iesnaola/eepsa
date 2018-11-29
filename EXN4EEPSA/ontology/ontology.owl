@@ -13,15 +13,15 @@
      xmlns:ns1="http://creativecommons.org/ns#">
     <owl:Ontology rdf:about="https://w3id.org/eepsa/exn4eepsa">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</owl:versionInfo>
         <vann:preferredNamespacePrefix xml:lang="en">exn4eepsa</vann:preferredNamespacePrefix>
         <terms:description xml:lang="en">This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology.</terms:description>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:issued>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-29</terms:issued>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
 Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution ontology module for the EEPSA Ontology</terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-29</terms:modified>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
@@ -116,6 +116,44 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/eepsa/exn4eepsa#hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eepsa/exn4eepsa#hasMember">
+        <owl:inverseOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#isMemberOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions"/>
+        <rdfs:range rdf:resource="https://w3id.org/eep#Execution"/>
+        <rdfs:comment xml:lang="en">Relation that links a collection of executions to an execution belonging to that collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/exn4eepsa#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eepsa/exn4eepsa#isMemberOf">
+        <rdfs:domain rdf:resource="https://w3id.org/eep#Execution"/>
+        <rdfs:range rdf:resource="https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions"/>
+        <rdfs:comment xml:lang="en">Relation that links an execution to the collection of executions it belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -141,7 +179,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Actuation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Execution"/>
         <rdfs:comment xml:lang="en">An execution made by an actuator implementing an actuating procedure.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Actuation</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -152,7 +190,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions">
         <rdfs:comment xml:lang="en">A collection of executions</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Collection of Executions</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -164,7 +202,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Forecast">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
         <rdfs:comment xml:lang="en">An observation estimated by a predictive model implementing a predictive procedure.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Forecast</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -176,7 +214,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Imputation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
         <rdfs:comment xml:lang="en">An observation estimated by an imputation method implementing an imputation procedure.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Imputation</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -188,7 +226,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#MissingValue">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Execution"/>
         <rdfs:comment xml:lang="en">An empty or null event for attributes where a value should have been recorded</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Missing Value</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -200,7 +238,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Observation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Execution"/>
         <rdfs:comment xml:lang="en">An execution made by an executor to estimate or calculate a quality of a feature of interest</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
@@ -212,7 +250,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Outlier">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
         <rdfs:comment xml:lang="en">An observation that stands out amongst other observations and does not conform to the expected behaviour</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">Outlier</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>

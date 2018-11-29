@@ -159,6 +159,45 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/ontology/om/om-lite#member -->
+
+    <owl:ObjectProperty rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#member">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/eepsa/exn4eepsa#hasMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/eepsa/exn4eepsa#isMemberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eepsa/exn4eepsa#hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eepsa/exn4eepsa#hasMember"/>
+    
+
+
+    <!-- https://w3id.org/eepsa/exn4eepsa#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eepsa/exn4eepsa#isMemberOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -178,7 +217,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- https://w3id.org/eepsa/exn4eepsa#Forecast -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Forecast">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
+        <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
     </owl:Class>
     
 
@@ -186,7 +225,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- https://w3id.org/eepsa/exn4eepsa#Imputation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Imputation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
+        <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
     </owl:Class>
     
 
@@ -200,7 +239,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     <!-- https://w3id.org/eepsa/exn4eepsa#Outlier -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Outlier">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Observation"/>
+        <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
     </owl:Class>
 </rdf:RDF>
 
