@@ -1,0 +1,119 @@
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/dc/terms/created> "2018-11-27" .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/dc/terms/description> "It defines the proposed alignments between the EXN4EEPSA ontology and the om-lite ontology."@en .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/dc/terms/title> "EXN4EEPSA ontology alignment with om-lite ontology"@en .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/ontology/bibo/status> "Published"@en .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa" .
+<https://w3id.org/eepsa/exn4eepsa_OMliteAlignment> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://def.seegrid.csiro.au/ontology/om/om-lite#member
+<http://def.seegrid.csiro.au/ontology/om/om-lite#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://def.seegrid.csiro.au/ontology/om/om-lite#member> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/eepsa/exn4eepsa#hasMember> .
+# 
+# http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf
+<http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/eepsa/exn4eepsa#isMemberOf> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#hasMember
+<https://w3id.org/eepsa/exn4eepsa#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#isMemberOf
+<https://w3id.org/eepsa/exn4eepsa#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://def.seegrid.csiro.au/ontology/om/om-lite#Observation
+<http://def.seegrid.csiro.au/ontology/om/om-lite#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://def.seegrid.csiro.au/ontology/om/om-lite#Observation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/eepsa/exn4eepsa#Observation> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Forecast
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Forecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/ontology/om/om-lite#Observation> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Imputation
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Imputation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/ontology/om/om-lite#Observation> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Observation
+<https://w3id.org/eepsa/exn4eepsa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exn4eepsa#Outlier
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exn4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/ontology/om/om-lite#Observation> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
