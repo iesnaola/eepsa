@@ -1,0 +1,410 @@
+<https://w3id.org/eepsa/ek4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/ek4eepsa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/description> "This ontology module covers the expert knowledge for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/description> "Expert knowledge for the EEPSA Ontology" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/issued> "2018-12-03" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/modified> "2018-12-03" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/dc/terms/title> "Expert Knowledge module for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ek4eepsa" .
+<https://w3id.org/eepsa/ek4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/affectedBy#affectedBy
+<https://w3id.org/affectedBy#affectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/affectedBy#influencedBy
+<https://w3id.org/affectedBy#influencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/bot#hasElement
+<https://w3id.org/bot#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/bot#hasStorey
+<https://w3id.org/bot#hasStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Space> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bot#hasElement> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> .
+<https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#influencedBy> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space in contact with the exterior by means of at least one building element (e.g. a wall or a window)."@en .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Adjacent to Outdoor Space"@en .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> .
+<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#Occupancy> .
+<https://w3id.org/eepsa/q4eepsa#Occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#SolarRadiation> .
+<https://w3id.org/eepsa/q4eepsa#SolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#WindSpeed> .
+<https://w3id.org/eepsa/q4eepsa#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature within a space adjacent to outdoor."@en .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Adjacent To Outdoor Space Indoor Temperature"@en .
+<https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#influencedBy> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space with bad insulation."@en .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Bad Insulated Space"@en .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#Occupancy> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#SolarRadiation> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature within a bad insulated space."@en .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Bad Insulated Space Indoor Temperature"@en .
+<https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Space> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bot#hasStorey> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#influencedBy> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space located in a storey below ground."@en .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Below Ground Level Space"@en .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#AtmosphericPressure> .
+<https://w3id.org/eepsa/q4eepsa#AtmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#Occupancy> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature within a space located in a storey below ground level."@en .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Below Ground Level Space Indoor Temperature"@en .
+<https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Space> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid41 <http://www.w3.org/2002/07/owl#unionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bot#hasElement> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/foi4eepsa#ExternalWindow> .
+<https://w3id.org/eepsa/foi4eepsa#ExternalWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bot#hasElement> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/foi4eepsa#Skylight> .
+<https://w3id.org/eepsa/foi4eepsa#Skylight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#influencedBy> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space enlightened with a source of light from the exterior."@en .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Naturally Enlightened Space"@en .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/q4eepsa#IndoorTemperature> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#CloudCover> .
+<https://w3id.org/eepsa/q4eepsa#CloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#Occupancy> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#SunPositionDirection> .
+<https://w3id.org/eepsa/q4eepsa#SunPositionDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/affectedBy#affectedBy> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/eepsa/q4eepsa#SunPositionElevation> .
+<https://w3id.org/eepsa/q4eepsa#SunPositionElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature within a naturally enlightened space."@en .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/ek4eepsa> .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Naturally Enlightened Space Indoor Temperature"@en .
+<https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement
+# 
+# https://w3id.org/eepsa/foi4eepsa#ExternalWindow
+# 
+# https://w3id.org/eepsa/foi4eepsa#Skylight
+# 
+# https://w3id.org/eepsa/foi4eepsa#UndergroundStorey
+# 
+# https://w3id.org/eepsa/q4eepsa#AtmosphericPressure
+# 
+# https://w3id.org/eepsa/q4eepsa#CloudCover
+# 
+# https://w3id.org/eepsa/q4eepsa#IndoorHumidity
+# 
+# https://w3id.org/eepsa/q4eepsa#IndoorTemperature
+<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/q4eepsa#Occupancy
+# 
+# https://w3id.org/eepsa/q4eepsa#OutdoorHumidity
+# 
+# https://w3id.org/eepsa/q4eepsa#OutdoorTemperature
+# 
+# https://w3id.org/eepsa/q4eepsa#SolarRadiation
+# 
+# https://w3id.org/eepsa/q4eepsa#SunPositionDirection
+# 
+# https://w3id.org/eepsa/q4eepsa#SunPositionElevation
+# 
+# https://w3id.org/eepsa/q4eepsa#WindSpeed
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/ek4eepsa#
+<https://w3id.org/eepsa/ek4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/eepsa/ek4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
