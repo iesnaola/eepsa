@@ -1,18 +1,18 @@
-<https://w3id.org/bot/0.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/bot/0.3.0> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/bot/0.3.0> .
-<https://w3id.org/bot/0.3.0> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/created> "2018-08-21" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/description> "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology."@en .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/description> "Feature of Interest ontology module for the EEPSA Ontology" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/issued> "2018-11-27" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/modified> "2018-11-27" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en .
-<https://w3id.org/bot/0.3.0> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
-<https://w3id.org/bot/0.3.0> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa" .
-<https://w3id.org/bot/0.3.0> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/foi4eepsa> .
-<https://w3id.org/bot/0.3.0> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/eepsa/foi4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/foi4eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/bot/0.3.0> .
+<https://w3id.org/eepsa/foi4eepsa#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/created> "2018-08-21" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/description> "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/description> "Feature of Interest ontology module for the EEPSA Ontology" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/issued> "2018-11-27" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/modified> "2018-11-27" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa" .
+<https://w3id.org/eepsa/foi4eepsa#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/foi4eepsa> .
+<https://w3id.org/eepsa/foi4eepsa#> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -150,6 +150,9 @@
 <https://w3id.org/bot#Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bot#Interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#FeatureOfInterest> .
 # 
+# https://w3id.org/bot#Storey
+<https://w3id.org/bot#Storey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/bot#Zone
 <https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#FeatureOfInterest> .
@@ -238,6 +241,14 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/eepsa/foi4eepsa#Skylight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa#> .
 <https://w3id.org/eepsa/foi4eepsa#Skylight> <http://www.w3.org/2000/01/rdf-schema#label> "Skylight"@en .
 <https://w3id.org/eepsa/foi4eepsa#Skylight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/foi4eepsa#UndergroundStorey
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Storey> .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/2000/01/rdf-schema#comment> "Storey located below ground level."@en .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/foi4eepsa> .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/2000/01/rdf-schema#label> "Underground Storey"@en .
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/eepsa/foi4eepsa#Wall
 <https://w3id.org/eepsa/foi4eepsa#Wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

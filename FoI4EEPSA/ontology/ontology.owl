@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/bot/0.3.0#"
-     xml:base="https://w3id.org/bot/0.3.0"
+<rdf:RDF xmlns="https://w3id.org/eepsa/foi4eepsa#"
+     xml:base="https://w3id.org/eepsa/foi4eepsa"
+     xmlns:schema="http://schema.org/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -13,10 +14,10 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://w3id.org/bot/0.3.0">
+    <owl:Ontology rdf:about="https://w3id.org/eepsa/foi4eepsa#">
         <owl:imports rdf:resource="https://w3id.org/bot/0.3.0"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</owl:versionInfo>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
         <terms:description xml:lang="en">This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology.</terms:description>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foi4eepsa</vann:preferredNamespacePrefix>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:issued>
@@ -370,6 +371,18 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa#"/>
         <rdfs:label xml:lang="en">Skylight</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/foi4eepsa#UndergroundStorey -->
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/foi4eepsa#UndergroundStorey">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Storey"/>
+        <rdfs:comment xml:lang="en">Storey located below ground level.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/foi4eepsa"/>
+        <rdfs:label xml:lang="en">Underground Storey</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 

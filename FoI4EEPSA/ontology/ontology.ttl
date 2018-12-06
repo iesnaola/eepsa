@@ -1,28 +1,28 @@
-@prefix : <https://w3id.org/bot/0.3.0#> .
+@prefix : <https://w3id.org/eepsa/foi4eepsa##> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/bot/0.3.0> .
+@base <https://w3id.org/eepsa/foi4eepsa#> .
 
-<https://w3id.org/bot/0.3.0> rdf:type owl:Ontology ;
-                              owl:imports <https://w3id.org/bot/0.3.0> ;
-                              <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                              <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+<https://w3id.org/eepsa/foi4eepsa#> rdf:type owl:Ontology ;
+                                     owl:imports <https://w3id.org/bot/0.3.0> ;
+                                     <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                     <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
 Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
-                              <http://purl.org/dc/terms/created> "2018-08-21"^^xsd:string ;
-                              <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+                                     <http://purl.org/dc/terms/created> "2018-08-21"^^xsd:string ;
+                                     <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
-                              <http://purl.org/dc/terms/description> "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology."@en ,
-                                                                     "Feature of Interest ontology module for the EEPSA Ontology"^^xsd:string ;
-                              <http://purl.org/dc/terms/issued> "2018-11-27"^^xsd:string ;
-                              <http://purl.org/dc/terms/modified> "2018-11-27"^^xsd:string ;
-                              <http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en ;
-                              <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
-                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa"^^xsd:string ;
-                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/foi4eepsa> ;
-                              owl:versionInfo 1.2 .
+                                     <http://purl.org/dc/terms/description> "This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology."@en ,
+                                                                            "Feature of Interest ontology module for the EEPSA Ontology"^^xsd:string ;
+                                     <http://purl.org/dc/terms/issued> "2018-11-27"^^xsd:string ;
+                                     <http://purl.org/dc/terms/modified> "2018-11-27"^^xsd:string ;
+                                     <http://purl.org/dc/terms/title> "Feature of Interest module for the EEPSA Ontology."@en ;
+                                     <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa"^^xsd:string ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/foi4eepsa> ;
+                                     owl:versionInfo 1.2 .
 
 #################################################################
 #    Annotation properties
@@ -172,6 +172,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                  rdfs:subClassOf <https://w3id.org/affectedBy#FeatureOfInterest> .
 
 
+###  https://w3id.org/bot#Storey
+<https://w3id.org/bot#Storey> rdf:type owl:Class .
+
+
 ###  https://w3id.org/bot#Zone
 <https://w3id.org/bot#Zone> rdf:type owl:Class ;
                             rdfs:subClassOf <https://w3id.org/affectedBy#FeatureOfInterest> .
@@ -255,6 +259,15 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                             rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa#> ;
                                             rdfs:label "Skylight"@en ;
                                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/eepsa/foi4eepsa#UndergroundStorey
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/bot#Storey> ;
+                                                     rdfs:comment "Storey located below ground level."@en ;
+                                                     rdfs:isDefinedBy <https://w3id.org/eepsa/foi4eepsa> ;
+                                                     rdfs:label "Underground Storey"@en ;
+                                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
 ###  https://w3id.org/eepsa/foi4eepsa#Wall
