@@ -1,0 +1,31 @@
+Log file for EXN4EEPSA.owl
+
+
+Metrics for EXN4EEPSA.owl
+
+No. of classes in ontology: 9
+No. of OP in ontology: 2
+No. of DP in ontology: 0
+No. of Ind in ontology: 1
+Size of ontology: 12
+Atomic size of module: 3.0
+No. of axioms in ontology: 72
+Appropriateness of ontology: 0.19107019345483284
+Intra module distance: 42.0
+Cohesion of ontology: 0.11363636363636363
+Attribute richness of ontology: 0.0
+Inheritance richness of ontology: 3.0
+Encapsulation of ontology: 0.8919753086419753 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for EXN4EEPSA.owl
+
+
+Relative Metrics for EXN4EEPSA.owl compared to EEPSA.owl
+
+Relative size of module: 0.07741935483870968
+Relative intra module distance of module: 1.4285714285714286
+Correctness of module: True, the module is logically correct, no new axioms have been added to the ontology.
+Completeness of ontology: False, the module is not logically complete. The meaning of the entity: <https://w3id.org/eep#Execution> is not preserved in the module as it is in the source ontology. 
+Time taken for processing: 0.068 seconds, 0.0011333333333333334 minutes, 1.888888888888889E-5 hours.

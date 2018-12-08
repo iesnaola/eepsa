@@ -1,0 +1,31 @@
+Log file for Q4EEPSA.owl
+
+
+Metrics for Q4EEPSA.owl
+
+No. of classes in ontology: 30
+No. of OP in ontology: 0
+No. of DP in ontology: 0
+No. of Ind in ontology: 1
+Size of ontology: 31
+Atomic size of module: 2.935483870967742
+No. of axioms in ontology: 197
+Appropriateness of ontology: 0.8931442160683094
+Intra module distance: 1194.0
+Cohesion of ontology: 0.18572796934865904
+Attribute richness of ontology: 0.0
+Inheritance richness of ontology: 4.833333333333333
+Encapsulation of ontology: 0.9599548787366047 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for Q4EEPSA.owl
+
+
+Relative Metrics for Q4EEPSA.owl compared to EEPSA.owl
+
+Relative size of module: 0.2
+Relative intra module distance of module: 1.015075376884422
+Correctness of module: True, the module is logically correct, no new axioms have been added to the ontology.
+Completeness of ontology: False, the module is not logically complete. The meaning of the entity: <https://w3id.org/affectedBy#Quality> is not preserved in the module as it is in the source ontology. 
+Time taken for processing: 0.188 seconds, 0.0031333333333333335 minutes, 5.222222222222223E-5 hours.

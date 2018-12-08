@@ -1,0 +1,31 @@
+Log file for RC.owl
+
+
+Metrics for RC.owl
+
+No. of classes in ontology: 4
+No. of OP in ontology: 3
+No. of DP in ontology: 2
+No. of Ind in ontology: 1
+Size of ontology: 10
+Atomic size of module: 2.7
+No. of axioms in ontology: 40
+Appropriateness of ontology: 0.06184665997806821
+Intra module distance: 0.0
+Cohesion of ontology: 0.0
+Attribute richness of ontology: 0.0
+Inheritance richness of ontology: NaN
+Encapsulation of ontology: 0.95 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for RC.owl
+
+
+Relative Metrics for RC.owl compared to EEPSA.owl
+
+Relative size of module: 0.06451612903225806
+Relative intra module distance of module: Infinity
+Correctness of module: True, the module is logically correct, no new axioms have been added to the ontology.
+Completeness of ontology: False, the module is not logically complete. The meaning of the entity: <https://w3id.org/eep#Execution> is not preserved in the module as it is in the source ontology. 
+Time taken for processing: 0.247 seconds, 0.004116666666666667 minutes, 6.861111111111111E-5 hours.

@@ -1,0 +1,32 @@
+Log file for EK4EEPSA.owl
+
+
+Metrics for EK4EEPSA.owl
+
+No. of classes in ontology: 25
+No. of OP in ontology: 4
+No. of DP in ontology: 0
+No. of Ind in ontology: 1
+Size of ontology: 30
+Atomic size of module: 2.6666666666666665
+No. of axioms in ontology: 81
+Appropriateness of ontology: 0.23741268501935214
+Intra module distance: 32.0
+Cohesion of ontology: 0.017241379310344827
+Attribute richness of ontology: 1.56
+Inheritance richness of ontology: 4.0
+Encapsulation of ontology: 0.9094650205761317 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for EK4EEPSA.owl
+
+
+Relative Metrics for EK4EEPSA.owl compared to EEPSA.owl
+
+Relative size of module: 0.1935483870967742
+Relative intra module distance of module: 16.125
+Correctness of module: False, the module is not logically correct. The following axiom exists in the module but not in the original ontology: 
+AnnotationAssertion(<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature> "stable") 
+Completeness of ontology: False, the module is not logically complete. The meaning of the entity: <https://w3id.org/bot#hasStorey> is not preserved in the module as it is in the source ontology. 
+Time taken for processing: 0.049 seconds, 8.166666666666667E-4 minutes, 1.3611111111111111E-5 hours.

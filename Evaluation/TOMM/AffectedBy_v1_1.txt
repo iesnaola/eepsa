@@ -1,0 +1,31 @@
+Log file for AffectedBy.owl
+
+
+Metrics for AffectedBy.owl
+
+No. of classes in ontology: 3
+No. of OP in ontology: 3
+No. of DP in ontology: 0
+No. of Ind in ontology: 1
+Size of ontology: 7
+Atomic size of module: 4.285714285714286
+No. of axioms in ontology: 62
+Appropriateness of ontology: 0.14423216139535733
+Intra module distance: 0.0
+Cohesion of ontology: 0.0
+Attribute richness of ontology: 0.6666666666666666
+Inheritance richness of ontology: NaN
+Encapsulation of ontology: 0.8472222222222222 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for AffectedBy.owl
+
+
+Relative Metrics for AffectedBy.owl compared to EEPSA.owl
+
+Relative size of module: 0.04516129032258064
+Relative intra module distance of module: Infinity
+Correctness of module: True, the module is logically correct, no new axioms have been added to the ontology.
+Completeness of ontology: True, the module is logically complete. The meaning of every entity is preserved as in the source ontology. 
+Time taken for processing: 0.21 seconds, 0.0035 minutes, 5.833333333333333E-5 hours.

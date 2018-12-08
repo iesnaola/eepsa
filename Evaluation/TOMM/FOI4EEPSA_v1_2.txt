@@ -1,0 +1,32 @@
+Log file for FOI4EEPSA.owl
+
+
+Metrics for FOI4EEPSA.owl
+
+No. of classes in ontology: 21
+No. of OP in ontology: 14
+No. of DP in ontology: 7
+No. of Ind in ontology: 3
+Size of ontology: 45
+Atomic size of module: 4.488888888888889
+No. of axioms in ontology: 519
+Appropriateness of ontology: -1.0
+Intra module distance: 500.0
+Cohesion of ontology: 0.04086333720480066
+Attribute richness of ontology: 0.09523809523809523
+Inheritance richness of ontology: 2.125
+Encapsulation of ontology: 0.98330122029544 
+Coupling of ontology: 0.0 
+Is the ontology independent?: false 
+Redundancy of ontology set: 0.1055350553505535 
+Log file for relative metrics for FOI4EEPSA.owl
+
+
+Relative Metrics for FOI4EEPSA.owl compared to EEPSA.owl
+
+Relative size of module: 0.2903225806451613
+Relative intra module distance of module: 1.0
+Correctness of module: False, the module is not logically correct. The following axiom exists in the module but not in the original ontology: 
+DataPropertyAssertion(<http://xmlns.com/foaf/0.1/name> _:genid154 "Pieter Pauwels") 
+Completeness of ontology: True, the module is logically complete. The meaning of every entity is preserved as in the source ontology. 
+Time taken for processing: 0.14 seconds, 0.0023333333333333335 minutes, 3.888888888888889E-5 hours.
