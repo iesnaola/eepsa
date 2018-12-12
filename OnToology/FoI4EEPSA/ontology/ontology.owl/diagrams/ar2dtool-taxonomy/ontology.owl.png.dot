@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalDoor" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Roof" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWall" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalBuildingElement" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:UndergroundStorey" "https://w3id.org/affectedBy#FeatureOfInterest" "https://w3id.org/bot#Interface" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Skylight" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" "https://w3id.org/bot#Zone" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWindow" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" "https://w3id.org/bot#Element" ; /*classes style*/
+	"https://w3id.org/bot#Interface" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Element" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Roof" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Skylight" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalBuildingElement" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/bot#Zone" -> "https://w3id.org/affectedBy#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalDoor" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWindow" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:UndergroundStorey" -> "https://w3id.org/bot#Storey" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWall" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalBuildingElement" -> "https://w3id.org/bot#Element" [ label = "rdfs:subClassOf" ];
+
+}
