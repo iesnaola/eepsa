@@ -1,0 +1,102 @@
+<https://w3id.org/eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/affectedBy#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/ek4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/exn4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/foi4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/p4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eepsa/q4eepsa#> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/rc#> .
+<https://w3id.org/eepsa#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/created> "2018-12-06" .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/description> "This ontology puts together all the ontology modules and ODPs that form the EEPSA Ontology."@en .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/description> "The EEPSA Ontology" .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/issued> "2018-12-12" .
+<https://w3id.org/eepsa#> <http://purl.org/dc/terms/title> "The EEPSA Ontology."@en .
+<https://w3id.org/eepsa#> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "eepsa" .
+<https://w3id.org/eepsa#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa> .
+<https://w3id.org/eepsa#> <http://www.w3.org/2002/07/owl#versionInfo> "2.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa#
+<https://w3id.org/eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -13,17 +13,17 @@
      xmlns:ns1="http://creativecommons.org/ns#">
     <owl:Ontology rdf:about="https://w3id.org/eepsa/q4eepsa">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</owl:versionInfo>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-13</terms:issued>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality ontology module for the EEPSA Ontology</terms:title>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:issued>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
 Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">q4eepsa</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-12</terms:modified>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
         <terms:description xml:lang="en">This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology.</terms:description>
     </owl:Ontology>
@@ -289,6 +289,11 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
     <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ActuatableQuality"/>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A quality related to the atmosphere and its phenomena.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
         <rdfs:label xml:lang="en">Meteorological Quality</rdfs:label>

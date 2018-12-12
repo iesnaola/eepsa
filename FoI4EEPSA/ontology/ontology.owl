@@ -27,9 +27,9 @@ Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-11-27</terms:modified>
         <terms:title xml:lang="en">Feature of Interest module for the EEPSA Ontology.</terms:title>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature of Interest ontology module for the EEPSA Ontology</terms:description>
-        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
     </owl:Ontology>
     

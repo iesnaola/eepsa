@@ -1,0 +1,5049 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/eepsa/q4eepsa", "http://purl.org/vocommons/voaf", "https://w3id.org/eepsa/p4eepsa", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/eep", "https://w3id.org/rc", "https://w3id.org/eepsa/ek4eepsa", "https://w3id.org/affectedBy", "https://w3id.org/eepsa/foi4eepsa", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/eepsa/exr4eepsa", "https://w3id.org/eepsa/exn4eepsa", "http://www.w3.org/2006/time" ],
+    "title" : {
+      "en" : "The EEPSA Ontology."
+    },
+    "iri" : "https://w3id.org/eepsa#",
+    "version" : "2.0",
+    "author" : [ "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" ],
+    "description" : {
+      "en" : "This ontology puts together all the ontology modules and ODPs that form the EEPSA Ontology.",
+      "undefined" : "The EEPSA Ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2018-12-06",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "eepsa",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The EEPSA Ontology.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-12-12",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "Work in Progress",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 1,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BelowGroundLevelSpaceIndoorTemperature",
+      "en" : "Below Ground Level Space Indoor Temperature"
+    },
+    "comment" : {
+      "en" : "Temperature within a space located in a storey below ground level."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnvironmentSensor",
+      "en" : "Environment Sensor"
+    },
+    "subClasses" : [ "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14" ],
+    "comment" : {
+      "en" : "A sensor that observes the environment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AtmosphericPressureSensor",
+      "en" : "Atmospheric Pressure Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the atmospheric pressure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExternalBuildingElement",
+      "en" : "External Building Element"
+    },
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "en" : "A building element that is external (i.e., that faces the outside of the building)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#Sensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sensor",
+      "en" : "Sensor"
+    },
+    "subClasses" : [ "19", "2" ],
+    "comment" : {
+      "en" : "An agent that implements a procedure to sense a change in a real world’s quality and produces an Observation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#AtmosphericPressure",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AtmosphericPressure",
+      "en" : "Atmospheric Pressure"
+    },
+    "comment" : {
+      "en" : "The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#Forecast",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Forecast",
+      "en" : "Forecast"
+    },
+    "comment" : {
+      "en" : "An observation estimated by a predictive model implementing a predictive procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SolarRadiation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SolarRadiation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SolarRadiation",
+      "en" : "Solar Radiation"
+    },
+    "comment" : {
+      "en" : "It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#ExternalWall",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExternalWall",
+      "en" : "External Wall"
+    },
+    "intersection" : [ "32", "15" ],
+    "comment" : {
+      "en" : "A wall that is external (facing the outside of the building)."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "41",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#HumiditySensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HumiditySensor",
+      "en" : "Humidity Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the humidity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Space",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space"
+    },
+    "subClasses" : [ "46", "47", "48", "49" ],
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/eep#Executor",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Executor",
+      "en" : "Executor"
+    },
+    "subClasses" : [ "3", "50", "51", "52" ],
+    "comment" : {
+      "undefined" : "An agent that produces an event (Execution) by implementing a procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/eep/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/affectedBy/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/q4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa#",
+      "baseIri" : "https://w3id.org/eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/foi4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/p4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/p4eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/rc#",
+      "baseIri" : "https://w3id.org/rc",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/exn4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/ek4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/eepsa/exr4eepsa#",
+      "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ResourceConsumptionGenerationQuality",
+      "en" : "Resource Consumption/Generation Quality"
+    },
+    "subClasses" : [ "64", "65", "66", "67", "68" ],
+    "comment" : {
+      "en" : "Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#ExternalDoor",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExternalDoor",
+      "en" : "External Door"
+    },
+    "intersection" : [ "30", "15" ],
+    "comment" : {
+      "en" : "A door that is external (facing the outside of the building)."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "69",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#GasConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GasConsumption",
+      "en" : "Gas Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of gas consumed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WaterConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WaterConsumption",
+      "en" : "Water Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of water consumed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#CO2",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#CO2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CO2",
+      "en" : "CO2"
+    },
+    "comment" : {
+      "en" : "Carbon Dioxide (CO2) measure in the atmosphere. (Defined by m3-lite)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeteorologicalQuality",
+      "en" : "Meteorological Quality"
+    },
+    "subClasses" : [ "75", "76", "77", "78", "79", "35", "80", "40", "81", "82", "83" ],
+    "comment" : {
+      "en" : "A quality related to the atmosphere and its phenomena."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BelowGroundLevelSpace",
+      "en" : "Below Ground Level Space"
+    },
+    "intersection" : [ "45" ],
+    "comment" : {
+      "en" : "A space located in a storey below ground."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "49",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NaturallyEnlightenedSpaceIndoorTemperature",
+      "en" : "Naturally Enlightened Space Indoor Temperature"
+    },
+    "comment" : {
+      "en" : "Temperature within a naturally enlightened space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#WindowActuator",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindowActuator",
+      "en" : "Window Actuator"
+    },
+    "comment" : {
+      "en" : "An actuator that controls the opening and/or closing of a window"
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Building",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#SunSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SunSensor",
+      "en" : "Sun Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that senses the direction of the Sun to measure the position of the sun or other light sources with respect to the sensor position."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/p4eepsa#PredictiveProcedure",
+    "baseIri" : "https://w3id.org/eepsa/p4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/p4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PredictiveProcedure",
+      "en" : "Predictive Procedure"
+    },
+    "comment" : {
+      "en" : "A procedure specifying how to predict an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#Roof",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Roof",
+      "en" : "Roof"
+    },
+    "comment" : {
+      "en" : "Construction enclosing the building from above (Source: ISO 6707-1)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#ExternalWindow",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExternalWindow",
+      "en" : "External Window"
+    },
+    "intersection" : [ "34", "15" ],
+    "comment" : {
+      "en" : "A window that is external (facing the outside of the building)."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "93",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#UndergroundStorey",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UndergroundStorey",
+      "en" : "Underground Storey"
+    },
+    "comment" : {
+      "en" : "Storey located below ground level."
+    },
+    "attributes" : [ "external" ],
+    "id" : "94",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#WaterMeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SmartMeterOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/WaterMeter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WaterMeter",
+      "en" : "Water Meter"
+    },
+    "comment" : {
+      "en" : "A water meter is a Meter designed to measure the quantity of water that flows through a pipe. The water meter can measures water consumption or water supply (defined by SEAS Smart Meter ontology)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Storey",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Storey"
+    },
+    "subClasses" : [ "94" ],
+    "attributes" : [ "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#GasMeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SmartMeterOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/GasMeter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GasMeter",
+      "en" : "Gas Meter"
+    },
+    "comment" : {
+      "en" : "A gas meter is a meter, used to measure the volume of fuel gases such as natural gas and propane. Gas meters are used at residential, commercial, and industrial buildings that consume fuel gas supplied by a gas utility (defined by SEAS Smart Meter ontology)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "102",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SolarRadiationSensor",
+      "en" : "Solar Radiation Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the solar radiation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#Precipitation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrecipitationLevel",
+      "en" : "Precipitation Level"
+    },
+    "comment" : {
+      "en" : "It is any product of the condensation of atmospheric water vapour that falls under gravity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CollectionOfExecutions",
+      "en" : "Collection of Executions"
+    },
+    "comment" : {
+      "en" : "A collection of executions"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#MissingValue",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MissingValue",
+      "en" : "Missing Value"
+    },
+    "comment" : {
+      "en" : "An empty or null event for attributes where a value should have been recorded"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#Window",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Window",
+      "en" : "Window"
+    },
+    "subClasses" : [ "93" ],
+    "comment" : {
+      "en" : "Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air (Source: ISO 6707-1)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#LigthActuator",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LigthActuator",
+      "en" : "Light Actuator"
+    },
+    "comment" : {
+      "en" : "An actuator that controls the activation, deactivation or regulation of a lamp or similar device that produces light"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BadInsulatedSpaceIndoorTemperature",
+      "en" : "Bad Insulated Space Indoor Temperature"
+    },
+    "comment" : {
+      "en" : "Temperature within a bad insulated space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#Observation",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "subClasses" : [ "107", "37", "108" ],
+    "comment" : {
+      "en" : "An execution made by an executor to estimate or calculate a quality of a feature of interest"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#Actuator",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Actuator",
+      "en" : "Actuator"
+    },
+    "subClasses" : [ "109", "105", "110", "111", "112", "113", "87" ],
+    "comment" : {
+      "en" : "An agent that implements a procedure to act on a real world’s quality."
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ActuatableQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActuatableQuality",
+      "en" : "Actuatable Quality"
+    },
+    "subClasses" : [ "71" ],
+    "comment" : {
+      "en" : "A quality of a feature of interest that can be acted on."
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#Anenometer",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Anenometer",
+      "en" : "Anenometer"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the wind speed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutdoorHumidity",
+      "en" : "Outdoor Humidity"
+    },
+    "comment" : {
+      "en" : "A quantity representing the amount of water vapour outdoors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eep#Procedure",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Procedure",
+      "en" : "Procedure"
+    },
+    "subClasses" : [ "54", "59", "61", "21" ],
+    "comment" : {
+      "undefined" : "A workflow, protocol, plan, algorithm, or computational method specifying how to produce an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#AirQualitySensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AirQualitySensor",
+      "en" : "Air Quality Sensor"
+    },
+    "subClasses" : [ "24", "26" ],
+    "comment" : {
+      "en" : "A sensor that observes the air quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Zone",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Zone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#HeatConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatConsumption",
+      "en" : "Heat Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of heat consumed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ObservableQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObservableQuality",
+      "en" : "Observable Quality"
+    },
+    "subClasses" : [ "62", "71", "122", "123", "36" ],
+    "comment" : {
+      "en" : "A quality of a feature of interest that can be observed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindSpeed",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindSpeed",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindSpeed",
+      "en" : "Wind Speed"
+    },
+    "comment" : {
+      "en" : "The ratio of the distance covered by moving air to the time quantity taken to cover it."
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#Orientation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Orientation",
+      "en" : "Orientation"
+    },
+    "comment" : {
+      "en" : "The description of how a thing is placed in the space it is in."
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#HVAC",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HVAC",
+      "en" : "HVAC"
+    },
+    "comment" : {
+      "en" : "An system that heats, cools and ventilates a given space"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#LightSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LightSensor",
+      "en" : "Light Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the light"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#Actuation",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Actuation",
+      "en" : "Actuation"
+    },
+    "comment" : {
+      "en" : "An execution made by an actuator implementing an actuating procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "134",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#SmartPlug",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SmartPlug",
+      "en" : "Smart Plug"
+    },
+    "comment" : {
+      "en" : "A device that enables the remote control and monitoring of the device plugged in"
+    },
+    "attributes" : [ "external" ],
+    "id" : "110",
+    "superClasses" : [ "19", "52" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AmmoniaSensor",
+      "en" : "Ammonia Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the ammonia levels"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#Occupancy",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Occupancy",
+      "en" : "Occupancy"
+    },
+    "comment" : {
+      "en" : "The usage or intended usage ratio of a given space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/p4eepsa#ImputationProcedure",
+    "baseIri" : "https://w3id.org/eepsa/p4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/p4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ImputationProcedure",
+      "en" : "Imputation Procedure"
+    },
+    "comment" : {
+      "en" : "A procedure specifying how to impute an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AdjacentToOutdoorSpace",
+      "en" : "Adjacent to Outdoor Space"
+    },
+    "intersection" : [ "45" ],
+    "comment" : {
+      "en" : "A space in contact with the exterior by means of at least one building element (e.g. a wall or a window)."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "46",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NaturallyEnlightenedSpace",
+      "en" : "Naturally Enlightened Space"
+    },
+    "intersection" : [ "45" ],
+    "comment" : {
+      "en" : "A space enlightened with a source of light from the exterior."
+    },
+    "attributes" : [ "external", "intersection" ],
+    "id" : "47",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CloudCoverSensor",
+      "en" : "Cloud Cover Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the cloud cover"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "125",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "119",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AdjacentToOutdoorSpaceIndoorTemperature",
+      "en" : "Adjacent To Outdoor Space Indoor Temperature"
+    },
+    "comment" : {
+      "en" : "Temperature within a space adjacent to outdoor."
+    },
+    "attributes" : [ "external" ],
+    "id" : "142",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindChill",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindChill",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindChill",
+      "en" : "Wind Chill"
+    },
+    "comment" : {
+      "en" : "The cooling effect of wind blowing on a surface."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#CO2Sensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CO2Sensor",
+      "en" : "CO2 Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the CO2 levels"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#Outlier",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Outlier",
+      "en" : "Outlier"
+    },
+    "comment" : {
+      "en" : "An observation that stands out amongst other observations and does not conform to the expected behaviour"
+    },
+    "attributes" : [ "external" ],
+    "id" : "108",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndoorHumidity",
+      "en" : "Indoor Humidity"
+    },
+    "comment" : {
+      "en" : "A quantity representing the amount of water vapour indoors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "150",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#DoorActuator",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DoorActuator",
+      "en" : "Door Actuator"
+    },
+    "comment" : {
+      "en" : "An actuator that controls the opening and/or closing of a door"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/eep#Execution",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Execution",
+      "en" : "Execution"
+    },
+    "subClasses" : [ "103", "38", "134" ],
+    "comment" : {
+      "undefined" : "An event made by an agent executing a task implemented by a procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#TemperatureSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TemperatureSensor",
+      "en" : "Temperature Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the temperature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace",
+    "baseIri" : "https://w3id.org/eepsa/ek4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/ek4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BadInsulatedSpace",
+      "en" : "Bad Insulated Space"
+    },
+    "comment" : {
+      "en" : "A space with bad insulation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#CloudCover",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#CloudCover",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CloudCover",
+      "en" : "Cloud Cover"
+    },
+    "comment" : {
+      "en" : "Measure of cloud cover at a certain time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutdoorTemperature",
+      "en" : "Outdoor Temperature"
+    },
+    "comment" : {
+      "en" : "The degree or intensity of heat present outdoors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Interface",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interface"
+    },
+    "attributes" : [ "external" ],
+    "id" : "173",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "https://w3id.org/affectedBy#Quality",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quality",
+      "en" : "Quality"
+    },
+    "subClasses" : [ "63", "114" ],
+    "comment" : {
+      "undefined" : "A quality of a feature of interest. An aspect of a feature of interest that is intrinsec to and cannot exist without the feature of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#PredictiveModel",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PredictiveModel",
+      "en" : "Predictive Model"
+    },
+    "comment" : {
+      "en" : "An agent that implements a procedure to predict an unknown or future event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SunPositionDirection",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SunPositionDirection",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SunPositionDirection",
+      "en" : "Sun Position Direction"
+    },
+    "comment" : {
+      "en" : "The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#MovementSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MovementSensor",
+      "en" : "Movement Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that detects the movement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#Wall",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Wall",
+      "en" : "Wall"
+    },
+    "subClasses" : [ "41" ],
+    "comment" : {
+      "en" : "Vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function (Source: ISO 6707-1)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ThermalComfortQuality",
+      "en" : "Thermal Comfort Quality"
+    },
+    "subClasses" : [ "179", "1", "150", "70", "178" ],
+    "comment" : {
+      "en" : "A quality related to the thermal comfort. According to the ANSI/ASHRAE Standard 55-2017, thermal comfort is defined as follows: \"that condition of mind that expresses satisfaction with the thermal environment and is assessed by subjective evaluation\""
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "63", "114" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndoorTemperature",
+      "en" : "Indoor Temperature"
+    },
+    "subClasses" : [ "106", "142", "0", "86" ],
+    "comment" : {
+      "en" : "The degree or intensity of heat present indoors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#ElectricityMeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SmartMeterOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/ElectricityMeter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricityMeter",
+      "en" : "Electricity Meter"
+    },
+    "comment" : {
+      "en" : "An electricity meter, electric meter, electrical meter, or energy meter is a meter that measures the amount of electric energy consumed by a residence, a business, or an electrically powered device (defined by SEAS Smart Meter ontology)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "180",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrecipitationSensor",
+      "en" : "Precipitation Sensor"
+    },
+    "comment" : {
+      "en" : "A sensor that observes the precipitation type, intensity, or quantity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#Skylight",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Skylight",
+      "en" : "Skylight"
+    },
+    "comment" : {
+      "en" : "Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building's space for daylighting purposes (Source: Wikipedia)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/affectedBy#FeatureOfInterest",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "FeatureOfInterest"
+    },
+    "subClasses" : [ "173", "16", "120" ],
+    "comment" : {
+      "undefined" : "A feature of interest is an abstraction of a real world phenomena (object, event, etc). A feature of interest is then described in terms of its properties or qualities, which are qualifiable, quantifiable, observable or operable qualities of the feature of interest."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/eepsa/p4eepsa#ActuatingProcedure",
+    "baseIri" : "https://w3id.org/eepsa/p4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/p4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActuatingProcedure",
+      "en" : "Actuating Procedure"
+    },
+    "comment" : {
+      "en" : "A procedure specifying how to act on an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#Door",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Door",
+      "en" : "Door"
+    },
+    "subClasses" : [ "69" ],
+    "comment" : {
+      "en" : "Construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation (Source: ISO 6707-1)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/p4eepsa#SensingProcedure",
+    "baseIri" : "https://w3id.org/eepsa/p4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/p4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SensingProcedure",
+      "en" : "Sensing Procedure"
+    },
+    "comment" : {
+      "en" : "A procedure specifying how to sense an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#Calorimeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Calorimeter",
+      "en" : "Calorimeter"
+    },
+    "comment" : {
+      "en" : "A meter that measures the amount of heat consumed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "191",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ElectricGeneration",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricGeneration",
+      "en" : "Electric Generation"
+    },
+    "comment" : {
+      "en" : "The amount of electricity generated."
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#SunPositionElevation",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#SunPositionElevation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SunPositionElevation",
+      "en" : "Sun Position Elevation"
+    },
+    "comment" : {
+      "en" : "It is the altitude of the sun, the angle between the horizon and the centre of the sun's disc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#ImputationMethod",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ImputationMethod",
+      "en" : "Imputation Method"
+    },
+    "comment" : {
+      "en" : "An agent that implements a procedure to compute an estimation of missing values"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#WindDirection",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#WindDirection",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindDirection",
+      "en" : "Wind Direction"
+    },
+    "comment" : {
+      "en" : "The geodetic azimuth of the direction from which the wind is blowing."
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ElectricConsumption",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/q4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricConsumption",
+      "en" : "Electric Consumption"
+    },
+    "comment" : {
+      "en" : "The amount of electricity consumed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#Imputation",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Imputation",
+      "en" : "Imputation"
+    },
+    "comment" : {
+      "en" : "An observation estimated by an imputation method implementing an imputation procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#UtilityMeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UtilityMeter",
+      "en" : "Utility Meter"
+    },
+    "subClasses" : [ "205", "102", "180", "110", "191", "57" ],
+    "comment" : {
+      "en" : "A system that observes the consumption/generation of an entity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#Thermostat",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Thermostat",
+      "en" : "Thermostat"
+    },
+    "comment" : {
+      "en" : "An actuator that controls the regulation of a device or system that heats or cools."
+    },
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChemicalAgentAtmosphericConcentrationNH3",
+      "undefined" : "Ammonia"
+    },
+    "comment" : {
+      "en" : "Measure of the concentration of Ammonia (NH3) gas suspended in the atmosphere. (Defined by m3-lite)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "178",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#GenerationMeter",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GenerationMeter",
+      "en" : "Generation Meter"
+    },
+    "comment" : {
+      "en" : "A meter that measures the amount of electricity generated"
+    },
+    "attributes" : [ "external" ],
+    "id" : "205",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/q4eepsa#Illuminance",
+    "baseIri" : "https://w3id.org/eepsa/q4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/iot/vocab/m3-lite#Illuminance",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Illuminance",
+      "en" : "Illuminance"
+    },
+    "comment" : {
+      "en" : "Illuminance is the total luminous flux incident on a surface, per unit area. (Defined by m3-lite)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "179",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/eepsa/exr4eepsa#BlindActuator",
+    "baseIri" : "https://w3id.org/eepsa/exr4eepsa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exr4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BlindActuator",
+      "en" : "Blind Actuator"
+    },
+    "comment" : {
+      "en" : "An actuator that controls the opening and/or closing of a blind"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "subClasses" : [ "28", "30", "32", "34", "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "90" ]
+  } ],
+  "property" : [ {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "210",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "211",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "212",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "215",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "6",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "6",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "16",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "16",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "16",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "16",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/rc#hasSpatialContext",
+    "baseIri" : "https://w3id.org/rc",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rc",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpatialContext",
+      "en" : "has spatial context"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "The location where an event takes place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "22",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "19",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "22",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "22",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#hasGrossPlannedArea",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "range" : "74",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGrossPlannedArea",
+      "en" : "has gross planned area"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/rc#hasTemporalContext",
+    "baseIri" : "https://w3id.org/rc",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rc",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTemporalContext",
+      "en" : "has temporal context"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "The time instant or interval when an event happens of has its effect. This temporal entity can be past, current or future."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#belongsTo",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "en" : "belongsTo"
+    },
+    "domain" : "89",
+    "comment" : {
+      "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/rc#hasSimpleResult",
+    "baseIri" : "https://w3id.org/rc",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rc",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSimpleResult",
+      "en" : "has simple result"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "The link between an execution and the RDF Literal representing the value associated to it."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#hasMember",
+    "inverse" : "98",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMember",
+      "en" : "has member"
+    },
+    "domain" : "97",
+    "comment" : {
+      "en" : "Relation that links a collection of executions to an execution belonging to that collection."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#hasMarketCategory",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "range" : "100",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMarketCategory",
+      "en" : "has market category"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/eep#forQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forQuality",
+      "en" : "forQuality"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Relation that links an executor to the qualities acted upon by the executions it made."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/eep#onQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "onQuality",
+      "en" : "onQuality"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the quality it is acting upon."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#hasMarketSubCategory",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMarketSubCategory",
+      "en" : "has market subcategory"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/eep#forFeatureOfInterest",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forFeatureOfInterest",
+      "en" : "forFeatureOfInterest"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Relation that links an executor to the features of interest of the executions it made."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/rc#hasResult",
+    "baseIri" : "https://w3id.org/rc",
+    "range" : "119",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rc",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResult",
+      "en" : "has result"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "The link between an execution and the RDF URI representing the value associated to it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/bot#hasStorey",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasStorey"
+    },
+    "domain" : "125",
+    "attributes" : [ "external", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "63",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "63",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/eep#implements",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "en" : "implements"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Relation that links an agent (Executor) to a procedure that it implements."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "63",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "63",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "36",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "36",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "36",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://w3id.org/eepsa/exn4eepsa#isMemberOf",
+    "baseIri" : "https://w3id.org/eepsa/exn4eepsa",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/exn4eepsa",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMemberOf",
+      "en" : "is member of"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "Relation that links an execution to the collection of executions it belongs to."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "62",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "62",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "36",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "62",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "18",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "18",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "62",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "62",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "18",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "18",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#hasYearOfConstruction",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "range" : "143",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasYearOfConstruction",
+      "en" : "has year of construction"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "90",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "45",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#affectedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affectedBy",
+      "en" : "affectedBy"
+    },
+    "domain" : "89",
+    "comment" : {
+      "undefined" : "A relation between qualities. A quality is affected by another quality if the value of the latter affects the value of the former."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "45",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "45",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/eep#usedProcedure",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedProcedure",
+      "en" : "usedProcedure"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "166"
+  }, {
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "3",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "1",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "1",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "1",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "71",
+    "domain" : "178",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "71",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "71",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "32",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "89",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "71",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "71",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "43",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "43",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "89",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "43",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "36",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "36",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "36",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "36",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "36",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "36",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "19",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "19",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "19",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "19",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "52",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "19",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "114",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/eep#onQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "onQuality",
+      "en" : "onQuality"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the quality it is acting upon."
+    },
+    "attributes" : [ "external", "object", "someValues", "functional" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://w3id.org/eep#usedProcedure",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedProcedure",
+      "en" : "usedProcedure"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
+    },
+    "attributes" : [ "external", "object", "someValues", "functional" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "142",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "0",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "211"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "86",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/eepsa/foi4eepsa#hasOccupancyType",
+    "baseIri" : "https://w3id.org/eepsa/foi4eepsa",
+    "range" : "144",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eepsa/foi4eepsa#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOccupancyType",
+      "en" : "has occupancy type"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "213"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#belongsTo",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "en" : "belongsTo"
+    },
+    "domain" : "89",
+    "comment" : {
+      "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "external", "object", "someValues", "functional" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://w3id.org/eep#madeBy",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBy",
+      "en" : "madeBy"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the executor that made the execution."
+    },
+    "attributes" : [ "external", "object", "someValues", "functional" ],
+    "id" : "215"
+  }, {
+    "iri" : "https://w3id.org/eep#hasFeatureOfInterest",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "90",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFeatureOfInterest",
+      "en" : "hasFeatureOfInterest"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the feature of interest it is acting upon."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://w3id.org/bot#hasElement",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasElement"
+    },
+    "domain" : "125",
+    "attributes" : [ "external", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "52",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "52",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "52",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "52",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "38",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "52",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "52",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "38",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "34",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "https://w3id.org/rc#hasGenerationTime",
+    "baseIri" : "https://w3id.org/rc",
+    "range" : "141",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rc",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGenerationTime",
+      "en" : "has generation time"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "The time instant when an execution is generated."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "228"
+  }, {
+    "range" : "30",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://w3id.org/eep#madeBy",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBy",
+      "en" : "madeBy"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the executor that made the execution."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "230"
+  }, {
+    "range" : "90",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "95",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "90",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "90",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  } ]
+}
