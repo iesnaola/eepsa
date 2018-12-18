@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/datamining4eepsa#"
+     xml:base="https://w3id.org/datamining4eepsa"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dm4eepsa="https://w3id.org/datamining4eepsa#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:bot="https://w3id.org/bot#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/datamining4eepsa">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/datamining4eepsa-0.1.owl"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
+        <terms:creator xml:lang="en">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:issued>2018-04-19</terms:issued>
+        <terms:modified xml:lang="en">2018-04-19</terms:modified>
+        <terms:description xml:lang="en">Data Mining-related knowledge representation for the EEPSA Ontology.</terms:description>
+        <terms:title>Data Mining for EEPSA</terms:title>
+        <bibo:status xml:lang="en">Work in progress</bibo:status>
+        <vann:preferredNamespacePrefix xml:lang="en">dm4eepsa</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#hasSolvingProcedure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/datamining4eepsa#hasSolvingProcedure">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">A relation between a Thing and a Procedure proposed to solve it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">has solving procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#requiresImputationProcedure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/datamining4eepsa#requiresImputationProcedure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/datamining4eepsa#ImputationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">The relationship between a Missing Value (chunk) and a suggested Imputation procedure to impute its value accurately.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">requires imputation procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#susceptibleToOutlier -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/datamining4eepsa#susceptibleToOutlier">
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">The relationship between a thing (normally a device) and an Outlier it may be susceptible to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">susceptible to outlier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Procedure -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Procedure"/>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ComplexValueDrawing -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ComplexValueDrawing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ValueDrawingProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Complex Value Drawing procedure to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Complex Value Drawing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#DeviceRelocation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#DeviceRelocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ProcedureUponDevice"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">A procedure that consists in placing the sensing device in an adequate location.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Device Relocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#DeviceReplacement -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#DeviceReplacement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ProcedureUponDevice"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">A procedure that consists in replacing the sensing device for another one.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Device Replacement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#DeviceShelter -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#DeviceShelter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ProcedureUponDevice"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">A procedure that consists in covering the sensing device adequately to avoid erroneous observations. For example, Stevenson Screen to shield the sensing device against direct precipitation or direct sunlight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Device Shelter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ImputationProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ImputationProcedure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">Procedure that attempts to compute an accurate estimation of the Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Imputation Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#IterativeValueEstimation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#IterativeValueEstimation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ValueEstimationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Iterative Value Estimation procedure to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Iterative Value Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#LongMissingValueChunk -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#LongMissingValueChunk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MissingValueChunk"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">A chunk of Missing Values which is considered to have a long length.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Long Missing Value Chunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MAR -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MAR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MissingValue"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Misingness at Random (MAR): When a pattern can be identified for observation&apos;s failure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">MAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MCAR -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MCAR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MissingValue"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Missingness Completely at Random (MCAR): When an observation fails randomly.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">MCAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MIV -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MIV">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MNAR"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Misingness that depends on its value itself (MIV): When the failure of an observation depends on ints own value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">MIV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MNAR -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MNAR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MissingValue"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Misingness not at Random (MNAR): When an observation fails with a pattern which is unidentifiable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">MNAR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MUOV -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MUOV">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MNAR"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Misingness that depends on unobserved variables (MUOV): When the variables that explain the cause of the observation&apos;s failure are not collected.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">MUOV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MissingValue -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MissingValue">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">When no data is stored in an attribute of an observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Missing Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MissingValueChunk -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MissingValueChunk">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#requiresImputationProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#ImputationProcedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">A chunk of Missing Values.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Missing Value Chunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#MultipleValuesEstimation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#MultipleValuesEstimation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ValueEstimationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Multiple Values Estimation procedure to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Multiple Values Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#Outlier -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#Outlier">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">Observations that stand out and do not conform to the expected behaviour.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by a beam spotlight. For example, an observation made by a sensing device located under a light bulb</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Beam Spotlight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#Outlier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#ProcedureUponDevice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier occurred by an error on the device itself.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Device Error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#Outlier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#DeviceRelocation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier occurred by the inadequate location of the device.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Device Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by the low battery of the device.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Device Low Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#DeviceReplacement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by a malfunction suffered by the device, which might have been transient.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Device Malfunction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by external factors. For example for being next to a source of radiant heat or cold such as windows and poorly insulated outside walls.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by External Conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByHVAC -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByHVAC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"/>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by its device&apos;s location in a point where an activated HVAC is sending hot or cold air.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by HVAC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedByRain -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedByRain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#DeviceShelter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by rainfall affecting the device.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Rain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/datamining4eepsa#hasSolvingProcedure"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/datamining4eepsa#DeviceShelter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <bibo:status xml:lang="en">stable</bibo:status>
+        <rdfs:comment xml:lang="en">An Outlier caused by direct sunlight on the device.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Outlier caused by Solar Radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ProcedureUponDevice -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ProcedureUponDevice">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Procedure that attempts to solve a problem by proceeding upon the Device.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Procedure Upon Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ShortMissingValueChunk -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ShortMissingValueChunk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#MissingValueChunk"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">A chunk of Missing Values which is considered to have a short length.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Short Missing Value Chunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#SimpleValueDrawing -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#SimpleValueDrawing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ValueDrawingProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Simple Value Drawing procedure to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Simple Value Drawing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#SimpleValueEstimation -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#SimpleValueEstimation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ValueEstimationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Simple Value Estimation procedure to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Simple Value Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ValueDrawingProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ValueDrawingProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ImputationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Procedure that consists in drawing a value to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Value Drawing Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/datamining4eepsa#ValueEstimationProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/datamining4eepsa#ValueEstimationProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/datamining4eepsa#ImputationProcedure"/>
+        <bibo:status xml:lang="en">testing</bibo:status>
+        <rdfs:comment xml:lang="en">Procedure that consists in estimating a value to impute a Missing Value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/datamining4eepsa#"/>
+        <rdfs:label xml:lang="en">Value Estimation Procedure</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

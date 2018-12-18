@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/bim4eepsa#"
+     xml:base="https://w3id.org/bim4eepsa"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/bim4eepsa">
+        <terms:issued>2017-07-10</terms:issued>
+        <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
+        <dc:title>BIM for EEPSA</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</rdfs:comment>
+        <vann:preferredNamespacePrefix>bim4eepsa</vann:preferredNamespacePrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdfs:comment xml:lang="en">The relation between something and the point,  or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#contains -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#contains">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/saref4bldg#isContainedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A relation between a physical space and the objects located in such space.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#hasSpace -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#hasSpace">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a building or a building space and the spaces it can be divided into.</rdfs:comment>
+        <rdfs:label xml:lang="en">has space</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#isContainedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A relation between an object and the physical space in which it is located.</rdfs:comment>
+        <rdfs:label xml:lang="en">is contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#isSpaceOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#isSpaceOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">Relation between a building space and the building or building space it belongs to.</rdfs:comment>
+        <rdfs:label xml:lang="en">isSpaceOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A unique identifier assigned to a building. A temporary identifier is initially assigned at the time of making a planning application. This temporary identifier is changed to a permanent identifier when the building is registered into a statutory buildings and properties database.</rdfs:comment>
+        <rdfs:label xml:lang="en">building ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">construction method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Main fire protection class for the building which is assigned from the fire protection classification table as given by the relevant national building code.</rdfs:comment>
+        <rdfs:label xml:lang="en">fire protection class</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The number of storeys within a building. Captured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach should be used in preference to setting a property for the number of storeys.</rdfs:comment>
+        <rdfs:label xml:lang="en">number of storeys</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Occupancy type for this object. It is defined according to the presiding national building code.</rdfs:comment>
+        <rdfs:label xml:lang="en">occupancy type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Year of construction of this building, including expected year of completion.</rdfs:comment>
+        <rdfs:label xml:lang="en">year of construction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works).</rdfs:comment>
+        <rdfs:label xml:lang="en">year of last refurbishment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">Spatial thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#BuildingElement -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#BuildingElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+        <rdfs:comment xml:lang="en">The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcBuildingElement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#Door -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Door">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#ExternalBuildingElement -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#ExternalBuildingElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:seeAlso xml:lang="en">Building elements that are external (face the outside of the building)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#ExternalDoor -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#ExternalDoor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#Door"/>
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#ExternalBuildingElement"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Door"/>
+        <rdfs:label xml:lang="en">External door</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">External door (faces the outside of the building)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#ExternalWall -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#ExternalWall">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#ExternalBuildingElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#Wall"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Wall"/>
+        <rdfs:label xml:lang="en">External wall</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">External wall (faces the outside of the building)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#ExternalWindow -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#ExternalWindow">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#ExternalBuildingElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/bim4eepsa#Window"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#Window"/>
+        <rdfs:label xml:lang="en">External window</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">External window (faces the outside of the building)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#Roof -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Roof">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: construction enclosing the building from above.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#Skylight -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Skylight">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:seeAlso xml:lang="en">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes. (Wikipedia)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#Wall -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Wall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#WeatherStation -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#WeatherStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4bldg#Building"/>
+        <rdfs:comment xml:lang="en">A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate (Wikipedia)</rdfs:comment>
+        <rdfs:label rdf:resource="http://aemet.linkeddata.es/ontology/WeatherStation"/>
+        <rdfs:label xml:lang="en">Weather station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bim4eepsa#Window -->
+
+    <owl:Class rdf:about="https://w3id.org/bim4eepsa#Window">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bim4eepsa#BuildingElement"/>
+        <rdfs:comment xml:lang="en">Definition according to ISO 6707-1: Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Building">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#hasSpace"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space).</rdfs:comment>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/ifc/IFC4_ADD1#IfcBuilding"/>
+        <prov:hadPrimarySource rdf:resource="http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcproductextension/lexical/ifcbuilding.htm"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#BuildingSpace -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#BuildingSpace">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#contains"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#hasSpace"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/def/saref4bldg#Building"/>
+                            <rdf:Description rdf:about="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An entity used to define the physical spaces of the building. A building space contains devices or building objects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Building space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#PhysicalObject -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#contains"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#isContainedIn"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+                            <rdf:Description rdf:about="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Any Object that has a proper space region.  (Definition extracted from DUL ontology)</rdfs:comment>
+        <rdfs:label xml:lang="en">Physical object</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
