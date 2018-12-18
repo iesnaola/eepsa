@@ -1,0 +1,160 @@
+{
+  "@context" : {
+    "MissingValueChunk" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MissingValueChunk"
+    },
+    "LongMissingValueChunk" : {
+      "@id" : "https://w3id.org/datamining4eepsa#LongMissingValueChunk"
+    },
+    "ShortMissingValueChunk" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ShortMissingValueChunk"
+    },
+    "DeviceRelocation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#DeviceRelocation"
+    },
+    "MAR" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MAR"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "ComplexValueDrawing" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ComplexValueDrawing"
+    },
+    "Procedure" : {
+      "@id" : "http://www.w3.org/ns/sosa/Procedure"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "ProcedureUponDevice" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ProcedureUponDevice"
+    },
+    "OutlierCausedByHVAC" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByHVAC"
+    },
+    "requiresImputationProcedure" : {
+      "@id" : "https://w3id.org/datamining4eepsa#requiresImputationProcedure",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "MCAR" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MCAR"
+    },
+    "DeviceShelter" : {
+      "@id" : "https://w3id.org/datamining4eepsa#DeviceShelter"
+    },
+    "OutlierCausedByDeviceLowBattery" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery"
+    },
+    "OutlierCausedBySolarRadiation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation"
+    },
+    "SimpleValueEstimation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#SimpleValueEstimation"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "MultipleValuesEstimation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MultipleValuesEstimation"
+    },
+    "ImputationProcedure" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ImputationProcedure"
+    },
+    "OutlierCausedByDeviceMalfunction" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction"
+    },
+    "IterativeValueEstimation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#IterativeValueEstimation"
+    },
+    "OutlierCausedByBeamSpotlight" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight"
+    },
+    "SimpleValueDrawing" : {
+      "@id" : "https://w3id.org/datamining4eepsa#SimpleValueDrawing"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "OutlierCausedByExternalConditions" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions"
+    },
+    "OutlierCausedByDeviceError" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "OutlierCausedByRain" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByRain"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "MissingValue" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MissingValue"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "MNAR" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MNAR"
+    },
+    "ValueEstimationProcedure" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ValueEstimationProcedure"
+    },
+    "hasSolvingProcedure" : {
+      "@id" : "https://w3id.org/datamining4eepsa#hasSolvingProcedure",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "OutlierCausedByDeviceLocation" : {
+      "@id" : "https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation"
+    },
+    "MIV" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MIV"
+    },
+    "DeviceReplacement" : {
+      "@id" : "https://w3id.org/datamining4eepsa#DeviceReplacement"
+    },
+    "susceptibleToOutlier" : {
+      "@id" : "https://w3id.org/datamining4eepsa#susceptibleToOutlier",
+      "@type" : "@id"
+    },
+    "MUOV" : {
+      "@id" : "https://w3id.org/datamining4eepsa#MUOV"
+    },
+    "Outlier" : {
+      "@id" : "https://w3id.org/datamining4eepsa#Outlier"
+    },
+    "ValueDrawingProcedure" : {
+      "@id" : "https://w3id.org/datamining4eepsa#ValueDrawingProcedure"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
+    }
+  }
+}

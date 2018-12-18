@@ -1,0 +1,98 @@
+{
+  "@context" : {
+    "StockingDensity" : {
+      "@id" : "https://w3id.org/pf4eepsa#StockingDensity"
+    },
+    "Space" : {
+      "@id" : "https://w3id.org/bot#Space"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "FeedingStructure" : {
+      "@id" : "https://w3id.org/pf4eepsa#FeedingStructure"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Slaughterhouse" : {
+      "@id" : "https://w3id.org/pf4eepsa#Slaughterhouse"
+    },
+    "Silo" : {
+      "@id" : "https://w3id.org/pf4eepsa#Silo"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Trough" : {
+      "@id" : "https://w3id.org/pf4eepsa#Trough"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "PoultryFarm" : {
+      "@id" : "https://w3id.org/pf4eepsa#PoultryFarm"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/bot#Building"
+    },
+    "isAffectedBy" : {
+      "@id" : "https://w3id.org/eepsa#isAffectedBy",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "Farm" : {
+      "@id" : "https://w3id.org/pf4eepsa#Farm"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "WaterDispenser" : {
+      "@id" : "https://w3id.org/pf4eepsa#WaterDispenser"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "BreedingSpace" : {
+      "@id" : "https://w3id.org/pf4eepsa#BreedingSpace"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/ns/ssn/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "StockingDensitySensor" : {
+      "@id" : "https://w3id.org/pf4eepsa#StockingDensitySensor"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "PhysicalObject" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    }
+  }
+}

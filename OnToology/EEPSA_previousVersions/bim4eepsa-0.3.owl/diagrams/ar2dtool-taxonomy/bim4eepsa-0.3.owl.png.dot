@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Door" "base:ExternalWall" "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" "base:WeatherStation" "bot:Building" "base:Skylight" "base:ExternalWindow" "base:ShelteredDevice" "bot:Interface" "bot:Zone" "wgs84_pos:SpatialThing" "base:Window" "base:Wall" "base:ExternalDoor" "bot:Element" "wgs84_pos:Point" "base:Roof" "base:ExternalBuildingElement" ; /*classes style*/
+	"bot:Interface" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"bot:Element" -> "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" [ label = "rdfs:subClassOf" ];
+	"base:Wall" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+	"base:Roof" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+	"wgs84_pos:Point" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"base:WeatherStation" -> "bot:Building" [ label = "rdfs:subClassOf" ];
+	"base:ExternalDoor" -> "base:Door" [ label = "rdfs:subClassOf" ];
+	"base:ShelteredDevice" -> "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" [ label = "rdfs:subClassOf" ];
+	"base:ExternalBuildingElement" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWall" -> "base:Wall" [ label = "rdfs:subClassOf" ];
+	"bot:Zone" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWindow" -> "base:Window" [ label = "rdfs:subClassOf" ];
+	"base:Skylight" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+	"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"base:Window" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+	"bot:Building" -> "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" [ label = "rdfs:subClassOf" ];
+	"base:Door" -> "bot:Element" [ label = "rdfs:subClassOf" ];
+
+}

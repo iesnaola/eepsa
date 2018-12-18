@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:ForecastResult" "http://qudt.org/schema/qudt#Unit" ; /*classes style*/
+	"https://w3id.org/pep/Procedure" -> "https://w3id.org/pep/Process" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/pep/ProcedureExecutor" -> "https://w3id.org/pep/ProcessExecutor" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/pep/ProcedureExecution" -> "https://w3id.org/pep/ProcessExecution" [ label = "owl:equivalentClass" ];
+	"NULL" -> "xsd:double" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://qudt.org/schema/qudt#numericValue" [ label = "owl:onProperty" ];
+	"NULL" -> "http://qudt.org/schema/qudt#Unit" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://qudt.org/schema/qudt#unit" [ label = "owl:onProperty" ];
+	"https://w3id.org/forecasting4eepsa" -> "https://w3id.org/pep/pep-1.1" [ label = "owl:imports" ];
+	"https://w3id.org/forecasting4eepsa" -> "https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.2.owl" [ label = "owl:versionIRI" ];
+	"https://w3id.org/forecasting4eepsa" -> "http://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"https://w3id.org/forecasting4eepsa" -> "https://w3id.org/seas/ForecastingOntology-1.0" [ label = "owl:imports" ];
+	"https://w3id.org/pep/ProcedureExecutionContainer" -> "https://w3id.org/pep/ProcessExecutionContainer" [ label = "owl:equivalentClass" ];
+	"owl:Thing" -> "base:ForecastResult" [ label = "base:hasForecastResult" ];
+
+}

@@ -1,0 +1,420 @@
+@prefix : <https://w3id.org/datamining4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/datamining4eepsa> .
+
+<https://w3id.org/datamining4eepsa> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/datamining4eepsa-0.1.owl> ;
+                                     <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc/4.0/> ;
+                                     <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" ;
+                                     <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""@en ;
+                                     <http://purl.org/dc/terms/description> "Data Mining-related knowledge representation for the EEPSA Ontology."@en ;
+                                     <http://purl.org/dc/terms/issued> "2018-04-19" ;
+                                     <http://purl.org/dc/terms/modified> "2018-04-19"@en ;
+                                     <http://purl.org/dc/terms/title> "Data Mining for EEPSA" ;
+                                     <http://purl.org/ontology/bibo/status> "Work in progress"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "dm4eepsa"@en ;
+                                     owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/datamining4eepsa#hasSolvingProcedure
+:hasSolvingProcedure rdf:type owl:ObjectProperty ;
+                     rdfs:range <http://www.w3.org/ns/sosa/Procedure> ;
+                     <http://purl.org/ontology/bibo/status> "stable"@en ;
+                     rdfs:comment "A relation between a Thing and a Procedure proposed to solve it."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "has solving procedure"@en .
+
+
+###  https://w3id.org/datamining4eepsa#requiresImputationProcedure
+:requiresImputationProcedure rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasSolvingProcedure ;
+                             rdfs:range :ImputationProcedure ;
+                             <http://purl.org/ontology/bibo/status> "testing"@en ;
+                             rdfs:comment "The relationship between a Missing Value (chunk) and a suggested Imputation procedure to impute its value accurately."@en ;
+                             rdfs:isDefinedBy : ;
+                             rdfs:label "requires imputation procedure"@en .
+
+
+###  https://w3id.org/datamining4eepsa#susceptibleToOutlier
+:susceptibleToOutlier rdf:type owl:ObjectProperty ;
+                      <http://purl.org/ontology/bibo/status> "testing"@en ;
+                      rdfs:comment "The relationship between a thing (normally a device) and an Outlier it may be susceptible to."@en ;
+                      rdfs:isDefinedBy : ;
+                      rdfs:label "susceptible to outlier"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> rdf:type owl:Class .
+
+
+###  https://w3id.org/datamining4eepsa#ComplexValueDrawing
+:ComplexValueDrawing rdf:type owl:Class ;
+                     rdfs:subClassOf :ValueDrawingProcedure ;
+                     <http://purl.org/ontology/bibo/status> "testing"@en ;
+                     rdfs:comment "Complex Value Drawing procedure to impute a Missing Value."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Complex Value Drawing"@en .
+
+
+###  https://w3id.org/datamining4eepsa#DeviceRelocation
+:DeviceRelocation rdf:type owl:Class ;
+                  rdfs:subClassOf :ProcedureUponDevice ;
+                  <http://purl.org/ontology/bibo/status> "testing"@en ;
+                  rdfs:comment "A procedure that consists in placing the sensing device in an adequate location."@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Device Relocation"@en .
+
+
+###  https://w3id.org/datamining4eepsa#DeviceReplacement
+:DeviceReplacement rdf:type owl:Class ;
+                   rdfs:subClassOf :ProcedureUponDevice ;
+                   <http://purl.org/ontology/bibo/status> "stable"@en ;
+                   rdfs:comment "A procedure that consists in replacing the sensing device for another one."@en ;
+                   rdfs:isDefinedBy : ;
+                   rdfs:label "Device Replacement"@en .
+
+
+###  https://w3id.org/datamining4eepsa#DeviceShelter
+:DeviceShelter rdf:type owl:Class ;
+               rdfs:subClassOf :ProcedureUponDevice ;
+               <http://purl.org/ontology/bibo/status> "stable"@en ;
+               rdfs:comment "A procedure that consists in covering the sensing device adequately to avoid erroneous observations. For example, Stevenson Screen to shield the sensing device against direct precipitation or direct sunlight."@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:label "Device Shelter"@en .
+
+
+###  https://w3id.org/datamining4eepsa#ImputationProcedure
+:ImputationProcedure rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Procedure> ;
+                     <http://purl.org/ontology/bibo/status> "stable"@en ;
+                     rdfs:comment "Procedure that attempts to compute an accurate estimation of the Missing Value."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Imputation Procedure"@en .
+
+
+###  https://w3id.org/datamining4eepsa#IterativeValueEstimation
+:IterativeValueEstimation rdf:type owl:Class ;
+                          rdfs:subClassOf :ValueEstimationProcedure ;
+                          <http://purl.org/ontology/bibo/status> "testing"@en ;
+                          rdfs:comment "Iterative Value Estimation procedure to impute a Missing Value."@en ;
+                          rdfs:isDefinedBy : ;
+                          rdfs:label "Iterative Value Estimation"@en .
+
+
+###  https://w3id.org/datamining4eepsa#LongMissingValueChunk
+:LongMissingValueChunk rdf:type owl:Class ;
+                       rdfs:subClassOf :MissingValueChunk ;
+                       <http://purl.org/ontology/bibo/status> "testing"@en ;
+                       rdfs:comment "A chunk of Missing Values which is considered to have a long length."@en ;
+                       rdfs:isDefinedBy : ;
+                       rdfs:label "Long Missing Value Chunk"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MAR
+:MAR rdf:type owl:Class ;
+     rdfs:subClassOf :MissingValue ;
+     <http://purl.org/ontology/bibo/status> "testing"@en ;
+     rdfs:comment "Misingness at Random (MAR): When a pattern can be identified for observation's failure."@en ;
+     rdfs:isDefinedBy : ;
+     rdfs:label "MAR"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MCAR
+:MCAR rdf:type owl:Class ;
+      rdfs:subClassOf :MissingValue ;
+      <http://purl.org/ontology/bibo/status> "testing"@en ;
+      rdfs:comment "Missingness Completely at Random (MCAR): When an observation fails randomly."@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "MCAR"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MIV
+:MIV rdf:type owl:Class ;
+     rdfs:subClassOf :MNAR ;
+     <http://purl.org/ontology/bibo/status> "testing"@en ;
+     rdfs:comment "Misingness that depends on its value itself (MIV): When the failure of an observation depends on ints own value."@en ;
+     rdfs:isDefinedBy : ;
+     rdfs:label "MIV"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MNAR
+:MNAR rdf:type owl:Class ;
+      rdfs:subClassOf :MissingValue ;
+      <http://purl.org/ontology/bibo/status> "testing"@en ;
+      rdfs:comment "Misingness not at Random (MNAR): When an observation fails with a pattern which is unidentifiable."@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "MNAR"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MUOV
+:MUOV rdf:type owl:Class ;
+      rdfs:subClassOf :MNAR ;
+      <http://purl.org/ontology/bibo/status> "testing"@en ;
+      rdfs:comment "Misingness that depends on unobserved variables (MUOV): When the variables that explain the cause of the observation's failure are not collected."@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "MUOV"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MissingValue
+:MissingValue rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+              <http://purl.org/ontology/bibo/status> "stable"@en ;
+              rdfs:comment "When no data is stored in an attribute of an observation."@en ;
+              rdfs:isDefinedBy : ;
+              rdfs:label "Missing Value"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MissingValueChunk
+:MissingValueChunk rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :requiresImputationProcedure ;
+                                     owl:someValuesFrom :ImputationProcedure
+                                   ] ;
+                   <http://purl.org/ontology/bibo/status> "testing"@en ;
+                   rdfs:comment "A chunk of Missing Values."@en ;
+                   rdfs:isDefinedBy : ;
+                   rdfs:label "Missing Value Chunk"@en .
+
+
+###  https://w3id.org/datamining4eepsa#MultipleValuesEstimation
+:MultipleValuesEstimation rdf:type owl:Class ;
+                          rdfs:subClassOf :ValueEstimationProcedure ;
+                          <http://purl.org/ontology/bibo/status> "testing"@en ;
+                          rdfs:comment "Multiple Values Estimation procedure to impute a Missing Value."@en ;
+                          rdfs:isDefinedBy : ;
+                          rdfs:label "Multiple Values Estimation"@en .
+
+
+###  https://w3id.org/datamining4eepsa#Outlier
+:Outlier rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
+         <http://purl.org/ontology/bibo/status> "stable"@en ;
+         rdfs:comment "Observations that stand out and do not conform to the expected behaviour."@en ;
+         rdfs:isDefinedBy : ;
+         rdfs:label "Outlier"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight
+:OutlierCausedByBeamSpotlight rdf:type owl:Class ;
+                              rdfs:subClassOf :OutlierCausedByDeviceLocation ;
+                              <http://purl.org/ontology/bibo/status> "stable"@en ;
+                              rdfs:comment "An Outlier caused by a beam spotlight. For example, an observation made by a sensing device located under a light bulb"@en ;
+                              rdfs:isDefinedBy : ;
+                              rdfs:label "Outlier caused by Beam Spotlight"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError
+:OutlierCausedByDeviceError rdf:type owl:Class ;
+                            rdfs:subClassOf :Outlier ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSolvingProcedure ;
+                                              owl:someValuesFrom :ProcedureUponDevice
+                                            ] ;
+                            <http://purl.org/ontology/bibo/status> "stable"@en ;
+                            rdfs:comment "An Outlier occurred by an error on the device itself."@en ;
+                            rdfs:isDefinedBy : ;
+                            rdfs:label "Outlier caused by Device Error"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation
+:OutlierCausedByDeviceLocation rdf:type owl:Class ;
+                               rdfs:subClassOf :Outlier ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasSolvingProcedure ;
+                                                 owl:someValuesFrom :DeviceRelocation
+                                               ] ;
+                               <http://purl.org/ontology/bibo/status> "stable"@en ;
+                               rdfs:comment "An Outlier occurred by the inadequate location of the device."@en ;
+                               rdfs:isDefinedBy : ;
+                               rdfs:label "Outlier caused by Device Location"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery
+:OutlierCausedByDeviceLowBattery rdf:type owl:Class ;
+                                 rdfs:subClassOf :OutlierCausedByDeviceError ;
+                                 <http://purl.org/ontology/bibo/status> "stable"@en ;
+                                 rdfs:comment "An Outlier caused by the low battery of the device."@en ;
+                                 rdfs:isDefinedBy : ;
+                                 rdfs:label "Outlier caused by Device Low Battery"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction
+:OutlierCausedByDeviceMalfunction rdf:type owl:Class ;
+                                  rdfs:subClassOf :OutlierCausedByDeviceError ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasSolvingProcedure ;
+                                                    owl:someValuesFrom :DeviceReplacement
+                                                  ] ;
+                                  <http://purl.org/ontology/bibo/status> "stable"@en ;
+                                  rdfs:comment "An Outlier caused by a malfunction suffered by the device, which might have been transient."@en ;
+                                  rdfs:isDefinedBy : ;
+                                  rdfs:label "Outlier caused by Device Malfunction"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions
+:OutlierCausedByExternalConditions rdf:type owl:Class ;
+                                   rdfs:subClassOf :OutlierCausedByDeviceLocation ;
+                                   <http://purl.org/ontology/bibo/status> "testing"@en ;
+                                   rdfs:comment "An Outlier caused by external factors. For example for being next to a source of radiant heat or cold such as windows and poorly insulated outside walls."@en ;
+                                   rdfs:isDefinedBy : ;
+                                   rdfs:label "Outlier caused by External Conditions"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByHVAC
+:OutlierCausedByHVAC rdf:type owl:Class ;
+                     rdfs:subClassOf :OutlierCausedByDeviceLocation ;
+                     <http://purl.org/ontology/bibo/status> "stable"@en ;
+                     rdfs:comment "An Outlier caused by its device's location in a point where an activated HVAC is sending hot or cold air."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Outlier caused by HVAC"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedByRain
+:OutlierCausedByRain rdf:type owl:Class ;
+                     rdfs:subClassOf :OutlierCausedByDeviceLocation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasSolvingProcedure ;
+                                       owl:someValuesFrom :DeviceShelter
+                                     ] ;
+                     <http://purl.org/ontology/bibo/status> "stable"@en ;
+                     rdfs:comment "An Outlier caused by rainfall affecting the device."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Outlier caused by Rain"@en .
+
+
+###  https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation
+:OutlierCausedBySolarRadiation rdf:type owl:Class ;
+                               rdfs:subClassOf :OutlierCausedByDeviceLocation ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasSolvingProcedure ;
+                                                 owl:someValuesFrom :DeviceShelter
+                                               ] ;
+                               <http://purl.org/ontology/bibo/status> "stable"@en ;
+                               rdfs:comment "An Outlier caused by direct sunlight on the device."@en ;
+                               rdfs:isDefinedBy : ;
+                               rdfs:label "Outlier caused by Solar Radiation"@en .
+
+
+###  https://w3id.org/datamining4eepsa#ProcedureUponDevice
+:ProcedureUponDevice rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Procedure> ;
+                     <http://purl.org/ontology/bibo/status> "testing"@en ;
+                     rdfs:comment "Procedure that attempts to solve a problem by proceeding upon the Device."@en ;
+                     rdfs:isDefinedBy : ;
+                     rdfs:label "Procedure Upon Device"@en .
+
+
+###  https://w3id.org/datamining4eepsa#ShortMissingValueChunk
+:ShortMissingValueChunk rdf:type owl:Class ;
+                        rdfs:subClassOf :MissingValueChunk ;
+                        <http://purl.org/ontology/bibo/status> "testing"@en ;
+                        rdfs:comment "A chunk of Missing Values which is considered to have a short length."@en ;
+                        rdfs:isDefinedBy : ;
+                        rdfs:label "Short Missing Value Chunk"@en .
+
+
+###  https://w3id.org/datamining4eepsa#SimpleValueDrawing
+:SimpleValueDrawing rdf:type owl:Class ;
+                    rdfs:subClassOf :ValueDrawingProcedure ;
+                    <http://purl.org/ontology/bibo/status> "testing"@en ;
+                    rdfs:comment "Simple Value Drawing procedure to impute a Missing Value."@en ;
+                    rdfs:isDefinedBy : ;
+                    rdfs:label "Simple Value Drawing"@en .
+
+
+###  https://w3id.org/datamining4eepsa#SimpleValueEstimation
+:SimpleValueEstimation rdf:type owl:Class ;
+                       rdfs:subClassOf :ValueEstimationProcedure ;
+                       <http://purl.org/ontology/bibo/status> "testing"@en ;
+                       rdfs:comment "Simple Value Estimation procedure to impute a Missing Value."@en ;
+                       rdfs:isDefinedBy : ;
+                       rdfs:label "Simple Value Estimation"@en .
+
+
+###  https://w3id.org/datamining4eepsa#ValueDrawingProcedure
+:ValueDrawingProcedure rdf:type owl:Class ;
+                       rdfs:subClassOf :ImputationProcedure ;
+                       <http://purl.org/ontology/bibo/status> "testing"@en ;
+                       rdfs:comment "Procedure that consists in drawing a value to impute a Missing Value."@en ;
+                       rdfs:isDefinedBy : ;
+                       rdfs:label "Value Drawing Procedure"@en .
+
+
+###  https://w3id.org/datamining4eepsa#ValueEstimationProcedure
+:ValueEstimationProcedure rdf:type owl:Class ;
+                          rdfs:subClassOf :ImputationProcedure ;
+                          <http://purl.org/ontology/bibo/status> "testing"@en ;
+                          rdfs:comment "Procedure that consists in estimating a value to impute a Missing Value."@en ;
+                          rdfs:isDefinedBy : ;
+                          rdfs:label "Value Estimation Procedure"@en .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

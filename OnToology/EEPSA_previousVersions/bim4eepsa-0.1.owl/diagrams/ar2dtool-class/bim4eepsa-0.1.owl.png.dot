@@ -1,0 +1,57 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Door" "base:ExternalWall" "https://w3id.org/def/saref4bldg#PhysicalObject" "base:WeatherStation" "7be23c99:167c0bcffc2:-7ff9" "base:ExternalWindow" "7be23c99:167c0bcffc2:-7ff6" "https://w3id.org/def/saref4bldg#Building" "7be23c99:167c0bcffc2:-7ffc" "https://w3id.org/def/saref4bldg#BuildingSpace" "base:BuildingElement" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "base:Window" "base:Wall" "base:ExternalDoor" "7be23c99:167c0bcffc2:-7feb" "base:Roof" "7be23c99:167c0bcffc2:-7fe5" "base:ExternalBuildingElement" ; /*classes style*/
+	"NULL" -> "https://w3id.org/def/saref4bldg#Building" [ label = "rdf:first" ];
+	"NULL" -> "base:Window" [ label = "rdf:first" ];
+	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#location" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#hasSpace" [ label = "owl:onProperty" ];
+	"NULL" -> "base:ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "xsd:integer" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> "base:Wall" [ label = "rdf:first" ];
+	"NULL" -> "base:Door" [ label = "rdf:first" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7fe3" [ label = "rdf:rest" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7fea" [ label = "owl:unionOf" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7feb" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#isSpaceOf" [ label = "owl:onProperty" ];
+	"NULL" -> "base:pset_BuildingCommon_occupancyType" [ label = "owl:onProperty" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#BuildingSpace" [ label = "rdf:first" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ff8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#PhysicalObject" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:pset_BuildingCommon_buildingID" [ label = "owl:onProperty" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7fe5" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#PhysicalObject" [ label = "rdf:first" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7fe4" [ label = "owl:unionOf" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#isContainedIn" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#contains" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/def/saref4bldg#BuildingSpace" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ff5" [ label = "owl:intersectionOf" ];
+	"NULL" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "7be23c99:167c0bcffc2:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "base:pset_BuildingCommon_numberOfStoreys" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:allValuesFrom" ];
+	"base:Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"base:WeatherStation" -> "http://aemet.linkeddata.es/ontology/WeatherStation" [ label = "rdfs:label" ];
+	"base:BuildingElement" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcBuildingElement" [ label = "rdfs:seeAlso" ];
+	"base:Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"base:ExternalWindow" -> "7be23c99:167c0bcffc2:-7ff6" [ label = "owl:equivalentClass" ];
+	"base:Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"base:Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"base:ExternalWall" -> "7be23c99:167c0bcffc2:-7ff9" [ label = "owl:equivalentClass" ];
+	"base:ExternalDoor" -> "7be23c99:167c0bcffc2:-7ffc" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/def/saref4bldg#Building" -> "http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcproductextension/lexical/ifcbuilding.htm" [ label = "prov:hadPrimarySource" ];
+	"https://w3id.org/def/saref4bldg#Building" -> "https://w3id.org/ifc/IFC4_ADD1#IfcBuilding" [ label = "rdfs:seeAlso" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_buildingID" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_yearOfLastRefurbishment" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_numberOfStoreys" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_fireProtectionClass" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_constructionMethod" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_occupancyType" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_yearOfConstruction" ];
+
+}

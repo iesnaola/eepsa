@@ -1,0 +1,2468 @@
+@prefix : <https://w3id.org/measurements4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/measurements4eepsa#> .
+
+<https://w3id.org/measurements4eepsa#> rdf:type owl:Ontology ;
+                                        owl:versionIRI <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/measurements4eepsa-0.3.owl> ;
+                                        owl:imports <http://www.w3.org/ns/ssn/> ;
+                                        <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                        <http://purl.org/dc/terms/created> "2018-07-10" ;
+                                        <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""@en ;
+                                        <http://purl.org/dc/terms/description> "Devices, actuations and measurement-related information for the EEPSA Ontology."@en ;
+                                        <http://purl.org/dc/terms/issued> "2017-07-10" ;
+                                        <http://purl.org/dc/terms/modified> "2018-04-11" ;
+                                        <http://purl.org/dc/terms/title> "Measurements for EEPSA (Energy Efficiency Prediction Semantic Assistant) Ontology" ;
+                                        <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "m4eepsa" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/measurements4eepsa> ;
+                                        rdfs:comment """Information about changes compared to version 0.2
+*********************************************************
+•	The SSN ontology is now imported."""@en ;
+                                        owl:versionInfo 0.3 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/iot/vocab/m3-lite#hasDirection
+<http://purl.org/iot/vocab/m3-lite#hasDirection> rdf:type owl:ObjectProperty ;
+                                                 rdfs:range [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.org/iot/vocab/m3-lite#hasDirection> ;
+                                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                              owl:onClass <http://purl.org/iot/vocab/m3-lite#DirectionAzimuth>
+                                                            ] ;
+                                                 rdfs:comment "The observations made by the sensors are affected by the direction of the sensing device. This property allows observations of the sensor to be associated to the Direction concept."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "has Direction"@en .
+
+
+###  http://qudt.org/schema/qudt#unit
+<http://qudt.org/schema/qudt#unit> rdf:type owl:ObjectProperty ;
+                                   rdfs:range <http://qudt.org/schema/qudt#Unit> ;
+                                   rdfs:comment "A reference to the unit of measure of a quantity (variable or constant) of interest." ;
+                                   rdfs:label "unit"@en .
+
+
+###  https://w3id.org/measurements4eepsa#hasActuation
+:hasActuation rdf:type owl:ObjectProperty ;
+              rdfs:comment "Links an object with an Actuation."@en ;
+              rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+              rdfs:label "has actuation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#hasSunExposurePeriod
+:hasSunExposurePeriod rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Determines the period to which it is exposed to sun."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                      rdfs:label "has sun exposure period"@en .
+
+
+###  https://w3id.org/measurements4eepsa#temperatureSetpoint
+:temperatureSetpoint rdf:type owl:ObjectProperty ;
+                     rdfs:comment "The temperature sought within a space."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                     rdfs:label "temperature setpoint"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://qudt.org/schema/qudt#numericValue
+<http://qudt.org/schema/qudt#numericValue> rdf:type owl:DatatypeProperty ;
+                                           rdfs:range xsd:double ;
+                                           rdfs:label "numeric value"@en .
+
+
+###  https://w3id.org/measurements4eepsa#futureHour
+:futureHour rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:integer ;
+            rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+            rdfs:label "future hour"@en .
+
+
+###  https://w3id.org/measurements4eepsa#numberOfActiveAHUs
+:numberOfActiveAHUs rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "Represents the number of AHU (Air-Handling Unit) that are scheduled to be activated."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                    rdfs:label "number of active AHUs"@en .
+
+
+###  https://w3id.org/measurements4eepsa#scheduleDate
+:scheduleDate rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:date ;
+              rdfs:comment "The date when an Actuation is scheduled to happen."@en ;
+              rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+              rdfs:label "schedule date"@en .
+
+
+###  https://w3id.org/measurements4eepsa#scheduleDateTime
+:scheduleDateTime rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "The date time when an Actuation is scheduled to happen."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "schedule date time"@en .
+
+
+###  https://w3id.org/measurements4eepsa#scheduleTime
+:scheduleTime rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:time ;
+              rdfs:comment "The time when an Actuation is scheduled to happen."@en ;
+              rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+              rdfs:label "schedule time"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.qudt.org/qudt/owl/1.0.0/unit.owl#Bar
+<http://data.qudt.org/qudt/owl/1.0.0/unit.owl#Bar> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                   rdfs:comment "Metric unit of atmospheric pressure equal to 14.50 pounds per square inch (lb/in2), 1.02 kilograms per square centimeter (kg/cm2), 29.53 inches of mercury (in Hg), or 0.9869 atmosphere."@en ;
+                                                   rdfs:label "Bar"@en ;
+                                                   rdfs:seeAlso "http://qudt.org/vocab/unit#Bar" .
+
+
+###  http://data.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeAngle
+<http://data.qudt.org/qudt/owl/1.0.0/unit.owl#DegreeAngle> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Degree> ;
+                                                           rdfs:comment "A plane angle unit which is equal to 1/360 of a full rotation or pi/180 rad."@en ;
+                                                           rdfs:label "Degree Angle"@en ;
+                                                           rdfs:seeAlso "http://qudt.org/vocab/unit#DegreeAngle" .
+
+
+###  http://data.qudt.org/qudt/owl/1.0.0/unit.owl#ElectricCurrent
+<http://data.qudt.org/qudt/owl/1.0.0/unit.owl#ElectricCurrent> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                               <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                               rdfs:comment "Electric current is the flow of electric charge. It is a base quantity in the International System of Units. Electric current is electric charge divided by time. Electric Current is the flow (movement) of electric charge. The amount of electric current through some surface, e.g., a section through a copper conductor, is defined as the amount of electric charge flowing through that surface over time."@en ;
+                                                               rdfs:label "Electric Current"@en ;
+                                                               rdfs:seeAlso "http://qudt.org/vocab/quantity#ElectricCurrent" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Acceleration
+<http://purl.org/iot/vocab/m3-lite#Acceleration> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "The rate of change of the velocity of a particle with respect to time."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Acceleration"@en ;
+                                                 rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/dim#Acceleration" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AccelerationInstantaneous
+<http://purl.org/iot/vocab/m3-lite#AccelerationInstantaneous> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Acceleration> ;
+                                                              rdfs:comment "The acceleration at a given instant of time."@en ;
+                                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                              rdfs:label "Instantaneous Acceleration"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Accelerometer
+<http://purl.org/iot/vocab/m3-lite#Accelerometer> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                  rdfs:comment " Accelerometers are used to automatically determine the orientation in which the user is holding the IoT Object (portrait or landscape)."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Accelerometer"@en ;
+                                                  rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#Accelerometer> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ActivePower
+<http://purl.org/iot/vocab/m3-lite#ActivePower> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Power> ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AirPollutantSensor
+<http://purl.org/iot/vocab/m3-lite#AirPollutantSensor> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AirPollution
+<http://purl.org/iot/vocab/m3-lite#AirPollution> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "Usually measured using Air Quality Index (AQI), it is the measure of Air Pollution in the environment. It is similar to Air Quality."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Air Pollution Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AirQuality
+<http://purl.org/iot/vocab/m3-lite#AirQuality> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                               <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                               rdfs:comment "Usually measured using an air quality index (AQI) that is a number used by government agencies to communicate to the public how polluted the air currently is or how polluted it is forecast to become. Different countries have their own air quality indices, corresponding to different national air quality standards. It is the measure of Air Quality of the environment. It is similar to Air Pollution. (Source Wikipedia)."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Air Quality Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AirTemperature
+<http://purl.org/iot/vocab/m3-lite#AirTemperature> rdf:type owl:Class ;
+                                                   owl:equivalentClass :OutdoorTemperature ;
+                                                   rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ,
+                                                                    <https://w3id.org/measurements4eepsa#> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AirThermometer
+<http://purl.org/iot/vocab/m3-lite#AirThermometer> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                   rdfs:comment "Device to measure the Air temperature of either indoor or outdoor atmosphere."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Air Thermometer"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Ampere
+<http://purl.org/iot/vocab/m3-lite#Ampere> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                           rdfs:comment "It is a unit of electric current, or amount of electric charge per second."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Microampere (uA)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AngularSpeed
+<http://purl.org/iot/vocab/m3-lite#AngularSpeed> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "It is the rate of change of angular displacement and is a vector quantity (more precisely, a pseudovector) that specifies the angular speed (rotational speed) of an object and the axis about which the object is rotating. (Source Wikipedia)."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Angular Speed"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AtmosphericPressure
+<http://purl.org/iot/vocab/m3-lite#AtmosphericPressure> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Pressure> ;
+                                                        rdfs:comment "The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Atmospheric Pressure"@en ;
+                                                        rdfs:seeAlso <http://openiot.eu/ontology/ns/AtmospherePressure> ,
+                                                                     <http://paul.staroch.name/thesis/SmartHomeWeather.owl#AtmosphericPressure> ,
+                                                                     "http://purl.oclc.org/NET/ssnx/qu/quantity#atmosphericPressure" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#AtmosphericPressureSensor
+<http://purl.org/iot/vocab/m3-lite#AtmosphericPressureSensor> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                              rdfs:comment "Atmospheric Pressure Sensor, Barometer or Barometric Pressure Sensor is a scientific instrument used in meteorology to measure atmospheric pressure."@en ;
+                                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                              rdfs:label "Atmospheric Pressure Sensor"@en ;
+                                                              rdfs:seeAlso <http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/weather.owlPressure> ,
+                                                                           <http://casas.wsu.edu/owl/cose.owl#BarometricPressureSensor> ,
+                                                                           <http://purl.oclc.org/NET/ssnx/meteo/aws#AtmosphericPressureSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#BatteryLevel
+<http://purl.org/iot/vocab/m3-lite#BatteryLevel> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "Measure of the percentage of the battery capacity that remains available."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Battery Level Quantity Kind"@en ;
+                                                 rdfs:seeAlso "http://www.w3.org/2007/uwa/context/deliveryContext.owl#BatteryLevel" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#BoardTemperature
+<http://purl.org/iot/vocab/m3-lite#BoardTemperature> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                     rdfs:comment "Measure of board temperature."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Board Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#BoardThermometer
+<http://purl.org/iot/vocab/m3-lite#BoardThermometer> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                     rdfs:comment "Device used to measure board temperature."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Board Thermometer"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#BuildingTemperature
+<http://purl.org/iot/vocab/m3-lite#BuildingTemperature> rdf:type owl:Class ;
+                                                        owl:equivalentClass :IndoorTemperature ;
+                                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                        rdfs:comment "Measure of building or room temperature."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Building/Room Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CO2
+<http://purl.org/iot/vocab/m3-lite#CO2> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                        rdfs:comment "Carbon Dioxide (CO2) measure in the atmosphere."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                        rdfs:label "Carbon Dioxide (CO2) Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CO2Sensor
+<http://purl.org/iot/vocab/m3-lite#CO2Sensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                              rdfs:comment "Carbon Dioxide (CO2) Sensor used to measure level of CO2 in the atmosphere."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Carbon Dioxide (CO2) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#COSensor
+<http://purl.org/iot/vocab/m3-lite#COSensor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                             rdfs:comment "Device to detect Carbon Monoxide (CO) in the environment."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Carbon Monoxide (CO) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Candela
+<http://purl.org/iot/vocab/m3-lite#Candela> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                            rdfs:comment "Candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540 x 10^12 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian. (Source Wikipedia)."@en ;
+                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                            rdfs:label "Candela"@en ;
+                                            rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#candela> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Capacitance
+<http://purl.org/iot/vocab/m3-lite#Capacitance> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                rdfs:comment "Measure of the ability of a system to store an electric charge."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Capacitance"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Centibar
+<http://purl.org/iot/vocab/m3-lite#Centibar> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://data.qudt.org/qudt/owl/1.0.0/unit.owl#Bar> ;
+                                             rdfs:comment "The centibar is a unit of pressure defined as 1e-2 bar."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Centibar"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Centimetre
+<http://purl.org/iot/vocab/m3-lite#Centimetre> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Meter> ;
+                                               rdfs:comment "A metric unit of length, equal to one hundredth of a metre."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Centimetre, Centimeter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration
+<http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                                          rdfs:comment "Measure of Chemical Agent Atmospheric Concentration"@en ;
+                                                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                          rdfs:label "Chemical Agent Atmospheric Concentration Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationAirParticles
+<http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationAirParticles> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration> ;
+                                                                                      rdfs:comment "Measure of the concentration of chemical particles suspended in the atmosphere."@en ;
+                                                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                                      rdfs:label "Air Particles Chemical Agent Atmospheric Concentration"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationCO
+<http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationCO> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration> ;
+                                                                            rdfs:comment "Measure of the concentration of Carbon Monoxide (CO) gas suspended in the atmosphere."@en ;
+                                                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                            rdfs:label "Carbon Monoxide (CO) Chemical Agent Atmospheric Concentration"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNO2
+<http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNO2> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration> ;
+                                                                             rdfs:comment "Measure of the concentration of NO2 gas suspended in the atmosphere."@en ;
+                                                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                             rdfs:label "NO2 Chemical Agent Atmospheric Concentration"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CloudCover
+<http://purl.org/iot/vocab/m3-lite#CloudCover> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                               rdfs:comment "Measure of cloud cover at a certain time. "@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Cloud Cover Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CloudCoverSensor
+<http://purl.org/iot/vocab/m3-lite#CloudCoverSensor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                     rdfs:comment "Cloud Cover Sensor is used to detect whether it is sunny, cloudy, etc."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Cloud Cover Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Conductivity
+<http://purl.org/iot/vocab/m3-lite#Conductivity> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "Measure of ability to conduct electricity. It is measured in siemens per meter (S/m)."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Conductivity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ConductivitySensor
+<http://purl.org/iot/vocab/m3-lite#ConductivitySensor> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                       rdfs:comment "Device used to measure the conductivity of a system."@en ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                       rdfs:label "Conductivity Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Coordinates
+<http://purl.org/iot/vocab/m3-lite#Coordinates> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                rdfs:comment "Triples for location in the (Latitude, Longitude, Altitude) format."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Coordinates"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Coulomb
+<http://purl.org/iot/vocab/m3-lite#Coulomb> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                            rdfs:comment "SI unit of electric charge."@en ;
+                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                            rdfs:label "Coulomb"@en ;
+                                            rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#coulomb> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Day
+<http://purl.org/iot/vocab/m3-lite#Day> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#SecondTime> ;
+                                        rdfs:comment "Day is a unit of time."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                        rdfs:label "Day"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Decibel
+<http://purl.org/iot/vocab/m3-lite#Decibel> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                            rdfs:comment "Decibel is a logarithmic unit used to express the ratio of two values of a physical quantity. It is often used to measure sound level."@en ;
+                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                            rdfs:label "Decibel (dB)"@en ;
+                                            rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#decibel" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DecibelA
+<http://purl.org/iot/vocab/m3-lite#DecibelA> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Decibel> ;
+                                             rdfs:comment "Sound pressure sensed by the human ear."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "DecibelA (dB(A))"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Degree
+<http://purl.org/iot/vocab/m3-lite#Degree> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                           rdfs:comment "Degree."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Degree"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DegreeCelsius
+<http://purl.org/iot/vocab/m3-lite#DegreeCelsius> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Degree> ;
+                                                  rdfs:comment "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Degree Celsius"@en ;
+                                                  rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/qu/unit#degreeCelsius> ,
+                                                               <http://sweet.jpl.nasa.gov/ontology/units.owl#degreeC> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DegreeFahrenheit
+<http://purl.org/iot/vocab/m3-lite#DegreeFahrenheit> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Degree> ;
+                                                     rdfs:comment "Measurement Unit to represent temperature on the Fahrenheit scale."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Degree Fahrenheit"@en ;
+                                                     rdfs:seeAlso <http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/weather.owlfahrenheit> ,
+                                                                  <http://sweet.jpl.nasa.gov/ontology/units.owl#degreeF> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DeltaDewPoint
+<http://purl.org/iot/vocab/m3-lite#DeltaDewPoint> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DewPoint> ;
+                                                  rdfs:comment "Difference between Dewpoint and surface temperatures."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Delta Dew Point"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DeltaDewPointSensor
+<http://purl.org/iot/vocab/m3-lite#DeltaDewPointSensor> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                        rdfs:comment "Device that measures the difference between Dewpoint and surface temperatures."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Delta Dew Point Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DewPoint
+<http://purl.org/iot/vocab/m3-lite#DewPoint> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                             rdfs:comment "It is the temperature to which air must be cooled at constant pressure to condense to form liquid."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Dew Point"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DewPointSensor
+<http://purl.org/iot/vocab/m3-lite#DewPointSensor> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                   rdfs:comment "Device that measures dew point."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Dew Point Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DewPointTemperature
+<http://purl.org/iot/vocab/m3-lite#DewPointTemperature> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DewPoint> ;
+                                                        rdfs:comment "The temperature at which dew forms and is a measure of atmospheric moisture. It is the temperature to which air must be cooled at constant pressure and water content to reach saturation. A higher dew point indicates more moisture in the air; a dew point greater than 20 Degree C (68 Degree F) is considered uncomfortable and greater than 22 Degree C (72 Degree F) is considered to be extremely humid."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Dew Point Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Dimensionless
+<http://purl.org/iot/vocab/m3-lite#Dimensionless> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                  rdfs:comment "Without dimensions; having no appreciable or noteworthy extent. Without physical meaning."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Dimensionless"@en ;
+                                                  rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DirectionAzimuth
+<http://purl.org/iot/vocab/m3-lite#DirectionAzimuth> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                     rdfs:comment "The geodetic azimuth of the direction towards which an object is point to."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Direction Azimuth"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Distance
+<http://purl.org/iot/vocab/m3-lite#Distance> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                             <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                             rdfs:comment "Measure of how far apart objects are."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Distance"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#DistanceSensor
+<http://purl.org/iot/vocab/m3-lite#DistanceSensor> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                   rdfs:comment "Distance Sensor is used to detect distance between two objects for example:  the safety distance with other cars. Distance sensor can be a laser."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Distance Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#EAQI
+<http://purl.org/iot/vocab/m3-lite#EAQI> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "Unit to measure Air Quality in European cities."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "European Air Quality Index (EAQI)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricCharge
+<http://purl.org/iot/vocab/m3-lite#ElectricCharge> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                   rdfs:comment "It is the physical property of matter that causes it to experience a force when placed in an electromagnetic field. (Source Wikipedia)."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Electric Charge"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricField
+<http://purl.org/iot/vocab/m3-lite#ElectricField> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                  <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                  rdfs:comment "Electric field is the electric force per unit charge."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Electric Field"@en ;
+                                                  rdfs:seeAlso "http://qudt.org/vocab/quantity#ElectricField" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricField1800MHz
+<http://purl.org/iot/vocab/m3-lite#ElectricField1800MHz> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ElectricField> ;
+                                                         rdfs:comment "A field of force associated with a moving electric charge equivalent to an electric field and a magnetic field at right angles to each other and to the direction of propagation. Applied to the 1800 MHz UHF band."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Electric Field 1800 MHz"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricField2100MHz
+<http://purl.org/iot/vocab/m3-lite#ElectricField2100MHz> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ElectricField> ;
+                                                         rdfs:comment "A field of force associated with a moving electric charge equivalent to an electric field and a magnetic field at right angles to each other and to the direction of propagation. Applied to the 2100 MHz UHF band."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Electric Field 2100 MHz"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricField2400MHz
+<http://purl.org/iot/vocab/m3-lite#ElectricField2400MHz> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ElectricField> ;
+                                                         rdfs:comment "A field of force associated with a moving electric charge equivalent to an electric field and a magnetic field at right angles to each other and to the direction of propagation. Applied to the 2400 MHz UHF band."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Electric Field 2400 MHz"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricField900Mhz
+<http://purl.org/iot/vocab/m3-lite#ElectricField900Mhz> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ElectricField> ;
+                                                        rdfs:comment "A field of force associated with a moving electric charge equivalent to an electric field and a magnetic field at right angles to each other and to the direction of propagation. Applied to the 900 MHz UHF band."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Electric Field 900 MHz"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricPotential
+<http://purl.org/iot/vocab/m3-lite#ElectricPotential> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                      rdfs:comment "Electric potential is the potential energy per unit charge associated with static (time-invariant) electric field."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Electric Potential"@en ;
+                                                      rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/dim#ElectricPotential" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricalResistance
+<http://purl.org/iot/vocab/m3-lite#ElectricalResistance> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                         rdfs:comment "The electrical resitance of an electrical conductor is the opposition to the passage of an electric current through that conductor."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Electrical Resistance"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ElectricalSensor
+<http://purl.org/iot/vocab/m3-lite#ElectricalSensor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                     rdfs:comment "Electrical Sensor."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Electrical Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Energy
+<http://purl.org/iot/vocab/m3-lite#Energy> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                           <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                           rdfs:comment "Energy is the property that must be transferred to an object in order to perform work on. (Source Wikipedia)."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Energy"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#EnergyMeter
+<http://purl.org/iot/vocab/m3-lite#EnergyMeter> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Sensor to measure power or energy consumption."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Energy Meter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Farad
+<http://purl.org/iot/vocab/m3-lite#Farad> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Farad"@en ;
+                                          rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#farad> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FillLevel
+<http://purl.org/iot/vocab/m3-lite#FillLevel> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                              <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                              rdfs:comment "Property used to determine the level a certain object such as waste bin is filled upto."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Fill Level"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Frequency
+<http://purl.org/iot/vocab/m3-lite#Frequency> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                              <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                              rdfs:comment "Frequency is the number of occurrences of a repeating event per unit time."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Frequency"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FrequencySensor
+<http://purl.org/iot/vocab/m3-lite#FrequencySensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "Device used to detect the frequency."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Frequency Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FuelConsumption
+<http://purl.org/iot/vocab/m3-lite#FuelConsumption> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                    rdfs:comment "The amount of fuel a vehicle uses to travel a particular distance at a particular speed."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Fuel Consumption Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FuelConsumptionInstantaneous
+<http://purl.org/iot/vocab/m3-lite#FuelConsumptionInstantaneous> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#FuelConsumption> ;
+                                                                 rdfs:comment "A measure that displays the instantaneous fuel consumption of a vehicle during its operation."@en ;
+                                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                 rdfs:label "Fuel Consumption Instantaneous"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FuelConsumptionTotal
+<http://purl.org/iot/vocab/m3-lite#FuelConsumptionTotal> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#FuelConsumption> ;
+                                                         rdfs:comment "Accumulated amount of fuel used during vehicle operation."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Fuel Consumption Total"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#FuelLevel
+<http://purl.org/iot/vocab/m3-lite#FuelLevel> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                              rdfs:comment "Device used to detect fuel level in a system such a car."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Fuel Level Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GPSSensor
+<http://purl.org/iot/vocab/m3-lite#GPSSensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                              rdfs:comment "Device that allows an object to localize itself."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "GPS Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GasDetector
+<http://purl.org/iot/vocab/m3-lite#GasDetector> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Device that detects the presence of gases in an area, often as part of a safety system."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Gas Detector"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor
+<http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#AirPollutantSensor> ;
+                                                           rdfs:comment "Device used to detect poisonous gaseous in the environment."@en ;
+                                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                           rdfs:label "Gaseous Pollutant Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Gauss
+<http://purl.org/iot/vocab/m3-lite#Gauss> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "Gauss is the CGS unit of measurement of magnetic flux density (or magnetic induction) (B) (Source Wikipedia)"@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Gauss"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Gram
+<http://purl.org/iot/vocab/m3-lite#Gram> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "It is a metric system unit of mass" ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Gram (g)" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre
+<http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                      rdfs:comment "It is defined by mass in grams divided by volume in cubic metres."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Gram Per Cubic Metre"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GramPerLiter
+<http://purl.org/iot/vocab/m3-lite#GramPerLiter> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                 rdfs:comment "It shows how many grams of a certain substance are present in one liter of a usually liquid or gaseous mixture."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Gram Per Liter (g/L)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GyrometerSensor
+<http://purl.org/iot/vocab/m3-lite#GyrometerSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "A gyrometer is an instrument which measures an angular speed."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Gyrometer Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#GyroscopeSensor
+<http://purl.org/iot/vocab/m3-lite#GyroscopeSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "A gyroscope is a device for measuring or maintening orientation."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Gyroscope Sensor"@en ;
+                                                    rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#Gyroscope> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#H2SSensor
+<http://purl.org/iot/vocab/m3-lite#H2SSensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                              rdfs:comment "Device used to measure of hydrogen sulfide in the environment."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "H2S Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Hertz
+<http://purl.org/iot/vocab/m3-lite#Hertz> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "The SI unit of frequency, equal to one cycle per second."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Hertz"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Hour
+<http://purl.org/iot/vocab/m3-lite#Hour> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#SecondTime> ;
+                                         rdfs:comment "Hour of the day."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Hour"@en ;
+                                         rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#hour> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#HouseholdApplianceTemperature
+<http://purl.org/iot/vocab/m3-lite#HouseholdApplianceTemperature> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                                  rdfs:comment "Measure of Household Appliance Temperature."@en ;
+                                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                  rdfs:label "Household Appliance Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Humidity
+<http://purl.org/iot/vocab/m3-lite#Humidity> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                             <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Humidity"@en ;
+                                             rdfs:seeAlso <http://elite.polito.it/ontologies/dogont.owl#HumidityMeasurementMNotification> ,
+                                                          <http://openiot.eu/ontology/ns/AtmosphereHumidity> ,
+                                                          <http://paul.staroch.name/thesis/SmartHomeWeather.owl#Humidity> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#HumiditySensor
+<http://purl.org/iot/vocab/m3-lite#HumiditySensor> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                   rdfs:comment "Humidity sensor or hygrometer is an instrument used for measuring the moisture concent in the environment."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Humidity Sensor"@en ;
+                                                   rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/meteo/aws#HumiditySensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Illuminance
+<http://purl.org/iot/vocab/m3-lite#Illuminance> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                rdfs:comment "Illuminance is the total luminous flux incident on a surface, per unit area."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Illuminance"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ImageSensor
+<http://purl.org/iot/vocab/m3-lite#ImageSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Sensor that detects and conveys the information that constitutes an image."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Image Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Inch
+<http://purl.org/iot/vocab/m3-lite#Inch> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Meter> ;
+                                         rdfs:comment "Length in inches."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Inch"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Index
+<http://purl.org/iot/vocab/m3-lite#Index> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "Arbitrary indirect reference which should be translated into meaningful measurements by using the corresponding decoding algorithm detailed in the resource description. In this case the returned values can only take certain values from a finite set."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Index"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Kelvin
+<http://purl.org/iot/vocab/m3-lite#Kelvin> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                           rdfs:comment "Kelvin is a unit of measurement for temperature."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Kelvin, Degree Kelvin"@en ;
+                                           rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#kelvin> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#KiloWattHour
+<http://purl.org/iot/vocab/m3-lite#KiloWattHour> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                 rdfs:comment "Measure of electrical energy equivalent to a power consumption of one thousand watts for one hour."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Kilo Watt Hour"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#KilobitsPerSecond
+<http://purl.org/iot/vocab/m3-lite#KilobitsPerSecond> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                      rdfs:comment "It is a unit of data transfer rate equal to: 1,000 bits per second."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Kilobits Per Second"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Kilogram
+<http://purl.org/iot/vocab/m3-lite#Kilogram> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Gram> ;
+                                             rdfs:comment "The SI unit of mass, it is equal to the mass of the international prototype of the kilogram."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Kilogram (kg)"@en ;
+                                             rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#kilogram" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#KilogramPerCubicMetre
+<http://purl.org/iot/vocab/m3-lite#KilogramPerCubicMetre> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre> ;
+                                                          rdfs:comment "It is SI derived unit of density, defined by mass in kilograms divided by volume in cubic metres."@en ;
+                                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                          rdfs:label "Kilogram Per Cubic Metre, Kilogram Per Cubic Meter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#KilometerPerHour
+<http://purl.org/iot/vocab/m3-lite#KilometerPerHour> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#MeterPerSecond> ;
+                                                     rdfs:comment "It is a unit of speed, expressing the number of kilometres travelled in one hour."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Kilometer Per Hour"@en ;
+                                                     rdfs:seeAlso "http://data.qudt.org/qudt/owl/1.0.0/unit.owl#KilometerPerHour" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Kilometre
+<http://purl.org/iot/vocab/m3-lite#Kilometre> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Meter> ;
+                                              rdfs:comment "A metric unit of measurement equal to 1,000 metres (approx 0.62 miles)."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Kilometre, Kilometer"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LeafWetness
+<http://purl.org/iot/vocab/m3-lite#LeafWetness> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                rdfs:comment "Leaf wetness is a meteorological parameter that describes the amount of dew and precipitation left on surfaces. It is used for monitoring leaf moisture for agricultural purposes, such as fungus and disease control, for control of irrigation systems, and for detection of fog and dew conditions, and early detection of rainfall. (Source Wikipedia)."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Leaf Wetness"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LeafWetnessSensor
+<http://purl.org/iot/vocab/m3-lite#LeafWetnessSensor> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                      rdfs:comment "Leaf Wetness Sensor is used in agriculture to check whether the plants need to be watered."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Leaf Wetness Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LightSensor
+<http://purl.org/iot/vocab/m3-lite#LightSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Light/Illuminance Sensor is used to adjust the brightness of the surface."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Light Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Liter
+<http://purl.org/iot/vocab/m3-lite#Liter> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "A metric unit of capacity defined as the volume of one kilogram of water under standard conditions. It is equal to 1,000 cubic centimetres."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Liter, Litre"@en ;
+                                          rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#litre" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LitrePer100Kilometres
+<http://purl.org/iot/vocab/m3-lite#LitrePer100Kilometres> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                          rdfs:comment "A consumption unit which is equal to the one of a vehicle which needs 1 fuel litre in order to traverse 100 kilometres."@en ;
+                                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                          rdfs:label "Litre Per 100 Kilometres, Liter Per 100 Kilometers"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LocationQK
+<http://purl.org/iot/vocab/m3-lite#LocationQK> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                               <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                               rdfs:comment "A particular place or position."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Location Quantity Kind"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Lumen
+<http://purl.org/iot/vocab/m3-lite#Lumen> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "The SI unit of luminous flux, equal to the amount of light emitted per second in a unit solid angle of one steradian from a uniform source of one candela."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Lumen (lm)"@en ;
+                                          rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#lumen" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LuminousFlux
+<http://purl.org/iot/vocab/m3-lite#LuminousFlux> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                 rdfs:comment "Luminous Flux is the measure of the perceived power of light."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Luminous Flux"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LuminousIntensity
+<http://purl.org/iot/vocab/m3-lite#LuminousIntensity> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                      rdfs:comment " It is a measure of the wavelength-weighted power emitted by a light source in a particular direction per unit solid angle, based on the luminosity function, a standardized model of the sensitivity of the human eye. The SI unit of luminous intensity is the candela (cd), an SI base unit. (Source Wikipedia)"@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Luminous Intensity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Lux
+<http://purl.org/iot/vocab/m3-lite#Lux> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                        rdfs:comment "The SI unit of illuminance, equal to one lumen per square metre."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                        rdfs:label "Lux (lx)"@en ;
+                                        rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#lux> ,
+                                                     "http://purl.oclc.org/NET/ssnx/qu/unit#lux" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MagneticField
+<http://purl.org/iot/vocab/m3-lite#MagneticField> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                  <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                  rdfs:comment "A region around a magnetic material or a moving electric charge within which the force of magnetism acts."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Magnetic Field"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MagneticFluxDensity
+<http://purl.org/iot/vocab/m3-lite#MagneticFluxDensity> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                        rdfs:comment "It is the magnetic flux  through a surface is the surface integral of the normal component of the magnetic field (B) passing through that surface. The SI unit of magnetic flux is the weber (Wb). (Source Wikipedia)."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Magnetic Flux Density"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Magnetometer
+<http://purl.org/iot/vocab/m3-lite#Magnetometer> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                 rdfs:comment "A magnetometer is an device that measures magnetism—either magnetization of magnetic material like a ferromagnet, or the strength and, in some cases, direction of the magnetic field at a point in space. (Source Wikipedia)."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Magnetometer"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Mass
+<http://purl.org/iot/vocab/m3-lite#Mass> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                         rdfs:comment "Mass is a property of a physical body. It is the measure of an object's resistance to acceleration when a net force is applied."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Mass"@en ;
+                                         rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/quantity#mass" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Meter
+<http://purl.org/iot/vocab/m3-lite#Meter> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "It is the unit of length."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Meter"@en ;
+                                          rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#meter> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MeterPerSecond
+<http://purl.org/iot/vocab/m3-lite#MeterPerSecond> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                   rdfs:comment "A speed/velocity unit which is equal to the speed of an object traveling 1 meter distance in one second."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Meter Per Second (m/s)"@en ;
+                                                   rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#metrePerSecond" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MeterPerSecondSquare
+<http://purl.org/iot/vocab/m3-lite#MeterPerSecondSquare> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                         rdfs:comment "It is the unit of acceleration."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Meter Per Second Square"@en ;
+                                                         rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/qu/unit#metrePerSecondSquared> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MethaneSensor
+<http://purl.org/iot/vocab/m3-lite#MethaneSensor> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                                  rdfs:comment "Device used to detect Methane in the environment."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Methane (CH4) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Microampere
+<http://purl.org/iot/vocab/m3-lite#Microampere> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Ampere> ;
+                                                rdfs:comment "It is a unit of electric current, or amount of electric charge per second."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Microampere (uA)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Microgram
+<http://purl.org/iot/vocab/m3-lite#Microgram> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Gram> ;
+                                              rdfs:comment "It is a unit of mass equal to one billionth (1×10^−9) of a kilogram."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Microgram (ug)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MicrogramPerCubicMetre
+<http://purl.org/iot/vocab/m3-lite#MicrogramPerCubicMetre> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre> ;
+                                                           rdfs:comment "Microgram per cubic metre is a unit of density defined as microgram divided by cubic metre. Milligram per cubic metre is a derived unit in the International System of Units."@en ;
+                                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                           rdfs:label "Microgram Per Cubic Metre, Microgram Per Cubic Meter"@en ;
+                                                           rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#microgramPerCubicMetre" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Microvolt
+<http://purl.org/iot/vocab/m3-lite#Microvolt> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Volt> ;
+                                              rdfs:comment "It is a unit of electromotive force or potential difference equal to one millionth of a volt. "@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Microvolt (uV)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Microwatt
+<http://purl.org/iot/vocab/m3-lite#Microwatt> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Watt> ;
+                                              rdfs:comment "It is a unit of power."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Microwatt (uW)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Mileage
+<http://purl.org/iot/vocab/m3-lite#Mileage> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                            <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                            rdfs:comment "Measure of the number of miles or the average distance that a vehicle can travel on a specified quantity of fuel"@en ;
+                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                            rdfs:label "Mileage"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MileageDistanceToService
+<http://purl.org/iot/vocab/m3-lite#MileageDistanceToService> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Mileage> ;
+                                                             rdfs:comment "The distance which can be travelled by the vehicle before the next service inspection is required.  A negative distance is transmitted if the service inspection has been passed."@en ;
+                                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                             rdfs:label "Mileage Distance To Service"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MileageTotal
+<http://purl.org/iot/vocab/m3-lite#MileageTotal> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Mileage> ;
+                                                 rdfs:comment "The total distance travelled by the particular vehicle since its initial production."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Mileage Total"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Miles
+<http://purl.org/iot/vocab/m3-lite#Miles> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Meter> ;
+                                          rdfs:comment "It is a unit of length that is equal to 1,760 yards (approx. 1.609 kilometres)."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Miles"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Milliampere
+<http://purl.org/iot/vocab/m3-lite#Milliampere> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Ampere> ;
+                                                rdfs:comment "One thousandth of an ampere."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Milliampere (mA)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Millibar
+<http://purl.org/iot/vocab/m3-lite#Millibar> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://data.qudt.org/qudt/owl/1.0.0/unit.owl#Bar> ;
+                                             rdfs:comment "One thousandth of a bar."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Millibar"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Milligram
+<http://purl.org/iot/vocab/m3-lite#Milligram> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Gram> ;
+                                              rdfs:comment "One thousandth of a gram."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Milligram (mg)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MilligramPerCubicMetre
+<http://purl.org/iot/vocab/m3-lite#MilligramPerCubicMetre> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GramPerCubicMetre> ;
+                                                           rdfs:comment "It is a density measurement unit."@en ;
+                                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                           rdfs:label "Milligram Per Cubic Metre, Milligram Per Cubic Meter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MilligramPerSquareMetre
+<http://purl.org/iot/vocab/m3-lite#MilligramPerSquareMetre> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                            rdfs:comment "A dose unit which is equal to 1 milligram of a substance per square meter of surface area of the recipient subject."@en ;
+                                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                            rdfs:label "Milligram Per Square Metre"@en ;
+                                                            rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#milligramPerSquareMetre" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Millilitre
+<http://purl.org/iot/vocab/m3-lite#Millilitre> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Liter> ;
+                                               rdfs:comment "One thousandth of a litre (0.002 pint)."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Millilitre"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MillimeterPerHour
+<http://purl.org/iot/vocab/m3-lite#MillimeterPerHour> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                      rdfs:comment "A unit of both speed (scalar) and velocity (vector), defined as the distance of one millimeter travelled per unit hour."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Millimeter Per Hour, Millimetre Per Hour"@en ;
+                                                      rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#millimetrePerHour" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Millimetre
+<http://purl.org/iot/vocab/m3-lite#Millimetre> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Meter> ;
+                                               rdfs:comment "One thousandth of a metre (0.039 in)."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Millimetre, Millimeter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Millisecond
+<http://purl.org/iot/vocab/m3-lite#Millisecond> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#SecondTime> ;
+                                                rdfs:comment "One thousandth of a second."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Millisecond"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Millivolt
+<http://purl.org/iot/vocab/m3-lite#Millivolt> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Volt> ;
+                                              rdfs:comment "One thousandth of a volt."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Millivolt (mV)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MillivoltPerMeter
+<http://purl.org/iot/vocab/m3-lite#MillivoltPerMeter> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                      rdfs:comment "It is a measure of the intensity of the signal of a radio transmitter."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Millivolt Per Meter, Millivolt Per Metre"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Milliwatt
+<http://purl.org/iot/vocab/m3-lite#Milliwatt> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Watt> ;
+                                              rdfs:comment "A unit of power equal to one thousandth of a watt."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Milliwatt (mW)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MinuteAngle
+<http://purl.org/iot/vocab/m3-lite#MinuteAngle> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                rdfs:comment "A Minute of Angle (MOA) is an angular measurement. A MOA is 1/60th of a degree."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Minute Angle"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MinuteTime
+<http://purl.org/iot/vocab/m3-lite#MinuteTime> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#SecondTime> ;
+                                               rdfs:comment "A unit of time equal to 60 seconds or 1/60th of an hour."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Minute Time"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MmHg
+<http://purl.org/iot/vocab/m3-lite#MmHg> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "A millimeter of mercury is a manometric unit of pressure, formerly defined as the extra pressure generated by a column of mercury one millimetre high and now defined as precisely 133.322387415 pascals. It is denoted by the symbol mmHg. It  is used to measure blood pressure measurements (systolic and diastolic)."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "MmHg"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MmolPerLiter
+<http://purl.org/iot/vocab/m3-lite#MmolPerLiter> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                 rdfs:comment "It is the amount of a substance that corresponds to its formula mass in milligrams. MmolPerLiter is used to measure cholesterol."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Mmol Per Liter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Motion
+<http://purl.org/iot/vocab/m3-lite#Motion> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                           <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                           rdfs:comment "It is the action or process of moving or being moved."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Motion"@en ;
+                                           rdfs:seeAlso <http://spitfire-project.eu/ontology/ns/Motion> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#MotionState
+<http://purl.org/iot/vocab/m3-lite#MotionState> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                                <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                rdfs:comment "Indicator of whether a person (or object) is detected upon his/her/its movement."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Motion State"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#NH3Sensor
+<http://purl.org/iot/vocab/m3-lite#NH3Sensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                              rdfs:comment "Device used to detect NH3 level in the environment."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "NH3 Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#NO2Sensor
+<http://purl.org/iot/vocab/m3-lite#NO2Sensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                              rdfs:comment "Sensor detecting levels of Nitrogen Dioxide (NO2) in the environment."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Nitrogen Dioxide (NO2) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#NOSensor
+<http://purl.org/iot/vocab/m3-lite#NOSensor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                             rdfs:comment "Device used to detect Nitrogen Oxide (NO) in the environment."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Nitrogen Oxide (NO) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#O3Sensor
+<http://purl.org/iot/vocab/m3-lite#O3Sensor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                             rdfs:comment "Device used to detect Ozone (O3) in the environment."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Ozone (O3) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#OccupancyDetector
+<http://purl.org/iot/vocab/m3-lite#OccupancyDetector> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                      rdfs:comment "Device used to detect if on object is occupied or not."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Occupancy Detector"@en ;
+                                                      rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#PassiveInfraredSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Ohm
+<http://purl.org/iot/vocab/m3-lite#Ohm> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                        rdfs:comment "Ohm is the unit of electrical resistance."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                        rdfs:label "Ohm"@en ;
+                                        rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#ohm> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Okta
+<http://purl.org/iot/vocab/m3-lite#Okta> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "Okta is the unit to measure the cloud cover."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Okta"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#OxygenSensor
+<http://purl.org/iot/vocab/m3-lite#OxygenSensor> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                                 rdfs:comment "Device used to detect Oxygen (O2) in the environment."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Oxygen Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PH
+<http://purl.org/iot/vocab/m3-lite#PH> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                       rdfs:comment "It is a numeric scale used to specify the acidity or basicity of an aqueous solution."@en ;
+                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                       rdfs:label "PH"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PHSensor
+<http://purl.org/iot/vocab/m3-lite#PHSensor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                             rdfs:comment "Device used to detect PH level."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "PH Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PPM
+<http://purl.org/iot/vocab/m3-lite#PPM> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                        rdfs:comment "It describes the concentration of something in water or soil."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                        rdfs:label "PPM (parts per million)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Pascal
+<http://purl.org/iot/vocab/m3-lite#Pascal> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                           rdfs:comment "Unit for pressure (e.g., atmospheric pressure)."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Pascal"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Percent
+<http://purl.org/iot/vocab/m3-lite#Percent> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                            rdfs:label "Percent"@en ;
+                                            rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#percent> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Pound
+<http://purl.org/iot/vocab/m3-lite#Pound> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Gram> ;
+                                          rdfs:comment "A unit of weight equal to 16 oz. 1 pound= 453.592 grams"@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Pound"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Power
+<http://purl.org/iot/vocab/m3-lite#Power> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                          rdfs:comment "It is the rate, per unit time, at which electrical energy is transferred by an electric circuit."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Power"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Precipitation
+<http://purl.org/iot/vocab/m3-lite#Precipitation> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                  rdfs:comment "It is any product of the condensation of atmospheric water vapor that falls under gravity."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Precipitation"@en ;
+                                                  rdfs:seeAlso <http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/sensor-observation.owlPrecipitatiowl:onProperty> ,
+                                                               <http://paul.staroch.name/thesis/SmartHomeWeather.owl#Precipitation> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PrecipitationSensor
+<http://purl.org/iot/vocab/m3-lite#PrecipitationSensor> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                        rdfs:comment "It is a device measuring the amount of precipitation."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Precipitation Sensor"@en ;
+                                                        rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/meteo/aws#PrecipitationSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Presence
+<http://purl.org/iot/vocab/m3-lite#Presence> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                             rdfs:comment "Measure to know if an object is present. It is usually boolean."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Presence"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PresenceStatePeople
+<http://purl.org/iot/vocab/m3-lite#PresenceStatePeople> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Presence> ;
+                                                        rdfs:comment "The presence or absence of people passing."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Presence State People"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Pressure
+<http://purl.org/iot/vocab/m3-lite#Pressure> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                             rdfs:comment "It is the physical force exerted on or against an object by something in contact with it."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Pressure"@en ;
+                                             rdfs:seeAlso <http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/sensor-observation.owlPressureProperty> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PressureSensor
+<http://purl.org/iot/vocab/m3-lite#PressureSensor> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                   rdfs:comment "A device used to detect pressure. For example, it can be attached on the bed to infer if the user is lying, sleeping, sitting, bed occupancy, etc."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Pressure Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Proximity
+<http://purl.org/iot/vocab/m3-lite#Proximity> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                              rdfs:comment "Measure to detect proximity."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Proximity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ProximitySensor
+<http://purl.org/iot/vocab/m3-lite#ProximitySensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "Detect if something is within proximity of a sensor."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Proximity Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Radian
+<http://purl.org/iot/vocab/m3-lite#Radian> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                           rdfs:comment "The radian is a unit of angular measure defined such that an angle of one radian subtended from the center of a unit circle produces an arc with arc length 1."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Radian"@en ;
+                                           rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#radian> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RadianPerSecond
+<http://purl.org/iot/vocab/m3-lite#RadianPerSecond> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                    rdfs:comment "The radian per second is defined as the change in the orientation of an object, in radians, every second. The radian per second is the SI unit of angular (rotational) speed."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Radian Per Second"@en ;
+                                                    rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#radianPerSecond" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Rainfall
+<http://purl.org/iot/vocab/m3-lite#Rainfall> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                             rdfs:comment "The depth of precipitation (water-equivalent) that accumulated over a measurement time quantity."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Rainfall"@en ;
+                                             rdfs:seeAlso "http://sweet.jpl.nasa.gov/ontology/property.owl#Rainfall" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ReactivePower
+<http://purl.org/iot/vocab/m3-lite#ReactivePower> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Power> ;
+                                                  rdfs:comment "The portion of electricity that establishes and sustains the electric and magnetic fields of alternating-current equipment."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Reactive Power"@en ;
+                                                  rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/dim#ReactivePower" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RelativeHumidity
+<http://purl.org/iot/vocab/m3-lite#RelativeHumidity> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                     rdfs:comment "The ratio of vapour pressure to saturation vapour pressure, where vapour pressure is the pressure exerted by the molecules of water vapour and saturation vapour pressure is the pressure exerted by molecules of water vapour in AIR that has attained saturation."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Relative Humidity"@en ;
+                                                     rdfs:seeAlso "http://sweet.jpl.nasa.gov/ontology/property.owl#RelativeHumidity" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RevolutionsPerMinute
+<http://purl.org/iot/vocab/m3-lite#RevolutionsPerMinute> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                         rdfs:comment "Revolutions per minute (abbreviated rpm, RPM, rev/min, r/min) is a measure of the frequency of rotation, specifically the number of rotations around a fixed axis in one minute. It is used as a measure of rotational speed of a mechanical component."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Revolutions Per Minute"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RoadOccupancy
+<http://purl.org/iot/vocab/m3-lite#RoadOccupancy> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :SpaceOccupancy ;
+                                                  rdfs:comment "Ratio of time on which a road lane section is occupied by vehicles within a given period of time."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Road Occupancy"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RoadSurfaceThermometer
+<http://purl.org/iot/vocab/m3-lite#RoadSurfaceThermometer> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                           rdfs:comment "Device used to measure the road Surface temperature."@en ;
+                                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                           rdfs:label "Road Surface Thermometer"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RoadTemperature
+<http://purl.org/iot/vocab/m3-lite#RoadTemperature> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                    rdfs:comment "Temperature of the road."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Road Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#RoomTemperature
+<http://purl.org/iot/vocab/m3-lite#RoomTemperature> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#BuildingTemperature> ;
+                                                    rdfs:comment "Temperature of a room."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Room Temperature"@en ;
+                                                    rdfs:seeAlso <http://elite.polito.it/ontologies/dogont.owl#TemperatureMeasurementMNotification> ,
+                                                                 <http://sensormeasurement.appspot.com/home#RoomTemperature> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SO2Sensor
+<http://purl.org/iot/vocab/m3-lite#SO2Sensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#GaseousPollutantSensor> ;
+                                              rdfs:comment "Device use to detect Sulphur Dioxide (SO2) level in the environment."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Sulphur Dioxide (SO2) Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Salinity
+<http://purl.org/iot/vocab/m3-lite#Salinity> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                             rdfs:comment "It is the measure of all the salts dissolved in water."@en ;
+                                             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                             rdfs:label "Salinity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SaltMeter
+<http://purl.org/iot/vocab/m3-lite#SaltMeter> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                              rdfs:comment "Device use to detect salinity of water."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Salt Meter"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Scale
+<http://purl.org/iot/vocab/m3-lite#Scale> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "Arbitrary indirect reference which should be translated into meaningful measurements by using the corresponding decoding algorithm detailed in the resource description. In this case the returned values are part of a continuous variable which can take any numeric value."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Scale"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SecondAngle
+<http://purl.org/iot/vocab/m3-lite#SecondAngle> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                rdfs:comment "It is a unit of angular measurement equal to 1/60 of one degree."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Second Angle"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SecondTime
+<http://purl.org/iot/vocab/m3-lite#SecondTime> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                               rdfs:comment "Qualitatively defined as the second division of the hour by sixty, the first division by sixty being the minute. SI definition of second is \"the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Second Time"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#ShakeSensor
+<http://purl.org/iot/vocab/m3-lite#ShakeSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Shake sensor is used to deduce the quality of the road, earthquakes."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Shake Sensor"@en ;
+                                                rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#ShakeSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SmokeDetector
+<http://purl.org/iot/vocab/m3-lite#SmokeDetector> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                  rdfs:comment "Device used to detect if there is a fire or the smoke."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Smoke Detector"@en ;
+                                                  rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#SmokeAlarm> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SoilHumidity
+<http://purl.org/iot/vocab/m3-lite#SoilHumidity> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                 rdfs:comment "It is the quantity of water contained in a material, such as soil. "@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Soil Humidity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor
+<http://purl.org/iot/vocab/m3-lite#SoilHumiditySensor> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                       rdfs:comment "It is the quantity of water contained in a material, such as soil. "@en ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                       rdfs:label "Soil Humidity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SoilMoistureTension
+<http://purl.org/iot/vocab/m3-lite#SoilMoistureTension> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                        rdfs:comment "The force per unit area required to remove film water from soil."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Soil Moisture Tension"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SoilTemperature
+<http://purl.org/iot/vocab/m3-lite#SoilTemperature> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                    rdfs:comment "Soil temperature is the bulk temperature of the soil, not the surface (skin) temperature."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Soil Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SolarRadiation
+<http://purl.org/iot/vocab/m3-lite#SolarRadiation> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                   rdfs:comment "It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia)."@en ;
+                                                   rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                   rdfs:label "Solar Radiation Measurement, PAR Measurement (Photosynthetically Active Radiation)"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor
+<http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                         rdfs:comment "Device used to detect Solar Radiation."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Solar Radiation Sensor"@en ;
+                                                         rdfs:seeAlso <http://purl.oclc.org/NET/ssnx/meteo/aws#RadiationSensor> ,
+                                                                      <http://spitfire-project.eu/ontology/ns/Light> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Speed
+<http://purl.org/iot/vocab/m3-lite#Speed> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                          rdfs:comment "The rate at which someone or something moves or operates or is able to move or operate."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Speed"@en ;
+                                          rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/quantity#speed" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SpeedAverage
+<http://purl.org/iot/vocab/m3-lite#SpeedAverage> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Speed> ;
+                                                 rdfs:comment "The rate at which someone or something moves or operates or is able to move or operate."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Speed"@en ;
+                                                 rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/quantity#speed" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SpeedInstantaneous
+<http://purl.org/iot/vocab/m3-lite#SpeedInstantaneous> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Speed> ;
+                                                       rdfs:comment "A measure of the instantaneous rate of motion of an object."@en ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                       rdfs:label "Speed Instantaneous"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SpeedMedian
+<http://purl.org/iot/vocab/m3-lite#SpeedMedian> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Speed> ;
+                                                rdfs:comment "A measure of the median rate of motion of an object."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Speed Median"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SpeedSensor
+<http://purl.org/iot/vocab/m3-lite#SpeedSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Sensor used to detect speed."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Car Speed Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SunPositionDirection
+<http://purl.org/iot/vocab/m3-lite#SunPositionDirection> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                         rdfs:comment "The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia)."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Sun Position Direction"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SunPositionDirectionSensor
+<http://purl.org/iot/vocab/m3-lite#SunPositionDirectionSensor> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                               rdfs:comment "Sensor used to detect sun position."@en ;
+                                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                               rdfs:label "Sun Position Direction Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SunPositionElevation
+<http://purl.org/iot/vocab/m3-lite#SunPositionElevation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                         rdfs:comment "It is the altitude of the sun, the angle between the horizon and the centre of the sun's disc."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Sun Position Elevation"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SunPositionElevationSensor
+<http://purl.org/iot/vocab/m3-lite#SunPositionElevationSensor> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                               rdfs:comment "Device used to detect sun elevation."@en ;
+                                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                               rdfs:label "Sun Position Elevation Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Temperature
+<http://purl.org/iot/vocab/m3-lite#Temperature> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                rdfs:comment "It is the air temperature."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Temperature"@en ;
+                                                rdfs:seeAlso <http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/sensor-observation.owlTemperatureProperty> ,
+                                                             <http://openiot.eu/ontology/ns/Temperature> ,
+                                                             <http://purl.oclc.org/NET/ssnx/meteo/aws#air_temperature> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Tesla
+<http://purl.org/iot/vocab/m3-lite#Tesla> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                          rdfs:comment "It is the SI unit of magnetic flux density."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Tesla"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Thermometer
+<http://purl.org/iot/vocab/m3-lite#Thermometer> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "A device to measure the temperature in a room or outside."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Thermometer"@en ;
+                                                rdfs:seeAlso <http://casas.wsu.edu/owl/cose.owl#TempuratureSensor> ,
+                                                             <http://purl.oclc.org/NET/ssnx/meteo/aws#TemperatureSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Timestamp
+<http://purl.org/iot/vocab/m3-lite#Timestamp> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                              rdfs:comment "Sequence of characters or encoded information identifying when a certain event occurred, usually giving date and time of day, sometimes accurate to a small fraction of a second. This representation should be encoded following ISO8601."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Timestamp"@en ;
+                                              rdfs:seeAlso "http://sweet.jpl.nasa.gov/2.3/propTime.owl#Timestamp" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Tonne
+<http://purl.org/iot/vocab/m3-lite#Tonne> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Gram> ;
+                                          rdfs:comment "It is a non-SI metric unit of mass equal to 1,000 kilograms."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                          rdfs:label "Tonne"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#TouchSensor
+<http://purl.org/iot/vocab/m3-lite#TouchSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "Device that captures and records physical touch or embrace on a device and/or object."@en ;
+                                                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                rdfs:label "Touch Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#UltrasonicSensor
+<http://purl.org/iot/vocab/m3-lite#UltrasonicSensor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                     rdfs:comment "Ultrasonic sensors are used to deduce human posture in smart home for example."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Ultrasonic Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Visibility
+<http://purl.org/iot/vocab/m3-lite#Visibility> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                               rdfs:comment "The state of being able to see or be seen."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Visibility"@en ;
+                                               rdfs:seeAlso <http://openiot.eu/ontology/ns/AtmosphereVisibility> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#VisibilitySensor
+<http://purl.org/iot/vocab/m3-lite#VisibilitySensor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                     rdfs:comment "Device used to detect Visibility."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Visibility Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Volt
+<http://purl.org/iot/vocab/m3-lite#Volt> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "The SI unit of electromotive force, the difference of potential that would carry one ampere of current against one ohm resistance."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Volt"@en ;
+                                         rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#volt> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#VoltAmpereReactive
+<http://purl.org/iot/vocab/m3-lite#VoltAmpereReactive> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                       rdfs:comment "In electric power transmission and distribution, volt-ampere reactive (var) is a unit in which reactive power is expressed in an AC electric power system."@en ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                       rdfs:label "Volt Ampere Reactive, VAR"@en ;
+                                                       rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#var" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#VoltageSensor
+<http://purl.org/iot/vocab/m3-lite#VoltageSensor> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                  rdfs:comment "A device designed to respond to physical stimuli such as temperature, light, magnetism, or movement, and to transmit resulting impulses for interpretation."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Voltage Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WaterLevel
+<http://purl.org/iot/vocab/m3-lite#WaterLevel> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                               rdfs:comment "The height reached by the water in a reservoir, river, storage tank, or similar."@en ;
+                                               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                               rdfs:label "Water Level"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WaterTemperature
+<http://purl.org/iot/vocab/m3-lite#WaterTemperature> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                                                     rdfs:comment "Sea surface temperature (SST) is the water temperature close to the ocean's surface."@en ;
+                                                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                     rdfs:label "Water Temperature"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Watt
+<http://purl.org/iot/vocab/m3-lite#Watt> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                         rdfs:comment "It is the SI unit of power, equivalent to one joule per second, corresponding to the rate of consumption of energy in an electric circuit where the potential difference is one volt and the current one ampere."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Watt (W)"@en ;
+                                         rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#watt> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WattPerSquareMeter
+<http://purl.org/iot/vocab/m3-lite#WattPerSquareMeter> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://qudt.org/schema/qudt#Unit> ;
+                                                       rdfs:comment "It is the SI unit for radiative and other energy fluxes."@en ;
+                                                       rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                       rdfs:label "Watt Per Square Metre, Watt Per Square Meter"@en ;
+                                                       rdfs:seeAlso "http://purl.oclc.org/NET/ssnx/qu/unit#wattPerSquareMetre" .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WeatherLuminosity
+<http://purl.org/iot/vocab/m3-lite#WeatherLuminosity> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Illuminance> ;
+                                                      rdfs:comment "Luminosity."@en ;
+                                                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                      rdfs:label "Weather Luminosity"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WeatherPrecipitation
+<http://purl.org/iot/vocab/m3-lite#WeatherPrecipitation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Precipitation> ;
+                                                         rdfs:comment "Weather Precipitation."@en ;
+                                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                         rdfs:label "Weather Precipitation"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Weight
+<http://purl.org/iot/vocab/m3-lite#Weight> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                           rdfs:comment "A body's relative mass or the quantity of matter contained by it, giving rise to a downward force; the heaviness of a person or thing."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                           rdfs:label "Weight"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WeightSensor
+<http://purl.org/iot/vocab/m3-lite#WeightSensor> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                 rdfs:comment "Device used to weight an object."@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Weight Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindChill
+<http://purl.org/iot/vocab/m3-lite#WindChill> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                              rdfs:comment "The cooling effect of wind blowing on a surface."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Wind Chill"@en ;
+                                              rdfs:seeAlso <http://openiot.eu/ontology/ns/WindChill> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindChillSensor
+<http://purl.org/iot/vocab/m3-lite#WindChillSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "Device used to detect Wind Chill."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Wind Chill Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindDirection
+<http://purl.org/iot/vocab/m3-lite#WindDirection> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                  rdfs:comment "The geodetic azimuth of the direction from which the wind is blowing."@en ;
+                                                  rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                  rdfs:label "Wind Direction"@en ;
+                                                  rdfs:seeAlso <http://paul.staroch.name/thesis/SmartHomeWeather.owl#DirectionalWind> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindDirectionSensor
+<http://purl.org/iot/vocab/m3-lite#WindDirectionSensor> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                        rdfs:comment "Device used to detect wind direction."@en ;
+                                                        rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                        rdfs:label "Wind Direction Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindSpeed
+<http://purl.org/iot/vocab/m3-lite#WindSpeed> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                                              <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                              rdfs:comment "The ratio of the distance covered by moving air to the time quantity taken to cover it."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                              rdfs:label "Wind Velocity, Wind Speed"@en ;
+                                              rdfs:seeAlso <http://openiot.eu/ontology/ns/WindSpeed> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindSpeedSensor
+<http://purl.org/iot/vocab/m3-lite#WindSpeedSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                    rdfs:comment "Wind Speed Sensor, Anemometer or Wind Velocity Sensor is used to measure the wind speed."@en ;
+                                                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                    rdfs:label "Wind Speed Sensor"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WorkingState
+<http://purl.org/iot/vocab/m3-lite#WorkingState> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                                                 rdfs:comment "Indicator of whether a person (or object) is working or not"@en ;
+                                                 rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                 rdfs:label "Working State"@en .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Year
+<http://purl.org/iot/vocab/m3-lite#Year> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#SecondTime> ;
+                                         rdfs:comment "Year as a unit of time."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                         rdfs:label "Year"@en ;
+                                         rdfs:seeAlso <http://sweet.jpl.nasa.gov/ontology/units.owl#year> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#chemicalAgentAtmosphericConcentrationO3
+<http://purl.org/iot/vocab/m3-lite#chemicalAgentAtmosphericConcentrationO3> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentration> ;
+                                                                            rdfs:comment "The concentration of ozone (O3) gas suspended in the atmosphere."@en ;
+                                                                            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite#> ;
+                                                                            rdfs:label "Chemical Agent Atmospheric Concentration O3"@en .
+
+
+###  http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> rdf:type owl:Class ;
+                                   rdfs:comment "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter. More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  Q = nU."@en ;
+                                   rdfs:isDefinedBy <http://qudt.org/schema/qudt#> ;
+                                   rdfs:label "Unit"@en .
+
+
+###  http://www.w3.org/ns/sosa/Actuation
+<http://www.w3.org/ns/sosa/Actuation> owl:equivalentClass <https://w3id.org/seas/Actuation> .
+
+
+###  http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> owl:equivalentClass <https://w3id.org/seas/Actuator> .
+
+
+###  https://w3id.org/measurements4eepsa#AmmoniaInWater
+:AmmoniaInWater rdf:type owl:Class ;
+                rdfs:subClassOf :NH3 ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "NH3 in Water"@en .
+
+
+###  https://w3id.org/measurements4eepsa#BlindActuator
+:BlindActuator rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> ;
+               rdfs:comment "An actuator to put the blinds up or down."@en ;
+               rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+               rdfs:label "Blind Actuator"@en .
+
+
+###  https://w3id.org/measurements4eepsa#Calorimeter
+:Calorimeter rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+             rdfs:comment "A sensor that measures heat capacity."@en ;
+             rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+             rdfs:label "Calorimeter"@en .
+
+
+###  https://w3id.org/measurements4eepsa#CentralHVAC
+:CentralHVAC rdf:type owl:Class ;
+             rdfs:subClassOf :HVAC ;
+             rdfs:comment "Designed to condition several spaces from one base location."@en ;
+             rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+             rdfs:label "Central HVAC"@en .
+
+
+###  https://w3id.org/measurements4eepsa#DissolvedOxygen
+:DissolvedOxygen rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                 rdfs:comment "Dissolved oxygen refers to the level of free, non-compound oxygen present in water or other liquids. It is an important parameter in assessing water quality because of its influence on the organisms living within a body of water (Source: http://www.fondriest.com/environmental-measurements/parameters/water-quality/dissolved-oxygen)."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "Dissolved Oxygen"@en .
+
+
+###  https://w3id.org/measurements4eepsa#EastOrientation
+:EastOrientation rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DirectionAzimuth> ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "East Orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#ElectricityMeter
+:ElectricityMeter rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                  rdfs:comment "A sensor that measures the amount of electric energy consumed by a residence, a business, or an electrically powered device (Source:Wikipedia)."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "Electricity Meter"@en .
+
+
+###  https://w3id.org/measurements4eepsa#HVAC
+:HVAC rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> ;
+      rdfs:comment """Represents a simplification of a real-world HVAC system. 
+
+Heating, Ventilation and Air Conditioning (HVAC) is the technology of indoor and vehicular environmental comfort (Wikipedia)"""@en ;
+      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+      rdfs:label "HVAC"@en .
+
+
+###  https://w3id.org/measurements4eepsa#HVACControlStrategy
+:HVACControlStrategy rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuation> ;
+                     rdfs:comment "Represents HVAC control strategies made by HVAC systems."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                     rdfs:label "HVAC Control Strategy"@en .
+
+
+###  https://w3id.org/measurements4eepsa#IndoorRelativeHumidity
+:IndoorRelativeHumidity rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#RelativeHumidity> ;
+                        rdfs:comment "Measure of the Relative Humidity Indoors."@en ;
+                        rdfs:isDefinedBy "https://w3id.org/measurements4eepsa#" ;
+                        rdfs:label "Indoor Relative Humidity"@en .
+
+
+###  https://w3id.org/measurements4eepsa#IndoorTemperature
+:IndoorTemperature rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                   rdfs:comment "Measure of indoor temperature."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                   rdfs:label "Indoor Temperature"@en .
+
+
+###  https://w3id.org/measurements4eepsa#LightActuator
+:LightActuator rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> ;
+               rdfs:comment "An actuator to switch lights on and off."@en ;
+               rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+               rdfs:label "Light Actuator"@en .
+
+
+###  https://w3id.org/measurements4eepsa#LocalHVAC
+:LocalHVAC rdf:type owl:Class ;
+           rdfs:subClassOf :HVAC ;
+           rdfs:comment "Designed to condition a single space (or portion of a space) from a location within or directly adjacent to the space."@en ;
+           rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+           rdfs:label "Local HVAC"@en .
+
+
+###  https://w3id.org/measurements4eepsa#MaxWindSpeed
+:MaxWindSpeed rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#WindSpeed> ;
+              rdfs:comment "The maximum speed of the wind."@en ;
+              rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+              rdfs:label "Max Wind Speed"@en .
+
+
+###  https://w3id.org/measurements4eepsa#NH3
+:NH3 rdf:type owl:Class ;
+     rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                     <http://www.w3.org/ns/sosa/ObservableProperty> ;
+     rdfs:comment "Ammonia or azane is a compound of nitrogen and hydrogen with the formula NH3 (Wikipedia)"@en ;
+     rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+     rdfs:label "NH3"@en .
+
+
+###  https://w3id.org/measurements4eepsa#NitrateInWater
+:NitrateInWater rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "Nitrate in Water"@en .
+
+
+###  https://w3id.org/measurements4eepsa#NorthOrientation
+:NorthOrientation rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DirectionAzimuth> ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "North Orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#OrganicCompoundsInWater
+:OrganicCompoundsInWater rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ,
+                                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                         rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                         rdfs:label "Organic Compounds in Water"@en .
+
+
+###  https://w3id.org/measurements4eepsa#Ortophosphate
+:Ortophosphate rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+               rdfs:comment "Otophosphate level."@en ;
+               rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+               rdfs:label "Ortophosphate"@en .
+
+
+###  https://w3id.org/measurements4eepsa#OutdoorRelativeHumidity
+:OutdoorRelativeHumidity rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#RelativeHumidity> ;
+                         rdfs:comment "Measure of the Relative Humidity Outdoors"@en ;
+                         rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                         rdfs:label "Outdoor Relative Humidity"@en .
+
+
+###  https://w3id.org/measurements4eepsa#OutdoorTemperature
+:OutdoorTemperature rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Temperature> ;
+                    rdfs:comment "Measure of outdoor temperature"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                    rdfs:label "Outdoor Temperature"@en .
+
+
+###  https://w3id.org/measurements4eepsa#SolarIrradiance
+:SolarIrradiance rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                 rdfs:comment "The power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument (Source: Wikipedia)."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "Solar Irradiance"@en .
+
+
+###  https://w3id.org/measurements4eepsa#SouthOrientation
+:SouthOrientation rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DirectionAzimuth> ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "South Orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#SpaceOccupancy
+:SpaceOccupancy rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                rdfs:comment "Ratio of time on which a space is occupied by people, animals or things within a given period of time."@en ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "Space Occupancy"@en .
+
+
+###  https://w3id.org/measurements4eepsa#SuspendedSolids
+:SuspendedSolids rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                 rdfs:comment "Total suspended solids (TSS) is the dry-weight of particles trapped by a filter. It is a water quality parameter used for example to assess the quality of wastewater after treatment in a wastewater treatment plant (Source: Wikipedia)."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "Suspended Solids" .
+
+
+###  https://w3id.org/measurements4eepsa#WaterConductivity
+:WaterConductivity rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#Conductivity> ;
+                   rdfs:comment "Conductivity of the water."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                   rdfs:label "Water Conductivity"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WaterFlow
+:WaterFlow rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+           rdfs:comment "The volume of water which passes per unit time (Source Wikipedia)"@en ;
+           rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+           rdfs:label "Water Flow"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WaterTurbidity
+:WaterTurbidity rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                rdfs:comment "Turbidity is the cloudiness or haziness of a fluid caused by large numbers of individual particles that are generally invisible to the naked eye, similar to smoke in air. The measurement of turbidity is a key test of water quality (Source: Wikipedia)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "Water Turbidity"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WestOrientation
+:WestOrientation rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/iot/vocab/m3-lite#DirectionAzimuth> ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "West Orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WindPower
+:WindPower rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+           rdfs:comment "Wind's average cubic speed."@en ;
+           rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+           rdfs:label "Wind Power"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WindSigmaTheta
+:WindSigmaTheta rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                rdfs:comment "Sigma Speed of the wind"@en ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "Wind Sigma Theta"@en .
+
+
+###  https://w3id.org/measurements4eepsa#WindSpeedSigma
+:WindSpeedSigma rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ActuatableProperty> ;
+                rdfs:comment "The sigma of wind speed."@en ;
+                rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                rdfs:label "Wind Speed Sigma"@en .
+
+
+###  https://w3id.org/pep/ProcedureExecution
+<https://w3id.org/pep/ProcedureExecution> rdf:type owl:Class .
+
+
+###  https://w3id.org/pep/ProcedureExecutor
+<https://w3id.org/pep/ProcedureExecutor> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/Actuation
+<https://w3id.org/seas/Actuation> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/pep/ProcedureExecution> ;
+                                  <http://purl.org/ontology/bibo/status> "testing"@en ;
+                                  rdfs:comment "An actuation is the execution of some actuating procedure by some actuator, and has an impact on the physical world."@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/seas/DeviceOntology> ;
+                                  rdfs:label "Actuation"@en .
+
+
+###  https://w3id.org/seas/Actuator
+<https://w3id.org/seas/Actuator> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/pep/ProcedureExecutor> ;
+                                 <http://purl.org/ontology/bibo/status> "testing" ;
+                                 rdfs:comment "An actuator is a device that implements some actuating procedure, and has thus an impact on the physical world."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/seas/DeviceOntology> ;
+                                 rdfs:label "Actuator"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/measurements4eepsa#eastOrientation
+:eastOrientation rdf:type owl:NamedIndividual ,
+                          :EastOrientation ;
+                 rdfs:comment "Individual representing the East orientation"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "East orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#northEastOrientation
+:northEastOrientation rdf:type owl:NamedIndividual ,
+                               :EastOrientation ,
+                               :NorthOrientation ;
+                      rdfs:comment "Individual representing the North East orientation"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                      rdfs:label "North East orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#northOrientation
+:northOrientation rdf:type owl:NamedIndividual ,
+                           :NorthOrientation ;
+                  rdfs:comment "Individual representing the North orientation"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "North orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#northWestOrientation
+:northWestOrientation rdf:type owl:NamedIndividual ,
+                               :NorthOrientation ,
+                               :WestOrientation ;
+                      rdfs:comment "Individual representing the North West orientation"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                      rdfs:label "North West orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#southEastOrientation
+:southEastOrientation rdf:type owl:NamedIndividual ,
+                               :EastOrientation ,
+                               :SouthOrientation ;
+                      rdfs:comment "Individual representing the South East orientation"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                      rdfs:label "South East orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#southOrientation
+:southOrientation rdf:type owl:NamedIndividual ,
+                           :SouthOrientation ;
+                  rdfs:comment "Individual representing the South orientation"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                  rdfs:label "South orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#southWestOrientation
+:southWestOrientation rdf:type owl:NamedIndividual ,
+                               :SouthOrientation ,
+                               :WestOrientation ;
+                      rdfs:comment "Individual representing the South West orientation"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                      rdfs:label "South West orientation"@en .
+
+
+###  https://w3id.org/measurements4eepsa#westOrientation
+:westOrientation rdf:type owl:NamedIndividual ,
+                          :WestOrientation ;
+                 rdfs:comment "Individual representing the West orientation"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/measurements4eepsa#> ;
+                 rdfs:label "West orientation"@en .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

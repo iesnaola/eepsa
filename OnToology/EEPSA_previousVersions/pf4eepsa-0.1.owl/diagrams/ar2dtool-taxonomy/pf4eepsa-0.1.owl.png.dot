@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Slaughterhouse" "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" "base:StockingDensity" "https://w3id.org/bot#Building" "base:WaterDispenser" "base:Silo" "base:PoultryFarm" "base:StockingDensitySensor" "base:Trough" "base:Farm" "https://w3id.org/bot#Space" "base:BreedingSpace" "http://www.w3.org/ns/ssn/Property" "http://www.w3.org/ns/sosa/Sensor" "base:FeedingStructure" "-482b97ce:167c0c17910:-7ffc" ; /*classes style*/
+	"base:Farm" -> "https://w3id.org/bot#Building" [ label = "rdfs:subClassOf" ];
+	"base:StockingDensity" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:PoultryFarm" -> "base:Farm" [ label = "rdfs:subClassOf" ];
+	"base:Silo" -> "https://w3id.org/bot#Building" [ label = "rdfs:subClassOf" ];
+	"base:Trough" -> "base:FeedingStructure" [ label = "rdfs:subClassOf" ];
+	"base:StockingDensitySensor" -> "http://www.w3.org/ns/sosa/Sensor" [ label = "rdfs:subClassOf" ];
+	"base:FeedingStructure" -> "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject" [ label = "rdfs:subClassOf" ];
+	"base:WaterDispenser" -> "base:FeedingStructure" [ label = "rdfs:subClassOf" ];
+	"base:BreedingSpace" -> "-482b97ce:167c0c17910:-7ffc" [ label = "rdfs:subClassOf" ];
+	"base:BreedingSpace" -> "https://w3id.org/bot#Space" [ label = "rdfs:subClassOf" ];
+	"base:Slaughterhouse" -> "https://w3id.org/bot#Building" [ label = "rdfs:subClassOf" ];
+
+}

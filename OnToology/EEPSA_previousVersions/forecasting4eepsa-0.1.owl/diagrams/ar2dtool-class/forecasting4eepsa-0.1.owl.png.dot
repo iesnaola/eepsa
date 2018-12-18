@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:TemperatureForecasting" "base:TemperatureForecaster" "base:TemperatureForecastResult" "wgs84_pos:SpatialThing" "http://qudt.org/schema/qudt#Unit" "http://purl.org/iot/vocab/m3-lite#Temperature" ; /*classes style*/
+	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
+	"NULL" -> "http://qudt.org/schema/qudt#unit" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/seas/forecastsProperty" [ label = "owl:onProperty" ];
+	"NULL" -> "base:TemperatureForecastResult" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/pep/madeBy" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/pep/implements" [ label = "owl:onProperty" ];
+	"NULL" -> "http://qudt.org/schema/qudt#numericValue" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:SpatialThing" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:TemperatureForecasting" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:hasForecastDateTime" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:double" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:dateTime" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://purl.org/iot/vocab/m3-lite#Temperature" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://qudt.org/schema/qudt#Unit" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "prov:generatedAtTime" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/pep/usedProcedure" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/pep/hasResult" [ label = "owl:onProperty" ];
+	"NULL" -> "base:TemperatureForecaster" [ label = "owl:someValuesFrom" ];
+	"https://w3id.org/forecasting4eepsa" -> "https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.1.owl" [ label = "owl:versionIRI" ];
+	"https://w3id.org/forecasting4eepsa" -> "https://w3id.org/seas/ForecastingOntology-1.0" [ label = "owl:imports" ];
+	"owl:Thing" -> "xsd:dateTime" [ label = "base:hasForecastDateTime" ];
+	"owl:Thing" -> "xsd:time" [ label = "base:hasForecastTime" ];
+
+}

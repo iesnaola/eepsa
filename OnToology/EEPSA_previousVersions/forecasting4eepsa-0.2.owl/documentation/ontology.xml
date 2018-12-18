@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/forecasting4eepsa#"
+     xml:base="https://w3id.org/forecasting4eepsa"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/forecasting4eepsa">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.2.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pep/pep-1.1"/>
+        <owl:imports rdf:resource="https://w3id.org/seas/ForecastingOntology-1.0"/>
+        <ns:license rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/"/>
+        <dc:publisher>IK4-TEKNIKER (http://www.tekniker.es)</dc:publisher>
+        <terms:creator xml:lang="en">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:description xml:lang="en">Forecasting-related knowledge representation for the EEPSA Ontology.</terms:description>
+        <terms:issued>2017-11-27</terms:issued>
+        <terms:modified xml:lang="en">2018-04-02</terms:modified>
+        <terms:title>Forecasting for EEPSA</terms:title>
+        <bibo:status xml:lang="en">Work in progress</bibo:status>
+        <vann:preferredNamespacePrefix xml:lang="en">f4eepsa</vann:preferredNamespacePrefix>
+        <owl:versionInfo xml:lang="en">0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt#unit -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt#unit"/>
+    
+
+
+    <!-- https://w3id.org/forecasting4eepsa#hasForecastResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/forecasting4eepsa#hasForecastResult">
+        <rdfs:range rdf:resource="https://w3id.org/forecasting4eepsa#ForecastResult"/>
+        <rdfs:comment xml:lang="en">Links a Forecast with its result (Forecast Result).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
+        <rdfs:label xml:lang="en">has forecast result</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/forecasting4eepsa#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/forecasting4eepsa#hasParameter">
+        <rdfs:comment xml:lang="en">Links a Forecasting Input with a parameter that it contains.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pep/hasResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pep/hasResult"/>
+    
+
+
+    <!-- https://w3id.org/pep/madeBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pep/madeBy"/>
+    
+
+
+    <!-- https://w3id.org/pep/usedProcedure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pep/usedProcedure"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt#numericValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#numericValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt#Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#Unit"/>
+    
+
+
+    <!-- https://w3id.org/forecasting4eepsa#ForecastResult -->
+
+
+    <owl:Class rdf:about="https://w3id.org/forecasting4eepsa#ForecastResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#unit"/>
+                <owl:someValuesFrom rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#numericValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents the result of a Forecast.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
+        <rdfs:label xml:lang="en">Forecast Result</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/forecasting4eepsa#ForecastingInput -->
+
+
+    <owl:Class rdf:about="https://w3id.org/forecasting4eepsa#ForecastingInput">
+        <rdfs:comment xml:lang="en">Represents inputs of Forecasting Processes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/forecasting4eepsa#"/>
+        <rdfs:label xml:lang="en">Forecasting Input</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pep/Procedure -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/Procedure">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pep/Process"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pep/ProcedureExecution -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcedureExecution">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pep/ProcessExecution"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pep/ProcedureExecutionContainer -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcedureExecutionContainer">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pep/ProcessExecutionContainer"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pep/ProcedureExecutor -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcedureExecutor">
+        <owl:equivalentClass rdf:resource="https://w3id.org/pep/ProcessExecutor"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pep/Process -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/Process"/>
+    
+
+
+    <!-- https://w3id.org/pep/ProcessExecution -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcessExecution"/>
+    
+
+
+    <!-- https://w3id.org/pep/ProcessExecutionContainer -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcessExecutionContainer"/>
+    
+
+
+    <!-- https://w3id.org/pep/ProcessExecutor -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/pep/ProcessExecutor"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

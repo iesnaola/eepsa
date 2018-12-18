@@ -1,0 +1,127 @@
+{
+  "@context" : {
+    "pset_BuildingCommon_yearOfConstruction" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Roof" : {
+      "@id" : "https://w3id.org/bim4eepsa#Roof"
+    },
+    "hasSpace" : {
+      "@id" : "https://w3id.org/def/saref4bldg#hasSpace",
+      "@type" : "@id"
+    },
+    "pset_BuildingCommon_buildingID" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ExternalDoor" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalDoor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "contains" : {
+      "@id" : "https://w3id.org/def/saref4bldg#contains",
+      "@type" : "@id"
+    },
+    "ExternalBuildingElement" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalBuildingElement"
+    },
+    "pset_BuildingCommon_numberOfStoreys" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pset_BuildingCommon_constructionMethod" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "pset_BuildingCommon_yearOfLastRefurbishment" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pset_BuildingCommon_occupancyType" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/def/saref4bldg#Building"
+    },
+    "Door" : {
+      "@id" : "https://w3id.org/bim4eepsa#Door"
+    },
+    "BuildingElement" : {
+      "@id" : "https://w3id.org/bim4eepsa#BuildingElement"
+    },
+    "isContainedIn" : {
+      "@id" : "https://w3id.org/def/saref4bldg#isContainedIn",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "pset_BuildingCommon_fireProtectionClass" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Window" : {
+      "@id" : "https://w3id.org/bim4eepsa#Window"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "ExternalWall" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalWall"
+    },
+    "Skylight" : {
+      "@id" : "https://w3id.org/bim4eepsa#Skylight"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "WeatherStation" : {
+      "@id" : "https://w3id.org/bim4eepsa#WeatherStation"
+    },
+    "ExternalWindow" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalWindow"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "BuildingSpace" : {
+      "@id" : "https://w3id.org/def/saref4bldg#BuildingSpace"
+    },
+    "Wall" : {
+      "@id" : "https://w3id.org/bim4eepsa#Wall"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isSpaceOf" : {
+      "@id" : "https://w3id.org/def/saref4bldg#isSpaceOf",
+      "@type" : "@id"
+    },
+    "PhysicalObject" : {
+      "@id" : "https://w3id.org/def/saref4bldg#PhysicalObject"
+    }
+  }
+}

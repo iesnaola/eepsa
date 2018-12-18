@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "dm4eepsa:DeviceRelocation" "dm4eepsa:ProcedureUponDevice" "dm4eepsa:DeviceShelter" "dm4eepsa:DeviceReplacement" "dm4eepsa:ImputationProcedure" "http://www.w3.org/ns/sosa/Procedure" ; /*classes style*/
+	"NULL" -> "dm4eepsa:ProcedureUponDevice" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "dm4eepsa:DeviceRelocation" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "dm4eepsa:DeviceShelter" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "dm4eepsa:ImputationProcedure" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "dm4eepsa:requiresImputationProcedure" [ label = "owl:onProperty" ];
+	"NULL" -> "dm4eepsa:DeviceReplacement" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "dm4eepsa:hasSolvingProcedure" [ label = "owl:onProperty" ];
+	"dm4eepsa:requiresImputationProcedure" -> "dm4eepsa:hasSolvingProcedure" [ label = "rdfs:subPropertyOf" ];
+	"https://w3id.org/datamining4eepsa" -> "http://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"https://w3id.org/datamining4eepsa" -> "https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/datamining4eepsa-0.1.owl" [ label = "owl:versionIRI" ];
+	"owl:Thing" -> "http://www.w3.org/ns/sosa/Procedure" [ label = "dm4eepsa:hasSolvingProcedure" ];
+	"owl:Thing" -> "dm4eepsa:ImputationProcedure" [ label = "dm4eepsa:requiresImputationProcedure" ];
+
+}
