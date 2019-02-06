@@ -1,0 +1,428 @@
+<https://w3id.org/bim4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bim4eepsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/bim4eepsa-0.2.owl> .
+<https://w3id.org/bim4eepsa> <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" .
+<https://w3id.org/bim4eepsa> <http://purl.org/dc/elements/1.1/title> "BIM for EEPSA" .
+<https://w3id.org/bim4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"@en .
+<https://w3id.org/bim4eepsa> <http://purl.org/dc/terms/issued> "2017-07-10" .
+<https://w3id.org/bim4eepsa> <http://purl.org/dc/terms/license> "This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/."@en .
+<https://w3id.org/bim4eepsa> <http://purl.org/ontology/bibo/status> "Work in progress"@en .
+<https://w3id.org/bim4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bim4eepsa" .
+<https://w3id.org/bim4eepsa> <http://www.w3.org/2000/01/rdf-schema#comment> "Building and space-related information for the EEPSA Ontology."@en .
+<https://w3id.org/bim4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#label> "altitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 latitude of a SpatialThing (decimal degrees)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/based_near> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 longitude of a SpatialThing (decimal degrees)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "longitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/saref4bldg#contains
+<https://w3id.org/def/saref4bldg#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4bldg#contains> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/saref4bldg#isContainedIn> .
+<https://w3id.org/def/saref4bldg#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/saref4bldg#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a physical space and the objects located in such space."@en .
+<https://w3id.org/def/saref4bldg#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+# 
+# https://w3id.org/def/saref4bldg#hasSpace
+<https://w3id.org/def/saref4bldg#hasSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4bldg#hasSpace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/saref4bldg#isSpaceOf> .
+<https://w3id.org/def/saref4bldg#hasSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/saref4bldg#hasSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a building or a building space and the spaces it can be divided into."@en .
+<https://w3id.org/def/saref4bldg#hasSpace> <http://www.w3.org/2000/01/rdf-schema#label> "has space"@en .
+# 
+# https://w3id.org/def/saref4bldg#isContainedIn
+<https://w3id.org/def/saref4bldg#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4bldg#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/saref4bldg#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an object and the physical space in which it is located."@en .
+<https://w3id.org/def/saref4bldg#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contained in"@en .
+# 
+# https://w3id.org/def/saref4bldg#isSpaceOf
+<https://w3id.org/def/saref4bldg#isSpaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4bldg#isSpaceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/saref4bldg#isSpaceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a building space and the building or building space it belongs to."@en .
+<https://w3id.org/def/saref4bldg#isSpaceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSpaceOf"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier assigned to a building. A temporary identifier is initially assigned at the time of making a planning application. This temporary identifier is changed to a permanent identifier when the building is registered into a statutory buildings and properties database."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID> <http://www.w3.org/2000/01/rdf-schema#label> "Building ID"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of intervention on the building: new construction, renovation, rehabilitation, etc."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Construction method"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Main fire protection class for the building which is assigned from the fire protection classification table as given by the relevant national building code."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass> <http://www.w3.org/2000/01/rdf-schema#label> "Fire protection class"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Total planned gross area for the building Used for programming the building."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea> <http://www.w3.org/2000/01/rdf-schema#label> "Gross planned area"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Total planned net area for the building Used for programming the building."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea> <http://www.w3.org/2000/01/rdf-schema#label> "Net planned area"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of storeys within a building. Captured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach should be used in preference to setting a property for the number of storeys."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys> <http://www.w3.org/2000/01/rdf-schema#label> "Number of storeys"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Occupancy type for this object. It is defined according to the presiding national building code."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy type"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Year of construction of this building, including expected year of completion."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Year of construction"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment> <http://www.w3.org/2000/01/rdf-schema#comment> "Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works)."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment> <http://www.w3.org/2000/01/rdf-schema#label> "Year of last refurbishment"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingUse_marketCategory
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of use e.g. residential, commercial, recreation etc."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Market category"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingUse_marketSubCategory
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketSubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketSubCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Subset of category of use e.g. multi-family, 2 bedroom, low rise."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_marketSubCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Market sub category"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingUse_narrativeText
+<https://w3id.org/bim4eepsa#pset_BuildingUse_narrativeText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_narrativeText> <http://www.w3.org/2000/01/rdf-schema#comment> "Added information relating to the adjacent building use that is not appropriate to the general descriptive text associated with an entity through the inherited IfcRoot.Description."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_narrativeText> <http://www.w3.org/2000/01/rdf-schema#label> "Narrative text"@en .
+# 
+# https://w3id.org/bim4eepsa#pset_BuildingUse_planningControlStatus
+<https://w3id.org/bim4eepsa#pset_BuildingUse_planningControlStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_planningControlStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Label of zoning category or class, or planning control category for the site or facility."@en .
+<https://w3id.org/bim4eepsa#pset_BuildingUse_planningControlStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Planning control status"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "point" .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial thing"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialThing" .
+# 
+# https://w3id.org/bim4eepsa#BuildingElement
+<https://w3id.org/bim4eepsa#BuildingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#BuildingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/saref4bldg#PhysicalObject> .
+<https://w3id.org/bim4eepsa#BuildingElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system."@en .
+<https://w3id.org/bim4eepsa#BuildingElement> <http://www.w3.org/2000/01/rdf-schema#label> "Building Element"@en .
+<https://w3id.org/bim4eepsa#BuildingElement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcBuildingElement> .
+# 
+# https://w3id.org/bim4eepsa#Door
+<https://w3id.org/bim4eepsa#Door> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#Door> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#Door> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition according to ISO 6707-1: construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation."@en .
+<https://w3id.org/bim4eepsa#Door> <http://www.w3.org/2000/01/rdf-schema#label> "Door"@en .
+<https://w3id.org/bim4eepsa#Door> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor> .
+# 
+# https://w3id.org/bim4eepsa#ExternalBuildingElement
+<https://w3id.org/bim4eepsa#ExternalBuildingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalBuildingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#ExternalBuildingElement> <http://www.w3.org/2000/01/rdf-schema#comment> "A building element that is external (face the outside of the building)"@en .
+<https://w3id.org/bim4eepsa#ExternalBuildingElement> <http://www.w3.org/2000/01/rdf-schema#label> "External building element"@en .
+# 
+# https://w3id.org/bim4eepsa#ExternalDoor
+<https://w3id.org/bim4eepsa#ExternalDoor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalDoor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#Door> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#ExternalBuildingElement> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalDoor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#Door> .
+<https://w3id.org/bim4eepsa#ExternalDoor> <http://www.w3.org/2000/01/rdf-schema#label> "External door"@en .
+<https://w3id.org/bim4eepsa#ExternalDoor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "A door that is external (facing the outside of the building)"@en .
+# 
+# https://w3id.org/bim4eepsa#ExternalWall
+<https://w3id.org/bim4eepsa#ExternalWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalWall> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#ExternalBuildingElement> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#Wall> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#Wall> .
+<https://w3id.org/bim4eepsa#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#label> "External wall"@en .
+<https://w3id.org/bim4eepsa#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "A wall that is external (facing the outside of the building)"@en .
+# 
+# https://w3id.org/bim4eepsa#ExternalWindow
+<https://w3id.org/bim4eepsa#ExternalWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalWindow> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#ExternalBuildingElement> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bim4eepsa#Window> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#ExternalWindow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#Window> .
+<https://w3id.org/bim4eepsa#ExternalWindow> <http://www.w3.org/2000/01/rdf-schema#comment> "A window that is external (facing the outside of the building)"@en .
+<https://w3id.org/bim4eepsa#ExternalWindow> <http://www.w3.org/2000/01/rdf-schema#label> "External window"@en .
+# 
+# https://w3id.org/bim4eepsa#Roof
+<https://w3id.org/bim4eepsa#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#Roof> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition according to ISO 6707-1: construction enclosing the building from above."@en .
+<https://w3id.org/bim4eepsa#Roof> <http://www.w3.org/2000/01/rdf-schema#label> "Roof"@en .
+<https://w3id.org/bim4eepsa#Roof> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof> .
+# 
+# https://w3id.org/bim4eepsa#Skylight
+<https://w3id.org/bim4eepsa#Skylight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#Skylight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#Skylight> <http://www.w3.org/2000/01/rdf-schema#label> "Skylight"@en .
+<https://w3id.org/bim4eepsa#Skylight> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building's space for daylighting purposes. (Wikipedia)"@en .
+# 
+# https://w3id.org/bim4eepsa#Wall
+<https://w3id.org/bim4eepsa#Wall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#Wall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#Wall> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition according to ISO 6707-1: vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function."@en .
+<https://w3id.org/bim4eepsa#Wall> <http://www.w3.org/2000/01/rdf-schema#label> "Wall"@en .
+<https://w3id.org/bim4eepsa#Wall> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall> .
+# 
+# https://w3id.org/bim4eepsa#WeatherStation
+<https://w3id.org/bim4eepsa#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/saref4bldg#Building> .
+<https://w3id.org/bim4eepsa#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A weather station is a facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study the weather and climate (Wikipedia)"@en .
+<https://w3id.org/bim4eepsa#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> <http://aemet.linkeddata.es/ontology/WeatherStation> .
+<https://w3id.org/bim4eepsa#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather station"@en .
+# 
+# https://w3id.org/bim4eepsa#Window
+<https://w3id.org/bim4eepsa#Window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bim4eepsa#Window> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bim4eepsa#BuildingElement> .
+<https://w3id.org/bim4eepsa#Window> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition according to ISO 6707-1: Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air."@en .
+<https://w3id.org/bim4eepsa#Window> <http://www.w3.org/2000/01/rdf-schema#label> "Window"@en .
+<https://w3id.org/bim4eepsa#Window> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow> .
+# 
+# https://w3id.org/def/saref4bldg#Building
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#hasSpace> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4bldg#BuildingSpace> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space)."@en .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/ifc/IFC4_ADD1#IfcBuilding> .
+<https://w3id.org/def/saref4bldg#Building> <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcproductextension/lexical/ifcbuilding.htm> .
+# 
+# https://w3id.org/def/saref4bldg#BuildingSpace
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#contains> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4bldg#PhysicalObject> .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#hasSpace> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4bldg#BuildingSpace> .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#isSpaceOf> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/saref4bldg#Building> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/saref4bldg#BuildingSpace> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity used to define the physical spaces of the building. A building space contains devices or building objects."@en .
+<https://w3id.org/def/saref4bldg#BuildingSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Building space"@en .
+# 
+# https://w3id.org/def/saref4bldg#PhysicalObject
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#contains> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4bldg#PhysicalObject> .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#isContainedIn> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/saref4bldg#BuildingSpace> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/saref4bldg#PhysicalObject> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Any Object that has a proper space region.  (Definition extracted from DUL ontology)"@en .
+<https://w3id.org/def/saref4bldg#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical object"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://purl.org/dc/elements/1.1/date> "$Date: 2009/04/20 15:00:30 $" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://purl.org/dc/elements/1.1/description> "A vocabulary for representing latitude, longitude and \n altitude information in the WGS84 geodetic reference datum. \n Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://purl.org/dc/elements/1.1/title> "WGS84 Geo Positioning: an RDF vocabulary" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://www.w3.org/2000/01/rdf-schema#comment> "\nRecent changes to this namespace:\n$Log: wgs84_pos.rdf,v $\nRevision 1.22  2009/04/20 15:00:30  timbl\nRemove the time bits which have been deal with elsewhere eg in iCal.\n\nRevision 1.21  2009/04/20 12:52:47  timbl\ntry again\n\nRevision 1.20  2009/04/20 12:42:11  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.19  2009/04/20 12:36:31  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.18  2006/02/01 22:01:04  danbri\nClarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid\n\nRevision 1.17  2004/02/06 17:38:12  danbri\nFixed a bad commit screwup\n\nRevision 1.15  2003/04/19 11:24:08  danbri\nFixed the typo even more.\n\nRevision 1.14  2003/04/19 11:16:56  danbri\nfixed a typo\n\nRevision 1.13  2003/02/19 22:27:27  connolly\nrelaxed domain constraints on lat/long/alt from Point to SpatialThing\n\nRevision 1.12  2003/01/12 01:41:41  danbri\nTrying local copy of XSLT doc.\n\nRevision 1.11  2003/01/12 01:20:18  danbri\nadded a link to morten's xslt rdfs viewer.\n\nRevision 1.10  2003/01/11 18:56:49  danbri\nRemoved datatype range from lat and long properties, since they would\nhave required each occurance of the property to mention the datatype.\n\nRevision 1.9  2003/01/11 11:41:31  danbri\nAnother typo; repaired rdfs:Property to rdf:Property x4\n\nRevision 1.8  2003/01/11 11:05:02  danbri\nAdded an rdfs:range for each lat/long/alt property,\nhttp://www.w3.org/2001/XMLSchema#float\n\nRevision 1.7  2003/01/10 20:25:16  danbri\nLonger rdfs:comment for Point, trying to be Earth-centric and neutral about\ncoordinate system(s) at the same time. Feedback welcomed.\n\nRevision 1.6  2003/01/10 20:18:30  danbri\nAdded CVS log comments into the RDF/XML as an rdfs:comment property of the\nvocabulary. Note that this is not common practice (but seems both harmless\nand potentially useful).\n\n\nrevision 1.5\ndate: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5\nUpdated schema:\nAdded a dc:date, added url for more info. Changed the rdfs:label of the\nnamespace from gp to geo. Added a class Point, set as the rdfs:domain of\neach property. Added XML comment on the lat_long property suggesting that\nwe might not need it (based on #rdfig commentary from implementors).\n\nrevision 1.4\ndate: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5\nFixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in\n#rdfig for catching this error.\n\nrevision 1.3\ndate: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3\nfixed buglet in vocab, added more wgs links\n\nrevision 1.2\ndate: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4\nRemoved alt from the as-a-flat-string property, and switched from\nspace separated to comma separated.\n\nrevision 1.1\ndate: 2003/01/10 10:53:23;  author: danbri;  state: Exp;\nbasic geo vocab\n\n" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://www.w3.org/2000/01/rdf-schema#label> "geo" .
+# 
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> <http://www.w3.org/2000/01/rdf-schema#comment> "A comma-separated representation of a latitude, longitude coordinate." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> <http://www.w3.org/2000/01/rdf-schema#label> "lat/long" .
+# 
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and the point,  or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping ."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

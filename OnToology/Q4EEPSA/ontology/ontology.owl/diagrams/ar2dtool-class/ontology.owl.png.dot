@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:WindChill" "base:ChemicalAgentAtmosphericConcentrationNH3" "base:Illuminance" "base:SolarRadiation" "base:WindDirection" "base:SunPositionElevation" "base:CloudCover" "base:WindSpeed" "base:ActuatableQuality" "base:SunPositionDirection" "base:PrecipitationLevel" "base:AtmosphericPressure" "base:CO2" ; /*classes style*/
+	"base:SunPositionElevation" -> "http://purl.org/iot/vocab/m3-lite#SunPositionElevation" [ label = "rdfs:seeAlso" ];
+	"base:SunPositionDirection" -> "http://purl.org/iot/vocab/m3-lite#SunPositionDirection" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/eepsa/q4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"https://w3id.org/eepsa/q4eepsa" -> "https://w3id.org/eepsa/q4eepsa" [ label = "vann:preferredNamespaceUri" ];
+	"base:WindChill" -> "http://purl.org/iot/vocab/m3-lite#WindChill" [ label = "rdfs:seeAlso" ];
+	"base:Illuminance" -> "http://purl.org/iot/vocab/m3-lite#Illuminance" [ label = "rdfs:seeAlso" ];
+	"base:ChemicalAgentAtmosphericConcentrationNH3" -> "http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3" [ label = "rdfs:seeAlso" ];
+	"base:SolarRadiation" -> "http://purl.org/iot/vocab/m3-lite#SolarRadiation" [ label = "rdfs:seeAlso" ];
+	"base:AtmosphericPressure" -> "http://purl.org/iot/vocab/m3-lite#AtmosphericPressure" [ label = "rdfs:seeAlso" ];
+	"base:PrecipitationLevel" -> "http://purl.org/iot/vocab/m3-lite#Precipitation" [ label = "rdfs:seeAlso" ];
+	"base:WindSpeed" -> "http://purl.org/iot/vocab/m3-lite#WindSpeed" [ label = "rdfs:seeAlso" ];
+	"base:CloudCover" -> "http://purl.org/iot/vocab/m3-lite#CloudCover" [ label = "rdfs:seeAlso" ];
+	"base:CO2" -> "http://purl.org/iot/vocab/m3-lite#CO2" [ label = "rdfs:seeAlso" ];
+	"NULL" -> "base:ActuatableQuality" [ label = "owl:complementOf" ];
+	"base:WindDirection" -> "http://purl.org/iot/vocab/m3-lite#WindDirection" [ label = "rdfs:seeAlso" ];
+
+}

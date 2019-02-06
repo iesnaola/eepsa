@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/eepsa/q4eepsa#Occupancy" "https://w3id.org/eepsa/q4eepsa#Illuminance" "https://w3id.org/saref#Pressure" "https://w3id.org/saref#Occupancy" "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure" "https://w3id.org/saref#Light" ; /*classes style*/
+	"https://w3id.org/eepsa/q4eepsa#Occupancy" -> "https://w3id.org/saref#Occupancy" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/q4eepsa_SAREFALignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"https://w3id.org/eepsa/q4eepsa#AtmosphericPressure" -> "https://w3id.org/saref#Pressure" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/q4eepsa#Illuminance" -> "https://w3id.org/saref#Light" [ label = "owl:equivalentClass" ];
+
+}

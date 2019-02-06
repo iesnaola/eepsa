@@ -1,0 +1,203 @@
+@prefix : <https://w3id.org/pf4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pf4eepsa> .
+
+<https://w3id.org/pf4eepsa> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/pf4eepsa-0.1.owl> ;
+                             <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                             <http://purl.org/dc/terms/created> "2018-04-10" ;
+                             <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                             <http://purl.org/dc/terms/description> "Poultry Farms-related information for the EEPSA Ontology."@en ;
+                             <http://purl.org/dc/terms/issued> "2018-04-10" ;
+                             <http://purl.org/dc/terms/modified> "2018-04-11" ;
+                             <http://purl.org/dc/terms/title> "Poultry Farm for EEPSA" ;
+                             <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "pf4eepsa" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/pf4eepsa" ;
+                             owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/eepsa#isAffectedBy
+<https://w3id.org/eepsa#isAffectedBy> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> rdf:type owl:Class .
+
+
+###  https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> rdf:type owl:Class .
+
+
+###  https://w3id.org/pf4eepsa#BreedingSpace
+:BreedingSpace rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/bot#Space> ,
+                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <https://w3id.org/eepsa#isAffectedBy> ;
+                                                        owl:hasValue <http://purl.org/iot/vocab/m3-lite#CO2>
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <https://w3id.org/eepsa#isAffectedBy> ;
+                                                        owl:hasValue :StockingDensity
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               rdfs:comment "A space where animals are raised and fed."@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:label "Breeding Space"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#Farm
+:Farm rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/bot#Building> ;
+      rdfs:comment "A farm is an area of land that is devoted primarily to agricultural processes with the primary objective of producing food and other crops; it is the basic facility in food production (Source: Wikipedia)."@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "Farm"@en ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#FeedingStructure
+:FeedingStructure rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+                  rdfs:comment "Architectonic elements with feeding purposes."@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Feeding Structure"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#PoultryFarm
+:PoultryFarm rdf:type owl:Class ;
+             rdfs:subClassOf :Farm ;
+             rdfs:comment "A farm where poultry are raised."@en ;
+             rdfs:isDefinedBy : ;
+             rdfs:label "Poultry Farm"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#Silo
+:Silo rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/bot#Building> ;
+      rdfs:comment "A silo (from the Greek σιρός – siros, \"pit for holding grain\") is a structure for storing bulk materials. Silos are used in agriculture to store grain (see grain elevators) or fermented feed known as silage (Source: Wikipedia)."@en ;
+      rdfs:isDefinedBy : ;
+      rdfs:label "Silo"@en ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#Slaughterhouse
+:Slaughterhouse rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/bot#Building> ;
+                rdfs:comment "A slaughterhouse or abattoir is a facility where animals are slaughtered for consumption as food (Source: Wikipedia)."@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Slaughterhouse"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#StockingDensity
+:StockingDensity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
+
+###  https://w3id.org/pf4eepsa#StockingDensitySensor
+:StockingDensitySensor rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                       rdfs:comment "A sensor for determining Stocking density within a room or space."@en ;
+                       rdfs:isDefinedBy : ;
+                       rdfs:label "Stocking Density Sensor"@en ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#Trough
+:Trough rdf:type owl:Class ;
+        rdfs:subClassOf :FeedingStructure ;
+        rdfs:comment "A long, narrow container without a lid that usually holds water or food for farm animals."@en ;
+        rdfs:isDefinedBy : ;
+        rdfs:label "Trough"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pf4eepsa#WaterDispenser
+:WaterDispenser rdf:type owl:Class ;
+                rdfs:subClassOf :FeedingStructure ;
+                rdfs:comment "A structure that dispenses water for feeding purposes."@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Water Dispenser"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/iot/vocab/m3-lite#CO2
+<http://purl.org/iot/vocab/m3-lite#CO2> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/pf4eepsa#StockingDensity
+:StockingDensity rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:StockingDensity rdfs:comment "In the Poultry Farm domain, Stocking Density determines the bird weight per unit area. The benefit of using bird weight per unit area is that the standards are consistent and would stand true no matter how heavy the target weight."@en ;
+                 rdfs:isDefinedBy : ;
+                 rdfs:label "Stocking Density"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

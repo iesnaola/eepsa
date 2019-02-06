@@ -1,0 +1,121 @@
+{
+  "@context" : {
+    "implements" : {
+      "@id" : "https://w3id.org/pep/implements",
+      "@type" : "@id"
+    },
+    "Unit" : {
+      "@id" : "http://qudt.org/schema/qudt#Unit"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "TemperatureForecast" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#TemperatureForecast"
+    },
+    "generatedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "TemperatureForecastResult" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#TemperatureForecastResult"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "numericValue" : {
+      "@id" : "http://qudt.org/schema/qudt#numericValue"
+    },
+    "Temperature" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Temperature"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "Forecast" : {
+      "@id" : "https://w3id.org/seas/Forecast"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "Forecaster" : {
+      "@id" : "https://w3id.org/seas/Forecaster"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasForecastTime" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#hasForecastTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "hasForecastDateTime" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#hasForecastDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasResult" : {
+      "@id" : "https://w3id.org/pep/hasResult",
+      "@type" : "@id"
+    },
+    "usedProcedure" : {
+      "@id" : "https://w3id.org/pep/usedProcedure",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "TemperatureForecaster" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#TemperatureForecaster"
+    },
+    "unit" : {
+      "@id" : "http://qudt.org/schema/qudt#unit",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "forecastsProperty" : {
+      "@id" : "https://w3id.org/seas/forecastsProperty",
+      "@type" : "@id"
+    },
+    "TemperatureForecasting" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#TemperatureForecasting"
+    },
+    "Forecasting" : {
+      "@id" : "https://w3id.org/seas/Forecasting"
+    },
+    "madeBy" : {
+      "@id" : "https://w3id.org/pep/madeBy",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}

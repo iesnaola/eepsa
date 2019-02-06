@@ -1,0 +1,383 @@
+<https://w3id.org/datamining4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/datamining4eepsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/datamining4eepsa-0.1.owl> .
+<https://w3id.org/datamining4eepsa> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"@en .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/terms/description> "Data Mining-related knowledge representation for the EEPSA Ontology."@en .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/terms/issued> "2018-04-19" .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/terms/modified> "2018-04-19"@en .
+<https://w3id.org/datamining4eepsa> <http://purl.org/dc/terms/title> "Data Mining for EEPSA" .
+<https://w3id.org/datamining4eepsa> <http://purl.org/ontology/bibo/status> "Work in progress"@en .
+<https://w3id.org/datamining4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dm4eepsa"@en .
+<https://w3id.org/datamining4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/datamining4eepsa#hasSolvingProcedure
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Procedure> .
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a Thing and a Procedure proposed to solve it."@en .
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#hasSolvingProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "has solving procedure"@en .
+# 
+# https://w3id.org/datamining4eepsa#requiresImputationProcedure
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/datamining4eepsa#ImputationProcedure> .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Missing Value (chunk) and a suggested Imputation procedure to impute its value accurately."@en .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#requiresImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "requires imputation procedure"@en .
+# 
+# https://w3id.org/datamining4eepsa#susceptibleToOutlier
+<https://w3id.org/datamining4eepsa#susceptibleToOutlier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/datamining4eepsa#susceptibleToOutlier> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#susceptibleToOutlier> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a thing (normally a device) and an Outlier it may be susceptible to."@en .
+<https://w3id.org/datamining4eepsa#susceptibleToOutlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#susceptibleToOutlier> <http://www.w3.org/2000/01/rdf-schema#label> "susceptible to outlier"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/datamining4eepsa#ComplexValueDrawing
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ValueDrawingProcedure> .
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://www.w3.org/2000/01/rdf-schema#comment> "Complex Value Drawing procedure to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ComplexValueDrawing> <http://www.w3.org/2000/01/rdf-schema#label> "Complex Value Drawing"@en .
+# 
+# https://w3id.org/datamining4eepsa#DeviceRelocation
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ProcedureUponDevice> .
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure that consists in placing the sensing device in an adequate location."@en .
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#DeviceRelocation> <http://www.w3.org/2000/01/rdf-schema#label> "Device Relocation"@en .
+# 
+# https://w3id.org/datamining4eepsa#DeviceReplacement
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ProcedureUponDevice> .
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure that consists in replacing the sensing device for another one."@en .
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#DeviceReplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Device Replacement"@en .
+# 
+# https://w3id.org/datamining4eepsa#DeviceShelter
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ProcedureUponDevice> .
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://www.w3.org/2000/01/rdf-schema#comment> "A procedure that consists in covering the sensing device adequately to avoid erroneous observations. For example, Stevenson Screen to shield the sensing device against direct precipitation or direct sunlight."@en .
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#DeviceShelter> <http://www.w3.org/2000/01/rdf-schema#label> "Device Shelter"@en .
+# 
+# https://w3id.org/datamining4eepsa#ImputationProcedure
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Procedure> .
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure that attempts to compute an accurate estimation of the Missing Value."@en .
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ImputationProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation Procedure"@en .
+# 
+# https://w3id.org/datamining4eepsa#IterativeValueEstimation
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ValueEstimationProcedure> .
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://www.w3.org/2000/01/rdf-schema#comment> "Iterative Value Estimation procedure to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#IterativeValueEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Iterative Value Estimation"@en .
+# 
+# https://w3id.org/datamining4eepsa#LongMissingValueChunk
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MissingValueChunk> .
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#comment> "A chunk of Missing Values which is considered to have a long length."@en .
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#LongMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#label> "Long Missing Value Chunk"@en .
+# 
+# https://w3id.org/datamining4eepsa#MAR
+<https://w3id.org/datamining4eepsa#MAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MAR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MissingValue> .
+<https://w3id.org/datamining4eepsa#MAR> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MAR> <http://www.w3.org/2000/01/rdf-schema#comment> "Misingness at Random (MAR): When a pattern can be identified for observation's failure."@en .
+<https://w3id.org/datamining4eepsa#MAR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MAR> <http://www.w3.org/2000/01/rdf-schema#label> "MAR"@en .
+# 
+# https://w3id.org/datamining4eepsa#MCAR
+<https://w3id.org/datamining4eepsa#MCAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MCAR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MissingValue> .
+<https://w3id.org/datamining4eepsa#MCAR> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MCAR> <http://www.w3.org/2000/01/rdf-schema#comment> "Missingness Completely at Random (MCAR): When an observation fails randomly."@en .
+<https://w3id.org/datamining4eepsa#MCAR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MCAR> <http://www.w3.org/2000/01/rdf-schema#label> "MCAR"@en .
+# 
+# https://w3id.org/datamining4eepsa#MIV
+<https://w3id.org/datamining4eepsa#MIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MIV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MNAR> .
+<https://w3id.org/datamining4eepsa#MIV> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MIV> <http://www.w3.org/2000/01/rdf-schema#comment> "Misingness that depends on its value itself (MIV): When the failure of an observation depends on ints own value."@en .
+<https://w3id.org/datamining4eepsa#MIV> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MIV> <http://www.w3.org/2000/01/rdf-schema#label> "MIV"@en .
+# 
+# https://w3id.org/datamining4eepsa#MNAR
+<https://w3id.org/datamining4eepsa#MNAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MNAR> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MissingValue> .
+<https://w3id.org/datamining4eepsa#MNAR> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MNAR> <http://www.w3.org/2000/01/rdf-schema#comment> "Misingness not at Random (MNAR): When an observation fails with a pattern which is unidentifiable."@en .
+<https://w3id.org/datamining4eepsa#MNAR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MNAR> <http://www.w3.org/2000/01/rdf-schema#label> "MNAR"@en .
+# 
+# https://w3id.org/datamining4eepsa#MUOV
+<https://w3id.org/datamining4eepsa#MUOV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MUOV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MNAR> .
+<https://w3id.org/datamining4eepsa#MUOV> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MUOV> <http://www.w3.org/2000/01/rdf-schema#comment> "Misingness that depends on unobserved variables (MUOV): When the variables that explain the cause of the observation's failure are not collected."@en .
+<https://w3id.org/datamining4eepsa#MUOV> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MUOV> <http://www.w3.org/2000/01/rdf-schema#label> "MUOV"@en .
+# 
+# https://w3id.org/datamining4eepsa#MissingValue
+<https://w3id.org/datamining4eepsa#MissingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/datamining4eepsa#MissingValue> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "When no data is stored in an attribute of an observation."@en .
+<https://w3id.org/datamining4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MissingValue> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Value"@en .
+# 
+# https://w3id.org/datamining4eepsa#MissingValueChunk
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#requiresImputationProcedure> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#ImputationProcedure> .
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#comment> "A chunk of Missing Values."@en .
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Value Chunk"@en .
+# 
+# https://w3id.org/datamining4eepsa#MultipleValuesEstimation
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ValueEstimationProcedure> .
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://www.w3.org/2000/01/rdf-schema#comment> "Multiple Values Estimation procedure to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#MultipleValuesEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Values Estimation"@en .
+# 
+# https://w3id.org/datamining4eepsa#Outlier
+<https://w3id.org/datamining4eepsa#Outlier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<https://w3id.org/datamining4eepsa#Outlier> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#comment> "Observations that stand out and do not conform to the expected behaviour."@en .
+<https://w3id.org/datamining4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#Outlier> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by a beam spotlight. For example, an observation made by a sensing device located under a light bulb"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByBeamSpotlight> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Beam Spotlight"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#Outlier> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#ProcedureUponDevice> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier occurred by an error on the device itself."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Device Error"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#Outlier> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#DeviceRelocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier occurred by the inadequate location of the device."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Device Location"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by the low battery of the device."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLowBattery> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Device Low Battery"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceError> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#DeviceReplacement> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by a malfunction suffered by the device, which might have been transient."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByDeviceMalfunction> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Device Malfunction"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by external factors. For example for being next to a source of radiant heat or cold such as windows and poorly insulated outside walls."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByExternalConditions> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by External Conditions"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByHVAC
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by its device's location in a point where an activated HVAC is sending hot or cold air."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByHVAC> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by HVAC"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedByRain
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#DeviceShelter> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by rainfall affecting the device."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedByRain> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Rain"@en .
+# 
+# https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#OutlierCausedByDeviceLocation> .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/datamining4eepsa#hasSolvingProcedure> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/datamining4eepsa#DeviceShelter> .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://purl.org/ontology/bibo/status> "stable"@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/2000/01/rdf-schema#comment> "An Outlier caused by direct sunlight on the device."@en .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#OutlierCausedBySolarRadiation> <http://www.w3.org/2000/01/rdf-schema#label> "Outlier caused by Solar Radiation"@en .
+# 
+# https://w3id.org/datamining4eepsa#ProcedureUponDevice
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Procedure> .
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure that attempts to solve a problem by proceeding upon the Device."@en .
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ProcedureUponDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure Upon Device"@en .
+# 
+# https://w3id.org/datamining4eepsa#ShortMissingValueChunk
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#MissingValueChunk> .
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#comment> "A chunk of Missing Values which is considered to have a short length."@en .
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ShortMissingValueChunk> <http://www.w3.org/2000/01/rdf-schema#label> "Short Missing Value Chunk"@en .
+# 
+# https://w3id.org/datamining4eepsa#SimpleValueDrawing
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ValueDrawingProcedure> .
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://www.w3.org/2000/01/rdf-schema#comment> "Simple Value Drawing procedure to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#SimpleValueDrawing> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Value Drawing"@en .
+# 
+# https://w3id.org/datamining4eepsa#SimpleValueEstimation
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ValueEstimationProcedure> .
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://www.w3.org/2000/01/rdf-schema#comment> "Simple Value Estimation procedure to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#SimpleValueEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Value Estimation"@en .
+# 
+# https://w3id.org/datamining4eepsa#ValueDrawingProcedure
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ImputationProcedure> .
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure that consists in drawing a value to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ValueDrawingProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Value Drawing Procedure"@en .
+# 
+# https://w3id.org/datamining4eepsa#ValueEstimationProcedure
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/datamining4eepsa#ImputationProcedure> .
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://purl.org/ontology/bibo/status> "testing"@en .
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure that consists in estimating a value to impute a Missing Value."@en .
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/datamining4eepsa#> .
+<https://w3id.org/datamining4eepsa#ValueEstimationProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Value Estimation Procedure"@en .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

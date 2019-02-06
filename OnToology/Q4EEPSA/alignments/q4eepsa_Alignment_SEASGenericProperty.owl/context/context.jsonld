@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Orientation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Orientation"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "WindSpeedProperty" : {
+      "@id" : "https://w3id.org/seas/WindSpeedProperty"
+    },
+    "IndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature"
+    },
+    "TemperatureProperty" : {
+      "@id" : "https://w3id.org/seas/TemperatureProperty"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "AirCO2LevelProperty" : {
+      "@id" : "https://w3id.org/seas/AirCO2LevelProperty"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "WindDirectionProperty" : {
+      "@id" : "https://w3id.org/seas/WindDirectionProperty"
+    },
+    "OutdoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "DirectionProperty" : {
+      "@id" : "https://w3id.org/seas/DirectionProperty"
+    },
+    "WindDirection" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindDirection"
+    },
+    "CO2" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#CO2"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "WindSpeed" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindSpeed"
+    }
+  }
+}

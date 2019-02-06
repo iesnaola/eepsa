@@ -1,0 +1,112 @@
+{
+  "@context" : {
+    "ForecastResult" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#ForecastResult"
+    },
+    "Unit" : {
+      "@id" : "http://qudt.org/schema/qudt#Unit"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "ProcedureExecutor" : {
+      "@id" : "https://w3id.org/pep/ProcedureExecutor"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Procedure" : {
+      "@id" : "https://w3id.org/pep/Procedure"
+    },
+    "ForecastingInput" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#ForecastingInput"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "ProcessExecution" : {
+      "@id" : "https://w3id.org/pep/ProcessExecution"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "numericValue" : {
+      "@id" : "http://qudt.org/schema/qudt#numericValue"
+    },
+    "ProcedureExecutionContainer" : {
+      "@id" : "https://w3id.org/pep/ProcedureExecutionContainer"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "ProcedureExecution" : {
+      "@id" : "https://w3id.org/pep/ProcedureExecution"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ProcessExecutor" : {
+      "@id" : "https://w3id.org/pep/ProcessExecutor"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasResult" : {
+      "@id" : "https://w3id.org/pep/hasResult",
+      "@type" : "@id"
+    },
+    "usedProcedure" : {
+      "@id" : "https://w3id.org/pep/usedProcedure",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "ProcessExecutionContainer" : {
+      "@id" : "https://w3id.org/pep/ProcessExecutionContainer"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "hasParameter" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#hasParameter",
+      "@type" : "@id"
+    },
+    "unit" : {
+      "@id" : "http://qudt.org/schema/qudt#unit",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/pep/Process"
+    },
+    "hasForecastResult" : {
+      "@id" : "https://w3id.org/forecasting4eepsa#hasForecastResult",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "madeBy" : {
+      "@id" : "https://w3id.org/pep/madeBy",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}

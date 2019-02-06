@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:TemperatureForecasting" "base:TemperatureForecaster" "base:TemperatureForecast" ; /*classes style*/
+	"base:TemperatureForecast" -> "https://w3id.org/seas/Forecast" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureForecasting" -> "https://w3id.org/seas/Forecasting" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureForecaster" -> "https://w3id.org/seas/Forecaster" [ label = "rdfs:subClassOf" ];
+
+}

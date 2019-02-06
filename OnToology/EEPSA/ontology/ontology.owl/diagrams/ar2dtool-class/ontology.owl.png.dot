@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/p4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/affectedBy#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/ek4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/exr4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "ns1:license" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/q4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/rc#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa" [ label = "vann:preferredNamespaceUri" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/exn4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/foi4eepsa#" [ label = "owl:imports" ];
+	"eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eep#" [ label = "owl:imports" ];
+
+}

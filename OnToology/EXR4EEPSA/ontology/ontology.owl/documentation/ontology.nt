@@ -1,0 +1,342 @@
+<https://w3id.org/eepsa/exr4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/exr4eepsa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/contributor> "Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>\nAitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/created> "2018-08-21" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/description> "This ontology module describes the Executor terminology under the eep:Executor class for the EEPSA Ontology."@en .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/issued> "2018-11-27" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/modified> "2018-11-27" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/dc/terms/title> "Executor ontology module for the EEPSA Ontology" .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exr4eepsa"@en .
+<https://w3id.org/eepsa/exr4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exr4eepsa> .
+<https://w3id.org/eepsa/exr4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eep#Executor
+<https://w3id.org/eep#Executor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Actuator
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that implements a procedure to act on a real world’s quality."@en .
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator"@en .
+<https://w3id.org/eepsa/exr4eepsa#Actuator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#AirQualitySensor
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the air quality"@en .
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Air Quality Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> .
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the ammonia levels"@en .
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Ammonia Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#AmmoniaSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Anenometer
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the wind speed"@en .
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/2000/01/rdf-schema#label> "Anenometer"@en .
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the atmospheric pressure"@en .
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric Pressure Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#AtmosphericPressureSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#BlindActuator
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that controls the opening and/or closing of a blind"@en .
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/2000/01/rdf-schema#label> "Blind Actuator"@en .
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#CO2Sensor
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#AirQualitySensor> .
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the CO2 levels"@en .
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Calorimeter
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter that measures the amount of heat consumed"@en .
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/2000/01/rdf-schema#label> "Calorimeter"@en .
+<https://w3id.org/eepsa/exr4eepsa#Calorimeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the cloud cover"@en .
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Cloud Cover Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#DoorActuator
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that controls the opening and/or closing of a door"@en .
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/2000/01/rdf-schema#label> "Door Actuator"@en .
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#ElectricityMeter
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "An electricity meter, electric meter, electrical meter, or energy meter is a meter that measures the amount of electric energy consumed by a residence, a business, or an electrically powered device (defined by SEAS Smart Meter ontology)."@en .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/seas/SmartMeterOntology> .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Electricity Meter"@en .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/seas/ElectricityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#ElectricityMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Sensor> .
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the environment"@en .
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Environment Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#GasMeter
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A gas meter is a meter, used to measure the volume of fuel gases such as natural gas and propane. Gas meters are used at residential, commercial, and industrial buildings that consume fuel gas supplied by a gas utility (defined by SEAS Smart Meter ontology)."@en .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/seas/SmartMeterOntology> .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Gas Meter"@en .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/seas/GasMeter> .
+<https://w3id.org/eepsa/exr4eepsa#GasMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#GenerationMeter
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter that measures the amount of electricity generated"@en .
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Generation Meter"@en .
+<https://w3id.org/eepsa/exr4eepsa#GenerationMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#HVAC
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "An system that heats, cools and ventilates a given space"@en .
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC"@en .
+<https://w3id.org/eepsa/exr4eepsa#HVAC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#HumiditySensor
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the humidity"@en .
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#ImputationMethod
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that implements a procedure to compute an estimation of missing values"@en .
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Imputation Method"@en .
+<https://w3id.org/eepsa/exr4eepsa#ImputationMethod> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#LightSensor
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the light"@en .
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Light Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#LigthActuator
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that controls the activation, deactivation or regulation of a lamp or similar device that produces light"@en .
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/2000/01/rdf-schema#label> "Light Actuator"@en .
+<https://w3id.org/eepsa/exr4eepsa#LigthActuator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#MovementSensor
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that detects the movement"@en .
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Movement Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#MovementSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the precipitation type, intensity, or quantity"@en .
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#PredictiveModel
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that implements a procedure to predict an unknown or future event"@en .
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/2000/01/rdf-schema#label> "Predictive Model"@en .
+<https://w3id.org/eepsa/exr4eepsa#PredictiveModel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Sensor
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent that implements a procedure to sense a change in a real world’s quality and produces an Observation."@en .
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/eepsa/exr4eepsa#" .
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#Sensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#SmartPlug
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that enables the remote control and monitoring of the device plugged in"@en .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Plug"@en .
+<https://w3id.org/eepsa/exr4eepsa#SmartPlug> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the solar radiation"@en .
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Solar Radiation Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#SunSensor
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that senses the direction of the Sun to measure the position of the sun or other light sources with respect to the sensor position."@en .
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sun Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#SunSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#TemperatureSensor
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#EnvironmentSensor> .
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that observes the temperature"@en .
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Sensor"@en .
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#Thermostat
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that controls the regulation of a device or system that heats or cools."@en .
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/2000/01/rdf-schema#label> "Thermostat"@en .
+<https://w3id.org/eepsa/exr4eepsa#Thermostat> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#UtilityMeter
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Sensor> .
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A system that observes the consumption/generation of an entity."@en .
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Utility Meter"@en .
+<https://w3id.org/eepsa/exr4eepsa#UtilityMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#WaterMeter
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#UtilityMeter> .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A water meter is a Meter designed to measure the quantity of water that flows through a pipe. The water meter can measures water consumption or water supply (defined by SEAS Smart Meter ontology)"@en .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/seas/SmartMeterOntology> .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Water Meter"@en .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/seas/WaterMeter> .
+<https://w3id.org/eepsa/exr4eepsa#WaterMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/eepsa/exr4eepsa#WindowActuator
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eepsa/exr4eepsa#Actuator> .
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that controls the opening and/or closing of a window"@en .
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eepsa/exr4eepsa#> .
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/2000/01/rdf-schema#label> "Window Actuator"@en .
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa/exr4eepsa#
+<https://w3id.org/eepsa/exr4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/eepsa/exr4eepsa#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

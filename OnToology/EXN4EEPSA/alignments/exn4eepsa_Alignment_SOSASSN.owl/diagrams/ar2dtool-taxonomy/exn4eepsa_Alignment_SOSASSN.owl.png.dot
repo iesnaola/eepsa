@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Outlier" "base:Observation" "base:Imputation" "base:Forecast" ; /*classes style*/
+	"base:Outlier" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Forecast" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Imputation" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+
+}

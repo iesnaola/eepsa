@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:NaturallyEnlightenedSpace" "d8d8f94be150563e33bd0def3be5a2d3" "base:BelowGroundLevelSpace" "cab34337de8fbea48870ab4a6ed2d19a" "base:AdjacentToOutdoorSpace" "base:BelowGroundLevelSpaceIndoorTemperature" "48562509d33f29bf776bd0540aac0baf" "base:AdjacentToOutdoorSpaceIndoorTemperature" "base:BadInsulatedSpace" "https://w3id.org/bot#Space" "base:NaturallyEnlightenedSpaceIndoorTemperature" "base:BadInsulatedSpaceIndoorTemperature" "98a4f78b4e543e1d8c6044eccdd75ca4" ; /*classes style*/
+	"base:AdjacentToOutdoorSpace" -> "https://w3id.org/bot#Space" [ label = "rdfs:subClassOf" ];
+	"base:NaturallyEnlightenedSpace" -> "https://w3id.org/bot#Space" [ label = "rdfs:subClassOf" ];
+	"base:BelowGroundLevelSpaceIndoorTemperature" -> "98a4f78b4e543e1d8c6044eccdd75ca4" [ label = "rdfs:subClassOf" ];
+	"base:BelowGroundLevelSpaceIndoorTemperature" -> "https://w3id.org/eepsa/q4eepsa#IndoorTemperature" [ label = "rdfs:subClassOf" ];
+	"base:AdjacentToOutdoorSpaceIndoorTemperature" -> "cab34337de8fbea48870ab4a6ed2d19a" [ label = "rdfs:subClassOf" ];
+	"base:AdjacentToOutdoorSpaceIndoorTemperature" -> "https://w3id.org/eepsa/q4eepsa#IndoorTemperature" [ label = "rdfs:subClassOf" ];
+	"base:BadInsulatedSpace" -> "https://w3id.org/bot#Space" [ label = "rdfs:subClassOf" ];
+	"base:BadInsulatedSpaceIndoorTemperature" -> "48562509d33f29bf776bd0540aac0baf" [ label = "rdfs:subClassOf" ];
+	"base:BadInsulatedSpaceIndoorTemperature" -> "https://w3id.org/eepsa/q4eepsa#IndoorTemperature" [ label = "rdfs:subClassOf" ];
+	"base:BelowGroundLevelSpace" -> "https://w3id.org/bot#Space" [ label = "rdfs:subClassOf" ];
+	"base:NaturallyEnlightenedSpaceIndoorTemperature" -> "d8d8f94be150563e33bd0def3be5a2d3" [ label = "rdfs:subClassOf" ];
+	"base:NaturallyEnlightenedSpaceIndoorTemperature" -> "https://w3id.org/eepsa/q4eepsa#IndoorTemperature" [ label = "rdfs:subClassOf" ];
+
+}

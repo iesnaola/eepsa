@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:TemperatureOutlierBySolarRadiation" "https://w3id.org/eep#Execution" "base:Actuation" "base:OutlierByPowerSupply" "base:Outlier" "base:Imputation" "base:Forecast" "base:TemperatureOutlierByRain" "base:OutlierBySensorLocation" "base:MissingValue" "base:IlluminanceOutlierByLightBeam" "base:OutlierBySensorMalfunction" "base:OutlierByDeviceError" "base:Observation" ; /*classes style*/
+	"base:OutlierBySensorMalfunction" -> "base:OutlierByDeviceError" [ label = "rdfs:subClassOf" ];
+	"base:OutlierByDeviceError" -> "base:Outlier" [ label = "rdfs:subClassOf" ];
+	"base:Actuation" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:IlluminanceOutlierByLightBeam" -> "base:OutlierBySensorLocation" [ label = "rdfs:subClassOf" ];
+	"base:Forecast" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Imputation" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+	"base:Observation" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureOutlierBySolarRadiation" -> "base:OutlierBySensorLocation" [ label = "rdfs:subClassOf" ];
+	"base:OutlierByPowerSupply" -> "base:OutlierByDeviceError" [ label = "rdfs:subClassOf" ];
+	"base:TemperatureOutlierByRain" -> "base:OutlierBySensorLocation" [ label = "rdfs:subClassOf" ];
+	"base:MissingValue" -> "https://w3id.org/eep#Execution" [ label = "rdfs:subClassOf" ];
+	"base:OutlierBySensorLocation" -> "base:Outlier" [ label = "rdfs:subClassOf" ];
+	"base:Outlier" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+
+}

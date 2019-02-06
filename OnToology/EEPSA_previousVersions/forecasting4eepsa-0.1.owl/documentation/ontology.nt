@@ -1,0 +1,212 @@
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.1.owl> .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/seas/ForecastingOntology-1.0> .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/elements/1.1/title> "Forecasting for EEPSA" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/issued> "2017-11-27" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/license> "This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/."@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/modified> "2017-11-27" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/ontology/bibo/status> "Work in progress"@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "f4eepsa"@en .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2000/01/rdf-schema#comment> "Forecasting-related knowledge representation for the EEPSA Ontology."@en .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt#unit
+<http://qudt.org/schema/qudt#unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pep/hasResult
+<https://w3id.org/pep/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pep/madeBy
+<https://w3id.org/pep/madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pep/usedProcedure
+<https://w3id.org/pep/usedProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt#numericValue
+<http://qudt.org/schema/qudt#numericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/forecasting4eepsa#hasForecastDateTime
+<https://w3id.org/forecasting4eepsa#hasForecastDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/forecasting4eepsa#hasForecastDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/forecasting4eepsa#hasForecastDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the future instant (in xsd:dateTime format) of time when a forecast takes place."@en .
+<https://w3id.org/forecasting4eepsa#hasForecastDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Review comment"@en .
+<https://w3id.org/forecasting4eepsa#hasForecastDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has forecast date time"@en .
+# 
+# https://w3id.org/forecasting4eepsa#hasForecastTime
+<https://w3id.org/forecasting4eepsa#hasForecastTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/forecasting4eepsa#hasForecastTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#time> .
+<https://w3id.org/forecasting4eepsa#hasForecastTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the future hour (in xsd:time format) of time when a forecast takes place."@en .
+<https://w3id.org/forecasting4eepsa#hasForecastTime> <http://www.w3.org/2000/01/rdf-schema#label> "has forecast time"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/iot/vocab/m3-lite#Temperature
+<http://purl.org/iot/vocab/m3-lite#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/forecasting4eepsa#TemperatureForecast
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seas/Forecast> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pep/hasResult> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/forecasting4eepsa#TemperatureForecastResult> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pep/madeBy> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/forecasting4eepsa#TemperatureForecaster> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pep/usedProcedure> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/forecasting4eepsa#TemperatureForecasting> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/seas/forecastsProperty> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/iot/vocab/m3-lite#Temperature> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#generatedAtTime> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#comment> "A Temperature Forecast is the execution of some Temperature Forecasting process by some Temperature Forecaster."@en .
+<https://w3id.org/forecasting4eepsa#TemperatureForecast> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Forecast"@en .
+# 
+# https://w3id.org/forecasting4eepsa#TemperatureForecastResult
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt#unit> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qudt.org/schema/qudt#Unit> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt#numericValue> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/forecasting4eepsa#hasForecastDateTime> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature Forecast Result represents the result of a Temperature Forecast."@en .
+<https://w3id.org/forecasting4eepsa#TemperatureForecastResult> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Forecast Result"@en .
+# 
+# https://w3id.org/forecasting4eepsa#TemperatureForecaster
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seas/Forecaster> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pep/implements> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/forecasting4eepsa#TemperatureForecasting> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/seas/forecastsProperty> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/iot/vocab/m3-lite#Temperature> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/2000/01/rdf-schema#comment> "A Temperature Forecaster implements some Temperature Forecasting process, and may generate temperature forecasts."@en .
+<https://w3id.org/forecasting4eepsa#TemperatureForecaster> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Forecaster"@en .
+# 
+# https://w3id.org/forecasting4eepsa#TemperatureForecasting
+<https://w3id.org/forecasting4eepsa#TemperatureForecasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seas/Forecasting> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/seas/forecastsProperty> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/iot/vocab/m3-lite#Temperature> .
+<https://w3id.org/forecasting4eepsa#TemperatureForecasting> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature Forecasting is the process of forecasting the temperature."@en .
+<https://w3id.org/forecasting4eepsa#TemperatureForecasting> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Forecasting"@en .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

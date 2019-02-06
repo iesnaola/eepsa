@@ -1,0 +1,194 @@
+@prefix : <https://w3id.org/eepsa/exr4eepsa_M3liteALignment#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/eepsa/exr4eepsa_M3liteALignment> .
+
+<https://w3id.org/eepsa/exr4eepsa_M3liteALignment> rdf:type owl:Ontology ;
+                                                    <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                                    <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>""" ;
+                                                    <http://purl.org/dc/terms/created> "2018-11-27" ;
+                                                    <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                                                    <http://purl.org/dc/terms/description> "It defines the proposed alignments between the EXR4EEPSA ontology and the M3-lite ontology."@en ;
+                                                    <http://purl.org/dc/terms/issued> "2018-11-27" ;
+                                                    <http://purl.org/dc/terms/title> "EXR4EEPSA ontology alignment with M3-lite ontology"@en ;
+                                                    <http://purl.org/ontology/bibo/status> "Published"@en ;
+                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "exr4eepsa" ;
+                                                    owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/iot/vocab/m3-lite#Blind
+<http://purl.org/iot/vocab/m3-lite#Blind> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#BlindActuator> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CO2Sensor
+<http://purl.org/iot/vocab/m3-lite#CO2Sensor> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#CO2Sensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#CloudCoverSensor
+<http://purl.org/iot/vocab/m3-lite#CloudCoverSensor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Door
+<http://purl.org/iot/vocab/m3-lite#Door> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#DoorActuator> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#HumiditySensor
+<http://purl.org/iot/vocab/m3-lite#HumiditySensor> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#HumiditySensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#LightSensor
+<http://purl.org/iot/vocab/m3-lite#LightSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#LightSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#PrecipitationSensor
+<http://purl.org/iot/vocab/m3-lite#PrecipitationSensor> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor
+<http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Thermometer
+<http://purl.org/iot/vocab/m3-lite#Thermometer> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#WindSpeedSensor
+<http://purl.org/iot/vocab/m3-lite#WindSpeedSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#Anenometer> .
+
+
+###  http://purl.org/iot/vocab/m3-lite#Window
+<http://purl.org/iot/vocab/m3-lite#Window> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/eepsa/exr4eepsa#WindowActuator> .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#Anenometer
+<https://w3id.org/eepsa/exr4eepsa#Anenometer> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#BlindActuator
+<https://w3id.org/eepsa/exr4eepsa#BlindActuator> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#CO2Sensor
+<https://w3id.org/eepsa/exr4eepsa#CO2Sensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor
+<https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#DoorActuator
+<https://w3id.org/eepsa/exr4eepsa#DoorActuator> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#HumiditySensor
+<https://w3id.org/eepsa/exr4eepsa#HumiditySensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#LightSensor
+<https://w3id.org/eepsa/exr4eepsa#LightSensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor
+<https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor
+<https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#TemperatureSensor
+<https://w3id.org/eepsa/exr4eepsa#TemperatureSensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exr4eepsa#WindowActuator
+<https://w3id.org/eepsa/exr4eepsa#WindowActuator> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

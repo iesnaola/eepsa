@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://purl.org/iot/vocab/m3-lite#Door" "http://purl.org/iot/vocab/m3-lite#Thermometer" "https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor" "https://w3id.org/eepsa/exr4eepsa#Anenometer" "https://w3id.org/eepsa/exr4eepsa#CO2Sensor" "https://w3id.org/eepsa/exr4eepsa#TemperatureSensor" "https://w3id.org/eepsa/exr4eepsa#WindowActuator" "http://purl.org/iot/vocab/m3-lite#CO2Sensor" "https://w3id.org/eepsa/exr4eepsa#DoorActuator" "http://purl.org/iot/vocab/m3-lite#HumiditySensor" "https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor" "https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor" "http://purl.org/iot/vocab/m3-lite#Blind" "http://purl.org/iot/vocab/m3-lite#Window" "https://w3id.org/eepsa/exr4eepsa#BlindActuator" "http://purl.org/iot/vocab/m3-lite#WindSpeedSensor" "http://purl.org/iot/vocab/m3-lite#LightSensor" "https://w3id.org/eepsa/exr4eepsa#LightSensor" "http://purl.org/iot/vocab/m3-lite#PrecipitationSensor" "http://purl.org/iot/vocab/m3-lite#CloudCoverSensor" "http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor" "https://w3id.org/eepsa/exr4eepsa#HumiditySensor" ; /*classes style*/
+	"http://purl.org/iot/vocab/m3-lite#WindSpeedSensor" -> "https://w3id.org/eepsa/exr4eepsa#Anenometer" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#PrecipitationSensor" -> "https://w3id.org/eepsa/exr4eepsa#PrecipitationSensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#Thermometer" -> "https://w3id.org/eepsa/exr4eepsa#TemperatureSensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#CloudCoverSensor" -> "https://w3id.org/eepsa/exr4eepsa#CloudCoverSensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#Window" -> "https://w3id.org/eepsa/exr4eepsa#WindowActuator" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#Door" -> "https://w3id.org/eepsa/exr4eepsa#DoorActuator" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#CO2Sensor" -> "https://w3id.org/eepsa/exr4eepsa#CO2Sensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#HumiditySensor" -> "https://w3id.org/eepsa/exr4eepsa#HumiditySensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#LightSensor" -> "https://w3id.org/eepsa/exr4eepsa#LightSensor" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#Blind" -> "https://w3id.org/eepsa/exr4eepsa#BlindActuator" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/iot/vocab/m3-lite#SolarRadiationSensor" -> "https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor" [ label = "rdfs:subClassOf" ];
+
+}
