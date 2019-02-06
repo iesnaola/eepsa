@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Door" "base:ExternalWall" "https://w3id.org/def/saref4bldg#PhysicalObject" "base:WeatherStation" "base:Skylight" "base:ExternalWindow" "https://w3id.org/def/saref4bldg#Building" "https://w3id.org/def/saref4bldg#BuildingSpace" "base:BuildingElement" "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" "base:Window" "base:Wall" "base:ExternalDoor" "base:Roof" "base:ExternalBuildingElement" ; /*classes style*/
+	"base:Door" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"base:Wall" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"base:Roof" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"base:WeatherStation" -> "https://w3id.org/def/saref4bldg#Building" [ label = "rdfs:subClassOf" ];
+	"base:ExternalDoor" -> "base:Door" [ label = "rdfs:subClassOf" ];
+	"base:BuildingElement" -> "https://w3id.org/def/saref4bldg#PhysicalObject" [ label = "rdfs:subClassOf" ];
+	"base:ExternalBuildingElement" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWall" -> "base:Wall" [ label = "rdfs:subClassOf" ];
+	"base:ExternalWindow" -> "base:Window" [ label = "rdfs:subClassOf" ];
+	"base:Skylight" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4bldg#BuildingSpace" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"base:Window" -> "base:BuildingElement" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4bldg#Building" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4bldg#PhysicalObject" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ label = "rdfs:subClassOf" ];
+
+}

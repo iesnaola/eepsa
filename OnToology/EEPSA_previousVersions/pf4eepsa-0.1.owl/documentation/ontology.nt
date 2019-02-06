@@ -1,0 +1,197 @@
+<https://w3id.org/pf4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pf4eepsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/pf4eepsa-0.1.owl> .
+<https://w3id.org/pf4eepsa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/created> "2018-04-10" .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/description> "Poultry Farms-related information for the EEPSA Ontology."@en .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/issued> "2018-04-10" .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/modified> "2018-04-11" .
+<https://w3id.org/pf4eepsa> <http://purl.org/dc/terms/title> "Poultry Farm for EEPSA" .
+<https://w3id.org/pf4eepsa> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/pf4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pf4eepsa" .
+<https://w3id.org/pf4eepsa> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/pf4eepsa" .
+<https://w3id.org/pf4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eepsa#isAffectedBy
+<https://w3id.org/eepsa#isAffectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/pf4eepsa#BreedingSpace
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eepsa#isAffectedBy> .
+_:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://purl.org/iot/vocab/m3-lite#CO2> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/eepsa#isAffectedBy> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/pf4eepsa#StockingDensity> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space where animals are raised and fed."@en .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Breeding Space"@en .
+<https://w3id.org/pf4eepsa#BreedingSpace> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#Farm
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Building> .
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/2000/01/rdf-schema#comment> "A farm is an area of land that is devoted primarily to agricultural processes with the primary objective of producing food and other crops; it is the basic facility in food production (Source: Wikipedia)."@en .
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/2000/01/rdf-schema#label> "Farm"@en .
+<https://w3id.org/pf4eepsa#Farm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#FeedingStructure
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> .
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Architectonic elements with feeding purposes."@en .
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Feeding Structure"@en .
+<https://w3id.org/pf4eepsa#FeedingStructure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#PoultryFarm
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pf4eepsa#Farm> .
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/2000/01/rdf-schema#comment> "A farm where poultry are raised."@en .
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/2000/01/rdf-schema#label> "Poultry Farm"@en .
+<https://w3id.org/pf4eepsa#PoultryFarm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#Silo
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Building> .
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/2000/01/rdf-schema#comment> "A silo (from the Greek σιρός – siros, \"pit for holding grain\") is a structure for storing bulk materials. Silos are used in agriculture to store grain (see grain elevators) or fermented feed known as silage (Source: Wikipedia)."@en .
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/2000/01/rdf-schema#label> "Silo"@en .
+<https://w3id.org/pf4eepsa#Silo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#Slaughterhouse
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Building> .
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/2000/01/rdf-schema#comment> "A slaughterhouse or abattoir is a facility where animals are slaughtered for consumption as food (Source: Wikipedia)."@en .
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/2000/01/rdf-schema#label> "Slaughterhouse"@en .
+<https://w3id.org/pf4eepsa#Slaughterhouse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#StockingDensity
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+# 
+# https://w3id.org/pf4eepsa#StockingDensitySensor
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor for determining Stocking density within a room or space."@en .
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Stocking Density Sensor"@en .
+<https://w3id.org/pf4eepsa#StockingDensitySensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#Trough
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pf4eepsa#FeedingStructure> .
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/2000/01/rdf-schema#comment> "A long, narrow container without a lid that usually holds water or food for farm animals."@en .
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/2000/01/rdf-schema#label> "Trough"@en .
+<https://w3id.org/pf4eepsa#Trough> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pf4eepsa#WaterDispenser
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pf4eepsa#FeedingStructure> .
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/2000/01/rdf-schema#comment> "A structure that dispenses water for feeding purposes."@en .
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/2000/01/rdf-schema#label> "Water Dispenser"@en .
+<https://w3id.org/pf4eepsa#WaterDispenser> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/iot/vocab/m3-lite#CO2
+<http://purl.org/iot/vocab/m3-lite#CO2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/pf4eepsa#StockingDensity
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "In the Poultry Farm domain, Stocking Density determines the bird weight per unit area. The benefit of using bird weight per unit area is that the standards are consistent and would stand true no matter how heavy the target weight."@en .
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pf4eepsa#> .
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/2000/01/rdf-schema#label> "Stocking Density"@en .
+<https://w3id.org/pf4eepsa#StockingDensity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

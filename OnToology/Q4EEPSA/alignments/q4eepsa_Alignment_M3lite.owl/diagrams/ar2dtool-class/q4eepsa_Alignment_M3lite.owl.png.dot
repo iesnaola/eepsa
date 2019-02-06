@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://purl.org/iot/vocab/m3-lite#Illuminance" "http://purl.org/iot/vocab/m3-lite#CloudCover" "http://purl.org/iot/vocab/m3-lite#WindSpeed" "https://w3id.org/eepsa/q4eepsa#Illuminance" "https://w3id.org/eepsa/q4eepsa#SolarRadiation" "http://purl.org/iot/vocab/m3-lite#CO2" "https://w3id.org/eepsa/q4eepsa#WindDirection" "https://w3id.org/eepsa/q4eepsa#SunPositionElevation" "http://purl.org/iot/vocab/m3-lite#WindDirection" "https://w3id.org/eepsa/q4eepsa#CloudCover" "http://purl.org/iot/vocab/m3-lite#SunPositionElevation" "https://w3id.org/eepsa/q4eepsa#WindSpeed" "http://purl.org/iot/vocab/m3-lite#SunPositionDirection" "http://purl.org/iot/vocab/m3-lite#WindChill" "http://purl.org/iot/vocab/m3-lite#Precipitation" "http://purl.org/iot/vocab/m3-lite#AtmosphericPressure" "https://w3id.org/eepsa/q4eepsa#SunPositionDirection" "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel" "http://purl.org/iot/vocab/m3-lite#SolarRadiation" "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure" "https://w3id.org/eepsa/q4eepsa#CO2" "http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3" "https://w3id.org/eepsa/q4eepsa#WindChill" "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3" ; /*classes style*/
+	"http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3" -> "https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#SunPositionElevation" -> "https://w3id.org/eepsa/q4eepsa#SunPositionElevation" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#SunPositionDirection" -> "https://w3id.org/eepsa/q4eepsa#SunPositionDirection" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#WindChill" -> "https://w3id.org/eepsa/q4eepsa#WindChill" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#SolarRadiation" -> "https://w3id.org/eepsa/q4eepsa#SolarRadiation" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#WindDirection" -> "https://w3id.org/eepsa/q4eepsa#WindDirection" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#Illuminance" -> "https://w3id.org/eepsa/q4eepsa#Illuminance" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/q4eepsa_M3liteALignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"http://purl.org/iot/vocab/m3-lite#CloudCover" -> "https://w3id.org/eepsa/q4eepsa#CloudCover" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#Precipitation" -> "https://w3id.org/eepsa/q4eepsa#PrecipitationLevel" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#CO2" -> "https://w3id.org/eepsa/q4eepsa#CO2" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#WindSpeed" -> "https://w3id.org/eepsa/q4eepsa#WindSpeed" [ label = "owl:equivalentClass" ];
+	"http://purl.org/iot/vocab/m3-lite#AtmosphericPressure" -> "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure" [ label = "owl:equivalentClass" ];
+
+}

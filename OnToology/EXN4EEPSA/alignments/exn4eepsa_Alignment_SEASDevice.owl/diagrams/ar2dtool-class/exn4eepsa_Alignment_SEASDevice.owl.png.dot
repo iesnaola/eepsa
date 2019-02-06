@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/seas/Observation" "https://w3id.org/seas/Actuation" "base:Observation" "base:Actuation" ; /*classes style*/
+	"base:Observation" -> "https://w3id.org/seas/Observation" [ label = "owl:equivalentClass" ];
+	"base:Actuation" -> "https://w3id.org/seas/Actuation" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/eepsa/exn4eepsa_SEASDeviceAlignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+
+}

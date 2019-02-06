@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Outlier" "base:Imputation" "base:Forecast" "http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" ; /*classes style*/
+	"base:Outlier" -> "http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" [ label = "rdfs:subClassOf" ];
+	"base:Forecast" -> "http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" [ label = "rdfs:subClassOf" ];
+	"base:Imputation" -> "http://def.seegrid.csiro.au/ontology/om/om-lite#Observation" [ label = "rdfs:subClassOf" ];
+
+}

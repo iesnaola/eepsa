@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/saref#ActuatingFunction" "base:Actuation" ; /*classes style*/
+	"https://w3id.org/eepsa/exn4eepsa_SAREFAlignment" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"base:Actuation" -> "https://w3id.org/saref#ActuatingFunction" [ label = "owl:equivalentClass" ];
+
+}

@@ -1,0 +1,42 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Door" "base:ExternalWall" "base:ExternalWindow" "-4259cd03:168c1d24435:-7ffc" "bot:Space" "wgs84_pos:SpatialThing" "base:Window" "-4259cd03:168c1d24435:-7ff9" "base:Wall" "base:ExternalDoor" "-4259cd03:168c1d24435:-7ff6" "base:Roof" "base:ExternalBuildingElement" ; /*classes style*/
+	"NULL" -> "base:Window" [ label = "rdf:first" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "base:ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ff5" [ label = "owl:intersectionOf" ];
+	"NULL" -> "base:Wall" [ label = "rdf:first" ];
+	"NULL" -> "base:Door" [ label = "rdf:first" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ff8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "-4259cd03:168c1d24435:-7ff7" [ label = "rdf:rest" ];
+	"base:Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"base:Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"base:ExternalWindow" -> "-4259cd03:168c1d24435:-7ff6" [ label = "owl:equivalentClass" ];
+	"base:Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"base:Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/bim4eepsa" -> "https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/bim4eepsa-0.3.owl" [ label = "owl:versionIRI" ];
+	"https://w3id.org/bim4eepsa" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = "cc:license" ];
+	"https://w3id.org/bim4eepsa" -> "https://w3id.org/bot/0.2.0" [ label = "owl:imports" ];
+	"wgs84_pos:location" -> "foaf:based_near" [ label = "rdfs:subPropertyOf" ];
+	"base:ExternalWall" -> "-4259cd03:168c1d24435:-7ff9" [ label = "owl:equivalentClass" ];
+	"base:ExternalDoor" -> "-4259cd03:168c1d24435:-7ffc" [ label = "owl:equivalentClass" ];
+	"owl:Thing" -> "wgs84_pos:SpatialThing" [ label = "wgs84_pos:location" ];
+	"wgs84_pos:SpatialThing" -> "owl:Thing" [ label = "wgs84_pos:lat" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_numberOfStoreys" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_fireProtectionClass" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_constructionMethod" ];
+	"wgs84_pos:SpatialThing" -> "owl:Thing" [ label = "wgs84_pos:long" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_occupancyType" ];
+	"bot:Space" -> "owl:Thing" [ label = "base:contains" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_yearOfConstruction" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:pset_BuildingCommon_buildingID" ];
+	"wgs84_pos:SpatialThing" -> "owl:Thing" [ label = "wgs84_pos:alt" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:pset_BuildingCommon_yearOfLastRefurbishment" ];
+	"owl:Thing" -> "xsd:double" [ label = "base:pset_BuildingCommon_grossPlannedArea" ];
+	"owl:Thing" -> "xsd:double" [ label = "base:pset_BuildingCommon_netPlannedArea" ];
+
+}

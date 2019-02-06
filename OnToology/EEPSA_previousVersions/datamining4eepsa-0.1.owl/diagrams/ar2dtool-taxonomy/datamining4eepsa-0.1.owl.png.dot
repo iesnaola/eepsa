@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dm4eepsa:Outlier" "dm4eepsa:OutlierCausedByDeviceLowBattery" "dm4eepsa:OutlierCausedByDeviceMalfunction" "dm4eepsa:DeviceRelocation" "dm4eepsa:OutlierCausedByDeviceError" "dm4eepsa:ProcedureUponDevice" "dm4eepsa:ComplexValueDrawing" "dm4eepsa:SimpleValueEstimation" "dm4eepsa:ValueDrawingProcedure" "dm4eepsa:SimpleValueDrawing" "dm4eepsa:MissingValue" "dm4eepsa:MNAR" "http://www.w3.org/ns/sosa/Observation" "dm4eepsa:MCAR" "dm4eepsa:IterativeValueEstimation" "dm4eepsa:OutlierCausedByBeamSpotlight" "dm4eepsa:MIV" "dm4eepsa:ShortMissingValueChunk" "dm4eepsa:OutlierCausedByRain" "dm4eepsa:OutlierCausedByHVAC" "dm4eepsa:MUOV" "dm4eepsa:MAR" "dm4eepsa:DeviceShelter" "dm4eepsa:OutlierCausedBySolarRadiation" "dm4eepsa:DeviceReplacement" "dm4eepsa:ImputationProcedure" "dm4eepsa:ValueEstimationProcedure" "dm4eepsa:OutlierCausedByExternalConditions" "http://www.w3.org/ns/sosa/Procedure" "dm4eepsa:MissingValueChunk" "dm4eepsa:OutlierCausedByDeviceLocation" "dm4eepsa:MultipleValuesEstimation" "dm4eepsa:LongMissingValueChunk" ; /*classes style*/
+	"dm4eepsa:OutlierCausedByBeamSpotlight" -> "dm4eepsa:OutlierCausedByDeviceLocation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MUOV" -> "dm4eepsa:MNAR" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:DeviceRelocation" -> "dm4eepsa:ProcedureUponDevice" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MNAR" -> "dm4eepsa:MissingValue" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:DeviceReplacement" -> "dm4eepsa:ProcedureUponDevice" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:Outlier" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByDeviceLocation" -> "dm4eepsa:Outlier" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ValueDrawingProcedure" -> "dm4eepsa:ImputationProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:SimpleValueDrawing" -> "dm4eepsa:ValueDrawingProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:IterativeValueEstimation" -> "dm4eepsa:ValueEstimationProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByExternalConditions" -> "dm4eepsa:OutlierCausedByDeviceLocation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ImputationProcedure" -> "http://www.w3.org/ns/sosa/Procedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ComplexValueDrawing" -> "dm4eepsa:ValueDrawingProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByDeviceMalfunction" -> "dm4eepsa:OutlierCausedByDeviceError" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByDeviceError" -> "dm4eepsa:Outlier" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MIV" -> "dm4eepsa:MNAR" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:DeviceShelter" -> "dm4eepsa:ProcedureUponDevice" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedBySolarRadiation" -> "dm4eepsa:OutlierCausedByDeviceLocation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ValueEstimationProcedure" -> "dm4eepsa:ImputationProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:LongMissingValueChunk" -> "dm4eepsa:MissingValueChunk" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MCAR" -> "dm4eepsa:MissingValue" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByHVAC" -> "dm4eepsa:OutlierCausedByDeviceLocation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MissingValue" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ShortMissingValueChunk" -> "dm4eepsa:MissingValueChunk" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByDeviceLowBattery" -> "dm4eepsa:OutlierCausedByDeviceError" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MultipleValuesEstimation" -> "dm4eepsa:ValueEstimationProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:SimpleValueEstimation" -> "dm4eepsa:ValueEstimationProcedure" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:OutlierCausedByRain" -> "dm4eepsa:OutlierCausedByDeviceLocation" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:MAR" -> "dm4eepsa:MissingValue" [ label = "rdfs:subClassOf" ];
+	"dm4eepsa:ProcedureUponDevice" -> "http://www.w3.org/ns/sosa/Procedure" [ label = "rdfs:subClassOf" ];
+
+}

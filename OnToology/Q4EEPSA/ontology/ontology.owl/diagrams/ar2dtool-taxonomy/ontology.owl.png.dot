@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:WindChill" "base:ChemicalAgentAtmosphericConcentrationNH3" "base:WaterConsumption" "base:OutdoorHumidity" "base:ThermalComfortQuality" "base:Occupancy" "base:Illuminance" "base:MeteorologicalQuality" "base:SolarRadiation" "base:WindDirection" "base:Orientation" "base:ElectricConsumption" "https://w3id.org/affectedBy#Quality" "base:IndoorTemperature" "base:SunPositionElevation" "base:CloudCover" "base:IndoorHumidity" "base:WindSpeed" "base:ObservableQuality" "base:GasConsumption" "-29e4527a:168c1d9f043:-7ffc" "base:ElectricGeneration" "base:ActuatableQuality" "base:SunPositionDirection" "base:OutdoorTemperature" "base:PrecipitationLevel" "base:AtmosphericPressure" "base:CO2" "base:HeatConsumption" "base:ResourceConsumptionGenerationQuality" ; /*classes style*/
+	"base:WindDirection" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:OutdoorHumidity" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:CloudCover" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:IndoorHumidity" -> "base:ThermalComfortQuality" [ label = "rdfs:subClassOf" ];
+	"base:CO2" -> "base:ThermalComfortQuality" [ label = "rdfs:subClassOf" ];
+	"base:SunPositionDirection" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:WindChill" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:MeteorologicalQuality" -> "-29e4527a:168c1d9f043:-7ffc" [ label = "rdfs:subClassOf" ];
+	"base:MeteorologicalQuality" -> "base:ObservableQuality" [ label = "rdfs:subClassOf" ];
+	"base:ElectricConsumption" -> "base:ResourceConsumptionGenerationQuality" [ label = "rdfs:subClassOf" ];
+	"base:HeatConsumption" -> "base:ResourceConsumptionGenerationQuality" [ label = "rdfs:subClassOf" ];
+	"base:Orientation" -> "base:ObservableQuality" [ label = "rdfs:subClassOf" ];
+	"base:ThermalComfortQuality" -> "base:ObservableQuality" [ label = "rdfs:subClassOf" ];
+	"base:ThermalComfortQuality" -> "base:ActuatableQuality" [ label = "rdfs:subClassOf" ];
+	"base:SunPositionElevation" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:WaterConsumption" -> "base:ResourceConsumptionGenerationQuality" [ label = "rdfs:subClassOf" ];
+	"base:ElectricGeneration" -> "base:ResourceConsumptionGenerationQuality" [ label = "rdfs:subClassOf" ];
+	"base:ResourceConsumptionGenerationQuality" -> "base:ObservableQuality" [ label = "rdfs:subClassOf" ];
+	"base:Illuminance" -> "base:ThermalComfortQuality" [ label = "rdfs:subClassOf" ];
+	"base:PrecipitationLevel" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:GasConsumption" -> "base:ResourceConsumptionGenerationQuality" [ label = "rdfs:subClassOf" ];
+	"base:SolarRadiation" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:Occupancy" -> "base:ObservableQuality" [ label = "rdfs:subClassOf" ];
+	"base:IndoorTemperature" -> "base:ThermalComfortQuality" [ label = "rdfs:subClassOf" ];
+	"base:AtmosphericPressure" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:ActuatableQuality" -> "https://w3id.org/affectedBy#Quality" [ label = "rdfs:subClassOf" ];
+	"base:WindSpeed" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:OutdoorTemperature" -> "base:MeteorologicalQuality" [ label = "rdfs:subClassOf" ];
+	"base:ChemicalAgentAtmosphericConcentrationNH3" -> "base:ThermalComfortQuality" [ label = "rdfs:subClassOf" ];
+	"base:ObservableQuality" -> "https://w3id.org/affectedBy#Quality" [ label = "rdfs:subClassOf" ];
+
+}

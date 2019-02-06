@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/saref#Measurement" "base:Observation" ; /*classes style*/
+	"https://w3id.org/saref#Measurement" -> "base:Observation" [ label = "rdfs:subClassOf" ];
+
+}

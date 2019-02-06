@@ -1,0 +1,226 @@
+@prefix : <https://w3id.org/forecasting4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/forecasting4eepsa> .
+
+<https://w3id.org/forecasting4eepsa> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.1.owl> ;
+                                      owl:imports <https://w3id.org/seas/ForecastingOntology-1.0> ;
+                                      <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" ;
+                                      <http://purl.org/dc/elements/1.1/title> "Forecasting for EEPSA" ;
+                                      <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""@en ;
+                                      <http://purl.org/dc/terms/issued> "2017-11-27" ;
+                                      <http://purl.org/dc/terms/license> "This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/."@en ;
+                                      <http://purl.org/dc/terms/modified> "2017-11-27" ;
+                                      <http://purl.org/ontology/bibo/status> "Work in progress"@en ;
+                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "f4eepsa"@en ;
+                                      rdfs:comment "Forecasting-related knowledge representation for the EEPSA Ontology."@en ;
+                                      owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://qudt.org/schema/qudt#unit
+<http://qudt.org/schema/qudt#unit> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pep/hasResult
+<https://w3id.org/pep/hasResult> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pep/madeBy
+<https://w3id.org/pep/madeBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pep/usedProcedure
+<https://w3id.org/pep/usedProcedure> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://qudt.org/schema/qudt#numericValue
+<http://qudt.org/schema/qudt#numericValue> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/forecasting4eepsa#hasForecastDateTime
+:hasForecastDateTime rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:dateTime ;
+                     rdfs:comment "Represents the future instant (in xsd:dateTime format) of time when a forecast takes place."@en ,
+                                  "Review comment"@en ;
+                     rdfs:label "has forecast date time"@en .
+
+
+###  https://w3id.org/forecasting4eepsa#hasForecastTime
+:hasForecastTime rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:time ;
+                 rdfs:comment "Represents the future hour (in xsd:time format) of time when a forecast takes place."@en ;
+                 rdfs:label "has forecast time"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/iot/vocab/m3-lite#Temperature
+<http://purl.org/iot/vocab/m3-lite#Temperature> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class .
+
+
+###  https://w3id.org/forecasting4eepsa#TemperatureForecast
+:TemperatureForecast rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/seas/Forecast> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
+                                       owl:someValuesFrom <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/pep/hasResult> ;
+                                       owl:someValuesFrom :TemperatureForecastResult
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/pep/madeBy> ;
+                                       owl:someValuesFrom :TemperatureForecaster
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/pep/usedProcedure> ;
+                                       owl:someValuesFrom :TemperatureForecasting
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/seas/forecastsProperty> ;
+                                       owl:someValuesFrom <http://purl.org/iot/vocab/m3-lite#Temperature>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/prov#generatedAtTime> ;
+                                       owl:someValuesFrom xsd:dateTime
+                                     ] ;
+                     rdfs:comment "A Temperature Forecast is the execution of some Temperature Forecasting process by some Temperature Forecaster."@en ;
+                     rdfs:label "Temperature Forecast"@en .
+
+
+###  https://w3id.org/forecasting4eepsa#TemperatureForecastResult
+:TemperatureForecastResult rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://qudt.org/schema/qudt#unit> ;
+                                             owl:someValuesFrom <http://qudt.org/schema/qudt#Unit>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://qudt.org/schema/qudt#numericValue> ;
+                                             owl:someValuesFrom xsd:double
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasForecastDateTime ;
+                                             owl:someValuesFrom xsd:dateTime
+                                           ] ;
+                           rdfs:comment "Temperature Forecast Result represents the result of a Temperature Forecast."@en ;
+                           rdfs:label "Temperature Forecast Result"@en .
+
+
+###  https://w3id.org/forecasting4eepsa#TemperatureForecaster
+:TemperatureForecaster rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/seas/Forecaster> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/pep/implements> ;
+                                         owl:someValuesFrom :TemperatureForecasting
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <https://w3id.org/seas/forecastsProperty> ;
+                                         owl:someValuesFrom <http://purl.org/iot/vocab/m3-lite#Temperature>
+                                       ] ;
+                       rdfs:comment "A Temperature Forecaster implements some Temperature Forecasting process, and may generate temperature forecasts."@en ;
+                       rdfs:label "Temperature Forecaster"@en .
+
+
+###  https://w3id.org/forecasting4eepsa#TemperatureForecasting
+:TemperatureForecasting rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/seas/Forecasting> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <https://w3id.org/seas/forecastsProperty> ;
+                                          owl:someValuesFrom <http://purl.org/iot/vocab/m3-lite#Temperature>
+                                        ] ;
+                        rdfs:comment "Temperature Forecasting is the process of forecasting the temperature."@en ;
+                        rdfs:label "Temperature Forecasting"@en .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

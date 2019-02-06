@@ -1,0 +1,248 @@
+@prefix : <https://w3id.org/eepsa/exn4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/eepsa/exn4eepsa> .
+
+<https://w3id.org/eepsa/exn4eepsa> rdf:type owl:Ontology ;
+                                    <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                    <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>""" ;
+                                    <http://purl.org/dc/terms/created> "2018-08-21" ;
+                                    <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                                    <http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en ;
+                                    <http://purl.org/dc/terms/issued> "2019-01-21" ;
+                                    <http://purl.org/dc/terms/modified> "2019-01-21" ;
+                                    <http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology" ;
+                                    <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exn4eepsa> ;
+                                    owl:versionInfo 1.3 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/eepsa/exn4eepsa#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMemberOf ;
+           rdfs:domain :CollectionOfExecutions ;
+           rdfs:range <https://w3id.org/eep#Execution> ;
+           rdfs:comment "Relation that links a collection of executions to an execution belonging to that collection."@en ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+           rdfs:label "has member"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain <https://w3id.org/eep#Execution> ;
+            rdfs:range :CollectionOfExecutions ;
+            rdfs:comment "Relation that links an execution to the collection of executions it belongs to."@en ;
+            rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+            rdfs:label "is member of"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/eep#Execution
+<https://w3id.org/eep#Execution> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#Actuation
+:Actuation rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/eep#Execution> ;
+           rdfs:comment "An execution made by an actuator implementing an actuating procedure."@en ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+           rdfs:label "Actuation"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions
+:CollectionOfExecutions rdf:type owl:Class ;
+                        rdfs:comment "A collection of executions"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                        rdfs:label "Collection of Executions"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#Forecast
+:Forecast rdf:type owl:Class ;
+          rdfs:subClassOf :Observation ;
+          rdfs:comment "An observation estimated by a predictive model implementing a predictive procedure."@en ;
+          rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+          rdfs:label "Forecast"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam
+:IlluminanceOutlierByLightBeam rdf:type owl:Class ;
+                               rdfs:subClassOf :OutlierBySensorLocation ;
+                               rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                               rdfs:label "Illuminance Outlier caused by Light Beam"@en ;
+                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An illuminance outlier originated from a sensor's exposure to a light beam."@en ,
+                                                                                          "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#Imputation
+:Imputation rdf:type owl:Class ;
+            rdfs:subClassOf :Observation ;
+            rdfs:comment "An observation estimated by an imputation method implementing an imputation procedure."@en ;
+            rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+            rdfs:label "Imputation"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#MissingValue
+:MissingValue rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/eep#Execution> ;
+              rdfs:comment "An empty or null event for attributes where a value should have been recorded"@en ;
+              rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+              rdfs:label "Missing Value"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#Observation
+:Observation rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/eep#Execution> ;
+             rdfs:comment "An execution made by an executor to estimate or calculate a quality of a feature of interest"@en ;
+             rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+             rdfs:label "Observation"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#Outlier
+:Outlier rdf:type owl:Class ;
+         rdfs:subClassOf :Observation ;
+         rdfs:comment "An observation that stands out amongst other observations and does not conform to the expected behaviour"@en ;
+         rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+         rdfs:label "Outlier"@en ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError
+:OutlierByDeviceError rdf:type owl:Class ;
+                      rdfs:subClassOf :Outlier ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                      rdfs:label "Outlier caused by Device Error"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from an error on a device."@en ,
+                                                                                 "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply
+:OutlierByPowerSupply rdf:type owl:Class ;
+                      rdfs:subClassOf :OutlierByDeviceError ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                      rdfs:label "Outlier caused by Power Supply"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a problem with the device's power supply."@en ,
+                                                                                 "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation
+:OutlierBySensorLocation rdf:type owl:Class ;
+                         rdfs:subClassOf :Outlier ;
+                         rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                         rdfs:label "Outlier caused by Sensor Location"@en ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a sensor's poor location."@en ,
+                                                                                    "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction
+:OutlierBySensorMalfunction rdf:type owl:Class ;
+                            rdfs:subClassOf :OutlierByDeviceError ;
+                            rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                            rdfs:label "Outlier caused by Sensor Malfunction"@en ;
+                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a problem with the functioning of the sensor making the observation."@en ,
+                                                                                       "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain
+:TemperatureOutlierByRain rdf:type owl:Class ;
+                          rdfs:subClassOf :OutlierBySensorLocation ;
+                          rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                          rdfs:label "Temperature Outlier caused by Rain"@en ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "A temperature outlier originated from a sensor's exposure to rain."@en ,
+                                                                                     "testing" .
+
+
+###  https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation
+:TemperatureOutlierBySolarRadiation rdf:type owl:Class ;
+                                    rdfs:subClassOf :OutlierBySensorLocation ;
+                                    rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
+                                    rdfs:label "Temperature Outlier caused by Solar Radiation"@en ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "A temperature outlier originated from a sensor's exposure to solar radiation."@en ,
+                                                                                               "testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/eepsa/exn4eepsa#
+: rdf:type owl:NamedIndividual ,
+           <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

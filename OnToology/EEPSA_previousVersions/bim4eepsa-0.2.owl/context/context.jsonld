@@ -1,0 +1,177 @@
+{
+  "@context" : {
+    "pset_BuildingCommon_yearOfConstruction" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfConstruction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Roof" : {
+      "@id" : "https://w3id.org/bim4eepsa#Roof"
+    },
+    "hasSpace" : {
+      "@id" : "https://w3id.org/def/saref4bldg#hasSpace",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "pset_BuildingCommon_buildingID" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_buildingID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ExternalDoor" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalDoor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "pset_BuildingUse_marketCategory" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingUse_marketCategory"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "contains" : {
+      "@id" : "https://w3id.org/def/saref4bldg#contains",
+      "@type" : "@id"
+    },
+    "ExternalBuildingElement" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalBuildingElement"
+    },
+    "pset_BuildingCommon_numberOfStoreys" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_numberOfStoreys",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pset_BuildingCommon_constructionMethod" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_constructionMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "pset_BuildingCommon_yearOfLastRefurbishment" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_yearOfLastRefurbishment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "pset_BuildingCommon_grossPlannedArea" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_grossPlannedArea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "pset_BuildingCommon_occupancyType" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_occupancyType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Building" : {
+      "@id" : "https://w3id.org/def/saref4bldg#Building"
+    },
+    "Door" : {
+      "@id" : "https://w3id.org/bim4eepsa#Door"
+    },
+    "BuildingElement" : {
+      "@id" : "https://w3id.org/bim4eepsa#BuildingElement"
+    },
+    "isContainedIn" : {
+      "@id" : "https://w3id.org/def/saref4bldg#isContainedIn",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "pset_BuildingCommon_netPlannedArea" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_netPlannedArea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "pset_BuildingCommon_fireProtectionClass" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingCommon_fireProtectionClass",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "Window" : {
+      "@id" : "https://w3id.org/bim4eepsa#Window"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "pset_BuildingUse_planningControlStatus" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingUse_planningControlStatus"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "pset_BuildingUse_narrativeText" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingUse_narrativeText"
+    },
+    "pset_BuildingUse_marketSubCategory" : {
+      "@id" : "https://w3id.org/bim4eepsa#pset_BuildingUse_marketSubCategory"
+    },
+    "ExternalWall" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalWall"
+    },
+    "Skylight" : {
+      "@id" : "https://w3id.org/bim4eepsa#Skylight"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "WeatherStation" : {
+      "@id" : "https://w3id.org/bim4eepsa#WeatherStation"
+    },
+    "ExternalWindow" : {
+      "@id" : "https://w3id.org/bim4eepsa#ExternalWindow"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "BuildingSpace" : {
+      "@id" : "https://w3id.org/def/saref4bldg#BuildingSpace"
+    },
+    "Wall" : {
+      "@id" : "https://w3id.org/bim4eepsa#Wall"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "isSpaceOf" : {
+      "@id" : "https://w3id.org/def/saref4bldg#isSpaceOf",
+      "@type" : "@id"
+    },
+    "PhysicalObject" : {
+      "@id" : "https://w3id.org/def/saref4bldg#PhysicalObject"
+    }
+  }
+}

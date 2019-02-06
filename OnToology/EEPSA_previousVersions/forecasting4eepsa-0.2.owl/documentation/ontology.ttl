@@ -1,0 +1,178 @@
+@prefix : <https://w3id.org/forecasting4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/forecasting4eepsa> .
+
+<https://w3id.org/forecasting4eepsa> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.2.owl> ;
+                                      owl:imports <https://w3id.org/pep/pep-1.1> ,
+                                                  <https://w3id.org/seas/ForecastingOntology-1.0> ;
+                                      <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc/4.0/> ;
+                                      <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" ;
+                                      <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""@en ;
+                                      <http://purl.org/dc/terms/description> "Forecasting-related knowledge representation for the EEPSA Ontology."@en ;
+                                      <http://purl.org/dc/terms/issued> "2017-11-27" ;
+                                      <http://purl.org/dc/terms/modified> "2018-04-02"@en ;
+                                      <http://purl.org/dc/terms/title> "Forecasting for EEPSA" ;
+                                      <http://purl.org/ontology/bibo/status> "Work in progress"@en ;
+                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "f4eepsa"@en ;
+                                      owl:versionInfo "0.2"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://qudt.org/schema/qudt#unit
+<http://qudt.org/schema/qudt#unit> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/forecasting4eepsa#hasForecastResult
+:hasForecastResult rdf:type owl:ObjectProperty ;
+                   rdfs:range :ForecastResult ;
+                   rdfs:comment "Links a Forecast with its result (Forecast Result)."@en ;
+                   rdfs:isDefinedBy : ;
+                   rdfs:label "has forecast result"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/forecasting4eepsa#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:comment "Links a Forecasting Input with a parameter that it contains."@en ;
+              rdfs:isDefinedBy : ;
+              rdfs:label "has parameter"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pep/hasResult
+<https://w3id.org/pep/hasResult> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pep/madeBy
+<https://w3id.org/pep/madeBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pep/usedProcedure
+<https://w3id.org/pep/usedProcedure> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://qudt.org/schema/qudt#numericValue
+<http://qudt.org/schema/qudt#numericValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> rdf:type owl:Class .
+
+
+###  https://w3id.org/forecasting4eepsa#ForecastResult
+:ForecastResult rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://qudt.org/schema/qudt#unit> ;
+                                  owl:someValuesFrom <http://qudt.org/schema/qudt#Unit>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://qudt.org/schema/qudt#numericValue> ;
+                                  owl:someValuesFrom xsd:double
+                                ] ;
+                rdfs:comment "Represents the result of a Forecast."@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:label "Forecast Result"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/forecasting4eepsa#ForecastingInput
+:ForecastingInput rdf:type owl:Class ;
+                  rdfs:comment "Represents inputs of Forecasting Processes."@en ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:label "Forecasting Input"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/pep/Procedure
+<https://w3id.org/pep/Procedure> owl:equivalentClass <https://w3id.org/pep/Process> .
+
+
+###  https://w3id.org/pep/ProcedureExecution
+<https://w3id.org/pep/ProcedureExecution> owl:equivalentClass <https://w3id.org/pep/ProcessExecution> .
+
+
+###  https://w3id.org/pep/ProcedureExecutionContainer
+<https://w3id.org/pep/ProcedureExecutionContainer> owl:equivalentClass <https://w3id.org/pep/ProcessExecutionContainer> .
+
+
+###  https://w3id.org/pep/ProcedureExecutor
+<https://w3id.org/pep/ProcedureExecutor> owl:equivalentClass <https://w3id.org/pep/ProcessExecutor> .
+
+
+###  https://w3id.org/pep/Process
+
+###  https://w3id.org/pep/ProcessExecution
+
+###  https://w3id.org/pep/ProcessExecutionContainer
+
+###  https://w3id.org/pep/ProcessExecutor
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

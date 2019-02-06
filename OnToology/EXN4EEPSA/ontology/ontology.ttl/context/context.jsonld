@@ -1,0 +1,108 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "IlluminanceOutlierByLightBeam" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Execution" : {
+      "@id" : "https://w3id.org/eep#Execution"
+    },
+    "OutlierBySensorLocation" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "TemperatureOutlierByRain" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain"
+    },
+    "isMemberOf" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#isMemberOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Imputation" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#Imputation"
+    },
+    "hasMember" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#hasMember",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "Forecast" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#Forecast"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "OutlierByPowerSupply" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "MissingValue" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#MissingValue"
+    },
+    "OutlierBySensorMalfunction" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "TemperatureOutlierBySolarRadiation" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Outlier" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#Outlier"
+    },
+    "Actuation" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#Actuation"
+    },
+    "CollectionOfExecutions" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#CollectionOfExecutions"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "OutlierByDeviceError" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Observation" : {
+      "@id" : "https://w3id.org/eepsa/exn4eepsa#Observation"
+    }
+  }
+}

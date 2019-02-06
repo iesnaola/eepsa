@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "b34dc770e5346913c3cb73f731633abe" "4f813f7a9f568481778050812932b68d" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" "c0019b92613d947495c2264982b7a43c" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalDoor" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Roof" "https://w3id.org/bot#Building" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWall" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalBuildingElement" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWindow" "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" ; /*classes style*/
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor" [ label = "rdfs:seeAlso" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall" [ label = "rdfs:seeAlso" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Roof" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof" [ label = "rdfs:seeAlso" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalDoor" -> "4f813f7a9f568481778050812932b68d" [ label = "owl:equivalentClass" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWindow" -> "c0019b92613d947495c2264982b7a43c" [ label = "owl:equivalentClass" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalWall" -> "b34dc770e5346913c3cb73f731633abe" [ label = "owl:equivalentClass" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" -> "http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow" [ label = "rdfs:seeAlso" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/bot/0.3.0" [ label = "owl:imports" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://w3id.org/eepsa/foi4eepsa" [ label = ":preferredNamespaceUri" ];
+	"foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:" -> "https://creativecommons.org/licenses/by-nc/4.0/" [ label = ":license" ];
+	"NULL" -> "36179841:168c1d8f858:-7ffa" [ label = "owl:intersectionOf" ];
+	"NULL" -> "36179841:168c1d8f858:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Window" [ label = "rdf:first" ];
+	"NULL" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:ExternalBuildingElement" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Door" [ label = "rdf:first" ];
+	"NULL" -> "36179841:168c1d8f858:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "36179841:168c1d8f858:-7ff8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "36179841:168c1d8f858:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "36179841:168c1d8f858:-7ffc" [ label = "owl:intersectionOf" ];
+	"NULL" -> "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:Wall" [ label = "rdf:first" ];
+	"https://w3id.org/bot#Building" -> "xsd:float" [ label = "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:hasGrossPlannedArea" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:hasMarketSubCategory" ];
+	"https://w3id.org/bot#Building" -> "xsd:integer" [ label = "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:hasYearOfConstruction" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:hasMarketCategory" ];
+	"https://w3id.org/bot#Building" -> "rdfs:Literal" [ label = "foi4eepsa^^http://www.w3.org/2001/XMLSchema#string:hasOccupancyType" ];
+
+}

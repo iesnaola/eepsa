@@ -1,0 +1,97 @@
+{
+  "@context" : {
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SolarRadiationSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#SolarRadiationSensor"
+    },
+    "LightSensor" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#LightSensor"
+    },
+    "WindowActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#WindowActuator"
+    },
+    "CO2Sensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#CO2Sensor"
+    },
+    "DoorActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#DoorActuator"
+    },
+    "Thermometer" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Thermometer"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Door" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Door"
+    },
+    "CloudCoverSensor" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#CloudCoverSensor"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Window" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Window"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#TemperatureSensor"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Blind" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#Blind"
+    },
+    "Anenometer" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#Anenometer"
+    },
+    "PrecipitationSensor" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#PrecipitationSensor"
+    },
+    "HumiditySensor" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#HumiditySensor"
+    },
+    "BlindActuator" : {
+      "@id" : "https://w3id.org/eepsa/exr4eepsa#BlindActuator"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "WindSpeedSensor" : {
+      "@id" : "http://purl.org/iot/vocab/m3-lite#WindSpeedSensor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

@@ -1,0 +1,168 @@
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/iesnaola/eepsa/master/EEPSA_previousVersions/forecasting4eepsa-0.2.owl> .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/pep/pep-1.1> .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/seas/ForecastingOntology-1.0> .
+<https://w3id.org/forecasting4eepsa> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/elements/1.1/publisher> "IK4-TEKNIKER (http://www.tekniker.es)" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/description> "Forecasting-related knowledge representation for the EEPSA Ontology."@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/issued> "2017-11-27" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/modified> "2018-04-02"@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/dc/terms/title> "Forecasting for EEPSA" .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/ontology/bibo/status> "Work in progress"@en .
+<https://w3id.org/forecasting4eepsa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "f4eepsa"@en .
+<https://w3id.org/forecasting4eepsa> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt#unit
+<http://qudt.org/schema/qudt#unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/forecasting4eepsa#hasForecastResult
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/forecasting4eepsa#ForecastResult> .
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Forecast with its result (Forecast Result)."@en .
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/forecasting4eepsa#> .
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/2000/01/rdf-schema#label> "has forecast result"@en .
+<https://w3id.org/forecasting4eepsa#hasForecastResult> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/forecasting4eepsa#hasParameter
+<https://w3id.org/forecasting4eepsa#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/forecasting4eepsa#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Forecasting Input with a parameter that it contains."@en .
+<https://w3id.org/forecasting4eepsa#hasParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/forecasting4eepsa#> .
+<https://w3id.org/forecasting4eepsa#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter"@en .
+<https://w3id.org/forecasting4eepsa#hasParameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pep/hasResult
+<https://w3id.org/pep/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pep/madeBy
+<https://w3id.org/pep/madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pep/usedProcedure
+<https://w3id.org/pep/usedProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt#numericValue
+<http://qudt.org/schema/qudt#numericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt#Unit
+<http://qudt.org/schema/qudt#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/forecasting4eepsa#ForecastResult
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt#unit> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qudt.org/schema/qudt#Unit> .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt#numericValue> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the result of a Forecast."@en .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/forecasting4eepsa#> .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2000/01/rdf-schema#label> "Forecast Result"@en .
+<https://w3id.org/forecasting4eepsa#ForecastResult> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/forecasting4eepsa#ForecastingInput
+<https://w3id.org/forecasting4eepsa#ForecastingInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/forecasting4eepsa#ForecastingInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents inputs of Forecasting Processes."@en .
+<https://w3id.org/forecasting4eepsa#ForecastingInput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/forecasting4eepsa#> .
+<https://w3id.org/forecasting4eepsa#ForecastingInput> <http://www.w3.org/2000/01/rdf-schema#label> "Forecasting Input"@en .
+<https://w3id.org/forecasting4eepsa#ForecastingInput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/pep/Procedure
+<https://w3id.org/pep/Procedure> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pep/Process> .
+# 
+# https://w3id.org/pep/ProcedureExecution
+<https://w3id.org/pep/ProcedureExecution> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pep/ProcessExecution> .
+# 
+# https://w3id.org/pep/ProcedureExecutionContainer
+<https://w3id.org/pep/ProcedureExecutionContainer> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pep/ProcessExecutionContainer> .
+# 
+# https://w3id.org/pep/ProcedureExecutor
+<https://w3id.org/pep/ProcedureExecutor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pep/ProcessExecutor> .
+# 
+# https://w3id.org/pep/Process
+# 
+# https://w3id.org/pep/ProcessExecution
+# 
+# https://w3id.org/pep/ProcessExecutionContainer
+# 
+# https://w3id.org/pep/ProcessExecutor
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
