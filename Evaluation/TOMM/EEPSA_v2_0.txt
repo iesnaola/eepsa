@@ -1,16 +1,16 @@
-Log file for EEPSA.owl
+Log file for eepsa.owl
 
 
-Metrics for EEPSA.owl
+Metrics for eepsa.owl
 
-No. of classes in ontology: 105
+No. of classes in ontology: 112
 No. of OP in ontology: 29
 No. of DP in ontology: 9
 No. of Ind in ontology: 12
-Size of ontology: 155
-Atomic size of ontology: 4.103225806451613
-No. of axioms in ontology: 1214
+Size of ontology: 162
+Atomic size of ontology: 4.055555555555555
+No. of axioms in ontology: 1256
 Appropriateness of ontology: -1.0
-Attribute richness of ontology: 0.4666666666666667
-Inheritance richness of ontology: 3.84
-Time taken for processing: 0.013 seconds, 2.1666666666666666E-4 minutes, 3.611111111111111E-6 hours.
+Attribute richness of ontology: 0.4375
+Inheritance richness of ontology: 3.6785714285714284
+Time taken for processing: 0.011 seconds, 1.8333333333333334E-4 minutes, 3.0555555555555556E-6 hours.
