@@ -1,512 +1,636 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/eepsa/q4eepsa#"
-     xml:base="https://w3id.org/eepsa/q4eepsa"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/eepsa/foi4eepsa#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:ns1="http://creativecommons.org/ns#">
-    <owl:Ontology rdf:about="https://w3id.org/eepsa/q4eepsa">
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-13</terms:issued>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality ontology module for the EEPSA Ontology</terms:title>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
-Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
-        <vann:preferredNamespacePrefix xml:lang="en">q4eepsa</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-12</terms:modified>
-        <bibo:status xml:lang="en">Work in Progress</bibo:status>
-        <terms:description xml:lang="en">This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology.</terms:description>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://purl.org/ontology/bibo/status -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
-
-    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
-    
-
-
-    <!-- https://w3id.org/affectedBy#Quality -->
-
-    <owl:Class rdf:about="https://w3id.org/affectedBy#Quality"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ActuatableQuality -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ActuatableQuality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/affectedBy#Quality"/>
-        <rdfs:comment xml:lang="en">A quality of a feature of interest that can be acted on.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Actuatable Quality</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#AtmosphericPressure -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#AtmosphericPressure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Atmospheric Pressure</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#AtmosphericPressure"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#CO2 -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#CO2">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"/>
-        <rdfs:comment xml:lang="en">Carbon Dioxide (CO2) measure in the atmosphere. (Defined by m3-lite)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">CO2</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#CO2"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3 -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"/>
-        <rdfs:comment xml:lang="en">Measure of the concentration of Ammonia (NH3) gas suspended in the atmosphere. (Defined by m3-lite)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ammonia</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#CloudCover -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#CloudCover">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">Measure of cloud cover at a certain time.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Cloud Cover</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#CloudCover"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ElectricConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ElectricConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"/>
-        <rdfs:comment xml:lang="en">The amount of electricity consumed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Electric Consumption</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ElectricGeneration -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ElectricGeneration">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"/>
-        <rdfs:comment xml:lang="en">The amount of electricity generated.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Electric Generation</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#GasConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#GasConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"/>
-        <rdfs:comment xml:lang="en">The amount of gas consumed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Gas Consumption</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#HeatConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#HeatConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"/>
-        <rdfs:comment xml:lang="en">The amount of heat consumed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Heat Consumption</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#Illuminance -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#Illuminance">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"/>
-        <rdfs:comment xml:lang="en">Illuminance is the total luminous flux incident on a surface, per unit area. (Defined by m3-lite)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Illuminance</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#Illuminance"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#IndoorHumidity -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#IndoorHumidity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"/>
-        <rdfs:comment xml:lang="en">A quantity representing the amount of water vapour indoors.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Indoor Humidity</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#IndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#IndoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality"/>
-        <rdfs:comment xml:lang="en">The degree or intensity of heat present indoors.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Indoor Temperature</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:complementOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ActuatableQuality"/>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A quality related to the atmosphere and its phenomena.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Meteorological Quality</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ObservableQuality -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ObservableQuality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/affectedBy#Quality"/>
-        <rdfs:comment xml:lang="en">A quality of a feature of interest that can be observed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Observable Quality</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#Occupancy -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#Occupancy">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
-        <rdfs:comment xml:lang="en">The usage or intended usage ratio of a given space.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Occupancy</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#Orientation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#Orientation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
-        <rdfs:comment xml:lang="en">The description of how a thing is placed in the space it is in.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Orientation</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#OutdoorHumidity -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">A quantity representing the amount of water vapour outdoors.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Outdoor Humidity</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#OutdoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The degree or intensity of heat present outdoors.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Outdoor Temperature</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#PrecipitationLevel -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#PrecipitationLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">It is any product of the condensation of atmospheric water vapour that falls under gravity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Precipitation Level</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#Precipitation"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
-        <rdfs:comment xml:lang="en">Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Resource Consumption/Generation Quality</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#SolarRadiation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#SolarRadiation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Solar Radiation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#SolarRadiation"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#SunPositionDirection -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#SunPositionDirection">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Sun Position Direction</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#SunPositionDirection"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#SunPositionElevation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#SunPositionElevation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">It is the altitude of the sun, the angle between the horizon and the centre of the sun&apos;s disc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Sun Position Elevation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#SunPositionElevation"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#ThermalComfortQuality">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ActuatableQuality"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ObservableQuality"/>
-        <rdfs:comment xml:lang="en">A quality related to the thermal comfort. According to the ANSI/ASHRAE Standard 55-2017, thermal comfort is defined as follows: &quot;that condition of mind that expresses satisfaction with the thermal environment and is assessed by subjective evaluation&quot;</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Thermal Comfort Quality</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#WaterConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WaterConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality"/>
-        <rdfs:comment xml:lang="en">The amount of water consumed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/q4eepsa"/>
-        <rdfs:label xml:lang="en">Water Consumption</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#WindChill -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WindChill">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The cooling effect of wind blowing on a surface.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Wind Chill</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#WindChill"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#WindDirection -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WindDirection">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The geodetic azimuth of the direction from which the wind is blowing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Wind Direction</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#WindDirection"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa#WindSpeed -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#WindSpeed">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality"/>
-        <rdfs:comment xml:lang="en">The ratio of the distance covered by moving air to the time quantity taken to cover it.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/iot/vocab/m3-lite"/>
-        <rdfs:label xml:lang="en">Wind Speed</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.org/iot/vocab/m3-lite#WindSpeed"/>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/eepsa/q4eepsa# -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/q4eepsa#">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
+     ontologyIRI="https://w3id.org/eepsa/foi4eepsa#">
+    <Prefix name="" IRI="https://w3id.org/eepsa/foi4eepsa#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://w3id.org/bot/0.3.0</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.2</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2018-08-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This ontology module describes the Feature of Interest terminology under the aff:FeatureOfInterest class for the EEPSA Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">foi4eepsa</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2018-11-27</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <IRI>https://w3id.org/eepsa/foi4eepsa</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2018-11-27</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Feature of Interest module for the EEPSA Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Feature of Interest ontology module for the EEPSA Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work in Progress</Literal>
+    </Annotation>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasGrossPlannedArea"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExternalWall"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Storey"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Wall"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMarketCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Zone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Roof"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExternalBuildingElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Skylight"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Window"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExternalDoor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI=""/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/based_near"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasYearOfConstruction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMarketSubCategory"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExternalWindow"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UndergroundStorey"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasOccupancyType"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Door"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ExternalDoor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Door"/>
+            <Class IRI="ExternalBuildingElement"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ExternalWall"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ExternalBuildingElement"/>
+            <Class IRI="Wall"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ExternalWindow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ExternalBuildingElement"/>
+            <Class IRI="Window"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/bot#Element"/>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/bot#Interface"/>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/bot#Zone"/>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Door"/>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExternalBuildingElement"/>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExternalDoor"/>
+        <Class IRI="Door"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExternalWall"/>
+        <Class IRI="Wall"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExternalWindow"/>
+        <Class IRI="Window"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Roof"/>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Skylight"/>
+        <Class IRI="ExternalBuildingElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UndergroundStorey"/>
+        <Class IRI="https://w3id.org/bot#Storey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wall"/>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Window"/>
+        <Class IRI="https://w3id.org/bot#Element"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <NamedIndividual IRI=""/>
+    </ClassAssertion>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasGrossPlannedArea"/>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMarketCategory"/>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMarketSubCategory"/>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasOccupancyType"/>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasYearOfConstruction"/>
+        <Class IRI="https://w3id.org/bot#Building"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasGrossPlannedArea"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMarketCategory"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMarketSubCategory"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasOccupancyType"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasYearOfConstruction"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Door</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation (Source: ISO 6707-1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Door</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Door</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Door</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Door</IRI>
+        <IRI>http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcDoor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>Door</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExternalBuildingElement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A building element that is external (i.e., that faces the outside of the building).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ExternalBuildingElement</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExternalBuildingElement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">External Building Element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>ExternalBuildingElement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExternalDoor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A door that is external (facing the outside of the building).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ExternalDoor</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExternalDoor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">External Door</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>ExternalDoor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExternalWall</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A wall that is external (facing the outside of the building).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ExternalWall</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExternalWall</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">External Wall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>ExternalWall</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExternalWindow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A window that is external (facing the outside of the building).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ExternalWindow</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExternalWindow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">External Window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>ExternalWindow</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Roof</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Construction enclosing the building from above (Source: ISO 6707-1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Roof</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Roof</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Roof</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Roof</IRI>
+        <IRI>http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcRoof</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>Roof</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Skylight</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Skylights are light transmitting fenestration (elements filling building envelope openings) forming all, or a portion of, the roof of a building&apos;s space for daylighting purposes (Source: Wikipedia).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Skylight</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Skylight</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Skylight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>Skylight</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>UndergroundStorey</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Storey located below ground level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>UndergroundStorey</IRI>
+        <IRI>https://w3id.org/eepsa/foi4eepsa</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>UndergroundStorey</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Underground Storey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>UndergroundStorey</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Wall</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vertical construction usually in masonry or in concrete which bounds or subdivides a construction works and fulfils a load bearing or retaining function (Source: ISO 6707-1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Wall</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Wall</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Wall</IRI>
+        <IRI>http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWall</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>Wall</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Window</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Construction for closing a vertical or near vertical opening in a wall or pitched roof that will admit light and may admit fresh air (Source: ISO 6707-1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Window</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Window</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Window</IRI>
+        <IRI>http://ifcowl.openbimstandards.org/IFC4_ADD2#IfcWindow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>Window</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGrossPlannedArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total planned area for the building Used for programming the building (Source: IFC2x3 Property Set Definition Reference).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasGrossPlannedArea</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasGrossPlannedArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has gross planned area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>hasGrossPlannedArea</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMarketCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Category of use e.g. residential, commercial, recreation etc. (Source: IFC2x3 Property Set Definition Reference).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasMarketCategory</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMarketCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has market category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>hasMarketCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMarketSubCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subset of category of use e.g. multi-family, 2 bedroom, low rise (Source: IFC2x3 Property Set Definition Reference).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasMarketSubCategory</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMarketSubCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has market subcategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>hasMarketSubCategory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasOccupancyType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occupancy type for this object. It is defined according to the presiding national building code (Source: IFC2x3 Property Set Definition Reference).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasOccupancyType</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOccupancyType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has occupancy type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>hasOccupancyType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasYearOfConstruction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Year of construction of this building, including expected year of completion (Source: IFC2x3 Property Set Definition Reference).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasYearOfConstruction</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasYearOfConstruction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has year of construction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>hasYearOfConstruction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
