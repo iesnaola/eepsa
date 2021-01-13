@@ -1,0 +1,363 @@
+@prefix : <https://w3id.org/eepsa/q4eepsa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/eepsa/q4eepsa> .
+
+<https://w3id.org/eepsa/q4eepsa> rdf:type owl:Ontology ;
+                                  <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                  <http://purl.org/dc/terms/contributor> """Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>
+Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>""" ;
+                                  <http://purl.org/dc/terms/created> "2018-08-21" ;
+                                  <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                                  <http://purl.org/dc/terms/description> "This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology."@en ;
+                                  <http://purl.org/dc/terms/issued> "2018-11-27" ;
+                                  <http://purl.org/dc/terms/modified> "2021-01-13" ;
+                                  <http://purl.org/dc/terms/title> "Quality ontology module for the EEPSA Ontology" ;
+                                  <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "q4eepsa"@en ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/q4eepsa> ;
+                                  owl:versionInfo 1.4 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/affectedBy#Quality
+<https://w3id.org/affectedBy#Quality> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ActuatableQuality
+:ActuatableQuality rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/affectedBy#Quality> ;
+                   rdfs:comment "A quality of a feature of interest that can be acted on."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:label "Actuatable Quality"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#AmmoniaLevel
+:AmmoniaLevel rdf:type owl:Class ;
+              rdfs:subClassOf :ComfortQuality ;
+              rdfs:comment "Measure of the concentration of Ammonia (NH3) gas suspended in the atmosphere. (Defined by m3-lite)"@en ;
+              rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+              rdfs:label "Ammonia Level" ;
+              rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3> ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#AtmosphericPressure
+:AtmosphericPressure rdf:type owl:Class ;
+                     rdfs:subClassOf :MeteorologicalQuality ;
+                     rdfs:comment "The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question."@en ;
+                     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+                     rdfs:label "Atmospheric Pressure"@en ;
+                     rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#AtmosphericPressure> ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#CO2Level
+:CO2Level rdf:type owl:Class ;
+          rdfs:subClassOf :ComfortQuality ;
+          rdfs:comment "Carbon Dioxide (CO2) measure in the atmosphere. (Defined by m3-lite)"@en ;
+          rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+          rdfs:label "CO2 Level"@en ;
+          rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#CO2> ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#CloudCover
+:CloudCover rdf:type owl:Class ;
+            rdfs:subClassOf :MeteorologicalQuality ;
+            rdfs:comment "Measure of cloud cover at a certain time."@en ;
+            rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+            rdfs:label "Cloud Cover"@en ;
+            rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#CloudCover> ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ComfortQuality
+:ComfortQuality rdf:type owl:Class ;
+                rdfs:subClassOf :ActuatableQuality ,
+                                :ObservableQuality ;
+                rdfs:comment "A quality that represents the condition of mind that expresses satisfactin with the environment."@en ;
+                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                rdfs:label "Comfort Quality"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ElectricConsumption
+:ElectricConsumption rdf:type owl:Class ;
+                     rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
+                     rdfs:comment "The amount of electricity consumed."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                     rdfs:label "Electric Consumption"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ElectricGeneration
+:ElectricGeneration rdf:type owl:Class ;
+                    rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
+                    rdfs:comment "The amount of electricity generated."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                    rdfs:label "Electric Generation"@en ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#GasConsumption
+:GasConsumption rdf:type owl:Class ;
+                rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
+                rdfs:comment "The amount of gas consumed."@en ;
+                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                rdfs:label "Gas Consumption"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#HeatConsumption
+:HeatConsumption rdf:type owl:Class ;
+                 rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
+                 rdfs:comment "The amount of heat consumed."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                 rdfs:label "Heat Consumption"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#Illuminance
+:Illuminance rdf:type owl:Class ;
+             rdfs:subClassOf :ComfortQuality ;
+             rdfs:comment "Illuminance is the total luminous flux incident on a surface, per unit area. (Defined by m3-lite)"@en ;
+             rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+             rdfs:label "Illuminance"@en ;
+             rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#Illuminance> ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#IndoorHumidity
+:IndoorHumidity rdf:type owl:Class ;
+                rdfs:subClassOf :ComfortQuality ;
+                rdfs:comment "A quantity representing the amount of water vapour indoors."@en ;
+                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                rdfs:label "Indoor Humidity"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#IndoorTemperature
+:IndoorTemperature rdf:type owl:Class ;
+                   rdfs:subClassOf :ComfortQuality ;
+                   rdfs:comment "The degree or intensity of heat present indoors."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:label "Indoor Temperature"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#MeteorologicalQuality
+:MeteorologicalQuality rdf:type owl:Class ;
+                       rdfs:subClassOf :ObservableQuality ;
+                       rdfs:comment "A quality related to the atmosphere and its phenomena."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                       rdfs:label "Meteorological Quality"@en ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ObservableQuality
+:ObservableQuality rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/affectedBy#Quality> ;
+                   rdfs:comment "A quality of a feature of interest that can be observed."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                   rdfs:label "Observable Quality"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#Occupancy
+:Occupancy rdf:type owl:Class ;
+           rdfs:subClassOf :ObservableQuality ;
+           rdfs:comment "The usage or intended usage ratio of a given space."@en ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+           rdfs:label "Occupancy"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#Orientation
+:Orientation rdf:type owl:Class ;
+             rdfs:subClassOf :ObservableQuality ;
+             rdfs:comment "The description of how a thing is placed in the space it is in."@en ;
+             rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+             rdfs:label "Orientation"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#OutdoorHumidity
+:OutdoorHumidity rdf:type owl:Class ;
+                 rdfs:subClassOf :MeteorologicalQuality ;
+                 rdfs:comment "A quantity representing the amount of water vapour outdoors."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                 rdfs:label "Outdoor Humidity"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#OutdoorTemperature
+:OutdoorTemperature rdf:type owl:Class ;
+                    rdfs:subClassOf :MeteorologicalQuality ;
+                    rdfs:comment "The degree or intensity of heat present outdoors."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                    rdfs:label "Outdoor Temperature"@en ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#PrecipitationLevel
+:PrecipitationLevel rdf:type owl:Class ;
+                    rdfs:subClassOf :MeteorologicalQuality ;
+                    rdfs:comment "It is any product of the condensation of atmospheric water vapour that falls under gravity."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                    rdfs:label "Precipitation Level"@en ;
+                    rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#Precipitation> ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#ResourceConsumptionGenerationQuality
+:ResourceConsumptionGenerationQuality rdf:type owl:Class ;
+                                      rdfs:subClassOf :ObservableQuality ;
+                                      rdfs:comment "Resource consumption and generation is about the consumption of non-renewable, or the consumption or generation of renewable resources (Source: Wikipedia)"@en ;
+                                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                                      rdfs:label "Resource Consumption/Generation Quality"@en ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SolarRadiation
+:SolarRadiation rdf:type owl:Class ;
+                rdfs:subClassOf :MeteorologicalQuality ;
+                rdfs:comment "It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                rdfs:label "Solar Radiation"@en ;
+                rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SolarRadiation> ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SunPositionDirection
+:SunPositionDirection rdf:type owl:Class ;
+                      rdfs:subClassOf :MeteorologicalQuality ;
+                      rdfs:comment "The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia)."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                      rdfs:label "Sun Position Direction"@en ;
+                      rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SunPositionDirection> ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SunPositionElevation
+:SunPositionElevation rdf:type owl:Class ;
+                      rdfs:subClassOf :MeteorologicalQuality ;
+                      rdfs:comment "It is the altitude of the sun, the angle between the horizon and the centre of the sun's disc."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                      rdfs:label "Sun Position Elevation"@en ;
+                      rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SunPositionElevation> ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#WaterConsumption
+:WaterConsumption rdf:type owl:Class ;
+                  rdfs:subClassOf :ResourceConsumptionGenerationQuality ;
+                  rdfs:comment "The amount of water consumed."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                  rdfs:label "Water Consumption"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#WindChill
+:WindChill rdf:type owl:Class ;
+           rdfs:subClassOf :MeteorologicalQuality ;
+           rdfs:comment "The cooling effect of wind blowing on a surface."@en ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+           rdfs:label "Wind Chill"@en ;
+           rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindChill> ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#WindDirection
+:WindDirection rdf:type owl:Class ;
+               rdfs:subClassOf :MeteorologicalQuality ;
+               rdfs:comment "The geodetic azimuth of the direction from which the wind is blowing."@en ;
+               rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+               rdfs:label "Wind Direction"@en ;
+               rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindDirection> ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/eepsa/q4eepsa#WindSpeed
+:WindSpeed rdf:type owl:Class ;
+           rdfs:subClassOf :MeteorologicalQuality ;
+           rdfs:comment "The ratio of the distance covered by moving air to the time quantity taken to cover it."@en ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+           rdfs:label "Wind Speed"@en ;
+           rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindSpeed> ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/eepsa/q4eepsa#
+: rdf:type owl:NamedIndividual ,
+           <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

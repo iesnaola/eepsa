@@ -1,0 +1,119 @@
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/dc/terms/created> "2021-01-13" .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJesús Bermúdez <mailto:jesus.bermudez@ehu.eus>" .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/dc/terms/description> "It defines the proposed alignments between the Q4EEPSA ontology and the QUDT Quantity Kinds vocabulary."@en .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/dc/terms/issued> "2021-01-13" .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/dc/terms/title> "Q4EEPSA ontology alignment with QUDT Quantity Kinds vocabulary"@en .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/ontology/bibo/status> "Published"@en .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://purl.org/vocab/vann/preferredNamespacePrefix> "foi4eepsa" .
+<https://w3id.org/eepsa/q4eepsa_QUDTQuantityKindsAlignment> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/quantitykind/AtmosphericPressure
+<http://qudt.org/vocab/quantitykind/AtmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/AtmosphericPressure> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/eepsa/q4eepsa#AtmosphericPressure> .
+# 
+# http://qudt.org/vocab/quantitykind/Illuminance
+<http://qudt.org/vocab/quantitykind/Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/Illuminance> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/eepsa/q4eepsa#Illuminance> .
+# 
+# http://qudt.org/vocab/quantitykind/RelativeHumidity
+<http://qudt.org/vocab/quantitykind/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://qudt.org/vocab/quantitykind/Temperature
+<http://qudt.org/vocab/quantitykind/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/q4eepsa#AtmosphericPressure
+<https://w3id.org/eepsa/q4eepsa#AtmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/q4eepsa#Illuminance
+<https://w3id.org/eepsa/q4eepsa#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/eepsa/q4eepsa#IndoorHumidity
+<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/vocab/quantitykind/RelativeHumidity> .
+# 
+# https://w3id.org/eepsa/q4eepsa#IndoorTemperature
+<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/vocab/quantitykind/Temperature> .
+# 
+# https://w3id.org/eepsa/q4eepsa#OutdoorHumidity
+<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/vocab/quantitykind/RelativeHumidity> .
+# 
+# https://w3id.org/eepsa/q4eepsa#OutdoorTemperature
+<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/vocab/quantitykind/Temperature> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
