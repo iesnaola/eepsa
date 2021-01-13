@@ -15,12 +15,12 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                                   <http://purl.org/dc/terms/description> "This ontology module describes the Quality terminology under the aff:Quality class for the EEPSA Ontology."@en ;
                                   <http://purl.org/dc/terms/issued> "2018-11-27"^^xsd:string ;
-                                  <http://purl.org/dc/terms/modified> "2020-11-17"^^xsd:string ;
+                                  <http://purl.org/dc/terms/modified> "2021-01-13"^^xsd:string ;
                                   <http://purl.org/dc/terms/title> "Quality ontology module for the EEPSA Ontology"^^xsd:string ;
                                   <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "q4eepsa"@en ;
                                   <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/q4eepsa> ;
-                                  owl:versionInfo 1.3 .
+                                  owl:versionInfo 1.4 .
 
 #################################################################
 #    Annotation properties
@@ -105,22 +105,22 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
-###  https://w3id.org/eepsa/q4eepsa#CO2
-:CO2 rdf:type owl:Class ;
+###  https://w3id.org/eepsa/q4eepsa#CO2Level
+:CO2Level rdf:type owl:Class ;
      rdfs:subClassOf :ComfortQuality ;
      rdfs:comment "Carbon Dioxide (CO2) measure in the atmosphere. (Defined by m3-lite)"@en ;
-     rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
-     rdfs:label "CO2"@en ;
+     rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+     rdfs:label "CO2 Level"@en ;
      rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#CO2> ;
      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
-###  https://w3id.org/eepsa/q4eepsa#ChemicalAgentAtmosphericConcentrationNH3
-:ChemicalAgentAtmosphericConcentrationNH3 rdf:type owl:Class ;
+###  https://w3id.org/eepsa/q4eepsa#AmmoniaLevel
+:AmmoniaLevel rdf:type owl:Class ;
                                           rdfs:subClassOf :ComfortQuality ;
                                           rdfs:comment "Measure of the concentration of Ammonia (NH3) gas suspended in the atmosphere. (Defined by m3-lite)"@en ;
-                                          rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
-                                          rdfs:label "Ammonia"^^xsd:string ;
+                                          rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
+                                          rdfs:label "Ammonia Level"^^xsd:string ;
                                           rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationNH3> ;
                                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
@@ -129,7 +129,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :CloudCover rdf:type owl:Class ;
             rdfs:subClassOf :MeteorologicalQuality ;
             rdfs:comment "Measure of cloud cover at a certain time."@en ;
-            rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+            rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
             rdfs:label "Cloud Cover"@en ;
             rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#CloudCover> ;
             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -185,7 +185,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :Illuminance rdf:type owl:Class ;
              rdfs:subClassOf :ComfortQuality ;
              rdfs:comment "Illuminance is the total luminous flux incident on a surface, per unit area. (Defined by m3-lite)"@en ;
-             rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+             rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
              rdfs:label "Illuminance"@en ;
              rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#Illuminance> ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -267,7 +267,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :PrecipitationLevel rdf:type owl:Class ;
                     rdfs:subClassOf :MeteorologicalQuality ;
                     rdfs:comment "It is any product of the condensation of atmospheric water vapour that falls under gravity."@en ;
-                    rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+                    rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
                     rdfs:label "Precipitation Level"@en ;
                     rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#Precipitation> ;
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -286,7 +286,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :SolarRadiation rdf:type owl:Class ;
                 rdfs:subClassOf :MeteorologicalQuality ;
                 rdfs:comment "It is the power per unit area received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring instrument. (Source Wikipedia)."@en ;
-                rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+                rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
                 rdfs:label "Solar Radiation"@en ;
                 rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SolarRadiation> ;
                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -296,7 +296,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :SunPositionDirection rdf:type owl:Class ;
                       rdfs:subClassOf :MeteorologicalQuality ;
                       rdfs:comment "The position of the Sun in the sky is a function of both time and the geographic coordinates of the observer on the surface of the Earth. (Source Wikipedia)."@en ;
-                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
                       rdfs:label "Sun Position Direction"@en ;
                       rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SunPositionDirection> ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -306,7 +306,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :SunPositionElevation rdf:type owl:Class ;
                       rdfs:subClassOf :MeteorologicalQuality ;
                       rdfs:comment "It is the altitude of the sun, the angle between the horizon and the centre of the sun's disc."@en ;
-                      rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+                      rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
                       rdfs:label "Sun Position Elevation"@en ;
                       rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#SunPositionElevation> ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -325,7 +325,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :WindChill rdf:type owl:Class ;
            rdfs:subClassOf :MeteorologicalQuality ;
            rdfs:comment "The cooling effect of wind blowing on a surface."@en ;
-           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
            rdfs:label "Wind Chill"@en ;
            rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindChill> ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -335,7 +335,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :WindDirection rdf:type owl:Class ;
                rdfs:subClassOf :MeteorologicalQuality ;
                rdfs:comment "The geodetic azimuth of the direction from which the wind is blowing."@en ;
-               rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+               rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
                rdfs:label "Wind Direction"@en ;
                rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindDirection> ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
@@ -345,7 +345,7 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 :WindSpeed rdf:type owl:Class ;
            rdfs:subClassOf :MeteorologicalQuality ;
            rdfs:comment "The ratio of the distance covered by moving air to the time quantity taken to cover it."@en ;
-           rdfs:isDefinedBy <http://purl.org/iot/vocab/m3-lite> ;
+           rdfs:isDefinedBy <https://w3id.org/eepsa/q4eepsa> ;
            rdfs:label "Wind Speed"@en ;
            rdfs:seeAlso <http://purl.org/iot/vocab/m3-lite#WindSpeed> ;
            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
