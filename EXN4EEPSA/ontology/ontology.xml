@@ -20,12 +20,12 @@ Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <terms:description xml:lang="en">This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-21</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-21</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-18</terms:modified>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution ontology module for the EEPSA Ontology</terms:title>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
         <vann:preferredNamespacePrefix xml:lang="en">exn4eepsa</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -231,19 +231,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
-    <!-- https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Illuminance Outlier caused by Light Beam</rdfs:label>
-        <ns1:term_status xml:lang="en">An illuminance outlier originated from a sensor&apos;s exposure to a light beam.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/eepsa/exn4eepsa#Imputation -->
 
 
@@ -293,105 +280,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:label xml:lang="en">Outlier</rdfs:label>
         <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Outlier"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Device Error</rdfs:label>
-        <ns1:term_status xml:lang="en">An outlier originated from an error on a device.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Power Supply</rdfs:label>
-        <ns1:term_status xml:lang="en">An outlier originated from a problem with the device&apos;s power supply.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Outlier"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Sensor Location</rdfs:label>
-        <ns1:term_status xml:lang="en">An outlier originated from a sensor&apos;s poor location.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Sensor Malfunction</rdfs:label>
-        <ns1:term_status xml:lang="en">An outlier originated from a problem with the functioning of the sensor making the observation.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Temperature Outlier caused by Rain</rdfs:label>
-        <ns1:term_status xml:lang="en">A temperature outlier originated from a sensor&apos;s exposure to rain.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Temperature Outlier caused by Solar Radiation</rdfs:label>
-        <ns1:term_status xml:lang="en">A temperature outlier originated from a sensor&apos;s exposure to solar radiation.</ns1:term_status>
-        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns1:term_status>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa# -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/exn4eepsa#">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 

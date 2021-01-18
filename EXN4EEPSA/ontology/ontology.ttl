@@ -15,12 +15,12 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                                     <http://purl.org/dc/terms/description> "This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology."@en ;
                                     <http://purl.org/dc/terms/issued> "2019-01-21"^^xsd:string ;
-                                    <http://purl.org/dc/terms/modified> "2019-01-21"^^xsd:string ;
+                                    <http://purl.org/dc/terms/modified> "2021-01-18"^^xsd:string ;
                                     <http://purl.org/dc/terms/title> "Execution ontology module for the EEPSA Ontology"^^xsd:string ;
                                     <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "exn4eepsa"@en ;
                                     <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/exn4eepsa> ;
-                                    owl:versionInfo 1.3 .
+                                    owl:versionInfo 1.4 .
 
 #################################################################
 #    Annotation properties
@@ -137,15 +137,6 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
-###  https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam
-:IlluminanceOutlierByLightBeam rdf:type owl:Class ;
-                               rdfs:subClassOf :OutlierBySensorLocation ;
-                               rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                               rdfs:label "Illuminance Outlier caused by Light Beam"@en ;
-                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An illuminance outlier originated from a sensor's exposure to a light beam."@en ,
-                                                                                          "testing"^^xsd:string .
-
-
 ###  https://w3id.org/eepsa/exn4eepsa#Imputation
 :Imputation rdf:type owl:Class ;
             rdfs:subClassOf :Observation ;
@@ -180,69 +171,6 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
          rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
          rdfs:label "Outlier"@en ;
          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError
-:OutlierByDeviceError rdf:type owl:Class ;
-                      rdfs:subClassOf :Outlier ;
-                      rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                      rdfs:label "Outlier caused by Device Error"@en ;
-                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from an error on a device."@en ,
-                                                                                 "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply
-:OutlierByPowerSupply rdf:type owl:Class ;
-                      rdfs:subClassOf :OutlierByDeviceError ;
-                      rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                      rdfs:label "Outlier caused by Power Supply"@en ;
-                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a problem with the device's power supply."@en ,
-                                                                                 "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation
-:OutlierBySensorLocation rdf:type owl:Class ;
-                         rdfs:subClassOf :Outlier ;
-                         rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                         rdfs:label "Outlier caused by Sensor Location"@en ;
-                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a sensor's poor location."@en ,
-                                                                                    "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction
-:OutlierBySensorMalfunction rdf:type owl:Class ;
-                            rdfs:subClassOf :OutlierByDeviceError ;
-                            rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                            rdfs:label "Outlier caused by Sensor Malfunction"@en ;
-                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "An outlier originated from a problem with the functioning of the sensor making the observation."@en ,
-                                                                                       "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain
-:TemperatureOutlierByRain rdf:type owl:Class ;
-                          rdfs:subClassOf :OutlierBySensorLocation ;
-                          rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                          rdfs:label "Temperature Outlier caused by Rain"@en ;
-                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "A temperature outlier originated from a sensor's exposure to rain."@en ,
-                                                                                     "testing"^^xsd:string .
-
-
-###  https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation
-:TemperatureOutlierBySolarRadiation rdf:type owl:Class ;
-                                    rdfs:subClassOf :OutlierBySensorLocation ;
-                                    rdfs:isDefinedBy <https://w3id.org/eepsa/exn4eepsa> ;
-                                    rdfs:label "Temperature Outlier caused by Solar Radiation"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "A temperature outlier originated from a sensor's exposure to solar radiation."@en ,
-                                                                                               "testing"^^xsd:string .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://w3id.org/eepsa/exn4eepsa#
-: rdf:type owl:NamedIndividual ,
-           <http://purl.org/vocommons/voaf#Vocabulary> .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

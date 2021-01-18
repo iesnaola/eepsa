@@ -12,19 +12,19 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:ns1="http://creativecommons.org/ns#">
     <owl:Ontology rdf:about="https://w3id.org/eepsa/exn4eepsa">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
         <vann:preferredNamespacePrefix xml:lang="en">exn4eepsa</vann:preferredNamespacePrefix>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-18</terms:modified>
         <terms:description xml:lang="en">This ontology module describes the Execution terminology under the eep:Execution class for the EEPSA Ontology.</terms:description>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</owl:versionInfo>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-21</terms:issued>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
 Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution ontology module for the EEPSA Ontology</terms:title>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-21</terms:modified>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-21</terms:issued>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
     </owl:Ontology>
     
@@ -133,7 +133,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:comment xml:lang="en">Relation that links a collection of executions to an execution belonging to that collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">has member</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -146,7 +146,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:comment xml:lang="en">Relation that links an execution to the collection of executions it belongs to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
         <rdfs:label xml:lang="en">is member of</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -209,18 +209,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
-    <!-- https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#IlluminanceOutlierByLightBeam">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Illuminance Outlier caused by Light Beam</rdfs:label>
-        <ns:term_status xml:lang="en">An illuminance outlier originated from a sensor&apos;s exposure to a light beam.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/eepsa/exn4eepsa#Imputation -->
 
     <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#Imputation">
@@ -266,97 +254,6 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:label xml:lang="en">Outlier</rdfs:label>
         <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Outlier"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Device Error</rdfs:label>
-        <ns:term_status xml:lang="en">An outlier originated from an error on a device.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierByPowerSupply">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Power Supply</rdfs:label>
-        <ns:term_status xml:lang="en">An outlier originated from a problem with the device&apos;s power supply.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#Outlier"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Sensor Location</rdfs:label>
-        <ns:term_status xml:lang="en">An outlier originated from a sensor&apos;s poor location.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorMalfunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierByDeviceError"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Outlier caused by Sensor Malfunction</rdfs:label>
-        <ns:term_status xml:lang="en">An outlier originated from a problem with the functioning of the sensor making the observation.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierByRain">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Temperature Outlier caused by Rain</rdfs:label>
-        <ns:term_status xml:lang="en">A temperature outlier originated from a sensor&apos;s exposure to rain.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/exn4eepsa#TemperatureOutlierBySolarRadiation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/exn4eepsa#OutlierBySensorLocation"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/exn4eepsa"/>
-        <rdfs:label xml:lang="en">Temperature Outlier caused by Solar Radiation</rdfs:label>
-        <ns:term_status xml:lang="en">A temperature outlier originated from a sensor&apos;s exposure to solar radiation.</ns:term_status>
-        <ns:term_status>testing</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/eepsa/exn4eepsa# -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/exn4eepsa#">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
