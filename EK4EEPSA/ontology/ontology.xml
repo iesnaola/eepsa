@@ -22,13 +22,13 @@ Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
 Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <terms:description xml:lang="en">This ontology module covers the expert knowledge for the EEPSA Ontology.</terms:description>
         <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert knowledge for the EEPSA Ontology</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-03</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-03</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-11</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-21</terms:modified>
         <terms:title xml:lang="en">Expert Knowledge module for the EEPSA Ontology.</terms:title>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ek4eepsa</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -108,6 +108,13 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
 
@@ -119,6 +126,20 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -414,6 +435,52 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
     
 
 
+    <!-- https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A space ventilated by a system installed with an air inlet and an outlet (e.g. HVAC).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
+        <rdfs:label xml:lang="en">Mechanically Ventilated Space</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Humidity within a mechanically ventilated space</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
+        <rdfs:label xml:lang="en">Mechanically Ventilated Space Indoor Humidity</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace -->
 
 
@@ -486,6 +553,71 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
         <rdfs:comment xml:lang="en">Temperature within a naturally enlightened space.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
         <rdfs:label xml:lang="en">Naturally Enlightened Space Indoor Temperature</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bot#Space"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/bot#hasElement"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/foi4eepsa#ExternalWindow"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A space ventilated by opening and closing the windows.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
+        <rdfs:label xml:lang="es">Naturally Ventilated Space</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Humidity within a naturally ventilated space</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
+        <rdfs:label xml:lang="en">Naturally Ventilated Space Indoor Humidity</rdfs:label>
         <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     

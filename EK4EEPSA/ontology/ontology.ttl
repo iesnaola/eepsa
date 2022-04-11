@@ -15,13 +15,13 @@ Aitor Arnaiz <mailto:aitor.arnaiz@tekniker.es>"""^^xsd:string ;
 Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
                                    <http://purl.org/dc/terms/description> "This ontology module covers the expert knowledge for the EEPSA Ontology."@en ,
                                                                           "Expert knowledge for the EEPSA Ontology"^^xsd:string ;
-                                   <http://purl.org/dc/terms/issued> "2018-12-03"^^xsd:string ;
-                                   <http://purl.org/dc/terms/modified> "2018-12-03"^^xsd:string ;
+                                   <http://purl.org/dc/terms/issued> "2022-04-11"^^xsd:string ;
+                                   <http://purl.org/dc/terms/modified> "2022-03-21"^^xsd:string ;
                                    <http://purl.org/dc/terms/title> "Expert Knowledge module for the EEPSA Ontology."@en ;
                                    <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "ek4eepsa"^^xsd:string ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/eepsa/ek4eepsa> ;
-                                   owl:versionInfo 1.0 .
+                                   owl:versionInfo 1.1 .
 
 #################################################################
 #    Annotation properties
@@ -63,12 +63,24 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>"""^^xsd:string ;
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/ontology/bibo/status
@@ -266,6 +278,39 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
 
+###  https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace
+:MechanicallyVentilatedSpace rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/bot#Space> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <https://w3id.org/affectedBy#influencedBy> ;
+                                               owl:someValuesFrom :MechanicallyVentilatedSpaceIndoorHumidity
+                                             ] ;
+                             rdfs:comment "A space ventilated by a system installed with an air inlet and an outlet (e.g. HVAC)."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/eepsa/ek4eepsa> ;
+                             rdfs:label "Mechanically Ventilated Space"@en ;
+                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity
+:MechanicallyVentilatedSpaceIndoorHumidity rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> ,
+                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#IndoorTemperature>
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#Occupancy>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                           rdfs:comment "Humidity within a mechanically ventilated space"@en ;
+                                           rdfs:isDefinedBy <https://w3id.org/eepsa/ek4eepsa> ;
+                                           rdfs:label "Mechanically Ventilated Space Indoor Humidity"@en ;
+                                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
 ###  https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace
 :NaturallyEnlightenedSpace rdf:type owl:Class ;
                            owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/bot#Space>
@@ -325,6 +370,114 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                             rdfs:label "Naturally Enlightened Space Indoor Temperature"@en ;
                                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
 
+
+###  https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace
+:NaturallyVentilatedSpace rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/bot#Space>
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <https://w3id.org/bot#hasElement> ;
+                                                                       owl:someValuesFrom <https://w3id.org/eepsa/foi4eepsa#ExternalWindow>
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf <https://w3id.org/bot#Space> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <https://w3id.org/affectedBy#influencedBy> ;
+                                            owl:someValuesFrom :NaturallyVentilatedSpaceIndoorHumidity
+                                          ] ;
+                          rdfs:comment "A space ventilated by opening and closing the windows."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/eepsa/ek4eepsa> ;
+                          rdfs:label "Naturally Ventilated Space"@es ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity
+:NaturallyVentilatedSpaceIndoorHumidity rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/eepsa/q4eepsa#IndoorHumidity> ,
+                                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                 owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#IndoorTemperature>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                 owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#Occupancy>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                 owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#OutdoorHumidity>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://w3id.org/affectedBy#affectedBy> ;
+                                                                                 owl:someValuesFrom <https://w3id.org/eepsa/q4eepsa#OutdoorTemperature>
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                        rdfs:comment "Humidity within a naturally ventilated space"@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/eepsa/ek4eepsa> ;
+                                        rdfs:label "Naturally Ventilated Space Indoor Humidity"@en ;
+                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement
+<https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/foi4eepsa#ExternalWindow
+<https://w3id.org/eepsa/foi4eepsa#ExternalWindow> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/foi4eepsa#Skylight
+<https://w3id.org/eepsa/foi4eepsa#Skylight> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/foi4eepsa#UndergroundStorey
+<https://w3id.org/eepsa/foi4eepsa#UndergroundStorey> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#AtmosphericPressure
+<https://w3id.org/eepsa/q4eepsa#AtmosphericPressure> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#CloudCover
+<https://w3id.org/eepsa/q4eepsa#CloudCover> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#IndoorHumidity
+<https://w3id.org/eepsa/q4eepsa#IndoorHumidity> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#IndoorTemperature
+<https://w3id.org/eepsa/q4eepsa#IndoorTemperature> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#Occupancy
+<https://w3id.org/eepsa/q4eepsa#Occupancy> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#OutdoorHumidity
+<https://w3id.org/eepsa/q4eepsa#OutdoorHumidity> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#OutdoorTemperature
+<https://w3id.org/eepsa/q4eepsa#OutdoorTemperature> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SolarRadiation
+<https://w3id.org/eepsa/q4eepsa#SolarRadiation> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SunPositionDirection
+<https://w3id.org/eepsa/q4eepsa#SunPositionDirection> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#SunPositionElevation
+<https://w3id.org/eepsa/q4eepsa#SunPositionElevation> rdf:type owl:Class .
+
+
+###  https://w3id.org/eepsa/q4eepsa#WindSpeed
+<https://w3id.org/eepsa/q4eepsa#WindSpeed> rdf:type owl:Class .
 
 
 #################################################################

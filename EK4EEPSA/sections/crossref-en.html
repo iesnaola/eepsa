@@ -1,5 +1,5 @@
-<h2  id="crossreference" class="list">Cross reference for EK4EEPSA classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by EK4EEPSA.
+<h2  id="crossreference" class="list">Cross reference for Expert Knowledge module for the EEPSA Ontology. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Expert Knowledge module for the EEPSA Ontology..
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -28,12 +28,28 @@ This section provides details for each class and property defined by EK4EEPSA.
             title="https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature">Below Ground Level Space Indoor Temperature</a>
       </li>
       <li>
+         <a href="#MechanicallyVentilatedSpace"
+            title="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace">Mechanically Ventilated Space</a>
+      </li>
+      <li>
+         <a href="#MechanicallyVentilatedSpaceIndoorHumidity"
+            title="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity">Mechanically Ventilated Space Indoor Humidity</a>
+      </li>
+      <li>
          <a href="#NaturallyEnlightenedSpace"
             title="https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace">Naturally Enlightened Space</a>
       </li>
       <li>
          <a href="#NaturallyEnlightenedSpaceIndoorTemperature"
             title="https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature">Naturally Enlightened Space Indoor Temperature</a>
+      </li>
+      <li>
+         <a href="#NaturallyVentilatedSpace"
+            title="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace">Naturally Ventilated Space</a>
+      </li>
+      <li>
+         <a href="#NaturallyVentilatedSpaceIndoorHumidity"
+            title="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity">Naturally Ventilated Space Indoor Humidity</a>
       </li>
    </ul>
    <div class="entity" id="AdjacentToOutdoorSpace">
@@ -301,6 +317,79 @@ This section provides details for each class and property defined by EK4EEPSA.
             <sup class="type-c" title="class">c</sup>)</dd>
       </dl>
    </div>
+   <div class="entity" id="MechanicallyVentilatedSpace">
+      <h3>Mechanically Ventilated Space<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace</p>
+      <div class="comment">
+         <span class="markdown">A space ventilated by a system installed with an air inlet and an outlet (e.g. HVAC).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/ek4eepsa">https://w3id.org/eepsa/ek4eepsa</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/bot#Space">space</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/affectedBy#influencedBy">influenced by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#MechanicallyVentilatedSpaceIndoorHumidity"
+               title="https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity">Mechanically Ventilated Space Indoor Humidity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MechanicallyVentilatedSpaceIndoorHumidity">
+      <h3>Mechanically Ventilated Space Indoor Humidity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity</p>
+      <div class="comment">
+         <span class="markdown">Humidity within a mechanically ventilated space</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/ek4eepsa">https://w3id.org/eepsa/ek4eepsa</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#IndoorHumidity">indoor humidity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>(<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#IndoorTemperature">indoor temperature</span>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#Occupancy">occupancy</span>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
    <div class="entity" id="NaturallyEnlightenedSpace">
       <h3>Naturally Enlightened Space<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -398,6 +487,97 @@ This section provides details for each class and property defined by EK4EEPSA.
             <span class="logic">some</span> 
             <span class="dotted"
                   title="https://w3id.org/eepsa/q4eepsa#SunPositionElevation">sun position elevation</span>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="NaturallyVentilatedSpace">
+      <h3>Naturally Ventilated Space<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace</p>
+      <div class="comment">
+         <span class="markdown">A space ventilated by opening and closing the windows.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/ek4eepsa">https://w3id.org/eepsa/ek4eepsa</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/bot#Space">space</span>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted" title="https://w3id.org/bot#hasElement">has element</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/foi4eepsa#ExternalWindow">external window</span>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/bot#Space">space</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="https://w3id.org/affectedBy#influencedBy">influenced by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#NaturallyVentilatedSpaceIndoorHumidity"
+               title="https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity">Naturally Ventilated Space Indoor Humidity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NaturallyVentilatedSpaceIndoorHumidity">
+      <h3>Naturally Ventilated Space Indoor Humidity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity</p>
+      <div class="comment">
+         <span class="markdown">Humidity within a naturally ventilated space</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/eepsa/ek4eepsa">https://w3id.org/eepsa/ek4eepsa</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#IndoorHumidity">indoor humidity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>(<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#IndoorTemperature">indoor temperature</span>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#Occupancy">occupancy</span>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted" title="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity">outdoor humidity</span>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<span class="dotted" title="https://w3id.org/affectedBy#affectedBy">affected by</span>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <span class="dotted"
+                  title="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature">outdoor temperature</span>
             <sup class="type-c" title="class">c</sup>)</dd>
       </dl>
    </div>

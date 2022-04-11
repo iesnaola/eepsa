@@ -1,446 +1,738 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/eepsa/ek4eepsa#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="https://w3id.org/eepsa/ek4eepsa"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ns1="http://creativecommons.org/ns#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://w3id.org/eepsa/ek4eepsa">
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-08-21</terms:created>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert knowledge for the EEPSA Ontology</terms:description>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ek4eepsa</vann:preferredNamespacePrefix>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-03</terms:issued>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
-Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</terms:contributor>
-        <terms:description xml:lang="en">This ontology module covers the expert knowledge for the EEPSA Ontology.</terms:description>
-        <terms:title xml:lang="en">Expert Knowledge module for the EEPSA Ontology.</terms:title>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-12-03</terms:modified>
-        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
-        <bibo:status xml:lang="en">Work in Progress</bibo:status>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/ontology/bibo/status -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
-    
-
-
-    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/based_near -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/based_near"/>
-    
-
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
-
-    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bot#Space"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/bot#hasElement"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A space in contact with the exterior by means of at least one building element (e.g. a wall or a window).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Adjacent to Outdoor Space</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-<!-- https://w3id.org/eepsa/q4eepsa#IndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#SolarRadiation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#WindSpeed"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Temperature within a space adjacent to outdoor.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Adjacent To Outdoor Space Indoor Temperature</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-    <!-- https://w3id.org/bot#Space -->
-
-    <owl:Class rdf:about="https://w3id.org/bot#Space"/>
-	
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A space with bad insulation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Bad Insulated Space</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#SolarRadiation"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Temperature within a bad insulated space.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Bad Insulated Space Indoor Temperature</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bot#Space"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/bot#hasStorey"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/foi4eepsa#UndergroundStorey"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A space located in a storey below ground.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Below Ground Level Space</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Temperature within a space located in a storey below ground level.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Below Ground Level Space Indoor Temperature</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/bot#Space"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/bot#hasElement"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/foi4eepsa#ExternalWindow"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/bot#hasElement"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/foi4eepsa#Skylight"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Space"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A space enlightened with a source of light from the exterior.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Naturally Enlightened Space</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature -->
-
-    <owl:Class rdf:about="https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#CloudCover"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#SunPositionDirection"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/affectedBy#affectedBy"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/eepsa/q4eepsa#SunPositionElevation"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Temperature within a naturally enlightened space.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eepsa/ek4eepsa"/>
-        <rdfs:label xml:lang="en">Naturally Enlightened Space Indoor Temperature</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:Class>
-       
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/eepsa/ek4eepsa# -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/eepsa/ek4eepsa#">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+     ontologyIRI="https://w3id.org/eepsa/ek4eepsa">
+    <Prefix name="" IRI="https://w3id.org/eepsa/ek4eepsa#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Aitor Arnaiz &lt;mailto:aitor.arnaiz@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>2018-08-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>Expert knowledge for the EEPSA Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">This ontology module covers the expert knowledge for the EEPSA Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal>2022-04-11</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal>2022-03-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Expert Knowledge module for the EEPSA Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+        <Literal xml:lang="en">Work in Progress</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <Literal>ek4eepsa</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <IRI></IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdjacentToOutdoorSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdjacentToOutdoorSpaceIndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BadInsulatedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BadInsulatedSpaceIndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BelowGroundLevelSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BelowGroundLevelSpaceIndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicallyVentilatedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicallyVentilatedSpaceIndoorHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturallyEnlightenedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturallyEnlightenedSpaceIndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturallyVentilatedSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturallyVentilatedSpaceIndoorHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/foi4eepsa#ExternalWindow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/foi4eepsa#Skylight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/foi4eepsa#UndergroundStorey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#CloudCover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#SolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#SunPositionDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#SunPositionElevation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#WindSpeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/bot#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/bot#hasStorey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/based_near"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AdjacentToOutdoorSpace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/bot#Space"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/bot#hasElement"/>
+                <Class IRI="https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BelowGroundLevelSpace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/bot#Space"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/bot#hasStorey"/>
+                <Class IRI="https://w3id.org/eepsa/foi4eepsa#UndergroundStorey"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NaturallyEnlightenedSpace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/bot#Space"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="https://w3id.org/bot#hasElement"/>
+                    <Class IRI="https://w3id.org/eepsa/foi4eepsa#ExternalWindow"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="https://w3id.org/bot#hasElement"/>
+                    <Class IRI="https://w3id.org/eepsa/foi4eepsa#Skylight"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NaturallyVentilatedSpace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/bot#Space"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/bot#hasElement"/>
+                <Class IRI="https://w3id.org/eepsa/foi4eepsa#ExternalWindow"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AdjacentToOutdoorSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdjacentToOutdoorSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#AdjacentToOutdoorSpaceIndoorTemperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdjacentToOutdoorSpaceIndoorTemperature"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdjacentToOutdoorSpaceIndoorTemperature"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#SolarRadiation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#WindSpeed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadInsulatedSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadInsulatedSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#BadInsulatedSpaceIndoorTemperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadInsulatedSpaceIndoorTemperature"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadInsulatedSpaceIndoorTemperature"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#SolarRadiation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BelowGroundLevelSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BelowGroundLevelSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#BelowGroundLevelSpaceIndoorTemperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BelowGroundLevelSpaceIndoorTemperature"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BelowGroundLevelSpaceIndoorTemperature"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicallyVentilatedSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicallyVentilatedSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#MechanicallyVentilatedSpaceIndoorHumidity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicallyVentilatedSpaceIndoorHumidity"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicallyVentilatedSpaceIndoorHumidity"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyEnlightenedSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyEnlightenedSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#NaturallyEnlightenedSpaceIndoorTemperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyEnlightenedSpaceIndoorTemperature"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyEnlightenedSpaceIndoorTemperature"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#CloudCover"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#SunPositionDirection"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#SunPositionElevation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyVentilatedSpace"/>
+        <Class IRI="https://w3id.org/bot#Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyVentilatedSpace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+            <Class IRI="#NaturallyVentilatedSpaceIndoorHumidity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyVentilatedSpaceIndoorHumidity"/>
+        <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorHumidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturallyVentilatedSpaceIndoorHumidity"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#IndoorTemperature"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#Occupancy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+                <Class IRI="https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <NamedIndividual IRI="#"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdjacentToOutdoorSpace</IRI>
+        <Literal xml:lang="en">A space in contact with the exterior by means of at least one building element (e.g. a wall or a window).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#AdjacentToOutdoorSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdjacentToOutdoorSpace</IRI>
+        <Literal xml:lang="en">Adjacent to Outdoor Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#AdjacentToOutdoorSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdjacentToOutdoorSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Temperature within a space adjacent to outdoor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#AdjacentToOutdoorSpaceIndoorTemperature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdjacentToOutdoorSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Adjacent To Outdoor Space Indoor Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#AdjacentToOutdoorSpaceIndoorTemperature</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BadInsulatedSpace</IRI>
+        <Literal xml:lang="en">A space with bad insulation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#BadInsulatedSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BadInsulatedSpace</IRI>
+        <Literal xml:lang="en">Bad Insulated Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BadInsulatedSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BadInsulatedSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Temperature within a bad insulated space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#BadInsulatedSpaceIndoorTemperature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BadInsulatedSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Bad Insulated Space Indoor Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BadInsulatedSpaceIndoorTemperature</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BelowGroundLevelSpace</IRI>
+        <Literal xml:lang="en">A space located in a storey below ground.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#BelowGroundLevelSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BelowGroundLevelSpace</IRI>
+        <Literal xml:lang="en">Below Ground Level Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BelowGroundLevelSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BelowGroundLevelSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Temperature within a space located in a storey below ground level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#BelowGroundLevelSpaceIndoorTemperature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BelowGroundLevelSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Below Ground Level Space Indoor Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#BelowGroundLevelSpaceIndoorTemperature</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MechanicallyVentilatedSpace</IRI>
+        <Literal xml:lang="en">A space ventilated by a system installed with an air inlet and an outlet (e.g. HVAC).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MechanicallyVentilatedSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MechanicallyVentilatedSpace</IRI>
+        <Literal xml:lang="en">Mechanically Ventilated Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#MechanicallyVentilatedSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MechanicallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal xml:lang="en">Humidity within a mechanically ventilated space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#MechanicallyVentilatedSpaceIndoorHumidity</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MechanicallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal xml:lang="en">Mechanically Ventilated Space Indoor Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#MechanicallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturallyEnlightenedSpace</IRI>
+        <Literal xml:lang="en">A space enlightened with a source of light from the exterior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NaturallyEnlightenedSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturallyEnlightenedSpace</IRI>
+        <Literal xml:lang="en">Naturally Enlightened Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#NaturallyEnlightenedSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturallyEnlightenedSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Temperature within a naturally enlightened space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NaturallyEnlightenedSpaceIndoorTemperature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturallyEnlightenedSpaceIndoorTemperature</IRI>
+        <Literal xml:lang="en">Naturally Enlightened Space Indoor Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#NaturallyEnlightenedSpaceIndoorTemperature</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturallyVentilatedSpace</IRI>
+        <Literal xml:lang="en">A space ventilated by opening and closing the windows.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NaturallyVentilatedSpace</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturallyVentilatedSpace</IRI>
+        <Literal xml:lang="es">Naturally Ventilated Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#NaturallyVentilatedSpace</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NaturallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal xml:lang="en">Humidity within a naturally ventilated space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#NaturallyVentilatedSpaceIndoorHumidity</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NaturallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal xml:lang="en">Naturally Ventilated Space Indoor Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#NaturallyVentilatedSpaceIndoorHumidity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
