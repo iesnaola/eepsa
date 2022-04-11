@@ -1,0 +1,164 @@
+{
+  "@context" : {
+    "OutdoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorHumidity"
+    },
+    "Space" : {
+      "@id" : "https://w3id.org/bot#Space"
+    },
+    "BadInsulatedSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpace"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasElement" : {
+      "@id" : "https://w3id.org/bot#hasElement",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "AdjacentToOutdoorSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpace"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SunPositionElevation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SunPositionElevation"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "NaturallyEnlightenedSpaceIndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpaceIndoorTemperature"
+    },
+    "ExternalBuildingElement" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalBuildingElement"
+    },
+    "IndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorTemperature"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "SolarRadiation" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SolarRadiation"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "NaturallyEnlightenedSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#NaturallyEnlightenedSpace"
+    },
+    "influencedBy" : {
+      "@id" : "https://w3id.org/affectedBy#influencedBy",
+      "@type" : "@id"
+    },
+    "affectedBy" : {
+      "@id" : "https://w3id.org/affectedBy#affectedBy",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "AtmosphericPressure" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#AtmosphericPressure"
+    },
+    "CloudCover" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#CloudCover"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "BelowGroundLevelSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpace"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "OutdoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#OutdoorTemperature"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "NaturallyVentilatedSpaceIndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpaceIndoorHumidity"
+    },
+    "Occupancy" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#Occupancy"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "AdjacentToOutdoorSpaceIndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#AdjacentToOutdoorSpaceIndoorTemperature"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "Skylight" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#Skylight"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "BelowGroundLevelSpaceIndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#BelowGroundLevelSpaceIndoorTemperature"
+    },
+    "ExternalWindow" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#ExternalWindow"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "UndergroundStorey" : {
+      "@id" : "https://w3id.org/eepsa/foi4eepsa#UndergroundStorey"
+    },
+    "IndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#IndoorHumidity"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "NaturallyVentilatedSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#NaturallyVentilatedSpace"
+    },
+    "BadInsulatedSpaceIndoorTemperature" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#BadInsulatedSpaceIndoorTemperature"
+    },
+    "SunPositionDirection" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#SunPositionDirection"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "MechanicallyVentilatedSpaceIndoorHumidity" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpaceIndoorHumidity"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "WindSpeed" : {
+      "@id" : "https://w3id.org/eepsa/q4eepsa#WindSpeed"
+    },
+    "MechanicallyVentilatedSpace" : {
+      "@id" : "https://w3id.org/eepsa/ek4eepsa#MechanicallyVentilatedSpace"
+    },
+    "hasStorey" : {
+      "@id" : "https://w3id.org/bot#hasStorey",
+      "@type" : "@id"
+    }
+  }
+}
